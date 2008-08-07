@@ -1,0 +1,40 @@
+#summary В настоящия речник представяме често срещани технически термини и техния правилен превод
+
+= Речник за правилен превод =
+
+|| *термин* || *превод* ||
+|| add-in || добавка (add in) ||
+|| boxing || опаковане ||
+|| click (mouse click) || щракване (с мишката) ||
+|| component || компонент (мъжки род) ||
+|| connection || връзка ||
+|| control || контрола (женски род) ||
+|| debug || дебъгвам ||
+|| debug info || дебъг информация ||
+|| debugger || дебъгер ||
+|| deployment || внедряване (deployment) ||
+|| escaping || escaping ||
+|| fixed-point number || реално число с фиксирана запетая ||
+|| format specifier | спецификатор за формат ||
+|| handler || обработчик ||
+|| heap	|| хийп ||
+|| member variable || член-променлива ||
+|| lock || заключване ||
+|| native code || машиннозависим код (native код) ||
+|| overloads || варианти ||
+|| parse, parsing || правя синтактичен анализ ||
+|| partial classes || частични класове ||
+|| precision specifier || спецификатор на точността ||
+|| reference type || референтен тип ||
+|| relative path || относителен път ||
+|| specifier || спецификатор ||
+|| statement || израз, програмна конструкция ||
+|| text box || текстово поле ||
+|| tracing || проследяване ||
+|| unboxing || разопаковане ||
+|| unit test || unit тест ||
+|| upgrade || надстрояване (upgrade) ||
+|| user control || потребителска контрола ||	
+|| validate || валидирам ||
+|| value type || стойностен тип ||
+|| viewer || визуализатор ||
