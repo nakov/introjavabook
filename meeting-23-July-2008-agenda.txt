@@ -41,11 +41,11 @@ http://code.google.com/p/introjavabook/
 
 На срещата се уговорихме да ползваме Google Code като среда за работа в екип и Subversion като repository за всички документите и ресурси по проекта. Направим съм администратори на проекта 3 души и всеки от тях може да добавя нови членове:
 
- - Светлин Наков - svetlin@nakov.com
+ - Светлин Наков - svetlin{-at-}nakov.com
 
- - Борис Червенков - boris.chervenkov@sentido.bg
+ - Борис Червенков - boris.chervenkov{-at-}sentido.bg
 
- - Лъчезар Цеков - luchesar@gmail.com
+ - Лъчезар Цеков - luchesar{-at-}gmail.com
 
 Ако не правите промени, можете да ползвате SVN сървъра анонимно (без парола) от този адрес:
 
@@ -57,27 +57,27 @@ http://introjavabook.googlecode.com/svn/trunk/
 
 Второ: Да пратите мейла си на някой от администраторите на проекта, за да ви добави. До момента съм добавил следните акаунти:
 
-panayot.dobrikov@sap.com, 
+panayot.dobrikov{-at-}sap.com, 
 
-nofearinc@gmail.com, 
+nofearinc{-at-}gmail.com, 
 
-alexdobrev@gmail.com, 
+alexdobrev{-at-}gmail.com, 
 
-nikolay.vasilev@gmail.com, 
+nikolay.vasilev{-at-}gmail.com, 
 
-iwu.ivanov@gmail.com, 
+iwu.ivanov{-at-}gmail.com, 
 
-vesko.kolev@gmail.com, 
+vesko.kolev{-at-}gmail.com, 
 
-radoslav.h.i@gmail.com, 
+radoslav.h.i{-at-}gmail.com, 
 
-adalmirant@abv.bg
+adalmirant{-at-}abv.bg
 
-svetlin@nakov.com, 
+svetlin{-at-}nakov.com, 
 
-boris.chervenkov@sentido.bg, 
+boris.chervenkov{-at-}sentido.bg, 
 
-luchesar@gmail.com
+luchesar{-at-}gmail.com
 
 На всички останали не знам акаунтите и очаквам да ми ги пратят.
 
@@ -201,6 +201,6 @@ luchesar@gmail.com
 
 Начална страница на групата: http://groups.google.com/group/intro-java-book
 
-Имейл адрес на групата: intro-java-book@googlegroups.com
+Имейл адрес на групата: intro-java-book{-at-}googlegroups.com
 
 Моля, абонирайте се. Смятам да ползваме групата като основен механизъм за комуникация.
