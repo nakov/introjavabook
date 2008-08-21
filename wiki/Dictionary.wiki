@@ -31,6 +31,7 @@
 || precision specifier || спецификатор на точността ||
 || reference type || референтен тип ||
 || relative path || относителен път ||
+|| (method) signature || сигнатура (на метод) ||
 || specifier || спецификатор ||
 || statement || израз, програмна конструкция ||
 || text box || текстово поле ||
