@@ -4,11 +4,10 @@ import java.util.TreeSet;
 /**
  * Implementation of {@link Dictionary} interface using 
  * {@link TreeSet}.
- * 
- * @author Vladimir Tsanev
- * 
  * @param <K> Type of the keys
  * @param <V> Type of the values
+ * 
+ * @author Vladimir Tsanev
  */
 public class TreeSetDictionary<K extends Comparable<K>, V> implements
 		Dictionary<K, V> {
@@ -115,7 +114,6 @@ public class TreeSetDictionary<K extends Comparable<K>, V> implements
 
 	/**
 	 * {@inheritDoc}
-	 * 
 	 * @throws NullPointerException
 	 *             if the specified element is null.
 	 */
