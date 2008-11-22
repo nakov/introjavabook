@@ -14,8 +14,8 @@ public interface Dictionary<K, V> {
 	/**
 	 * Adds specified value by specified key in the current
 	 * Dictionary.
-	 * @param key key for the new value 
-	 * @param value value to be mapped with 
+	 * @param key - key for the new value 
+	 * @param value - value to be mapped with 
 	 * that key in current Dictionary.
 	 * @throws NullPointerException if specified key is null.
 	 */
@@ -23,7 +23,7 @@ public interface Dictionary<K, V> {
 
 	/**
 	 * Finds the value mapped by specified key.
-	 * @param key key for which the value is needed.
+	 * @param key - key for which the value is needed.
 	 * @return value for the specified key if present, 
 	 * or <code>null</code> if there is no value with such 
 	 * key in the current Dictionary.
@@ -32,7 +32,7 @@ public interface Dictionary<K, V> {
 	
 	/**
 	 * Removes a value mapped by specified key.
-	 * @param key key for which the value will be removed
+	 * @param key - key for which the value will be removed
 	 * @return <code>true</code> if value for the specified key if 
 	 * present, or <code>false</code> if there is no value with such 
 	 * key in the current Dictionary.
