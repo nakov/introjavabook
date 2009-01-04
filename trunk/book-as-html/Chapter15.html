@@ -1,0 +1,3089 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<title>Introduction to Programming with Java Book - Chapter 15</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 5 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"Tms Rmn";
+	panose-1:2 2 6 3 4 5 5 2 3 4;}
+@font-face
+	{font-family:Helv;
+	panose-1:2 11 6 4 2 2 2 3 2 4;}
+@font-face
+	{font-family:"New York";
+	panose-1:2 4 5 3 6 5 6 2 3 4;}
+@font-face
+	{font-family:System;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 1 6 1 0 1 1 1 1 1;}
+@font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:Dotum;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:SimHei;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:MingLiU;
+	panose-1:2 1 6 9 0 1 1 1 1 1;}
+@font-face
+	{font-family:Mincho;
+	panose-1:2 2 6 9 4 3 5 8 3 5;}
+@font-face
+	{font-family:Gulim;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Angsana New";
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:"Cordia New";
+	panose-1:2 11 3 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Latha;
+	panose-1:2 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sylfaen;
+	panose-1:1 10 5 2 5 3 6 3 3 3;}
+@font-face
+	{font-family:Vrinda;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Raavi;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Shruti;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sendnya;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Gautami;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Tunga;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Estrangelo Edessa";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Arial CYR";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:SunSans-Regular;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:SAfon;}
+@font-face
+	{font-family:"Courier New CYR";
+	panose-1:2 7 3 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:StarSymbol;}
+@font-face
+	{font-family:OpenSymbol;
+	panose-1:5 1 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sawasdee;}
+@font-face
+	{font-family:Marlett;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;}
+@font-face
+	{font-family:"Lucida Sans Unicode";
+	panose-1:2 11 6 2 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
+@font-face
+	{font-family:Impact;
+	panose-1:2 11 8 6 3 9 2 5 2 4;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;}
+@font-face
+	{font-family:"Franklin Gothic Medium";
+	panose-1:2 11 6 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Palatino Linotype";
+	panose-1:2 4 5 2 5 5 5 3 3 4;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Webdings;
+	panose-1:5 3 1 2 1 5 9 6 7 3;}
+@font-face
+	{font-family:"MV Boli";}
+@font-face
+	{font-family:"Microsoft Sans Serif";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Academy;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Antiqua;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Baltica;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Bookvar;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Ariel";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Courier";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Dutch Roman";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Garamond";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Garamond Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Kursiv";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Palatia";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Roman";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Roman Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Times";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Times Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Domkrat;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Geneva;
+	panose-1:2 2 226 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Hebar;
+	panose-1:2 11 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Izhitsa;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Kaliakra;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Karina;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:KarinaBlack;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:OldCyr;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Opal;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:OpalB;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:TimesNakov;
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:Timok;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:TmsCyr;
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:Zhikaryov;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Agency FB";
+	panose-1:2 11 5 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Algerian;
+	panose-1:4 2 7 5 4 10 2 6 7 2;}
+@font-face
+	{font-family:"Arial Rounded MT Bold";
+	panose-1:2 15 7 4 3 5 4 3 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Baskerville Old Face";
+	panose-1:2 2 6 2 8 5 5 2 3 3;}
+@font-face
+	{font-family:"Bauhaus 93";
+	panose-1:4 3 9 5 2 11 2 2 12 2;}
+@font-face
+	{font-family:"Bell MT";
+	panose-1:2 2 5 3 6 3 5 2 3 3;}
+@font-face
+	{font-family:"Berlin Sans FB";
+	panose-1:2 14 6 2 2 5 2 2 3 6;}
+@font-face
+	{font-family:"Bernard MT Condensed";
+	panose-1:2 5 8 6 6 9 5 2 4 4;}
+@font-face
+	{font-family:"Blackadder ITC";
+	panose-1:4 2 5 5 5 16 7 2 13 2;}
+@font-face
+	{font-family:"Bodoni MT";
+	panose-1:2 7 6 3 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Black";
+	panose-1:2 7 10 3 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Condensed";
+	panose-1:2 7 6 6 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Poster Compressed";
+	panose-1:2 7 7 6 8 6 1 5 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+@font-face
+	{font-family:"Bookman Old Style";
+	panose-1:2 5 6 4 5 5 5 2 2 4;}
+@font-face
+	{font-family:"Bradley Hand ITC";
+	panose-1:3 7 4 2 5 3 2 3 2 3;}
+@font-face
+	{font-family:"Britannic Bold";
+	panose-1:2 11 9 3 6 7 3 2 2 4;}
+@font-face
+	{font-family:Broadway;
+	panose-1:4 4 9 5 8 11 2 2 5 2;}
+@font-face
+	{font-family:"Brush Script MT";
+	panose-1:3 6 8 2 4 4 6 7 3 4;}
+@font-face
+	{font-family:"Californian FB";
+	panose-1:2 7 4 3 6 8 11 3 2 4;}
+@font-face
+	{font-family:"Calisto MT";
+	panose-1:2 4 6 3 5 5 5 3 3 4;}
+@font-face
+	{font-family:Castellar;
+	panose-1:2 10 4 2 6 4 6 1 3 1;}
+@font-face
+	{font-family:Centaur;
+	panose-1:2 3 5 4 5 2 5 2 3 4;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Century Schoolbook";
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Chiller;
+	panose-1:4 2 4 4 3 16 7 2 6 2;}
+@font-face
+	{font-family:"Colonna MT";
+	panose-1:4 2 8 5 6 2 2 3 2 3;}
+@font-face
+	{font-family:"Cooper Black";
+	panose-1:2 8 9 4 4 3 11 2 4 4;}
+@font-face
+	{font-family:"Copperplate Gothic Bold";
+	panose-1:2 14 7 5 2 2 6 2 4 4;}
+@font-face
+	{font-family:"Copperplate Gothic Light";
+	panose-1:2 14 5 7 2 2 6 2 4 4;}
+@font-face
+	{font-family:"Curlz MT";
+	panose-1:4 4 4 4 5 7 2 2 2 2;}
+@font-face
+	{font-family:"Edwardian Script ITC";
+	panose-1:3 3 3 2 4 7 7 13 8 4;}
+@font-face
+	{font-family:Elephant;
+	panose-1:2 2 9 4 9 5 5 2 3 3;}
+@font-face
+	{font-family:"Engravers MT";
+	panose-1:2 9 7 7 8 5 5 2 3 4;}
+@font-face
+	{font-family:"Eras Bold ITC";
+	panose-1:2 11 9 7 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Eras Demi ITC";
+	panose-1:2 11 8 5 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Eras Light ITC";
+	panose-1:2 11 4 2 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Eras Medium ITC";
+	panose-1:2 11 6 2 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Felix Titling";
+	panose-1:4 6 5 5 6 2 2 2 10 4;}
+@font-face
+	{font-family:"Footlight MT Light";
+	panose-1:2 4 6 2 6 3 10 2 3 4;}
+@font-face
+	{font-family:Forte;
+	panose-1:3 6 9 2 4 5 2 7 2 3;}
+@font-face
+	{font-family:"Franklin Gothic Book";
+	panose-1:2 11 5 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Demi";
+	panose-1:2 11 7 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Demi Cond";
+	panose-1:2 11 7 6 3 4 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Heavy";
+	panose-1:2 11 9 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Medium Cond";
+	panose-1:2 11 6 6 3 4 2 2 2 4;}
+@font-face
+	{font-family:"Freestyle Script";
+	panose-1:3 8 4 2 3 2 5 11 4 4;}
+@font-face
+	{font-family:"French Script MT";
+	panose-1:3 2 4 2 4 6 7 4 6 5;}
+@font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;}
+@font-face
+	{font-family:Gigi;
+	panose-1:4 4 5 4 6 16 7 2 13 2;}
+@font-face
+	{font-family:"Gill Sans MT Ext Condensed Bold";
+	panose-1:2 11 9 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans MT";
+	panose-1:2 11 5 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans MT Condensed";
+	panose-1:2 11 5 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans Ultra Bold";
+	panose-1:2 11 10 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans Ultra Bold Condensed";
+	panose-1:2 11 10 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gloucester MT Extra Condensed";
+	panose-1:2 3 8 8 2 6 1 1 1 1;}
+@font-face
+	{font-family:"Goudy Old Style";
+	panose-1:2 2 5 2 5 3 5 2 3 3;}
+@font-face
+	{font-family:"Goudy Stout";
+	panose-1:2 2 9 4 7 3 11 2 4 1;}
+@font-face
+	{font-family:Haettenschweiler;
+	panose-1:2 11 7 6 4 9 2 6 2 4;}
+@font-face
+	{font-family:"Harlow Solid Italic";
+	panose-1:4 3 6 4 2 15 2 2 13 2;}
+@font-face
+	{font-family:Harrington;
+	panose-1:4 4 5 5 5 10 2 2 7 2;}
+@font-face
+	{font-family:"High Tower Text";
+	panose-1:2 4 5 2 5 5 6 3 3 3;}
+@font-face
+	{font-family:"Imprint MT Shadow";
+	panose-1:4 2 6 5 6 3 3 3 2 2;}
+@font-face
+	{font-family:Jokerman;
+	panose-1:4 9 6 5 6 13 6 2 7 2;}
+@font-face
+	{font-family:"Juice ITC";
+	panose-1:4 4 4 3 4 10 2 2 2 2;}
+@font-face
+	{font-family:"Kristen ITC";
+	panose-1:3 5 5 2 4 2 2 3 2 2;}
+@font-face
+	{font-family:"Kunstler Script";
+	panose-1:3 3 4 2 2 6 7 13 13 6;}
+@font-face
+	{font-family:"Lucida Bright";
+	panose-1:2 4 6 2 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Lucida Calligraphy";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"Lucida Fax";
+	panose-1:2 6 6 2 5 5 5 2 2 4;}
+@font-face
+	{font-family:"Lucida Handwriting";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"Lucida Sans";
+	panose-1:2 11 6 2 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Lucida Sans Typewriter";
+	panose-1:2 11 5 9 3 5 4 3 2 4;}
+@font-face
+	{font-family:"MS Outlook";
+	panose-1:5 1 1 0 1 0 0 0 0 0;}
+@font-face
+	{font-family:Magneto;
+	panose-1:4 3 8 5 5 8 2 2 13 2;}
+@font-face
+	{font-family:"Maiandra GD";
+	panose-1:2 14 5 2 3 3 8 2 2 4;}
+@font-face
+	{font-family:"Matura MT Script Capitals";
+	panose-1:3 2 8 2 6 6 2 7 2 2;}
+@font-face
+	{font-family:Mistral;
+	panose-1:3 9 7 2 3 4 7 2 4 3;}
+@font-face
+	{font-family:"Modern No\. 20";
+	panose-1:2 7 7 4 7 5 5 2 3 3;}
+@font-face
+	{font-family:"Monotype Corsiva";
+	panose-1:3 1 1 1 1 2 1 1 1 1;}
+@font-face
+	{font-family:"Niagara Engraved";
+	panose-1:4 2 5 2 7 7 3 3 2 2;}
+@font-face
+	{font-family:"Niagara Solid";
+	panose-1:4 2 5 2 7 7 2 2 2 2;}
+@font-face
+	{font-family:"OCR A Extended";
+	panose-1:2 1 5 9 2 1 2 1 3 3;}
+@font-face
+	{font-family:"Old English Text MT";
+	panose-1:3 4 9 2 4 5 8 3 8 6;}
+@font-face
+	{font-family:Onyx;
+	panose-1:4 5 6 2 8 7 2 2 2 3;}
+@font-face
+	{font-family:"Palace Script MT";
+	panose-1:3 3 3 2 2 6 7 12 11 5;}
+@font-face
+	{font-family:Papyrus;
+	panose-1:3 7 5 2 6 5 2 3 2 5;}
+@font-face
+	{font-family:Parchment;
+	panose-1:3 4 6 2 4 7 8 4 8 4;}
+@font-face
+	{font-family:Perpetua;
+	panose-1:2 2 5 2 6 4 1 2 3 3;}
+@font-face
+	{font-family:"Perpetua Titling MT";
+	panose-1:2 2 5 2 6 5 5 2 8 4;}
+@font-face
+	{font-family:Playbill;
+	panose-1:4 5 6 3 10 6 2 2 2 2;}
+@font-face
+	{font-family:"Poor Richard";
+	panose-1:2 8 5 2 5 5 5 2 7 2;}
+@font-face
+	{font-family:Pristina;
+	panose-1:3 6 4 2 4 4 6 8 2 4;}
+@font-face
+	{font-family:"Rage Italic";
+	panose-1:3 7 5 2 4 5 7 7 3 4;}
+@font-face
+	{font-family:Ravie;
+	panose-1:4 4 8 5 5 8 9 2 6 2;}
+@font-face
+	{font-family:Rockwell;
+	panose-1:2 6 6 3 2 2 5 2 4 3;}
+@font-face
+	{font-family:"Rockwell Condensed";
+	panose-1:2 6 6 3 5 4 5 2 1 4;}
+@font-face
+	{font-family:"Rockwell Extra Bold";
+	panose-1:2 6 9 3 4 5 5 2 4 3;}
+@font-face
+	{font-family:"Informal Roman";
+	panose-1:3 6 4 2 3 4 6 11 2 4;}
+@font-face
+	{font-family:"Script MT Bold";
+	panose-1:3 4 6 2 4 6 7 8 9 4;}
+@font-face
+	{font-family:"Showcard Gothic";
+	panose-1:4 2 9 4 2 1 2 2 6 4;}
+@font-face
+	{font-family:"Snap ITC";
+	panose-1:4 4 10 7 6 10 2 2 2 2;}
+@font-face
+	{font-family:Stencil;
+	panose-1:4 4 9 5 13 8 2 2 4 4;}
+@font-face
+	{font-family:"Tw Cen MT";
+	panose-1:2 11 6 2 2 1 4 2 6 3;}
+@font-face
+	{font-family:"Tw Cen MT Condensed";
+	panose-1:2 11 6 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Tempus Sans ITC";
+	panose-1:4 2 4 4 3 13 7 2 2 2;}
+@font-face
+	{font-family:"Viner Hand ITC";
+	panose-1:3 7 5 2 3 5 2 2 2 3;}
+@font-face
+	{font-family:Vivaldi;
+	panose-1:3 2 6 2 5 5 6 9 8 4;}
+@font-face
+	{font-family:"Vladimir Script";
+	panose-1:3 5 4 2 4 4 7 7 3 5;}
+@font-face
+	{font-family:"Wide Latin";
+	panose-1:2 10 10 7 5 5 5 2 4 4;}
+@font-face
+	{font-family:"Wingdings 2";
+	panose-1:5 2 1 2 1 5 7 7 7 7;}
+@font-face
+	{font-family:"Wingdings 3";
+	panose-1:5 4 1 2 1 8 7 7 7 7;}
+@font-face
+	{font-family:"Berlin Sans FB Demi";
+	panose-1:2 14 8 2 2 5 2 2 3 6;}
+@font-face
+	{font-family:"MS Reference Sans Serif";
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"MS Reference Specialty";
+	panose-1:5 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Tw Cen MT Condensed Extra Bold";
+	panose-1:2 11 8 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:"MT Extra";
+	panose-1:5 5 1 2 1 2 5 2 2 2;}
+@font-face
+	{font-family:"Bookshelf Symbol 7";
+	panose-1:5 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"OCR-B 10 BT";
+	panose-1:2 11 6 1 2 2 2 2 2 4;}
+@font-face
+	{font-family:"OCR-A BT";
+	panose-1:2 15 5 1 2 2 4 2 3 4;}
+@font-face
+	{font-family:"WP MultinationalA Courier";
+	panose-1:5 0 0 9 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalB Courier";
+	panose-1:2 6 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"WP MultinationalA Helve";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalB Helve";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalA Roman";
+	panose-1:2 2 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"WP MultinationalB Roman";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Nina;
+	panose-1:2 11 6 6 3 5 4 4 2 4;}
+@font-face
+	{font-family:sshlinedraw;
+	panose-1:0 0 4 9 0 0 0 0 0 0;}
+@font-face
+	{font-family:Candara;
+	panose-1:2 14 5 2 3 3 3 2 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Constantia;
+	panose-1:2 3 6 2 5 3 6 3 3 3;}
+@font-face
+	{font-family:Corbel;
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 6 6 2 2 2 3 2 4;}
+@font-face
+	{font-family:"DejaVu Sans";
+	panose-1:2 11 6 3 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Condensed";
+	panose-1:2 11 6 6 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Mono";
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Serif";
+	panose-1:2 6 6 3 5 6 5 2 2 4;}
+@font-face
+	{font-family:"DejaVu Serif Condensed";
+	panose-1:2 6 6 6 5 6 5 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Light";
+	panose-1:2 11 2 3 3 8 4 2 2 4;}
+@font-face
+	{font-family:"Myriad Pro";
+	panose-1:2 11 6 6 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Myriad Web";
+	panose-1:2 11 8 3 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Myriad Web Pro";
+	panose-1:2 11 5 3 3 4 3 2 2 4;}
+@font-face
+	{font-family:Myriade;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Myriad Web Pro Condensed";
+	panose-1:2 11 5 6 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Segoe Condensed";
+	panose-1:2 11 6 6 4 2 0 2 2 3;}
+@font-face
+	{font-family:ZWAdobeF;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@StarSymbol";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:.5in;
+	margin-left:0in;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:24.0pt;
+	font-family:"Verdana","sans-serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Verdana","sans-serif";}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Verdana","sans-serif";}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:9.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Verdana","sans-serif";}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:9.9pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:20.15pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:30.05pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:14.15pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-14.15pt;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	background:navy;
+	font-size:10.0pt;
+	font-family:"Tahoma","sans-serif";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Cambria","serif";
+	color:#243F60;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-family:"Cambria","serif";
+	color:#404040;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+span.Code
+	{mso-style-name:Code;
+	font-family:"Courier New";
+	font-weight:bold;}
+p.WarningMessage, li.WarningMessage, div.WarningMessage
+	{mso-style-name:"Warning Message";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+p.WarningMessageAfter6pt, li.WarningMessageAfter6pt, div.WarningMessageAfter6pt
+	{mso-style-name:"Warning Message + After\:  6 pt";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.msoIns
+	{mso-style-name:"";
+	text-decoration:underline;
+	color:teal;}
+span.msoDel
+	{mso-style-name:"";
+	text-decoration:line-through;
+	color:red;}
+ /* Page Definitions */
+ @page Section1
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section1
+	{page:Section1;}
+@page Section2
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section2
+	{page:Section2;}
+@page Section3
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section3
+	{page:Section3;}
+@page Section4
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section4
+	{page:Section4;}
+@page Section5
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section5
+	{page:Section5;}
+@page Section6
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section6
+	{page:Section6;}
+@page Section7
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section7
+	{page:Section7;}
+@page Section8
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section8
+	{page:Section8;}
+@page Section9
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section9
+	{page:Section9;}
+@page Section10
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section10
+	{page:Section10;}
+@page Section11
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section11
+	{page:Section11;}
+@page Section12
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section12
+	{page:Section12;}
+@page Section13
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section13
+	{page:Section13;}
+@page Section14
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section14
+	{page:Section14;}
+@page Section15
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section15
+	{page:Section15;}
+@page Section16
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section16
+	{page:Section16;}
+@page Section17
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section17
+	{page:Section17;}
+@page Section18
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section18
+	{page:Section18;}
+@page Section19
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section19
+	{page:Section19;}
+@page Section20
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section20
+	{page:Section20;}
+@page Section21
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section21
+	{page:Section21;}
+@page Section22
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section22
+	{page:Section22;}
+@page Section23
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section23
+	{page:Section23;}
+@page Section24
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section24
+	{page:Section24;}
+@page Section25
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section25
+	{page:Section25;}
+@page Section26
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section26
+	{page:Section26;}
+@page Section27
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section27
+	{page:Section27;}
+@page Section28
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section28
+	{page:Section28;}
+@page Section29
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section29
+	{page:Section29;}
+@page Section30
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section30
+	{page:Section30;}
+@page Section31
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section31
+	{page:Section31;}
+@page Section32
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section32
+	{page:Section32;}
+@page Section33
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section33
+	{page:Section33;}
+@page Section34
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section34
+	{page:Section34;}
+@page Section35
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section35
+	{page:Section35;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section23>
+
+<h1><a name="_Toc218278553"></a><a name="_Toc218196027"></a><a
+name="_Глава_15._Текстови"></a><span lang=BG>Глава 15. Текстови файлове</span></h1>
+
+<h2><a name="_Toc218196028"><span lang=BG>Автор</span></a></h2>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>Данаил Алексиев</span></p>
+
+<h2><a name="_Toc218196029"><span lang=BG>В тази тема...</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>В настоящата тема ще се запознаем с основните
+похвати при работа с текстови файлове в Java. Ще разясним какво е това поток,
+за какво служи и как се ползва. Ще обясним какво е текстов файл и как се чете и
+пише в текстови файлове. Ще демонстрираме и обясним добрите практики за
+прихващане и обра­ботка на изключения, възникващи при работата с файлове. Разбира
+се, всичко това ще онагледим и демонстрираме на практика с много примери.</span></p>
+
+<b><span lang=BG style='font-size:14.0pt;font-family:"Verdana","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<h2><a name="_Toc218196030"><span lang=BG>Потоци</span></a></h2>
+
+<p class=MsoNormal><b><span lang=BG>Потоците (streams)</span></b><span lang=BG>
+са важна част от всяка входно-изходна библиотека. Те намират своето приложение,
+когато програмата трябва да &quot;прочете&quot; или &quot;запише&quot; данни от
+или във външен източник на данни – файл, други компютри, сървъри и т.н.</span></p>
+
+<p class=MsoNormal><span lang=BG>Преди да продължим е важно да уточним, че
+терминът <b>вход (input)</b> се асоциира с четенето на информация, а терминът <b>изход
+(output)</b> – със записването на информация.</span></p>
+
+<h3><a name="_Toc218196031"><span lang=BG>Какво представляват потоците?</span></a></h3>
+
+<p class=MsoNormal><b><span lang=BG>Потокът</span></b><span lang=BG> е наредена
+последователност от байтове, които се изпращат от едно приложение или входно
+устройство и се получават в друго прило­жение или изходно устройство. Тези
+байтове се изпращат и получават един след друг и винаги пристигат в същия ред,
+в който са били изпратени. Потоците са абстракция на комуникационен канал за
+данни, който свързва две устройства или програми.</span></p>
+
+<p class=MsoNormal><span lang=BG>Потоците са основното средство за обмяна на
+информация в компютърния свят. Чрез тях различни програми достъпват файловете
+на компютъра, чрез тях се осъществява и мрежова комуникация между отдалечени
+ком­пютри. За да прочетем или запишем нещо от или във файл, единственото, което
+трябва да направим, е да отворим поток към дадения файл. Това ни позволява да
+достъпим данните, записани във файла, и да извършим необходимата ни операция
+(вход или изход).</span></p>
+
+<p class=MsoNormal><span lang=BG>Модерните сайтове в Интернет не могат без
+потоци и така наречения <b>streaming </b>(произлиза от stream - поток), който
+представлява достъпване на големите мултимедийни файлове по уеб страниците чрез
+поток. Това позволява техния преглед да започне преди цялостното им сваляне,
+което повишава бързодействието на страницата.</span></p>
+
+<h3><a name="_Toc218196032"><span lang=BG>Основни неща, които трябва да знаем
+за потоците</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Потоците се използват, за да четем и записваме
+данни от и на различни устройства. Те улесняват комуникацията между програма и
+файл, прог­рама и отдалечен компютър и т.н.</span></p>
+
+<p class=MsoNormal><span lang=BG>Потоците са <b>подредени</b> серии от байтове.
+Не случайно наблягаме на думата подредени. От огромна важност е да се запомни,
+че потоците са строго подредени и организирани. По никакъв начин не можем да си
+позволим да влияем на подредбата на информацията в потока, защото по този начин
+ще я направим неизползваема.</span></p>
+
+<p class=MsoNormal><span lang=BG>Потоците позволяват <b>последователен</b> достъп
+до данните си. Отново е важно да се вникне в значението на думата
+последователен. Може да манипулираме данните само в реда, в който те пристигат от
+потока. Това е тясно свързано с горното свойство.  Имайте това предвид, когато
+създа­вате собствени програми. Не можете да вземете първия байт, след това
+осмия, третия, тринадесетия и така нататък. Потоците <b>не</b> предоставят
+произволен достъп до данните си, а</span><span lang=BG> </span><span lang=BG>само
+<b>последователен</b>. Ако ви се струва по-лесно, може да мислим за потоците
+като за свързан списък от байтове, в който те имат строга последователност.</span></p>
+
+<p class=MsoNormal><span lang=BG>За различните ситуации има различни видове
+потоци. Едни служат за работа с текстови файлове, други – за работа с бинарни
+(двоични) файлове, трети пък – за работа със символни низове. Различни са и
+потоците, които се използват при мрежова комуникация. Голямото изобилие от потоци
+ни улеснява в различните ситуации, но също така и ни затруднява, защото трябва
+да сме запознати със спецификата на всеки отделен тип, преди да го използваме в
+приложението си. </span></p>
+
+<p class=MsoNormal><span lang=BG>Потоците се отварят преди началото на работата
+с тях и се затварят след като е приключило използването им. Това е нещо
+абсолютно задължи­телно и не може да се пропусне, поради риск от загуба на
+данни, повреждане на файла, към който е отворен потока и т.н. – все неприятни
+неща, които не трябва да допускаме да стават в програмите ни.</span></p>
+
+<p class=MsoNormal><span lang=BG>Потоците можем да оприличим на тръби,
+свързващи две точки:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><span
+lang=BG><img border=0 width=450 height=112
+src="image137.jpg"></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>От едната страна &quot;наливаме&quot;
+данни, а от другата данните &quot;изтичат&quot;. Този, който налива данните не
+се интересува как те се пренасят, но е сигурен, че каквото е налял, такова ще
+излезе от другата страна на тръбата. Тези, които ползват потоците не се
+интересуват как данните стигат до тях. Те знаят, че ако някой нещо налее от
+другата страна, то ще пристигне при тях. Потоците са транспортен канал за
+данни, както и тръбите.</span></p>
+
+<h3><a name="_Toc218196033"><span lang=BG>Потоци в Java – основни класове</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В Java класовете за работа с потоци се намират
+в пакета </span><span class=Code><span lang=BG>java.io</span></span><span
+lang=BG>. Сега ще се концентрираме върху тяхната йерархия и организация.</span></p>
+
+<p class=MsoNormal><span lang=BG>Можем да отличим два основни типа потоци –
+такива, които работят с двоични данни и такива, които работят с текстови данни.
+Ще се спрем на основните характеристики на тези два вида след малко.</span></p>
+
+<p class=MsoNormal><span lang=BG>Общото между тях е организацията и
+структурирането им. На върха на йерархията стоят абстрактни класове съответно
+за вход и изход. Те няма как да бъдат инстанцирани, но дефинират основната
+функционалност, която притежават всички останали потоци. Съществуват и
+буферирани потоци, които не добавят никаква допълнителна функционалност, но
+позволяват работата с буфер при четене и записване на информацията, което
+значително повишава бързодействието. Буферираните потоци няма да се разглеждат
+в тази глава, тъй като ние се концентрираме върху обработката на текстови
+файлове. Ако имате желание, може да се допитате до богатата документация,
+достъпна в Интернет, или към някой учебник за по-напреднали в програмирането.</span></p>
+
+<p class=MsoNormal><span lang=BG>Основните класове в пакета </span><span
+class=Code><span lang=BG>java.iо </span></span><span lang=BG>са </span><span
+class=Code><span lang=BG>InputStream</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>OutputStream</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>BufferedInputStream</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>BufferedOutputStream</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>DataInputStream</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>DataOutputStream</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>Reader</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>Writer</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>BufferedReader</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>BufferedWriter</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>PrintWriter</span></span><span lang=BG> и </span><span
+class=Code><span lang=BG>PrintStream</span></span><span lang=BG>. Сега ще се
+спрем по-обстойно на тях, разделяйки ги по основния им признак – типа данни, с
+които работят.</span></p>
+
+<p class=MsoNormal><span lang=BG>В тази глава в примерите за писане в текстов
+файл ще ползваме само </span><span class=Code><span lang=BG>PrintStream</span></span><span
+lang=BG>, защото е идеален за работа с текстови файлове и с него се борави
+изключително лесно.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Всички потоци в
+Java си приличат и по едно основно нещо – задължи­телно е да ги затворим, след
+като сме приключили работа с тях. В противен случай рискуваме да навредим на
+данните в потока или файла, към който сме го отворили. Това ни води и до
+първото основно правило, което винаги трябва да помним при работа с потоци:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Винаги затваряйте потоците и файловете,
+  с които рабо­тите! Оставянето на отворен поток или файл води до загуба на
+  ресурси и може да блокира работата на други потребители или процеси във
+  вашата система.</span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc218196034"><span lang=BG>Двоични и текстови потоци</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Както споменахме по-рано, можем да разделим
+потоците на две големи групи в съответствие с типа данни, с който боравят, а
+именно – двоични потоци и текстови потоци.</span></p>
+
+<h4><span lang=BG>Двоични потоци</span></h4>
+
+<p class=MsoNormal><span lang=BG>От името им личи, че работят с двоични данни.
+Сами се досещате, че това ги прави универсални и тях може да ползваме за четене
+на информация от всякакви файлове (картинки, музикални и мултимедийни файлове,
+текстови файлове и т.н.). Ще ги разгледаме накратко, защото за момента се
+ограничаваме до работа с текстови файлове.</span></p>
+
+<p class=MsoNormal><span lang=BG>Двата основни абстрактни класа, които седят в
+дъното на йерархията на двоичните потоци са съответно </span><span class=Code><span
+lang=BG>InputStream</span></span><span lang=BG> за вход и </span><span
+class=Code><span lang=BG>OutputStream</span></span><span lang=BG> за изход.
+Както казахме по-горе, те не могат да се инстанцират, но дефи­нират основната
+функционалност и се ползват при създаването на другите двоични потоци.</span></p>
+
+<p class=MsoNormal><span class=Code><span lang=BG>InputStream</span></span><span
+lang=BG> ни предлага различни методи за четене (четене само на един байт,
+четене на произволен брой байтове и записването им в масив и т.н.), пропускане
+на определен брой байтове, проверяване на броя достъпни байтове и, разбира се,
+метод за затваряне на потока. Обект от този клас може да получим от източник,
+извиквай съответния му метод.</span></p>
+
+<p class=MsoNormal><span class=Code><span lang=BG>OutputStream</span></span><span
+lang=BG> също е абстрактен клас. Той съдържа базовата функцио­налност за
+записване на информация в даден източник. Основните му методи ни позволяват да
+записваме различен брой байтове в източника, да прочистваме буфера на потока и,
+отново, да затваряме потока.</span></p>
+
+<p class=MsoNormal><span lang=BG>Другите класове за работа с бинарни потоци са </span><span
+class=Code><span lang=BG>BufferedInputStream</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>BufferedOutputStream</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>DataInputStream</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>DataOutputStream</span></span><span lang=BG>. За да
+можем да създадем обекти от тях, се нуждаем от обект от </span><span
+class=Code><span lang=BG>InputStream </span></span><span lang=BG>или,
+съответно,</span><span class=Code><span lang=BG> OutputStream</span></span><span
+lang=BG>.</span></p>
+
+<h4><span lang=BG>Текстови потоци</span></h4>
+
+<p class=MsoNormal><span lang=BG>Текстовите потоци са много подобни на
+двоичните, но работят само с текстови данни или, по-точно казано, с данни от
+символен тип (</span><span class=Code><span lang=BG>char</span></span><span
+lang=BG>). Идеални са за работа с текстови файлове. От друга страна това ги
+прави неизползваеми при работа с каквито и да е бинарни файлове.</span></p>
+
+<p class=MsoNormal><span lang=BG>Основните класове за работа с текстови потоци са
+</span><span class=Code><span lang=BG>Reader</span></span><span lang=BG> и </span><span
+class=Code><span lang=BG>Writer</span></span><span lang=BG>. Те са аналогични
+на основните класове от двоичните потоци. Методите им са същите, но вместо
+аргументи от тип </span><span class=Code><span lang=BG>byte</span></span><span
+lang=BG> приемат </span><span class=Code><span lang=BG>char</span></span><span
+lang=BG>. Както знаете, символите в Java са Unicode символи, но потоците могат
+да работят освен с Unicode и с други кодирания.</span></p>
+
+<p class=MsoNormal><span lang=BG>Съществуват и буферираните варианти </span><span
+class=Code><span lang=BG>BufferedReader</span></span><span lang=BG> и </span><span
+class=Code><span lang=BG>BufferedWriter</span></span><span lang=BG>, които се
+отличават с по-голямото си бързодействие.</span></p>
+
+<p class=MsoNormal><span lang=BG>Важно място има и класа </span><span
+class=Code><span lang=BG>PrintWriter</span></span><span lang=BG>, но той не е
+във фокуса на тази глава. Ако имате желание, може да погледнете документацията
+на Java API-то или източници в Интернет.</span></p>
+
+<p class=MsoNormal><span lang=BG>Класът, на когото ще обърнем най-голямо
+внимание е </span><span class=Code><span lang=BG>PrintStream</span></span><span
+lang=BG>. Той в голяма част се припокрива с </span><span class=Code><span
+lang=BG>PrintWriter</span></span><span lang=BG>, но има някой специфични
+особености. За да създадем обект от </span><span class=Code><span lang=BG>PrintStream</span></span><span
+lang=BG> класа ни е нужен файл или символен низ с име и път до файла. Той има
+много полезни методи, като например добре познатите </span><span class=Code><span
+lang=BG>print(</span><span lang=BG>…</span></span><span class=Code><span
+lang=BG>) </span></span><span lang=BG>и </span><span class=Code><span lang=BG>println(</span><span
+lang=BG>…</span></span><span class=Code><span lang=BG>)</span></span><span
+lang=BG>. Всъщност </span><span class=Code><span lang=BG>System.out</span></span><span
+lang=BG> не е нищо повече от обект от тип </span><span class=Code><span
+lang=BG>PrintStream</span></span><span lang=BG>. Ето защо боравейки с този клас
+ще можем да използваме всички методи, с които вече сме добре запознати от
+работата ни с конзолата. Това, с което </span><span class=Code><span lang=BG>PrintStream</span></span><span
+lang=BG> класа се отличава, е, че скрито от нас той превръща текста в байтове
+преди да ги запише на желаното място. Леснотата, с която се работи с него и
+големите му възможности го правят идеален за изпол­зване в примерите, които ще
+последват по-напред в тази глава.</span></p>
+
+<h2><a name="_Toc218196035"><span lang=BG>Четене от текстов файл</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Текстовите файлове предоставят идеалното
+решение за записване на данни, които трябва да ползваме често, а са твърде
+обемисти, за да ги въвеждаме ръчно всеки път, когато стартираме програмата.
+Сами се убеждавате, че тази практика изисква идеално владение на механизмите за
+четене на текстови файлове.</span></p>
+
+<p class=MsoNormal><span lang=BG>Java платформата предоставя множество начини
+за четене от файлове, но не всички са много лесни и интуитивни за използване.
+Ето защо се спираме на нещо познато за вас – класът </span><span class=Code><span
+lang=BG>java.util.Scanner</span></span><span lang=BG>. Сигурно до сега стотици
+пъти ви се е налагало да го ползвате за всевъзможни операции. Именно за това
+считаме, че ще е идеален за случая, защото е най-лесния начин за четене на
+текстов файл и същевременно сте имали много шансове да го усвоите до
+съвършенство.</span></p>
+
+<h3><a name="_Toc218196036"><span lang=BG>Класът java.util.Scanner за четене на
+текстов файл</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В момента сигурно сте малко объркани. До тук
+казахме, че четенето и записването в текстови файлове става само и изключително
+с потоци, а, същевременно, </span><span class=Code><span lang=BG>java.util.Scanner</span></span><span
+lang=BG> не се появи никъде в изброените по-горе потоци и не сте сигурни дали
+въобще е поток. Наистина, </span><span class=Code><span lang=BG>java.util.Scanner</span></span><span
+lang=BG> не е поток, но може да работи с потоци. Той предоставя най-лесния и
+разбираем начин за четене от текстов файл като се има предвид, че често до сега
+сте го използвали за четене на различни неща от конзолата.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Едно от големите
+предимства на </span><span class=Code><span lang=BG>java.util.Scanner</span></span><span
+lang=BG> е, че не е нужно да има поток, за да бъде създаден. Може да го
+създадем просто от файл, което значително ни улеснява и намалява вариантите за
+грешка. При създаването можем да уточним и кодирането. Ето пример как може да
+бъде създаден обект от класа </span><span class=Code><span lang=BG>java.util.Scanner</span></span><span
+lang=BG>:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Link the File variable to a file on the computer</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>File file = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> File(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;test.txt&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Create a Scanner connected to a file and specify encoding</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner fileReader = </span><b><span lang=BG style='font-family:
+  "Courier New";color:#7F0055'>new</span></b><span lang=BG style='font-family:
+  "Courier New";color:black'> Scanner(file, </span><span lang=BG
+  style='font-family:"Courier New";color:#2A00FF'>&quot;windows-1251&quot;</span><span
+  lang=BG style='font-family:"Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Read file here...</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Close the resource after you've finished using it</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>fileReader.close();</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Първото, което
+трябва да направим е да създадем променлива от тип </span><span class=Code><span
+lang=BG>java.io.File</span></span><span lang=BG>, която да свържем с конкретен
+файл от нашия компютър. За целта е нужно само да подадем като параметър в
+конструктора му името на желания файл. Имайте предвид, че ако файлът се намира
+в папката на проекта, то можем да подадем само конкретното му име. В противен
+случай трябва да подадем пълния път до файла.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><b><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></b></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Не забравяйте при подаване на пълния
+  път до даден файл да направите escaping на наклонените черти, които се
+  използват за разделяне на папките (&quot;</span><span class=Code><span
+  lang=BG>C:\\Temp\\test.txt</span></span><span lang=BG>&quot;, а не &quot;</span><span
+  class=Code><span lang=BG>C:\Temp\test.txt</span></span><span lang=BG>&quot;).
+  По възможност избягвайте пълни пътища и работете с релативни!</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Използването на
+пълен път до даден файл (примерно </span><span class=Code><span lang=BG>C:\Temp\test.txt</span></span>)
+<span lang=BG>е лоша практика, защото прави програмата ви зависима от средата и
+непреносима. Ако я пренесете на друг компютър, ще трябва да коригирате пътищата
+до файловете, които тя търси. Ако използвате релативен (относителен) път спрямо
+текущата директория (това е директорията на проекта), вашата програма ще е
+лесно преносима.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Вече можем да
+създадем и нашия </span><span class=Code><span lang=BG>java.util.Scanner</span></span><span
+lang=BG>. Като параметри този път подаваме новосъздадената файлова променлива и
+име на encoding (като</span><span class=Code><span lang=BG> String</span></span><span
+lang=BG>), който желаем да ползваме при прочитането на файла (в този случай
+използваме </span><span class=Code><span lang=BG>windows-1251</span></span><span
+lang=BG>). Така можем да го ползваме за прочитане на желаната информация. Ако
+не укажем изрично кодиране, </span>Java <span lang=BG>използва кодирането по
+подразбиране в операционната система (което може да е различно на различни
+компютри).</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ще забележите, че
+при създаването на нашия </span><span class=Code><span lang=BG>Scanner</span></span><span
+lang=BG>, че Eclipse ви предупреждава за неприхваната изключителна ситуация. За
+сега изберете опцията просто да добавите </span><span class=Code><span lang=BG>throws</span></span><span
+lang=BG> декларация. За прихващането и обработването на изключителни ситуации
+при работа с файлове ще стане дума малко по-късно в тази глава, в секцията &quot;<a
+href="#_Обработка_на_грешки">Обработка на грешки</a>&quot;.</span></p>
+
+<h3><a name="_Toc218196037"><span lang=BG>Четене на текстов файл ред по ред –
+пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>След като се
+научихме как да създаваме </span><span class=Code><span lang=BG>Scanner</span></span><span
+lang=BG> вече можем да се опитаме да направим нещо по-сложно</span>:<span
+lang=BG> да прочетем цял текстов файл ред по ред и да печатаме прочетеното на
+конзолата. Моят съвет е да използваме възможността на Eclipse за създаване на
+текстови файлове (десен бутон на мишката върху проекта -&gt; New -&gt; File; за
+име пишем нещо, което завършва на </span><span class=Code><span lang=BG>.txt</span></span><span
+lang=BG>), за да създадем нашия текстов файл. Така той ще се създаде в самия
+проект и няма да се налага да подаваме пълния път до него при създаването на
+файлова променлива. Нека нашия</span>т<span lang=BG> файл изглежда така:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  background:#F3F3F3;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  class=Code><span lang=BG>sample.txt</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>This is
+  our first line.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>This is
+  our second line.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>This is
+  our third line.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>This is
+  our fourth line.</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New"'>This is our fifth line.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Имаме текстов
+файл, от който да четем. Сега трябва да създадем файлова променлива, свързана с
+него, да създадем и </span><span class=Code><span lang=BG>Scanner</span></span><span
+lang=BG> и да прочетем и отпечатаме всички редове. Това можем да направим по
+следния начин:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  background:#F3F3F3;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  class=Code><span lang=BG>FileReader.java</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Link the File variable to a file on the computer</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>File file = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> File(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;sample.txt&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Next line may throw an exception!</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner fileReader = </span><b><span lang=BG style='font-family:
+  "Courier New";color:#7F0055'>new</span></b><span lang=BG style='font-family:
+  "Courier New";color:black'> Scanner(file);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> lineNumber = 0;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Read file</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>while</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (fileReader.hasNextLine()) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  lineNumber++;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Line %d: %s%n&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>, </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     lineNumber, fileReader.nextLine());</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Close the resource after you've finished using it</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>fileReader.close();</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Сами се убеждавате, че няма нищо трудно в
+четенето на текстови файлове. Първата част на програмата вече ни е добре
+позната – създаваме файловата променлива, а след това и </span><span
+class=Code><span lang=BG>Scanner</span></span><span lang=BG>. След това
+създаваме и една променлива – брояч, чиято цел е да брои и показва на кой ред
+от файла се намираме в текущия момент.</span></p>
+
+<p class=MsoNormal><span lang=BG>За същинската част – прочитането на файла ред
+по ред, </span><span class=Code><span lang=BG>while</span></span><span lang=BG>
+цикъл. За условие за изпълнение на цикъла използваме метода на класа </span><span
+class=Code><span lang=BG>Scanner </span></span><span lang=BG>–</span><span
+class=Code><span lang=BG> hasNextLine()</span></span><span lang=BG>. Той
+проверява дали има следващ достъпен ред или е достигнат края на файла и връща
+резултата от тип </span><span class=Code><span lang=BG>boolean</span></span><span
+lang=BG>. Съществуват подобни методи за много от Java типовете. В тялото на
+цикъла задачата ни се свежда до това да увеличим стойността на променливата –
+брояч с единица и след това да отпечатаме текущия ред от файла в желания от нас
+формат. За целта използваме един метод, който ни е отлично познат от задачите,
+в които се е изисквало да се прочете нещо от конзолата – </span><span
+class=Code><span lang=BG>nextLine()</span></span><span lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>След като сме
+прочели нужното ни от файла, отново не бива да забравяме да затворим </span><span
+class=Code><span lang=BG>Scanner</span></span><span lang=BG> обекта, за да
+избегнем загубата на ресурси. За това ползваме метода </span><span class=Code><span
+lang=BG>close()</span></span><span lang=BG>.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Винаги затваряйте инстанциите на </span><span
+  class=Code><span lang=BG>Scanner</span></span><span lang=BG> след като
+  приключите работа с тях. В противен случай рискувате да загубите системни
+  ресурси. За затваряне използвайте метода </span><span class=Code><span
+  lang=BG>close()</span></span><span lang=BG>.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Резултатът от
+изпълнението на програмата би трябвало да изглежда така:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Line 1: This is our first line.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Line 2: This is our second line.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Line 3: This is our third line.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Line 4: This is our fourth line.</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>Line 5: This is our fifth line.</span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc218196038"><span lang=BG>Кодиране на файловете. Четене на
+кирилица</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Нека сега разгледаме проблемите, които се
+появяват при четене с неко­ректно кодиране, например при четене на файл на
+кирилица.</span></p>
+
+<h4><span lang=BG>Кодиране (encoding)</span></h4>
+
+<p class=MsoNormal><span lang=BG>Добре знаете, че в паметта на компютрите
+всичко се запазва в двоичен вид. Фактически, това означава, че се налага и
+текстовите файлове да се представят цифрово, за да могат да бъдат съхранени в
+паметта. Този процес се нарича <b>кодиране на файловете</b>.</span></p>
+
+<p class=MsoNormal><span lang=BG>Кодирането се състои в заместването на
+текстовите символи (цифри, букви, препинателни знаци и т.н.) с точно определени
+числови стой­ности. Може грубо да си го представите като голяма таблица, в
+която срещу всеки символ стои определена стойност (пореден номер).</span></p>
+
+<p class=MsoNormal><span lang=BG>Пример за кодираща схема (encoding</span><span
+lang=BG> </span><span lang=BG>или charset) е например </span><span class=Code><span
+lang=BG>ISO 8859-1</span></span><span lang=BG>, </span><span class=Code><span
+lang=BG>windows-1251</span></span><span lang=BG>, </span><span class=Code><span
+lang=BG>UTF-8</span></span><span lang=BG>, </span><span class=Code>KOI8-R</span><span
+lang=BG> и т.н.</span><span lang=BG> </span><span lang=BG>Това е една таблица
+със символи и техните номера, но може да съдържа и специални правила. Например
+символът &quot;ударение&quot; (U+0300) е специален и се залепя за последния
+символ, който го предхожда.</span></p>
+
+<h4><span lang=BG>Четене на кирилица</span></h4>
+
+<p class=MsoNormal><span lang=BG>Вероятно вече се досещате, че ако искаме да
+четем от файл, който съдържа символи от кирилицата, трябва да използваме точния
+encoding, който &quot;разбира&quot; тези специални символи. Такъв именно е </span><span
+class=Code><span lang=BG>windows-1251</span></span><span lang=BG>. С него
+спокойно можем да четем текстови файлове, съдържащи кирилица. Единственото,
+което трябва да направим, е да го определим като encoding на потока, който ще
+обработваме с нашия </span><span class=Code><span lang=BG>Scanner</span></span><span
+lang=BG> (погледнете отново примера за създаване на </span><span class=Code><span
+lang=BG>Scanner</span></span><span lang=BG>).</span></p>
+
+<p class=MsoNormal><span lang=BG>Ако не укажем изрично кодиращата схема
+(encoding) за четене от файла, ще бъде използван системният encoding, който е
+различен на всеки един компютър. В такъв случай програмата може и да работи
+коректно, но може и да не работи коректно. Може да се случи и нещо по-лошо: при
+нас програмата да работи коректно, а като я занесем при клиента, за който е
+предназначена, там да се счупи кирилицата.</span></p>
+
+<p class=MsoNormal><span lang=BG>Може би се чудите какво става, ако &quot;омажем&quot;
+кодирането при четене или писане във файл. Възможни са няколко сценария:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Ако ползваме само латиница, всичко ще работи нормално.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Ако ползваме кирилица и четем с грешен encoding, ще прочетем т. нар.
+каракацили (познати още като джуджуфлечки или маймуняци). Това са случайни
+безсмислени символи.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Ако записваме кирилица в кодиране, което не поддържа кирилската азбука,
+буквите от кирилицата ще бъдат заменени безвъзвратно със символа &quot;</span><span
+class=Code><span lang=BG>?</span></span><span lang=BG>&quot; (въпросителна).</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>При всички случаи
+това са неприятни проблеми, които можем да не забележим веднага, а чак след
+време.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>За да избегнете проблемите с неправилно
+  кодирането на файловете винаги задавайте encoding изрично. Иначе програмата
+  може да работи некоректно или да се счупи след време, без въобще да я бутате.</span></p>
+  </td>
+ </tr>
+</table>
+
+<h4><span lang=BG>Стандартът Unicode. Четене на Unicode</span></h4>
+
+<p class=MsoNormal><b><span lang=BG>Unicode</span></b><span lang=BG>
+представлява индустриален стандарт, който позволява на ком­пютри и други
+електронни устройства винаги да представят и манипу­лират по един и същи начин
+текст, написан на повечето от световните писмености. Той се състои от дефиниции
+на над 100 000 символа, както и разнообразни стандартни кодиращи схеми
+(encodings). Обединението на различните символи, което ни предлага Unicode,
+води до голямото му разпространение. Както знаете, символите в Java (типовете </span><span
+class=Code><span lang=BG>char</span></span><span lang=BG> и </span><span
+class=Code><span lang=BG>String</span></span><span lang=BG>) също се представят
+в Unicode.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>За да прочетем
+символи, записани в Unicode, трябва да използваме някоя от поддържаните в този
+стандарт кодиращи схеми (encoding</span>s<span lang=BG>). Най-известен и широко
+използван е UTF-8. Той представя стандартните ASCII символи с 1 байт, а всички
+останали – с до 4 байта. Можем да го определим за encoding по вече познатия ни
+начин (погледнете отново примера за създаване на </span><span class=Code><span
+lang=BG>Scanner</span></span><span lang=BG>):</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>File file = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> File(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;sample.txt&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner scanner = </span><b><span lang=BG style='font-family:
+  "Courier New";color:#7F0055'>new</span></b><span lang=BG style='font-family:
+  "Courier New";color:black'> Scanner(file, </span><span lang=BG
+  style='font-family:"Courier New";color:#2A00FF'>&quot;UTF-8&quot;</span><span
+  lang=BG style='font-family:"Courier New";color:black'>);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Ако се чудите дали за четене на текстов файл
+на кирилица да ползвате кодиране </span><span class=Code><span lang=BG>windows-1251</span></span><span
+lang=BG> или </span><span class=Code><span lang=BG>UTF-8</span></span><span
+lang=BG>, на този отговор няма ясен отговор. И двата стандарта масово се
+ползват за записване на текстове на български език. И двете кодиращи схеми за
+позволени и може да ги срещнете.</span></p>
+
+<h2><a name="_Toc218196039"><span lang=BG>Писане в текстов файл</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Писането в текстови файлове е много удобен
+способ за съхранение на различни видове информация. Например, можем да
+записваме резулта­тите от изпълнението на дадена програма. Също така можем да
+ги полз­ваме, примерно и за да направим нещо като дневник на програмата –
+удобен начин за следене кога се е стартирала, отбелязване на различни грешки
+при изпълнението и т.н.</span></p>
+
+<p class=MsoNormal><span lang=BG>Отново както и при четенето текстов файл, и
+при писането ще използваме един познат ни от работата с конзолата клас, въпреки
+че този път това не е толкова явно. Вярвам, че сте добре запознати с </span><span
+class=Code><span lang=BG>System.out</span></span><span lang=BG>. Това не е нищо
+повече от инстанция на класа, който ще използваме за писане в текстови файлове,
+а именно </span><span class=Code><span lang=BG>java.io.PrintStream</span></span><span
+lang=BG>. </span></p>
+
+<h3><a name="_Toc218196040"><span lang=BG>Класът java.io.PrintStream</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Както вече
+няколкократно споменахме, класът </span><span class=Code><span lang=BG>PrintStream</span></span><span
+lang=BG> е част от пакета </span><span class=Code><span lang=BG>java.io</span></span><span
+lang=BG> и се използва изключително и само за работа с текстови данни. За
+разлика от другите текстови потоци, преди да запише данните на желаното място,
+той ги превръща в байтове. </span><span class=Code><span lang=BG>PrintStream</span></span><span
+lang=BG> ни дава възможност при създаването си да определим желания от нас
+encoding. Можем да създадем инстанция на класа по следния начин:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>PrintStream fileWriter = </span><b><span lang=BG
+  style='font-family:"Courier New";color:#7F0055'>new</span></b><span lang=BG
+  style='font-family:"Courier New";color:black'> PrintStream(</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;test.txt&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;windows-1251&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Като параметри на конструктора трябва да
+подадем файл/име на файл и ако искаме, желаният от нас encoding. Този ред код
+отново може да предизвикат появата на грешка. За сега просто добавете </span><span
+class=Code><span lang=BG>throws</span></span><span lang=BG> декла­рация в
+сигнатурата на текущия метод. Скоро ще обърнем внимание и на обработката на
+грешки при работа във файлове.</span></p>
+
+<h3><a name="_Toc218196041"><span lang=BG>Отпечатване на числата от 1 до 20 в
+текстов файл – пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>След като вече
+можем да създаваме </span><span class=Code><span lang=BG>PrintStream</span></span><span
+lang=BG>, ще го използваме по предназначение. Целта ни ще е да запишем в един
+текстов файл числата от 1 до 20, като всяко число е на отделен ред. Можем да го
+направим по следния начин:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Create a PrintStream instance</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>PrintStream fileWriter = </span><b><span lang=BG
+  style='font-family:"Courier New";color:#7F0055'>new</span></b><span lang=BG
+  style='font-family:"Courier New";color:black'> PrintStream(</span><span
+  lang=BG style='font-family:"Courier New";color:#2A00FF'>&quot;numbers.txt&quot;</span><span
+  lang=BG style='font-family:"Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Loop through the numbers from 1 to 20 and write them</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> num = 1; num &lt;= 20; num++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  fileWriter.println(num);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Close the stream when you are done using it</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>fileWriter.close();</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Започваме като създаваме инстанция на </span><span
+class=Code><span lang=BG>PrintStream</span></span><span lang=BG> по вече
+познатия ни от примера начин.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>За да вземем
+числата от 1 до 20 ще използваме един </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG>-цикъл. В тялото на цикъла ще използваме метода </span><span
+class=Code><span lang=BG>println(…)</span></span><span lang=BG>, който отново
+познаваме от работата ни с конзолата, за да запишем текущото число на нов ред
+във файла. Не бива да се притеснявате, ако файлът, чието име сте дали не
+съществува. Ако случаят е такъв, той ще бъде автоматично създаден в папката на
+проекта, а ако вече съществува, ще бъде презаписан (ще изгубите старото му
+съдържание). Той ще има следния вид:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  background:#F3F3F3;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  class=Code><span lang=BG>numbers.txt</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>1</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>2</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>3</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>…</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>20</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В края на
+програмата затваряме потоците, които сме използвали.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><b><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></b></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Не пропускайте да затворите потока след
+  като приключите с използването му! За затваряне използвайте метода </span><span
+  class=Code><span lang=BG>close()</span></span><span lang=BG>.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><a name="_Обработка_на_грешки"></a><span
+lang=BG>Когато искате да печатате кирилица и се чудите кое кодиране да
+ползвате, предпочитайте кодирането UTF-8. То е универсално и поддържа не само
+кирилица, но и всички широкоразпространени световни азбуки: гръцки, арабски,
+китайски, японски и др.</span></p>
+
+<h2><a name="_Toc218196042"><span lang=BG>Обработка на грешки</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Докато сте правили примерите до тук, сигурно
+сте забелязали, че при доста от операциите, свързани с файлове, могат да
+възникнат изключи­телни ситуации. Основните принципи и подходи за тяхното
+прихващане и обработка вече са ви познати от предишните глави и най-вече от
+главата &quot;<a href="#_Глава_12._Обработка">Обработка на изключения</a>&quot;.
+Сега ще се спрем малко на специфичните грешки при работа с файлове и най-добрите
+практики, за тяхната обра­ботка.</span></p>
+
+<h3><a name="_Toc218196043"><span lang=BG>Прихващане на изключения при работа с
+файлове</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Може би най-често срещаната грешка при работа
+с файлове е </span><span class=Code><span lang=BG>FileNotFoundException</span></span><span
+lang=BG> (от името и личи, че индикира, че желаният файл не е намерен). Тя може
+да възникне, когато използваме този файл за създаването на </span><span
+class=Code><span lang=BG>Scanner</span></span><span lang=BG> или </span><span
+class=Code><span lang=BG>PrintStream</span></span><span lang=BG>.</span></p>
+
+<p class=MsoNormal><span lang=BG>Когато избираме и типа encoding при създаване
+на </span><span class=Code><span lang=BG>Scanner</span></span><span lang=BG> и </span><span
+class=Code><span lang=BG>PrintStream</span></span><span lang=BG> може да
+възникне и </span><span class=Code><span lang=BG>UnsupportedEncodingException</span></span><span
+lang=BG>. Това значи, че избраният от нас encoding не е поддържан.</span></p>
+
+<p class=MsoNormal><span lang=BG>Друга често срещана грешка е  </span><span
+class=Code><span lang=BG>IOException</span></span><span lang=BG>. Това е клас,
+който е базов за всички входно-изходни грешки при работа с потоци.</span></p>
+
+<p class=MsoNormal><span lang=BG>Стандартният подход при обработване на
+изключения при работа с файлове е следният: декларираме променливите от клас </span><span
+class=Code><span lang=BG>Scanner</span></span><span lang=BG> и/или </span><span
+class=Code><span lang=BG>PrintStream</span></span><span lang=BG> преди </span><span
+class=Code><span lang=BG>try-catch-finally</span></span><span lang=BG> блока,
+като ги инициализираме със стойност </span><span class=Code><span lang=BG>null</span></span><span
+lang=BG>. В самия блок ги инициализираме с нужните ни стойности и прихващаме и
+обработваме потенциалните грешки по подходящ начин. За по-специална цел ще
+ползваме </span><span class=Code><span lang=BG>finally</span></span><span
+lang=BG> частта. За да онагледим казаното до тук, ще дадем пример.</span></p>
+
+<h3><a name="_Toc218196044"><span lang=BG>Прихващане на грешка при отваряне на
+файл – пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ето как можем да
+прихванем изключенията, настъпващи при работа с файлове:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>String fileName = </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;sample.txt&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner fileReader = </span><b><span lang=BG style='font-family:
+  "Courier New";color:#7F0055'>null</span></b><span lang=BG style='font-family:
+  "Courier New";color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> lineNumber = 0;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>try</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  fileReader = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> Scanner(</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> File(fileName));</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;File &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'> + fileName + </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot; opened.&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>while</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (fileReader.hasNextLine()) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     lineNumber++;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Line %d:%s%n&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>, </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       lineNumber, fileReader.nextLine());</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>} </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>catch</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (FileNotFoundException fnf) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;File &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'> + fileName + </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot; not found.&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>} </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>catch</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (NullPointerException npe) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;File &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'> + fileName + </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot; not found.&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>} </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>finally</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Close the scanner in the finally block</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>if</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (fileReader != </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>null</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     fileReader.close();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Scanner closed.&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Това е същият пример за четене на файл ред по
+ред. Този път сме прихванали и обработили по подходящ начин възможните
+извънредни ситуации. Обърнете внимание как използваме </span><span class=Code><span
+lang=BG>finally</span></span><span lang=BG> блока. Тъй като той се изпълнява
+винаги, независимо дали са възникнали грешки или не, той е идеалното място
+където да направим задължителното затваряне на използваните ресурси (в случай,
+че не са вече затворени). За подсигу­ряване сме добавили и </span><span
+class=Code><span lang=BG>catch</span></span><span lang=BG> блок за </span><span
+class=Code><span lang=BG>NullPointerException</span></span><span lang=BG>.</span></p>
+
+<h2><a name="_Toc218196045"><span lang=BG>Текстови файлове – още примери</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Надяваме се теоретичните обяснения и примерите
+до сега да са успели да ви помогнат да навлезете в тънкостите при работа с
+текстови файлове. Сега ще разгледаме още няколко по-комплексни примери с цел да
+затвърдим получените до тук знания и да онагледим как да ги ползваме в
+практически задачи.</span></p>
+
+<h3><a name="_Toc218196046"><span lang=BG>Брой срещания на дума във файл –
+пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ето как може да
+реализираме проста програма, която брои колко пъти се среща дума в даден текстов
+файл (за дума считаме всеки подниз от текста). В примера, нека текстът изглежда
+така:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  background:#F3F3F3;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  class=Code><span lang=BG>sample.txt</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>This is
+  our &quot;Intro to Programming in Java&quot; book.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>In it
+  you will learn the basics of Java programming.</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New"'>You will find out how nice Java is.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Броенето можем да
+направим така: ще прочитаме файла ред по ред и всеки път, когато срещнем
+търсената от нас дума, ще увеличаваме стой­ността на една променлива (брояч).
+Ще обработим възможните изключи­телни ситуации, за да може потребителят да
+получава адекватна инфор­мация при появата на грешки. Ето и примерна реализация:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  background:#F3F3F3;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  class=Code><span lang=BG>CountWordOccurrences.java</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>String fileName = </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;sample.txt&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner fileReader = </span><b><span lang=BG style='font-family:
+  "Courier New";color:#7F0055'>null</span></b><span lang=BG style='font-family:
+  "Courier New";color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> occurrences = 0;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>String word = </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Java&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>try</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  fileReader = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> Scanner(</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> File(fileName));</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;File &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'> + fileName + </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot; opened.&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>while</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (fileReader.hasNextLine()) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     String line = fileReader.nextLine();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> index = line.indexOf(word);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>while</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (index != -1) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       occurrences++;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       index = line.indexOf(word, (index + 1));</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>} </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>catch</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (FileNotFoundException fnf) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;File &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'> + fileName + </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot; not found.&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>} </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>catch</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (NullPointerException npe) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;File &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'> + fileName + </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot; not found.&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>} </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>finally</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>if</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (fileReader != </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>null</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     fileReader.close();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Scanner closed.&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>);     </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;The word %s occurs %d times&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>, </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  word, occurrences);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>За леснота в примера думата, която търсим е твърдо
+кодирана (hard</span>coded)<span lang=BG>. Вие може да реализирате програмата
+така, че да търси дума, въведена от потребителя.</span></p>
+
+<p class=MsoNormal><span lang=BG>Виждате, че примерът не се различава много от
+предишните. Отново инициализираме променливите извън </span><span class=Code><span
+lang=BG>try-catch-finally</span></span><span lang=BG> блока. Пак използваме </span><span
+class=Code><span lang=BG>while</span></span><span lang=BG>-цикъл, за да
+прочитаме редовете на текстовия файл един по един. Вътре в тялото му има още
+един </span><span class=Code><span lang=BG>while</span></span><span lang=BG>-цикъл,
+с който преброяваме колко пъти се среща думата в дадения ред и увеличаваме
+брояча на срещанията. Това става като използваме метода от класа </span><span
+class=Code><span lang=BG>String</span></span><span lang=BG> </span><span
+class=Code><span lang=BG>indexOf(…)</span></span><span lang=BG> (припомнете си
+какво прави той в случай, че сте забравили). Не пропускаме да затворим </span><span
+class=Code><span lang=BG>Scanner</span></span><span lang=BG> обекта. Единственото,
+което после ни остава да направим е да изведем резултата на конзолата.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>За нашия пример
+резултатът е следният:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>File sample.txt opened.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner closed.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>The word Java occurs 3 times</span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc218196047"><span lang=BG>Коригиране на файл със субтитри –
+пример</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Сега ще разгледаме един по-сложен пример, в
+който едновременно четем от един файл и записваме в друг. Става дума за
+програма, която коригира файл със субтитри за някакъв филм.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Нашата цел ще бъде
+да изчетем един файл със субтитри, които са некоректни и не се появяват в
+точния момент и да отместим времената </span>п<span lang=BG>о подходящ начин,
+за да се появяват правилно. Един такъв файл в общия случай съдържа времето за
+появяване на екрана, времето за скриване от екрана и текста, който трябва да се
+появи в дефинирания интервал от време. Ето как изглежда един типичен файл със
+субтитри:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  background:#F3F3F3;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  class=Code>GORA</span><span class=Code><span lang=BG>.</span></span><span
+  class=Code>sub</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>{1029}{1122}{Y:i}Капитане,
+  системите са|във шибана готовност.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>{1123}{1270}{Y:i}Шибаното
+  налягане е стабилно.|- Пригответе се за шибаното кацане.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>{1343}{1468}{Y:i}Моля,
+  затегнете коланите|и се настанете по местата си.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>{1509}{1610}{Y:i}Координати
+  5.6|- Пет, пет, шест, точка ком.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>{1632}{1718}{Y:i}Къде
+  се дянаха|шибаните координати?</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>{1756}{1820}Командир
+  Логар,|всички говорят на английски.</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>{1821}{1938}Не
+  може ли да преминем|на турски още от началото?</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>{1942}{1992}Може!</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>{3104}{3228}{Y:b}Г.О.Р.А.|филм
+  за космоса</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>...</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>За да го
+коригираме, просто трябва да нанесем корекция във времето за показване на
+субтитрите. Такава корекция може да бъде отместване (до­бавяне или изваждане на
+някаква константа) или промяна на ско­ростта (умножаване по някакви число,
+примерно 1.05).</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ето и приме­рен
+код, с който може да реализираме такава програма:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  background:#F3F3F3;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  class=Code><span lang=BG>FixingSubtitles.java</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>import</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> java.io.File;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>import</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> java.io.FileNotFoundException;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>import</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> java.io.PrintStream;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>import</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> java.io.UnsupportedEncodingException;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>import</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> java.util.Scanner;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>public</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>class</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> FixingSubtitles {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>private</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>static</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>final</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>COEFFICIENT</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'> = 2;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>private</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>static</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>final</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>ADDITION</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'> = 5000;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>private</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>static</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>final</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> String </span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>INPUT_FILE</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'> = </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;GORA.sub&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>private</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>static</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>final</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> String </span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>OUTPUT_FILE</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'> = </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;fixed.sub&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>public</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>static</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>void</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> main(String[] args) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     Scanner fileInput = </span><b><span lang=BG
+  style='font-family:"Courier New";color:#7F0055'>null</span></b><span lang=BG
+  style='font-family:"Courier New";color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     PrintStream fileOutput = </span><b><span lang=BG
+  style='font-family:"Courier New";color:#7F0055'>null</span></b><span lang=BG
+  style='font-family:"Courier New";color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>try</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Create scanner with the Cyrillic encoding</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       fileInput = </span><b><span lang=BG style='font-family:
+  "Courier New";color:#7F0055'>new</span></b><span lang=BG style='font-family:
+  "Courier New";color:black'> Scanner(</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>          </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> File(</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>INPUT_FILE</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>), </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;windows-1251&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Create PrintWriter with the Cyrillic encoding</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       fileOutput = </span><b><span lang=BG style='font-family:
+  "Courier New";color:#7F0055'>new</span></b><span lang=BG style='font-family:
+  "Courier New";color:black'> PrintStream(</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>          </span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>OUTPUT_FILE</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;windows-1251&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       String line;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>while</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (fileInput.hasNextLine()) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>          line = fileInput.nextLine();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>          String fixedLine = <i>fixLine</i>(line);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>          fileOutput.println(fixedLine);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     } </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>catch</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (FileNotFoundException fnfe) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>err</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(fnfe.getMessage());</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     } </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>catch</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (UnsupportedEncodingException uee) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>err</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(uee.getMessage());</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     } </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>finally</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>if</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>null</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> != fileInput) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>          fileInput.close();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>if</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>null</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> != fileOutput) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>          fileOutput.close();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>private</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>static</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> String fixLine(String line) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Find closing brace</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> bracketFromIndex = line.indexOf(</span><span lang=BG
+  style='font-family:"Courier New";color:#2A00FF'>'}'</span><span lang=BG
+  style='font-family:"Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Extract 'from' time</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     String fromTime = line.substring(1, bracketFromIndex);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Calculate new 'from' time</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> newFromTime = </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       Integer.<i>parseInt</i>(fromTime) * </span><i><span
+  lang=BG style='font-family:"Courier New";color:#0000C0'>COEFFICIENT</span></i><span
+  lang=BG style='font-family:"Courier New";color:black'> + </span><i><span
+  lang=BG style='font-family:"Courier New";color:#0000C0'>ADDITION</span></i><span
+  lang=BG style='font-family:"Courier New";color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Find the following closing brace</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> bracketToIndex = line.indexOf(</span><span lang=BG
+  style='font-family:"Courier New";color:#2A00FF'>'}'</span><span lang=BG
+  style='font-family:"Courier New";color:black'>, bracketFromIndex+1);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Extract 'to' time</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     String toTime = </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       line.substring(bracketFromIndex + 2, bracketToIndex);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Calculate new 'to' time</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> newToTime = </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       Integer.<i>parseInt</i>(toTime) * </span><i><span
+  lang=BG style='font-family:"Courier New";color:#0000C0'>COEFFICIENT</span></i><span
+  lang=BG style='font-family:"Courier New";color:black'> + </span><i><span
+  lang=BG style='font-family:"Courier New";color:#0000C0'>ADDITION</span></i><span
+  lang=BG style='font-family:"Courier New";color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Create a new line using the new 'from' and 'to' times</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     String fixedLine = </span><span lang=BG style='font-family:
+  "Courier New";color:#2A00FF'>&quot;{&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'> + newFromTime + </span><span
+  lang=BG style='font-family:"Courier New";color:#2A00FF'>&quot;}&quot;</span><span
+  lang=BG style='font-family:"Courier New";color:black'> + </span><span
+  lang=BG style='font-family:"Courier New";color:#2A00FF'>&quot;{&quot;</span><span
+  lang=BG style='font-family:"Courier New";color:black'> +</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       newToTime + </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;}&quot; </span><span lang=BG style='font-family:"Courier New";
+  color:black'>+ line.substring(bracketToIndex + 1);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>return</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> fixedLine;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Тук създаваме </span><span class=Code><span
+lang=BG>Scanner</span></span><span lang=BG> и </span><span class=Code><span
+lang=BG>PrintStream</span></span><span lang=BG> и задаваме да използват
+encoding &quot;</span><span class=Code><span lang=BG>windows-1251</span></span><span
+lang=BG>&quot;, защото ще работим с файлове, съдържащи кирилица. Това значи, че
+не трябва да забравяме да добавим </span><span class=Code><span lang=BG>catch</span></span><span
+lang=BG> блок, за да прихванем </span><span class=Code><span lang=BG>UnsupportedEncodingException</span></span><span
+lang=BG>. Отново използваме вече поз­натия ни начин за четене на файл ред по
+ред. Различното този път е, че в тялото на цикъла записваме всеки ред във файла
+с вече коригирани субтитри, след като го поправим в метода </span><span
+class=Code><span lang=BG>fixLine(String)</span></span><span lang=BG> (този
+метод не е обект на нашата дискусия, тъй като може да бъде имплементиран по много
+и различни начини в зависимост какво точно искаме да кориги­раме). Важно е да
+на забравим да затворим потоците във </span><span class=Code><span lang=BG>finally</span></span><span
+lang=BG> блока.</span></p>
+
+<h2><a name="_Toc218196048"><span lang=BG>Упражнения</span></a></h2>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която чете от текстов файл и принтира нечетните му
+редове на конзолата.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която чете списък от имена от един текстов файл,
+сортира ги по азбучен ред и ги запазва в друг файл. Имената да са с латински
+букви. На всеки ред от файла, където са записани имената, има точно по едно
+име. На всеки ред от файла с резултата също трябва да има само по едно име.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която чете от файл квадратна матрица от цели числа и
+намира подматрицата с размери 2 х 2 с най-голяма сума и записва тази сума в
+отделен текстов файл. Първия ред на входния файл съдържа големината на
+записаната матрица (N). Следващите N реда съдържат по N числа, разделени с
+интервал.  </span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която заменя всяко срещане на подниза &quot;start&quot;
+с &quot;finish&quot; в текстов файл. Можете ли да пренапишете програмата така,
+че да заменя само цели думи?</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която прочита списък от думи от файл, наречен </span><span
+class=Code><span lang=BG>words.txt</span></span><span lang=BG>, преброява колко
+пъти всяка от тези думи се среща в друг файл </span><span class=Code><span
+lang=BG>text.txt</span></span><span lang=BG> и записва резултата в трети файл –
+</span><span class=Code><span lang=BG>result.txt</span></span><span lang=BG>,
+като преди това ги сортира по брой на срещане в намаляващ ред.</span></p>
+
+<h2><a name="_Toc218196049"><span lang=BG>Решения и упътвания</span></a></h2>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Използвайте примерите, които разгледахме в настоящата глава.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Записвайте всяко прочетено име в масив и след това го сортирайте по
+подходящ начин.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Прочетете първия ред от файла и създайте матрица с получения размер.
+След това четете останалите редове един по един и отделяйте числата. След това
+ги записвайте на съответния ред в матрицата.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Четете файла ред по ред и използвайте методите на класа </span><span
+class=Code><span lang=BG>String</span></span><span lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Създайте хеш таблица с ключ думите от </span><span class=Code><span
+lang=BG>words.txt</span></span><span lang=BG> и стойност броя срещания на всяка
+дума. Четете ред по ред </span><span class=Code><span lang=BG>text.txt</span></span><span
+lang=BG> и разделяйте всеки ред на думи. Проверете дали някоя от получените при
+разде­лянето думи се среща в хеш таблицата и при нужда прибавяте 1 към броя на
+срещанията й.</span></p>
+
+<p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+
+</div>
+
+<span style='font-size:10.0pt;font-family:"Verdana","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+</div>
+
+</body>
+
+</html>
