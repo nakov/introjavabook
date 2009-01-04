@@ -1,0 +1,3325 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<title>Introduction to Programming with Java Book - Chapter 6</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 5 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"Tms Rmn";
+	panose-1:2 2 6 3 4 5 5 2 3 4;}
+@font-face
+	{font-family:Helv;
+	panose-1:2 11 6 4 2 2 2 3 2 4;}
+@font-face
+	{font-family:"New York";
+	panose-1:2 4 5 3 6 5 6 2 3 4;}
+@font-face
+	{font-family:System;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 1 6 1 0 1 1 1 1 1;}
+@font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:Dotum;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:SimHei;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:MingLiU;
+	panose-1:2 1 6 9 0 1 1 1 1 1;}
+@font-face
+	{font-family:Mincho;
+	panose-1:2 2 6 9 4 3 5 8 3 5;}
+@font-face
+	{font-family:Gulim;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Angsana New";
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:"Cordia New";
+	panose-1:2 11 3 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Latha;
+	panose-1:2 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sylfaen;
+	panose-1:1 10 5 2 5 3 6 3 3 3;}
+@font-face
+	{font-family:Vrinda;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Raavi;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Shruti;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sendnya;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Gautami;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Tunga;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Estrangelo Edessa";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Arial CYR";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:SunSans-Regular;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:SAfon;}
+@font-face
+	{font-family:"Courier New CYR";
+	panose-1:2 7 3 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:StarSymbol;}
+@font-face
+	{font-family:OpenSymbol;
+	panose-1:5 1 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sawasdee;}
+@font-face
+	{font-family:Marlett;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;}
+@font-face
+	{font-family:"Lucida Sans Unicode";
+	panose-1:2 11 6 2 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
+@font-face
+	{font-family:Impact;
+	panose-1:2 11 8 6 3 9 2 5 2 4;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;}
+@font-face
+	{font-family:"Franklin Gothic Medium";
+	panose-1:2 11 6 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Palatino Linotype";
+	panose-1:2 4 5 2 5 5 5 3 3 4;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Webdings;
+	panose-1:5 3 1 2 1 5 9 6 7 3;}
+@font-face
+	{font-family:"MV Boli";}
+@font-face
+	{font-family:"Microsoft Sans Serif";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Academy;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Antiqua;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Baltica;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Bookvar;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Ariel";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Courier";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Dutch Roman";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Garamond";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Garamond Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Kursiv";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Palatia";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Roman";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Roman Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Times";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Times Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Domkrat;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Geneva;
+	panose-1:2 2 226 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Hebar;
+	panose-1:2 11 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Izhitsa;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Kaliakra;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Karina;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:KarinaBlack;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:OldCyr;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Opal;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:OpalB;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:TimesNakov;
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:Timok;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:TmsCyr;
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:Zhikaryov;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Agency FB";
+	panose-1:2 11 5 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Algerian;
+	panose-1:4 2 7 5 4 10 2 6 7 2;}
+@font-face
+	{font-family:"Arial Rounded MT Bold";
+	panose-1:2 15 7 4 3 5 4 3 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Baskerville Old Face";
+	panose-1:2 2 6 2 8 5 5 2 3 3;}
+@font-face
+	{font-family:"Bauhaus 93";
+	panose-1:4 3 9 5 2 11 2 2 12 2;}
+@font-face
+	{font-family:"Bell MT";
+	panose-1:2 2 5 3 6 3 5 2 3 3;}
+@font-face
+	{font-family:"Berlin Sans FB";
+	panose-1:2 14 6 2 2 5 2 2 3 6;}
+@font-face
+	{font-family:"Bernard MT Condensed";
+	panose-1:2 5 8 6 6 9 5 2 4 4;}
+@font-face
+	{font-family:"Blackadder ITC";
+	panose-1:4 2 5 5 5 16 7 2 13 2;}
+@font-face
+	{font-family:"Bodoni MT";
+	panose-1:2 7 6 3 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Black";
+	panose-1:2 7 10 3 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Condensed";
+	panose-1:2 7 6 6 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Poster Compressed";
+	panose-1:2 7 7 6 8 6 1 5 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+@font-face
+	{font-family:"Bookman Old Style";
+	panose-1:2 5 6 4 5 5 5 2 2 4;}
+@font-face
+	{font-family:"Bradley Hand ITC";
+	panose-1:3 7 4 2 5 3 2 3 2 3;}
+@font-face
+	{font-family:"Britannic Bold";
+	panose-1:2 11 9 3 6 7 3 2 2 4;}
+@font-face
+	{font-family:Broadway;
+	panose-1:4 4 9 5 8 11 2 2 5 2;}
+@font-face
+	{font-family:"Brush Script MT";
+	panose-1:3 6 8 2 4 4 6 7 3 4;}
+@font-face
+	{font-family:"Californian FB";
+	panose-1:2 7 4 3 6 8 11 3 2 4;}
+@font-face
+	{font-family:"Calisto MT";
+	panose-1:2 4 6 3 5 5 5 3 3 4;}
+@font-face
+	{font-family:Castellar;
+	panose-1:2 10 4 2 6 4 6 1 3 1;}
+@font-face
+	{font-family:Centaur;
+	panose-1:2 3 5 4 5 2 5 2 3 4;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Century Schoolbook";
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Chiller;
+	panose-1:4 2 4 4 3 16 7 2 6 2;}
+@font-face
+	{font-family:"Colonna MT";
+	panose-1:4 2 8 5 6 2 2 3 2 3;}
+@font-face
+	{font-family:"Cooper Black";
+	panose-1:2 8 9 4 4 3 11 2 4 4;}
+@font-face
+	{font-family:"Copperplate Gothic Bold";
+	panose-1:2 14 7 5 2 2 6 2 4 4;}
+@font-face
+	{font-family:"Copperplate Gothic Light";
+	panose-1:2 14 5 7 2 2 6 2 4 4;}
+@font-face
+	{font-family:"Curlz MT";
+	panose-1:4 4 4 4 5 7 2 2 2 2;}
+@font-face
+	{font-family:"Edwardian Script ITC";
+	panose-1:3 3 3 2 4 7 7 13 8 4;}
+@font-face
+	{font-family:Elephant;
+	panose-1:2 2 9 4 9 5 5 2 3 3;}
+@font-face
+	{font-family:"Engravers MT";
+	panose-1:2 9 7 7 8 5 5 2 3 4;}
+@font-face
+	{font-family:"Eras Bold ITC";
+	panose-1:2 11 9 7 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Eras Demi ITC";
+	panose-1:2 11 8 5 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Eras Light ITC";
+	panose-1:2 11 4 2 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Eras Medium ITC";
+	panose-1:2 11 6 2 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Felix Titling";
+	panose-1:4 6 5 5 6 2 2 2 10 4;}
+@font-face
+	{font-family:"Footlight MT Light";
+	panose-1:2 4 6 2 6 3 10 2 3 4;}
+@font-face
+	{font-family:Forte;
+	panose-1:3 6 9 2 4 5 2 7 2 3;}
+@font-face
+	{font-family:"Franklin Gothic Book";
+	panose-1:2 11 5 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Demi";
+	panose-1:2 11 7 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Demi Cond";
+	panose-1:2 11 7 6 3 4 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Heavy";
+	panose-1:2 11 9 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Medium Cond";
+	panose-1:2 11 6 6 3 4 2 2 2 4;}
+@font-face
+	{font-family:"Freestyle Script";
+	panose-1:3 8 4 2 3 2 5 11 4 4;}
+@font-face
+	{font-family:"French Script MT";
+	panose-1:3 2 4 2 4 6 7 4 6 5;}
+@font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;}
+@font-face
+	{font-family:Gigi;
+	panose-1:4 4 5 4 6 16 7 2 13 2;}
+@font-face
+	{font-family:"Gill Sans MT Ext Condensed Bold";
+	panose-1:2 11 9 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans MT";
+	panose-1:2 11 5 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans MT Condensed";
+	panose-1:2 11 5 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans Ultra Bold";
+	panose-1:2 11 10 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans Ultra Bold Condensed";
+	panose-1:2 11 10 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gloucester MT Extra Condensed";
+	panose-1:2 3 8 8 2 6 1 1 1 1;}
+@font-face
+	{font-family:"Goudy Old Style";
+	panose-1:2 2 5 2 5 3 5 2 3 3;}
+@font-face
+	{font-family:"Goudy Stout";
+	panose-1:2 2 9 4 7 3 11 2 4 1;}
+@font-face
+	{font-family:Haettenschweiler;
+	panose-1:2 11 7 6 4 9 2 6 2 4;}
+@font-face
+	{font-family:"Harlow Solid Italic";
+	panose-1:4 3 6 4 2 15 2 2 13 2;}
+@font-face
+	{font-family:Harrington;
+	panose-1:4 4 5 5 5 10 2 2 7 2;}
+@font-face
+	{font-family:"High Tower Text";
+	panose-1:2 4 5 2 5 5 6 3 3 3;}
+@font-face
+	{font-family:"Imprint MT Shadow";
+	panose-1:4 2 6 5 6 3 3 3 2 2;}
+@font-face
+	{font-family:Jokerman;
+	panose-1:4 9 6 5 6 13 6 2 7 2;}
+@font-face
+	{font-family:"Juice ITC";
+	panose-1:4 4 4 3 4 10 2 2 2 2;}
+@font-face
+	{font-family:"Kristen ITC";
+	panose-1:3 5 5 2 4 2 2 3 2 2;}
+@font-face
+	{font-family:"Kunstler Script";
+	panose-1:3 3 4 2 2 6 7 13 13 6;}
+@font-face
+	{font-family:"Lucida Bright";
+	panose-1:2 4 6 2 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Lucida Calligraphy";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"Lucida Fax";
+	panose-1:2 6 6 2 5 5 5 2 2 4;}
+@font-face
+	{font-family:"Lucida Handwriting";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"Lucida Sans";
+	panose-1:2 11 6 2 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Lucida Sans Typewriter";
+	panose-1:2 11 5 9 3 5 4 3 2 4;}
+@font-face
+	{font-family:"MS Outlook";
+	panose-1:5 1 1 0 1 0 0 0 0 0;}
+@font-face
+	{font-family:Magneto;
+	panose-1:4 3 8 5 5 8 2 2 13 2;}
+@font-face
+	{font-family:"Maiandra GD";
+	panose-1:2 14 5 2 3 3 8 2 2 4;}
+@font-face
+	{font-family:"Matura MT Script Capitals";
+	panose-1:3 2 8 2 6 6 2 7 2 2;}
+@font-face
+	{font-family:Mistral;
+	panose-1:3 9 7 2 3 4 7 2 4 3;}
+@font-face
+	{font-family:"Modern No\. 20";
+	panose-1:2 7 7 4 7 5 5 2 3 3;}
+@font-face
+	{font-family:"Monotype Corsiva";
+	panose-1:3 1 1 1 1 2 1 1 1 1;}
+@font-face
+	{font-family:"Niagara Engraved";
+	panose-1:4 2 5 2 7 7 3 3 2 2;}
+@font-face
+	{font-family:"Niagara Solid";
+	panose-1:4 2 5 2 7 7 2 2 2 2;}
+@font-face
+	{font-family:"OCR A Extended";
+	panose-1:2 1 5 9 2 1 2 1 3 3;}
+@font-face
+	{font-family:"Old English Text MT";
+	panose-1:3 4 9 2 4 5 8 3 8 6;}
+@font-face
+	{font-family:Onyx;
+	panose-1:4 5 6 2 8 7 2 2 2 3;}
+@font-face
+	{font-family:"Palace Script MT";
+	panose-1:3 3 3 2 2 6 7 12 11 5;}
+@font-face
+	{font-family:Papyrus;
+	panose-1:3 7 5 2 6 5 2 3 2 5;}
+@font-face
+	{font-family:Parchment;
+	panose-1:3 4 6 2 4 7 8 4 8 4;}
+@font-face
+	{font-family:Perpetua;
+	panose-1:2 2 5 2 6 4 1 2 3 3;}
+@font-face
+	{font-family:"Perpetua Titling MT";
+	panose-1:2 2 5 2 6 5 5 2 8 4;}
+@font-face
+	{font-family:Playbill;
+	panose-1:4 5 6 3 10 6 2 2 2 2;}
+@font-face
+	{font-family:"Poor Richard";
+	panose-1:2 8 5 2 5 5 5 2 7 2;}
+@font-face
+	{font-family:Pristina;
+	panose-1:3 6 4 2 4 4 6 8 2 4;}
+@font-face
+	{font-family:"Rage Italic";
+	panose-1:3 7 5 2 4 5 7 7 3 4;}
+@font-face
+	{font-family:Ravie;
+	panose-1:4 4 8 5 5 8 9 2 6 2;}
+@font-face
+	{font-family:Rockwell;
+	panose-1:2 6 6 3 2 2 5 2 4 3;}
+@font-face
+	{font-family:"Rockwell Condensed";
+	panose-1:2 6 6 3 5 4 5 2 1 4;}
+@font-face
+	{font-family:"Rockwell Extra Bold";
+	panose-1:2 6 9 3 4 5 5 2 4 3;}
+@font-face
+	{font-family:"Informal Roman";
+	panose-1:3 6 4 2 3 4 6 11 2 4;}
+@font-face
+	{font-family:"Script MT Bold";
+	panose-1:3 4 6 2 4 6 7 8 9 4;}
+@font-face
+	{font-family:"Showcard Gothic";
+	panose-1:4 2 9 4 2 1 2 2 6 4;}
+@font-face
+	{font-family:"Snap ITC";
+	panose-1:4 4 10 7 6 10 2 2 2 2;}
+@font-face
+	{font-family:Stencil;
+	panose-1:4 4 9 5 13 8 2 2 4 4;}
+@font-face
+	{font-family:"Tw Cen MT";
+	panose-1:2 11 6 2 2 1 4 2 6 3;}
+@font-face
+	{font-family:"Tw Cen MT Condensed";
+	panose-1:2 11 6 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Tempus Sans ITC";
+	panose-1:4 2 4 4 3 13 7 2 2 2;}
+@font-face
+	{font-family:"Viner Hand ITC";
+	panose-1:3 7 5 2 3 5 2 2 2 3;}
+@font-face
+	{font-family:Vivaldi;
+	panose-1:3 2 6 2 5 5 6 9 8 4;}
+@font-face
+	{font-family:"Vladimir Script";
+	panose-1:3 5 4 2 4 4 7 7 3 5;}
+@font-face
+	{font-family:"Wide Latin";
+	panose-1:2 10 10 7 5 5 5 2 4 4;}
+@font-face
+	{font-family:"Wingdings 2";
+	panose-1:5 2 1 2 1 5 7 7 7 7;}
+@font-face
+	{font-family:"Wingdings 3";
+	panose-1:5 4 1 2 1 8 7 7 7 7;}
+@font-face
+	{font-family:"Berlin Sans FB Demi";
+	panose-1:2 14 8 2 2 5 2 2 3 6;}
+@font-face
+	{font-family:"MS Reference Sans Serif";
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"MS Reference Specialty";
+	panose-1:5 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Tw Cen MT Condensed Extra Bold";
+	panose-1:2 11 8 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:"MT Extra";
+	panose-1:5 5 1 2 1 2 5 2 2 2;}
+@font-face
+	{font-family:"Bookshelf Symbol 7";
+	panose-1:5 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"OCR-B 10 BT";
+	panose-1:2 11 6 1 2 2 2 2 2 4;}
+@font-face
+	{font-family:"OCR-A BT";
+	panose-1:2 15 5 1 2 2 4 2 3 4;}
+@font-face
+	{font-family:"WP MultinationalA Courier";
+	panose-1:5 0 0 9 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalB Courier";
+	panose-1:2 6 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"WP MultinationalA Helve";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalB Helve";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalA Roman";
+	panose-1:2 2 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"WP MultinationalB Roman";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Nina;
+	panose-1:2 11 6 6 3 5 4 4 2 4;}
+@font-face
+	{font-family:sshlinedraw;
+	panose-1:0 0 4 9 0 0 0 0 0 0;}
+@font-face
+	{font-family:Candara;
+	panose-1:2 14 5 2 3 3 3 2 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Constantia;
+	panose-1:2 3 6 2 5 3 6 3 3 3;}
+@font-face
+	{font-family:Corbel;
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 6 6 2 2 2 3 2 4;}
+@font-face
+	{font-family:"DejaVu Sans";
+	panose-1:2 11 6 3 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Condensed";
+	panose-1:2 11 6 6 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Mono";
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Serif";
+	panose-1:2 6 6 3 5 6 5 2 2 4;}
+@font-face
+	{font-family:"DejaVu Serif Condensed";
+	panose-1:2 6 6 6 5 6 5 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Light";
+	panose-1:2 11 2 3 3 8 4 2 2 4;}
+@font-face
+	{font-family:"Myriad Pro";
+	panose-1:2 11 6 6 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Myriad Web";
+	panose-1:2 11 8 3 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Myriad Web Pro";
+	panose-1:2 11 5 3 3 4 3 2 2 4;}
+@font-face
+	{font-family:Myriade;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Myriad Web Pro Condensed";
+	panose-1:2 11 5 6 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Segoe Condensed";
+	panose-1:2 11 6 6 4 2 0 2 2 3;}
+@font-face
+	{font-family:ZWAdobeF;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@StarSymbol";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:.5in;
+	margin-left:0in;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:24.0pt;
+	font-family:"Verdana","sans-serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Verdana","sans-serif";}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Verdana","sans-serif";}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:9.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Verdana","sans-serif";}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:9.9pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:20.15pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:30.05pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:14.15pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-14.15pt;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	background:navy;
+	font-size:10.0pt;
+	font-family:"Tahoma","sans-serif";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Cambria","serif";
+	color:#243F60;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-family:"Cambria","serif";
+	color:#404040;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+span.Code
+	{mso-style-name:Code;
+	font-family:"Courier New";
+	font-weight:bold;}
+p.WarningMessage, li.WarningMessage, div.WarningMessage
+	{mso-style-name:"Warning Message";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+p.WarningMessageAfter6pt, li.WarningMessageAfter6pt, div.WarningMessageAfter6pt
+	{mso-style-name:"Warning Message + After\:  6 pt";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.msoIns
+	{mso-style-name:"";
+	text-decoration:underline;
+	color:teal;}
+span.msoDel
+	{mso-style-name:"";
+	text-decoration:line-through;
+	color:red;}
+ /* Page Definitions */
+ @page Section1
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section1
+	{page:Section1;}
+@page Section2
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section2
+	{page:Section2;}
+@page Section3
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section3
+	{page:Section3;}
+@page Section4
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section4
+	{page:Section4;}
+@page Section5
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section5
+	{page:Section5;}
+@page Section6
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section6
+	{page:Section6;}
+@page Section7
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section7
+	{page:Section7;}
+@page Section8
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section8
+	{page:Section8;}
+@page Section9
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section9
+	{page:Section9;}
+@page Section10
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section10
+	{page:Section10;}
+@page Section11
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section11
+	{page:Section11;}
+@page Section12
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section12
+	{page:Section12;}
+@page Section13
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section13
+	{page:Section13;}
+@page Section14
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section14
+	{page:Section14;}
+@page Section15
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section15
+	{page:Section15;}
+@page Section16
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section16
+	{page:Section16;}
+@page Section17
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section17
+	{page:Section17;}
+@page Section18
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section18
+	{page:Section18;}
+@page Section19
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section19
+	{page:Section19;}
+@page Section20
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section20
+	{page:Section20;}
+@page Section21
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section21
+	{page:Section21;}
+@page Section22
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section22
+	{page:Section22;}
+@page Section23
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section23
+	{page:Section23;}
+@page Section24
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section24
+	{page:Section24;}
+@page Section25
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section25
+	{page:Section25;}
+@page Section26
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section26
+	{page:Section26;}
+@page Section27
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section27
+	{page:Section27;}
+@page Section28
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section28
+	{page:Section28;}
+@page Section29
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section29
+	{page:Section29;}
+@page Section30
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section30
+	{page:Section30;}
+@page Section31
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section31
+	{page:Section31;}
+@page Section32
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section32
+	{page:Section32;}
+@page Section33
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section33
+	{page:Section33;}
+@page Section34
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section34
+	{page:Section34;}
+@page Section35
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section35
+	{page:Section35;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section14>
+
+<h1><a name="_Toc218278544"></a><a name="_Toc218195680"></a><a
+name="_Глава_6._Цикли"></a><span lang=BG>Глава 6. Цикли</span></h1>
+
+<h2><a name="_Toc218195681"><span lang=BG>Автор</span></a></h2>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>Румяна Топалска</span></p>
+
+<h2><a name="_Toc218195682"><span lang=BG>В тази тема...</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>В настоящата тема ще разгледаме конструкциите
+за цикли, с които можем да изпълняваме даден фрагмент програмен код
+многократно. Ще разгле­даме как се реализират повторения с условие (</span><span
+class=Code><span lang=BG>while</span></span><span lang=BG> и </span><span
+class=Code><span lang=BG>do</span></span><span lang=BG>-</span><span
+class=Code><span lang=BG>while</span></span><span lang=BG> цикли) и как се
+работи с </span><span class=Code><span lang=BG>for</span></span><span lang=BG>-цикли.
+Ще дадем примери за различните възмож­ности за дефиниране на цикъл, за начина
+им на конструиране и за някои от основните им приложения. Накрая ще разгледаме
+как можем да използ­ваме няколко цикъла един в друг (вложени цикли).</span></p>
+
+<b><span lang=BG style='font-size:14.0pt;font-family:"Verdana","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<h2><a name="_Toc218195683"><span lang=BG>Какво е &quot;цикъл&quot;?</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>В програмирането често се налага многократното
+изпълнение на дадена последователност от операции. <b>Цикълът (loop) </b>е
+структурата, която позволява това изпълнение без излишно писане на повтарящ се
+код. В зависимост от вида на цикъла, програмния код в него се повтаря:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>определени от фиксирано число пъти;</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>докато дадено условие е изпълнено.</span></p>
+
+<p class=MsoNormal><span lang=BG>Цикъл, който никога не свършва, се нарича <b>безкраен</b>
+<b>(infinite)</b>.</span></p>
+
+<h2><a name="_Toc218195684"><span lang=BG>Конструкция за цикъл while</span></a></h2>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Един от
+най-простите и често използвани цикли е <b>while</b>.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>while</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><span style='font-family:"Courier New";color:black'>condition</span><span
+  lang=BG style='font-family:"Courier New";color:black'>) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  statements;</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b><span lang=BG>Condition</span></b><span lang=BG> е израз,
+който връща булев резултат – </span><span class=Code><span lang=BG>true</span></span><span
+lang=BG> или </span><span class=Code><span lang=BG>fasle</span></span><span
+lang=BG>. Той определя докога ще се изпълнява тялото на цикъла и се нарича – <b>loop
+condition.</b></span></p>
+
+<p class=MsoNormal><b><span lang=BG>Statements</span></b><span lang=BG> са
+програмният код, изпълняван в цикъла. Те се наричат тяло на цикъла.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>При </span><span
+class=Code><span lang=BG>while</span></span><span lang=BG> цикъла първо се
+изпълнява булевия израз, ако резултатът от него е true, се изпълнява и
+последователността от операции, това се повтаря докато условния израз не върне </span><span
+class=Code><span lang=BG>false</span></span><span lang=BG>. Това е и причината
+често да бъде наричан цикъл с предусловие (<b>pre-test loop</b>). Ето
+логическата схема, по която се изпълняват </span><span class=Code><span
+lang=BG>while</span></span><span lang=BG> </span><span lang=BG>циклите:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG><img
+border=0 width=169 height=219
+src="image052.gif"></span></p>
+
+<h3><a name="_Toc218195685"><span lang=BG>Използване на while цикли</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>While циклите
+изпълняват група операции докато е в сила дадено условие.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Нека разгледаме
+един съвсем прост пример за използването на </span><span class=Code><span
+lang=BG>while</span></span><span lang=BG> цикъл, при който само се отпечатват
+на конзолата числата в интервала от 0 до 9 в нарастващ ред:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Initialize the counter</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> counter = 0;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Check the loop condition</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>while</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (counter &lt; 10) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Execute statements in loop if the result is true</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Number : %d%n&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>, counter);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Change the counter</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  counter++; </span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>При изпълнение на примерния код получаваме
+следния резултат:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG><img
+border=0 width=529 height=214
+src="image053.jpg"></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Нека дадем още
+примери, за да се убедите в ползата от циклите и да ви покажем какви задачи
+можем да решаваме с цикли.</span></p>
+
+<h3><a name="_Toc218195686"><span lang=BG>Сумиране на числата от 1 до N –
+пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В настоящия пример
+ще разгледаме как с помощта на цикъла </span><span class=Code><span lang=BG>while</span></span><span
+lang=BG> се намира сумата на числата от </span><span class=Code><span lang=BG>1</span></span><span
+lang=BG> до </span><span class=Code><span lang=BG>N</span></span><span lang=BG>.
+Числото </span><span class=Code><span lang=BG>N</span></span><span lang=BG> се
+чете от конзолата. Инициализираме променливите </span><span class=Code><span
+lang=BG>num</span></span><span lang=BG> и </span><span class=Code><span
+lang=BG>sum</span></span><span lang=BG> със стойност </span><span class=Code><span
+lang=BG>1</span></span><span lang=BG>. В </span><span class=Code><span lang=BG>num</span></span><span
+lang=BG> ще пазим текущото число, което ще добавяме към сумата на предходните.
+При всяко преминаване през цикъла ще го увеличаваме с </span><span class=Code><span
+lang=BG>1</span></span><span lang=BG>, за да получим следващото число, след
+което при влизане в цикъла проверяваме дали то отговаря на условието на цикъла,
+тоест дали е в интервала от </span><span class=Code><span lang=BG>1</span></span><span
+lang=BG> до </span><span class=Code><span lang=BG>N</span></span><span lang=BG>.
+</span><span class=Code><span lang=BG>Sum</span></span><span lang=BG> е
+променливата за сумата на числата. При влизане в цикъла добавяме към нея поредното
+число записано в </span><span class=Code><span lang=BG>num</span></span><span
+lang=BG>. На конзолата принтираме всички </span><span class=Code><span lang=BG>num</span></span><span
+lang=BG> (числа от 1 до N) с разделител &quot;+&quot; и крайния резултат от
+сумирането след приключване на цикъла.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner input = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> Scanner(System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>in</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.print(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;n = &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> n = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> num = 1;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> sum = 1;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.print(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;The sum 1&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>while</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (num &lt; n) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  num++;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  sum += num;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;+%d&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, num);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>System.</span><i><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>out</span></i><span lang=BG style='font-family:
+  "Courier New";color:black'>.printf(</span><span lang=BG style='font-family:
+  "Courier New";color:#2A00FF'>&quot; = %d%n&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>, sum);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Изходът е програмата е следният:</span></p>
+
+<p class=MsoNormal><span lang=BG><img border=0 width=530 height=82
+src="image054.jpg"></span></p>
+
+<p class=MsoNormal><span lang=BG>Нека дадем още един пример за използване на </span><span
+class=Code><span lang=BG>while</span></span><span lang=BG>, преди да продъл­жим
+към другите конструкции за организиране на цикъл.</span></p>
+
+<h3><a name="_Toc218195687"><span lang=BG>Проверка за просто число – пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ще напишем
+програма, с която да проверяваме дали дадено число е просто. Числото ще четем
+от конзолата. Както знаем от математиката, просто е всяко число, което освен на
+себе си и на 1, не се дели на други числа. Можем да проверим дали числото </span><span
+class=Code><span lang=BG>num</span></span><span lang=BG> е просто, като в цикъл
+проверим дали се дели на всички числа между 2 и</span> &#8730;<span class=Code><span
+lang=BG>num</span></span><span lang=BG>:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner input = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> Scanner(System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>in</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.print(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Enter a positive Number: &quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> num = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> divider = 2;       </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> maxDivider = (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>) Math.<i>sqrt</i>(num);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>boolean</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> prime = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>true</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>while</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (prime &amp;&amp; (divider &lt;= maxDivider)) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>if</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (num % divider == 0) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     prime = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>false</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  divider++;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>System.</span><i><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>out</span></i><span lang=BG style='font-family:
+  "Courier New";color:black'>.println(</span><span lang=BG style='font-family:
+  "Courier New";color:#2A00FF'>&quot;Prime? &quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'> + prime);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Променливата </span><span
+class=Code><span lang=BG>divider</span></span><span lang=BG>, използваме за
+стойността на евентуалния делител на числото, я инициализираме в началото с 2. </span><span
+class=Code><span lang=BG>maxDivider</span></span><span lang=BG> е максималният
+възможен делител, който е равен на корен квадратен от числото (ако имаме
+делител, по-голям от </span>&#8730;<span class=Code><span lang=BG>num</span></span><span
+lang=BG>, то би трябвало </span><span class=Code><span lang=BG>num</span></span><span
+lang=BG> да има и друг дели</span>­<span lang=BG>тел, който е обаче по-малък от
+</span>&#8730;<span class=Code><span lang=BG>num</span></span><span lang=BG> и
+затова няма смисъл да проверяваме числата, по-големи от </span>&#8730;<span
+class=Code><span lang=BG>num</span></span><span lang=BG>). Така намаляваме броя
+на итерациите на цикъла. Друга променлива от булев тип </span><span class=Code><span
+lang=BG>prime</span></span><span lang=BG> </span><span lang=BG>ще използваме за
+резул­тата. Първоначално, нека нейната стойност е </span><span class=Code><span
+lang=BG>true</span></span><span lang=BG>. При преминаване през цикъла, ако се
+окаже, че числото има делител, стойността ще стане </span><span class=Code><span
+lang=BG>false</span></span><span lang=BG>. В този пример условието на </span><span
+class=Code><span lang=BG>while</span></span><span lang=BG> цикъла се състои от
+две подусловия, които са свързани с логическия оператор </span><span
+class=Code><span lang=BG>&amp;&amp;</span></span><span lang=BG> (логическо и).
+В този случай, за да бъде изпълнен цикъла, трябва и двете да са верни
+едновременно, което също води до намаляване броя на итерациите, защото
+намирайки един делител </span><span class=Code><span lang=BG>prime</span></span><span
+lang=BG> става </span><span class=Code><span lang=BG>false</span></span><span
+lang=BG> и условието вече не е изпълнено. Това означава, че цикъла се изпълнява
+до намиране на първия делител на числото.</span></p>
+
+<p class=MsoNormal><span lang=BG>Ето как изглежда резултатът от изпълнението на
+горния пример:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG><img
+border=0 width=496 height=82
+src="image055.jpg"></span></p>
+
+<h3><a name="_Toc218195688"><span lang=BG>Оператор break</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Операторът <b>break</b>
+се използва за излизане от цикъла. Операциите в цикъла се изпълняват в
+съответния им ред и при достигане на оператора </span><span class=Code><span
+lang=BG>break</span></span><span lang=BG>, независимо дали условието за
+излизане от цикъла е изпълнено, изпълнението на цикъла се прекратява, като кода
+след </span><span class=Code><span lang=BG>break</span></span><span lang=BG> не
+се изпълнява.</span></p>
+
+<h3><a name="_Toc218195689"><span lang=BG>Изчисляване на факториел – пример</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В този пример ще пресметнем факториела на
+въведено през конзолата число с помощта на безкраен </span><span class=Code><span
+lang=BG>while</span></span><span lang=BG> цикъл и оператора </span><span
+class=Code><span lang=BG>break</span></span><span lang=BG>. Да си припомним от
+математиката какво е факториел и как се изчислява. Това е функция на естествено
+число n, която изразява произведението на всички естествени числа, по-малки или
+равни на n. Записва се n! и по дефиниция:</span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:28.4pt;text-indent:-14.2pt'><span lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>n! = 1*2*3.......(n-1)*n, за  n&gt;1;</span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:28.4pt;text-indent:-14.2pt'><span lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>1! = 1;</span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:28.4pt;text-indent:-14.2pt'><span lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>0! = 1.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>N! може да се
+изрази чрез факториел от естествени числа, по-малки от n:</span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:28.4pt;text-indent:-14.2pt'><span lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>n! = (n-1)!n,</span><span lang=BG> като използваме
+началната стойност 1! = 1.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Това ще използваме
+и ние, за да изчислим факториела на n. Инициализираме променливата </span><span
+class=Code><span lang=BG>factorial</span></span><span lang=BG> с 1, а n – четем
+от конзолата. </span><span class=Code><span lang=BG>While</span></span><span
+lang=BG> цикълът, който ще конструираме, искаме да е безкраен. За тази цел
+условието трябва винаги да е </span><span class=Code><span lang=BG>true</span></span><span
+lang=BG>. Ще използваме оператора </span><span class=Code><span lang=BG>break</span></span><span
+lang=BG>, за да прекратим цикълът, когато n достигне 1. Самото изчисление ще
+започнем от числото </span><span class=Code><span lang=BG>n</span></span><span
+lang=BG>, с него ще умножаваме </span><span class=Code><span lang=BG>factorial</span></span><span
+lang=BG>, след което </span><span class=Code><span lang=BG>n</span></span><span
+lang=BG> ще намаляваме с 1. Или ще сметнем факториел по следната формула: n*(n-1)*(n-2)*…*3*2,
+при n=1 прекратяваме изпълнението на цикъла.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner input = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> Scanner(System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>in</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> n = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// &quot;long&quot; is the biggest integer type</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>long</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> factorial = 1;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Perform an “infinite loop&quot; </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>while</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>true</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>if</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (n == 1) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>break</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  factorial *= n;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  n--;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>System.</span><i><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>out</span></i><span lang=BG style='font-family:
+  "Courier New";color:black'>.println(</span><span lang=BG style='font-family:
+  "Courier New";color:#2A00FF'>&quot;n! = &quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'> + factorial);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ако въведем 10
+като вход, на конзолата ще видим следния резултат:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'><span class=Code><span lang=BG
+  style='font-weight:normal'>10</span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span class=Code><span lang=BG
+  style='font-weight:normal'>n! = 3628800</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="_Toc218195690"><span lang=BG>Конструкция за цикъл do-while</span></a></h2>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><b><span lang=BG>Do-while</span></b><span
+lang=BG> цикълът е аналогичен на </span><span class=Code><span lang=BG>while</span></span><span
+lang=BG> цикъла, само че при него проверката на булевия израз се прави след
+изпълнението на операциите в цикъла. Този тип цикли се наричат – цикли с условие
+в края (post-test loop).</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ето как изглежда
+един </span><span class=Code><span lang=BG>do</span></span>-<span class=Code><span
+lang=BG>while</span></span><span lang=BG> </span><span lang=BG>цикъл:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>do</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  statements;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal style='margin-top:0in'><b><span lang=BG style='font-family:
+  "Courier New";color:#7F0055'>while</span></b><span lang=BG style='font-family:
+  "Courier New";color:black'> (expression);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Схематично </span><span
+class=Code><span lang=BG>do</span></span>-<span class=Code><span lang=BG>while</span></span><span
+lang=BG> </span><span lang=BG>циклите се изпълняват по следната логическа
+схема:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG><img
+border=0 width=158 height=202
+src="image056.jpg"></span></p>
+
+<h3><a name="_Toc218195691"><span lang=BG>Използване на do-while цикли</span></a></h3>
+
+<p class=MsoNormal><b><span lang=BG>Do-while</span></b><span lang=BG> цикълът
+се използва, когато искаме да си гарантираме, че поредицата от операции в него
+ще бъде многократно, но май-малко веднъж.</span></p>
+
+<h3><a name="_Toc218195692"><span lang=BG>Изчисляване на факториел – пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В този пример
+отново ще изчислим факториела на дадено число </span><span class=Code><span
+lang=BG>n</span></span><span lang=BG>, но този път вместо безкраен </span><span
+class=Code><span lang=BG>while</span></span><span lang=BG> цикъл, ще използваме
+</span><span class=Code><span lang=BG>do-while</span></span><span lang=BG>.
+Логиката е аналогична на тази в предния пример. Умножаваме всяко следващо число
+с произведението на предходните и го намаляваме с 1, след което проверяваме
+дали то все още е по-голямо от 0. Накрая отпечатваме получения резултат на
+конзолата.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner input = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> Scanner(System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>in</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.print(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;n = &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> n = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>long</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> factorial = 1;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>do</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Multiply to become next value of factorial</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  factorial *= n;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Decrement n to get next number</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  n--;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>} </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>while</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (n &gt; 0); </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Check the loop condition</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>System.</span><i><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>out</span></i><span lang=BG style='font-family:
+  "Courier New";color:black'>.println(</span><span lang=BG style='font-family:
+  "Courier New";color:#2A00FF'>&quot;n! = &quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'> + factorial);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ето го и резултатът
+от изпълнение на горния пример при </span>n=7<span lang=BG>:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr style='height:13.05pt'>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt;height:13.05pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>n
+  = 7</span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span class=Code><span lang=BG
+  style='font-weight:normal'>n! = 5040</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Нека дадем още един, по-интересен, пример.</span></p>
+
+<h3><a name="_Toc218195693"><span lang=BG>Произведение в интервала [N...M] –
+пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В този пример ще
+намерим произведението на всички числа в интервала [N…M]. Началната стойност на
+интервала я присвояваме на целочислената променлива </span><span class=Code><span
+lang=BG>num</span></span><span lang=BG>. Влизайки в цикъла първо ще пресмятаме
+произведението на числата до </span><span class=Code><span lang=BG>num</span></span><span
+lang=BG>. Това произведение ще записваме в </span><span class=Code><span
+lang=BG>product</span></span><span lang=BG>, след което </span><span
+class=Code><span lang=BG>num</span></span><span lang=BG> ще го увеличаваме с 1
+и цикълът ще се изпълнява докато </span><span class=Code><span lang=BG>num</span></span><span
+lang=BG> не стане равно на </span><span class=Code><span lang=BG>m</span></span><span
+lang=BG>.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner input = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> Scanner(System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>in</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// </span><span style='font-family:"Courier New";color:#006600'>Read</span><span
+  lang=BG style='font-family:"Courier New";color:#006600'> the end values of
+  the interval n...m from the console</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> n = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> m = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> num = n;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>long</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> product = 1;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>do</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  product *= num;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  num++;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>} </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>while</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (num &lt;= m);</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>System.</span><i><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>out</span></i><span lang=BG style='font-family:
+  "Courier New";color:black'>.println(</span><span lang=BG style='font-family:
+  "Courier New";color:#2A00FF'>&quot;product[n..m] = &quot;</span><span
+  lang=BG style='font-family:"Courier New";color:black'> + product);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Като резултат ще
+получим нещо такова:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>2</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>6</span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span class=Code><span lang=BG
+  style='font-weight:normal'>product[n..m] = 720</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="_Toc218195694"><span lang=BG>Конструкция за цикъл for</span></a></h2>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span class=Code><span lang=BG
+style='font-weight:normal'>For</span></span><b>-<span lang=BG>циклите</span></b><span
+lang=BG> са малко по-сложни от </span><span class=Code><span lang=BG>while</span></span><span
+lang=BG> </span><span lang=BG>и </span><span class=Code><span lang=BG>do</span></span>-<span
+class=Code><span lang=BG>while</span></span><span lang=BG> </span><span
+lang=BG>циклите, но за сметка на това могат да решават по-сложно задачи с
+по-малко писане на код. Характерната за </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG>-цикъла структура е следната:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span class=Code><span lang=BG style='font-weight:
+  normal'> (initialization; test; update) {</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><span class=Code><span lang=BG style='font-weight:normal'>statements;</span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span class=Code><span lang=BG
+  style='font-weight:normal'>}</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Тя се състои от инициализационна част за
+брояча, булево условие, израз за обновяване на брояча и тяло на цикъла. Броячът
+на </span><span class=Code><span lang=BG>for</span></span><span lang=BG> цикъла
+го отличава от другите цикли. Броят на итерациите на този цикъл най-често се
+знае още преди да започне изпълнението му.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Безкраен цикъл
+(infinite loop) чрез оператора </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG> се конструира по следния начин:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span class=Code><span lang=BG style='font-weight:
+  normal'> ( ; ; ) {</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><span class=Code><span lang=BG style='font-weight:normal'>statements;</span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span class=Code><span lang=BG
+  style='font-weight:normal'>}</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Безкраен цикъл означава цикъл, който никога не
+завършва. Обикновено в нашите програми нямаме нужда от безкраен цикъл, освен,
+ако някъде в тялото му не използваме </span><span class=Code><span lang=BG>break</span></span>,
+<span lang=BG>за да завършим цикъла преждевременно.</span></p>
+
+<h3><a name="_Toc218195695"><span lang=BG>Инициализация на for цикъла</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'>For-<span lang=BG>циклите могат
+да имат инициализационен блок:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span class=Code><span lang=BG style='font-weight:
+  normal'> </span></span><span class=Code><span lang=BG style='font-weight:
+  normal'>(</span></span><span style='font-family:"Courier New";color:#7F0055'>int
+  </span><span class=Code><span lang=BG>num = 0;</span></span><span class=Code><span
+  lang=BG style='font-weight:normal'> ...; ...) {</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>   
+  </span></span><span lang=BG style='font-family:"Courier New";color:#006600'>//
+  </span><span style='font-family:"Courier New";color:#006600'>Can use num here</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>}</span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:#006600'>// </span><span style='font-family:"Courier New";
+  color:#006600'>Cannot use num here</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Той се изпълнява веднъж, точно преди влизане в
+цикъла. Обикновено се използва за деклариране на променливата-брояч. Тази
+променлива е &quot;видима&quot; и може да се използва само в рамките на цикъла.</span></p>
+
+<h3><a name="_Toc218195696"><span lang=BG>Условие на for цикъла</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'>For-<span lang=BG>циклите могат
+да имат условие за повторение:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span class=Code><span lang=BG style='font-weight:
+  normal'> </span></span><span class=Code><span lang=BG style='font-weight:
+  normal'>(</span></span><b><span style='font-family:"Courier New";color:#7F0055'>int
+  </span></b><span class=Code><span lang=BG style='font-weight:normal'>num = 0;
+  </span></span><span class=Code><span lang=BG>num &lt; 10;</span></span><span
+  class=Code><span lang=BG style='font-weight:normal'> ...) {</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>   
+  </span></span><span lang=BG style='font-family:"Courier New";color:#006600'>//
+  </span><span style='font-family:"Courier New";color:#006600'>Can use num here</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>}</span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:#006600'>// </span><span style='font-family:"Courier New";
+  color:#006600'>Cannot use num here</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>То се изпълнява веднъж, преди всяка итерация
+на цикъла. При резултат </span><span class=Code><span lang=BG>true</span></span><span
+lang=BG> се изпълнява тялото на цикъла, а при </span><span class=Code><span
+lang=BG>false</span></span><span lang=BG> то се пропуска и се преминава към
+останалата част от програмата. Използва се като <b>loop condition</b> (условие
+на цикъла).</span></p>
+
+<h3><a name="_Toc218195697"><span lang=BG>Обновяване на водещата променлива</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Последната част от
+един </span>for-<span lang=BG>цикъл съдържа код, който обновява водещата променлива:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span class=Code><span lang=BG style='font-weight:
+  normal'> </span></span><span class=Code><span lang=BG style='font-weight:
+  normal'>(</span></span><b><span style='font-family:"Courier New";color:#7F0055'>int
+  </span></b><span class=Code><span lang=BG style='font-weight:normal'>num = 0;
+  num &lt; 10; </span></span><span class=Code><span lang=BG>num++</span></span><span
+  class=Code><span lang=BG style='font-weight:normal'>) {</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>   
+  </span></span><span lang=BG style='font-family:"Courier New";color:#006600'>//
+  </span><span style='font-family:"Courier New";color:#006600'>Can use num here</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>}</span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:#006600'>// </span><span style='font-family:"Courier New";
+  color:#006600'>Cannot use num here</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Той се изпълнява след като е приключило
+изпълнението на тялото на цикъла. Най-често се използва за обновяване
+стойността на брояча.</span></p>
+
+<h3><a name="_Toc218195698"><span lang=BG>Изчисляване на N^M – пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ще напишем
+програма, която пресмята m-тата степен на число n. Ще използваме </span><span
+class=Code><span lang=BG>for</span></span><span lang=BG>-цикъл. Инициализираме
+променливата-брояч (</span><span class=Code><span lang=BG>int i = 0</span></span><span
+lang=BG>). Определяме условието на цикъла – </span><span class=Code><span
+lang=BG>i &lt; m</span></span><span lang=BG>, така цикълът се изпълнява от </span><span
+class=Code><span lang=BG>0</span></span><span lang=BG> до </span><span
+class=Code><span lang=BG>m-1</span></span><span lang=BG> или точно </span><span
+class=Code><span lang=BG>m</span></span><span lang=BG> пъти. При всяко
+изпълнение на цикъла </span><span class=Code><span lang=BG>n</span></span><span
+lang=BG> ще се вдига на поредната степен и накрая ще принтираме резултата, за
+да видим правилно ли работи програмата.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner input = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> Scanner(System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>in</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>); </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.print(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;n=&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> n = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.print(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;m=&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> m = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>long</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> result = 1;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i = 0; i &lt; m; i++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  result *= n;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>System.</span><i><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>out</span></i><span lang=BG style='font-family:
+  "Courier New";color:black'>.println(</span><span lang=BG style='font-family:
+  "Courier New";color:#2A00FF'>&quot;n^m = &quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'> + result);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Ето как изглежда изходът от програмата при n=2
+и m=10:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG><img
+border=0 width=310 height=96
+src="image057.jpg"></span></p>
+
+<h3><a name="_Toc218195699">For-<span lang=BG>цикъл с няколко променливи</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>С конструкцията за
+</span><span class=Code><span lang=BG>for</span></span>-<span lang=BG>цикъл
+можем да ползваме едновременно няколко променливи. Ето един пример, в който
+имаме два брояча. Единият се движи от 1 нагоре, а другият се движи от 10
+надолу:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> small=1, large=10; small&lt;large; small++, large--) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;%d %d\n&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>, small, large);</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Условието за
+прекратяване на цикъла е застъпване на броячите. В крайна сметка се получава
+следния резултат:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>1 10</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>2 9</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>3 8</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>4 7</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>5 6</span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc218195700"><span lang=BG>Оператор continue</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Операторът </span><span
+class=Code><span lang=BG>continue</span></span><span lang=BG> спира текущата
+итерация на най-вътрешния цикъл, но не излиза от него. С помощта на следващия
+пример ще разгледаме как точно се използва този оператор.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ще намерим сумата
+на всички нечетни естествени числа в интервала [1...n], който не се делят на 7.
+Ще използваме </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG>-цикъл. При инициализиране на променливата ще и зададем стойност 1, тъй
+като това е първото нечетно естествено число в интервала [1...n]. Ще
+проверяваме дали </span><span class=Code><span lang=BG>i</span></span><span
+lang=BG> е все още в интервала (</span><span class=Code><span lang=BG>i &lt;= n</span></span><span
+lang=BG>). В израза за обновяване на променливата ще я увеличаваме с 2, за да
+работим само с нечетни числа. В тялото на цикъла ще правим проверка дали
+числото се дели на 7. Ако това е изпълнено извикваме оператора </span><span
+class=Code><span lang=BG>continue</span></span><span lang=BG>, който ще
+прекрати изпълнението на цикъла (няма да добави текущото число към сумата). Ще
+се извърши обновяване на променливата и ще продължи изпълнението на цикъла. Ако
+не е изпълнено ще премине към обновяване на сумата с числото.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner input = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> Scanner(System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>in</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> n = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> sum = 0;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i = 1; i &lt;= n; i += 2) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>if</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (i % 7 == 0) </span><span style='font-family:"Courier New";
+  color:black'>{</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>continue</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><span style='font-family:"Courier New";color:black'>}</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  sum += i;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>System.</span><i><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>out</span></i><span lang=BG style='font-family:
+  "Courier New";color:black'>.println(</span><span lang=BG style='font-family:
+  "Courier New";color:#2A00FF'>&quot;sum = &quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'> + sum);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Резултатът от
+примера при </span>n=26 <span lang=BG>е</span><span lang=BG> </span><span
+lang=BG>следният:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>26</span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span class=Code><span lang=BG
+  style='font-weight:normal'>sum = 141</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="_Toc218195701"><span lang=BG>Разширена конструкция за цикъл for</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>От версия 5 на </span>Java <span lang=BG>за
+удобство на програмистите беше добавена още една конструкция за цикъл, т.нар. </span><span
+class=Code><span lang=BG>foreach</span></span><span lang=BG> </span><span
+lang=BG>конструкция, наричана още разширен </span><span class=Code><span
+lang=BG>for</span></span>-<span lang=BG>цикъл. Тази конструкция служи за
+обхождане на всички елементи на даден масив, списък или колекция от елементи.
+Подробно с масивите ще се запознаем в темата &quot;<a href="#_Глава_7._Масиви">Масиви</a>&quot;,
+но за момента можем да си представяме един масив като последователност от числа
+или други елементи.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ето как изглежда
+един разширен </span><span class=Code>for</span>-<span lang=BG>цикъл:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (variable : collection) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  statements;</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Както виждате, той е значително по-прост от
+стандартния </span><span class=Code><span lang=BG>for</span></span>-<span
+lang=BG>цикъл и затова много-често се предпочита от програмистите, тъй като
+спестява писане.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ето един пример, в
+който ще видите разширения </span><span class=Code><span lang=BG>for</span></span>-<span
+lang=BG>цикъл в действие:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[] numbers = {2, 3, 5, 7, 11, 13, 17, 19};</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i : numbers) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;%d &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, i);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>String[] towns = {</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Sofia&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Plovdiv&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Varna&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Bourgas&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>};</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (String town: towns) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;%s &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, town);</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В примера се
+създава масив от числа и след това те се обхождат с разширения </span>for-<span
+lang=BG>цикъл и се отпечатват на конзолата. След това се създава масив от имена
+на градове (символни низове) и по същия начин се отпечатват на конзолата. Ето
+какъв е резултатът от примера:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>2
+  3 5 7 11 13 17 19 </span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span class=Code><span lang=BG
+  style='font-weight:normal'>Sofia Plovdiv Varna Bourgas</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="_Toc218195702"><span lang=BG>Вложени цикли</span></a></h2>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><b><span lang=BG>Вложените цикли</span></b><span
+lang=BG> представляват конструкция от няколко цикъла един в друг. Най-вътрешния
+цикъл се изпълнява най-много пъти. В примерната конструкция по долу ще разгледаме
+пример за вложен цикъл. След инициализация на първия </span><span class=Code><span
+lang=BG>for</span></span><span lang=BG> цикъл ще започне да се изпълнява
+втория. Ще се инициализира променливата му, ще се провери условието и ще се
+изпълнят изразите в него, след което ще се обнови променливата и ще продължи
+изпълнението на този цикъл, докато условието му не върне </span><span
+class=Code><span lang=BG>false</span></span><span lang=BG>. В този случай ще се
+върне в първия </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG> цикъл, ще се извърши обновяване на неговата променлива и отново ще
+бъде изпълнен целия втори цикъл. Обикновено 2 </span><span class=Code><span
+lang=BG>for</span></span><span lang=BG> цикъла се използват за манипулация на
+двумерни масиви. Вложените цикли, използвани необмислено, могат да влошат
+производителността на програмата.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (initialization; test; update) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG>    </span><b><span lang=BG
+  style='font-family:"Courier New";color:#7F0055'>for</span></b><span lang=BG
+  style='font-family:"Courier New";color:black'> (initialization; test; update)
+  {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG>        </span><span lang=BG
+  style='font-family:"Courier New";color:black'>statements;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG>    </span><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG>    </span><span lang=BG style='font-family:
+  "Courier New";color:black'>…</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc218195703"></a><a name="_Отпечатване_на_триъгълник"></a><span
+lang=BG>Отпечатване на триъгълник – пример</span></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Нека си поставим следната
+задача: по дадено число </span><span class=Code><span lang=BG>n</span></span><span
+lang=BG> </span><span lang=BG>да отпечатаме на конзолата триъгълник с </span><span
+class=Code><span lang=BG>n</span></span><span lang=BG> на брой реда, изглеждащ по
+следния начин:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'><span class=Code><span lang=BG>1</span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span class=Code><span lang=BG>1 2</span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span class=Code><span lang=BG>1 2
+  3</span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span class=Code><span lang=BG>. .
+  .</span></span></p>
+  <p class=MsoNormal style='margin-top:0in'><span class=Code><span lang=BG>1 2
+  3 . . . n</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Това ще направим с
+два </span><span class=Code><span lang=BG>for</span></span><span lang=BG>-цикъла.
+Външния ще ни обхожда редовете, а вътрешния – елементите в тях. Когато сме на
+първия ред, трябва да отпечатаме </span>&quot;<span lang=BG>1</span>&quot;<span
+lang=BG> (1 елемент, 1 итерация на вътрешния цикъл). На втория – </span>&quot;<span
+lang=BG>1 2</span>&quot;<span lang=BG> (2 елемента, 2 итерации). Виждаме, че
+има зависимост между реда, на който сме и броя на елементите, който ще
+отпечатваме. Това ни дава информация за определяне конструкцията на вътрешния
+цикъл:</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:28.4pt;text-indent:-14.2pt'><span lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>инициализираме променливата с 1 (първото число,
+което ще отпечатаме) =&gt; </span><span class=Code><span lang=BG>col</span></span><span
+lang=BG> = 1;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:28.4pt;text-indent:-14.2pt'><span lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>условието ни зависи от реда, на който сме. Той
+ограничава елементите =&gt; </span><span class=Code><span lang=BG>col</span></span><span
+lang=BG> &lt;= </span><span class=Code><span lang=BG>row</span></span><span
+lang=BG>;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:28.4pt;text-indent:-14.2pt'><span lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>обновяваме променливата увеличавайки я с 1.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>На практика трябва
+да направим един </span><span class=Code><span lang=BG>for</span></span>-<span
+lang=BG>цикъл (външен) от 1 до </span><span class=Code><span lang=BG>n</span></span><span
+lang=BG> (за редовете) и в него още един </span><span class=Code><span lang=BG>for</span></span>-<span
+lang=BG>цикъл (вътрешен</span>)<span lang=BG> за числата в текущия ред, който
+да е от 1 до номера на текущия ред. Външният цикъл ходи по редовете, а
+вътрешният – по всяка от колоните за текущия ред. В крайна сметка получаваме
+следния сорс код:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner input = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> Scanner(System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>in</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> n = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> row = 1; row &lt;= n; row++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> col = 1; col &lt;= row; col++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.print(col + </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot; &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println();</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Ако го изпълним, ще се убедим, че работи
+коректно. Ето как изглежда резултатът при n=7:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG><img
+border=0 width=339 height=181
+src="image058.jpg"></span></p>
+
+<h3><a name="_Toc218195704"><span lang=BG>Прости числа в даден интервал –
+пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Да разгледаме още
+един пример за вложени цикли. Поставяме си за цел да отпечатаме на конзолата
+всички прости числа в интервала [N, M]. Интервалът ще ограничим с </span><span
+class=Code><span lang=BG>for</span></span><span lang=BG>-цикъл, а за проверката
+за просто число ще използваме вложен </span><span class=Code><span lang=BG>while</span></span><span
+lang=BG> цикъл. Логиката, по която правим провер­ката за просто число, вече ни
+е позната. Във </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG>-цикъла инициализираме променливата да е равна на началната стойност на
+интервала, ще проверяваме при всяка итерация дали нейната стойност все още е в
+него и накрая ще увеличаваме с 1. След преминаване през </span><span
+class=Code><span lang=BG>while</span></span><span lang=BG> цикъла булевата
+променлива </span><span class=Code><span lang=BG>prime</span></span><span
+lang=BG> показва дали числото е просто или не. Това ще проверим с условния оператор
+</span><span class=Code><span lang=BG>if</span></span><span lang=BG> и при
+резултат </span><span class=Code><span lang=BG>true</span></span><span lang=BG>
+ще отпечатваме числото на конзолата. Ето как изглежда реализацията:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner input = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> Scanner(System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>in</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.print(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;n=&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> n = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.print(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;m=&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> m = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> num = n; num &lt;= m; num++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>boolean</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> prime = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>true</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> divider = 2;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> maxDivider = (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>) Math.<i>sqrt</i>(num);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>while</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (divider &lt;= maxDivider) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>if</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (num % divider == 0) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       prime = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>false</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>break</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     divider++;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>if</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (prime) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;%d &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, num);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Ако изпълним примера за n=3 и m=75 ще получим
+следния резултат:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG><img
+border=0 width=476 height=98
+src="image059.jpg"></span></p>
+
+<h3><a name="_Toc218195705"><span lang=BG>Щастливи числа – пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Нека разгледаме
+още един пример, с който ще покажем, че можем да влагаме и повече от два цикъла
+един в друг. Целта е да намерим и отпечатаме всички четирицифрени числа от вида
+ABCD, за които: A+B = C+D (наричаме ги щастливи числа). Това ще реализираме с
+помощта на четири </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG>-цикъла – за всяка цифра по един. Най-външния цикъл ще ни определя
+хилядните. Той ще започва от 1, а останалите от 0. Ще правим проверка, дали
+текущото ни число е щастливо, в най-вътрешния цикъл. Ако е така ще го
+отпечатваме на конзолата.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> a = 1; a &lt;= 9; a++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> b = 0; b &lt;= 9; b++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> c = 0; c &lt;= 9; c++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> d = 0; d &lt;= 9; d++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>          </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>if</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> ((a + b) == (c + d)) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>            System.</span><i><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>out</span></i><span lang=BG style='font-family:
+  "Courier New";color:black'>.printf(</span><span lang=BG style='font-family:
+  "Courier New";color:#2A00FF'>&quot;%d%d%d%d%n&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>, a, b, c, d);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>          }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Ето част от отпечатания резултат (целият е
+много дълъг):</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG><img
+border=0 width=339 height=178
+src="image060.jpg"></span></p>
+
+<h3><a name="_Toc218195706"><span lang=BG>ТОТО 6/49 – пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В този пример ще
+намерим всички възможни комбинации от тотото (6/49). Трябва да намерим и
+отпечатаме всички възможни извадки от 6 различни числа в интервала </span>[<span
+lang=BG>1...49</span>]<span lang=BG>. Ще използваме 6 </span><span class=Code><span
+lang=BG>for</span></span><span lang=BG> цикъла. За разлика от предния пример, има
+изискване, че числата не могат да се повтарят. Затова вътрешните цикли няма да
+започват от 1, а от числото, до което е стигнал предходния цикъл + 1. За да
+избегнем повторенията ще се стремим всяко следващо число да е по-голямо от
+предходното. Първият цикъл ще трябва да го въртим до 44 (а не до 49), вторият
+до 45, и т.н. Последният цикъл ще е до 49. Ако въртим всички цикли до 49, ще
+получим съвпадащи числа в някои от комбинациите. По същата причина всеки
+следващ цикъл започва от брояча на предходния + 1. Нека да видим какво ще се
+получи:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i1 = 1; i1 &lt;= 44; i1++)</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i2 = i1 + 1; i2 &lt;= 45; i2++)</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i3 = i2 + 1; i3 &lt;= 46; i3++)</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i4 = i3 + 1; i4 &lt;= 47; i4++)</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>          </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i5 = i4 + 1; i5 &lt;= 48; i5++)</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>            </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i6 = i5 + 1; i6 &lt;= 49; i6++)</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>              System.</span><i><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>out</span></i><span lang=BG style='font-family:
+  "Courier New";color:black'>.printf(</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>                 </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;%d %d %d %d %d %d%n&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>,</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>                 i1, i2, i3, i4, i5, i6);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Всичко изглежда правилно. Да стартираме
+програмата. Изглежда, че работи, но има един проблем – комбинациите са прекален
+много и програмата не завършва (едва ли някой ще я изчака). Това е в реда на
+нещата и е една от причините да има ТОТО 6/49 – комбинациите наистина са много.</span></p>
+
+<h2><a name="_Toc218195707"><span lang=BG>Упражнения</span></a></h2>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която отпечатва на конзолата числата от 1 до N.
+Числото N се чете от стандартния вход.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която отпечатва на конзолата числата от 1 до N,
+които не се делят на 3 и 7. Числото N се чете от стандартния вход.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която чете от конзолата поредица от цели числа и
+отпечатва най-малкото и най-голямото от тях.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която отпечатва всички възможни карти от стандартно
+тесте без джокери (имаме 52 карти: 4 бои по 13 карти).</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която чете от конзолата числото N и отпечатва сумата
+на първите N члена от редицата на Фибоначи: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,
+55, 89, 144, 233, 377, ...</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която пресмята N!/K! за дадени N и K (1&lt;K&lt;N).</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която пресмята N!*K!/(N-K)! за дадени N и K.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която за дадено цяло число N, пресмята сумата: <sub><img
+border=0 width=185 height=33
+src="image061.gif"></sub></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>В комбинаториката числата на Каталан (Catalan’s numbers) се изчисляват
+по следната формула: <sub><img border=0 width=180 height=48
+src="image062.gif"></sub>,
+за n &#8805; 0. Напишете програма, която изчислява N-тото число на Каталан за
+дадено N.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>10.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Напишете
+програма, която чете от конзолата положително цяло число N (N &lt; 20) и
+отпечатва матрица с числа като на фигурата по-долу:</span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:17.85pt'><span lang=BG>                          <b>N = 3     </b>               <b>N
+= 4</b></span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0 width=276
+ style='width:207.0pt;margin-left:1.45in;border-collapse:collapse'>
+ <tr style='height:74.55pt'>
+  <td width=120 valign=top style='width:1.25in;padding:0in 5.4pt 0in 5.4pt;
+  height:74.55pt'>
+  <table class=Heading6Char border=1 cellspacing=0 cellpadding=0 align=left
+   style='border-collapse:collapse;border:none;margin-left:4.8pt;margin-right:
+   4.8pt'>
+   <tr style='height:14.2pt'>
+    <td width=19 valign=top style='width:14.2pt;border:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>1</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border:solid windowtext 1.0pt;
+    border-left:none;padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>2</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border:solid windowtext 1.0pt;
+    border-left:none;padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>3</span></p>
+    </td>
+   </tr>
+   <tr style='height:14.2pt'>
+    <td width=19 valign=top style='width:14.2pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>2</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>3</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>4</span></p>
+    </td>
+   </tr>
+   <tr style='height:14.2pt'>
+    <td width=19 valign=top style='width:14.2pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>3</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>4</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>5</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin-bottom:6.0pt'></p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;padding:0in 5.4pt 0in 5.4pt;
+  height:74.55pt'>
+  <table class=Heading6Char border=1 cellspacing=0 cellpadding=0 align=left
+   style='border-collapse:collapse;border:none;margin-left:4.8pt;margin-right:
+   4.8pt'>
+   <tr style='height:14.2pt'>
+    <td width=19 valign=top style='width:14.2pt;border:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>1</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border:solid windowtext 1.0pt;
+    border-left:none;padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>2</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border:solid windowtext 1.0pt;
+    border-left:none;padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>3</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border:solid windowtext 1.0pt;
+    border-left:none;padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>4</span></p>
+    </td>
+   </tr>
+   <tr style='height:14.2pt'>
+    <td width=19 valign=top style='width:14.2pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>2</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>3</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>4</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>5</span></p>
+    </td>
+   </tr>
+   <tr style='height:14.2pt'>
+    <td width=19 valign=top style='width:14.2pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>3</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>4</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>5</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>6</span></p>
+    </td>
+   </tr>
+   <tr style='height:14.2pt'>
+    <td width=19 valign=top style='width:14.2pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>4</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>5</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>6</span></p>
+    </td>
+    <td width=19 valign=top style='width:14.2pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0in 5.4pt 0in 5.4pt;height:14.2pt'>
+    <p class=MsoNormal align=center style='margin-top:2.0pt;margin-right:0in;
+    margin-bottom:2.0pt;margin-left:0in;text-align:center'><span lang=BG>7</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin-bottom:6.0pt'></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>11.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Напишете
+програма, която пресмята на колко нули завършва факто­риела на дадено число.
+Примери:</span></p>
+
+<p class=MsoNormal><span lang=BG>        N = 10 -&gt; N! = 36288<b>00</b> -&gt;
+2</span></p>
+
+<p class=MsoNormal><span lang=BG>        N = 20 -&gt; N! = 243290200817664<b>0000</b>
+-&gt; 4</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>12.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Напишете
+програма, която преобразува дадено число от десетична в двоична бройна система.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>13.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Напишете
+програма, която преобразува дадено число от двоична в десетична бройна система.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>14.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Напишете
+програма, която преобразува дадено число от десетична в шестнайсетична бройна
+система.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>15.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Напишете
+програма, която преобразува дадено число от шестнайсе­тична в десетична бройна
+система.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>16.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Напишете
+програма, която по дадено число N отпечатва случайно число между 1 и N.</span></p>
+
+<h2><a name="_Toc218195708"><span lang=BG>Решения и упътвания</span></a></h2>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Използвайте </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG> цикъл.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Използвайте </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG> цикъл</span><span lang=BG> </span><span lang=BG>и оператора </span><span
+class=Code><span lang=BG>%</span></span><span lang=BG> за намиране на остатък
+при целочислено деление.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Първо прочетете броя числа. След това ги въведете с един </span><span
+class=Code><span lang=BG>for</span></span><span lang=BG> цикъл. Докато
+въвеждате всяко следващо число запазвайте в две променливи най-малкото и
+най-голямото число до момента.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Номерирайте картите от 2 до 14 (тези числа ще съответстват на картите
+от 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A). Номерирайте боите от 1 до 4 (1 -
+спатия, 2 – каро, 3 – купа, 4 – пика). Сега вече можете да завъртите 2 вложени
+цикъла и да отпечатате всяка от картите.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Числата на Фибоначи започват от 0 и 1, като всяко следващо се получава
+като сума от предходните две.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Умножете числата от K+1 до N.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Вариант за решение е поотделно да пресмятате всеки от факто­риелите и
+накрая да извършвате съответните операции с резултатите. Помислете как можете
+да оптимизирате пресмятанията, за да не смятате прекалено много факториели! При
+обикновени дроби, съставени от факто­риели има много възможности за съкращение
+на еднакви множители в числителя и знаменателя.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Погледнете предходната задача.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Погледнете предходната задача.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>10.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Трябва да
+използвате два вложени цикъла, по подобие на <a
+href="#_Отпечатване_на_триъгълник">задачата с триъгълника</a>.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>11.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Броят на
+нулите зависи от това, колко пъти числото 5 е делител на факториела.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>12.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Прочетете в
+Уикипедия какво представляват бройните системи: <a
+href="http://en.wikipedia.org/wiki/Numeral_system">http://en.wikipedia.org/wiki/Numeral_system</a>.
+След това помислете как можете да преминавате от десетична в друга бройна
+система. Помис­лете и за обратното – преминаване от друга бройна система към
+десе­тична. Ако се затрудните, вижте главата &quot;<a href="#_Глава_8._Бройни">Бройни
+системи</a>&quot;.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>13.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Погледнете
+предходната задача.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>14.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Погледнете
+предходната задача.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>15.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Погледнете
+предходната задача.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>16.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Потърсете в
+Интернет информация за класа</span><span lang=BG> </span><span class=Code><span
+lang=BG>java.util.Random</span></span>.</p>
+
+<p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+
+</div>
+
+<span style='font-size:10.0pt;font-family:"Verdana","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+</div>
+
+</body>
+
+</html>

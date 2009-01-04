@@ -1,0 +1,3924 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<title>Introduction to Programming with Java Book - Chapter 0</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 5 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"Tms Rmn";
+	panose-1:2 2 6 3 4 5 5 2 3 4;}
+@font-face
+	{font-family:Helv;
+	panose-1:2 11 6 4 2 2 2 3 2 4;}
+@font-face
+	{font-family:"New York";
+	panose-1:2 4 5 3 6 5 6 2 3 4;}
+@font-face
+	{font-family:System;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 1 6 1 0 1 1 1 1 1;}
+@font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:Dotum;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:SimHei;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:MingLiU;
+	panose-1:2 1 6 9 0 1 1 1 1 1;}
+@font-face
+	{font-family:Mincho;
+	panose-1:2 2 6 9 4 3 5 8 3 5;}
+@font-face
+	{font-family:Gulim;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Angsana New";
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:"Cordia New";
+	panose-1:2 11 3 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Latha;
+	panose-1:2 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sylfaen;
+	panose-1:1 10 5 2 5 3 6 3 3 3;}
+@font-face
+	{font-family:Vrinda;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Raavi;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Shruti;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sendnya;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Gautami;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Tunga;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Estrangelo Edessa";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Arial CYR";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:SunSans-Regular;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:SAfon;}
+@font-face
+	{font-family:"Courier New CYR";
+	panose-1:2 7 3 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:StarSymbol;}
+@font-face
+	{font-family:OpenSymbol;
+	panose-1:5 1 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sawasdee;}
+@font-face
+	{font-family:Marlett;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;}
+@font-face
+	{font-family:"Lucida Sans Unicode";
+	panose-1:2 11 6 2 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
+@font-face
+	{font-family:Impact;
+	panose-1:2 11 8 6 3 9 2 5 2 4;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;}
+@font-face
+	{font-family:"Franklin Gothic Medium";
+	panose-1:2 11 6 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Palatino Linotype";
+	panose-1:2 4 5 2 5 5 5 3 3 4;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Webdings;
+	panose-1:5 3 1 2 1 5 9 6 7 3;}
+@font-face
+	{font-family:"MV Boli";}
+@font-face
+	{font-family:"Microsoft Sans Serif";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Academy;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Antiqua;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Baltica;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Bookvar;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Ariel";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Courier";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Dutch Roman";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Garamond";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Garamond Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Kursiv";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Palatia";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Roman";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Roman Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Times";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Times Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Domkrat;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Geneva;
+	panose-1:2 2 226 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Hebar;
+	panose-1:2 11 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Izhitsa;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Kaliakra;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Karina;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:KarinaBlack;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:OldCyr;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Opal;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:OpalB;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:TimesNakov;
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:Timok;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:TmsCyr;
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:Zhikaryov;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Agency FB";
+	panose-1:2 11 5 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Algerian;
+	panose-1:4 2 7 5 4 10 2 6 7 2;}
+@font-face
+	{font-family:"Arial Rounded MT Bold";
+	panose-1:2 15 7 4 3 5 4 3 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Baskerville Old Face";
+	panose-1:2 2 6 2 8 5 5 2 3 3;}
+@font-face
+	{font-family:"Bauhaus 93";
+	panose-1:4 3 9 5 2 11 2 2 12 2;}
+@font-face
+	{font-family:"Bell MT";
+	panose-1:2 2 5 3 6 3 5 2 3 3;}
+@font-face
+	{font-family:"Berlin Sans FB";
+	panose-1:2 14 6 2 2 5 2 2 3 6;}
+@font-face
+	{font-family:"Bernard MT Condensed";
+	panose-1:2 5 8 6 6 9 5 2 4 4;}
+@font-face
+	{font-family:"Blackadder ITC";
+	panose-1:4 2 5 5 5 16 7 2 13 2;}
+@font-face
+	{font-family:"Bodoni MT";
+	panose-1:2 7 6 3 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Black";
+	panose-1:2 7 10 3 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Condensed";
+	panose-1:2 7 6 6 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Poster Compressed";
+	panose-1:2 7 7 6 8 6 1 5 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+@font-face
+	{font-family:"Bookman Old Style";
+	panose-1:2 5 6 4 5 5 5 2 2 4;}
+@font-face
+	{font-family:"Bradley Hand ITC";
+	panose-1:3 7 4 2 5 3 2 3 2 3;}
+@font-face
+	{font-family:"Britannic Bold";
+	panose-1:2 11 9 3 6 7 3 2 2 4;}
+@font-face
+	{font-family:Broadway;
+	panose-1:4 4 9 5 8 11 2 2 5 2;}
+@font-face
+	{font-family:"Brush Script MT";
+	panose-1:3 6 8 2 4 4 6 7 3 4;}
+@font-face
+	{font-family:"Californian FB";
+	panose-1:2 7 4 3 6 8 11 3 2 4;}
+@font-face
+	{font-family:"Calisto MT";
+	panose-1:2 4 6 3 5 5 5 3 3 4;}
+@font-face
+	{font-family:Castellar;
+	panose-1:2 10 4 2 6 4 6 1 3 1;}
+@font-face
+	{font-family:Centaur;
+	panose-1:2 3 5 4 5 2 5 2 3 4;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Century Schoolbook";
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Chiller;
+	panose-1:4 2 4 4 3 16 7 2 6 2;}
+@font-face
+	{font-family:"Colonna MT";
+	panose-1:4 2 8 5 6 2 2 3 2 3;}
+@font-face
+	{font-family:"Cooper Black";
+	panose-1:2 8 9 4 4 3 11 2 4 4;}
+@font-face
+	{font-family:"Copperplate Gothic Bold";
+	panose-1:2 14 7 5 2 2 6 2 4 4;}
+@font-face
+	{font-family:"Copperplate Gothic Light";
+	panose-1:2 14 5 7 2 2 6 2 4 4;}
+@font-face
+	{font-family:"Curlz MT";
+	panose-1:4 4 4 4 5 7 2 2 2 2;}
+@font-face
+	{font-family:"Edwardian Script ITC";
+	panose-1:3 3 3 2 4 7 7 13 8 4;}
+@font-face
+	{font-family:Elephant;
+	panose-1:2 2 9 4 9 5 5 2 3 3;}
+@font-face
+	{font-family:"Engravers MT";
+	panose-1:2 9 7 7 8 5 5 2 3 4;}
+@font-face
+	{font-family:"Eras Bold ITC";
+	panose-1:2 11 9 7 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Eras Demi ITC";
+	panose-1:2 11 8 5 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Eras Light ITC";
+	panose-1:2 11 4 2 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Eras Medium ITC";
+	panose-1:2 11 6 2 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Felix Titling";
+	panose-1:4 6 5 5 6 2 2 2 10 4;}
+@font-face
+	{font-family:"Footlight MT Light";
+	panose-1:2 4 6 2 6 3 10 2 3 4;}
+@font-face
+	{font-family:Forte;
+	panose-1:3 6 9 2 4 5 2 7 2 3;}
+@font-face
+	{font-family:"Franklin Gothic Book";
+	panose-1:2 11 5 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Demi";
+	panose-1:2 11 7 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Demi Cond";
+	panose-1:2 11 7 6 3 4 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Heavy";
+	panose-1:2 11 9 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Medium Cond";
+	panose-1:2 11 6 6 3 4 2 2 2 4;}
+@font-face
+	{font-family:"Freestyle Script";
+	panose-1:3 8 4 2 3 2 5 11 4 4;}
+@font-face
+	{font-family:"French Script MT";
+	panose-1:3 2 4 2 4 6 7 4 6 5;}
+@font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;}
+@font-face
+	{font-family:Gigi;
+	panose-1:4 4 5 4 6 16 7 2 13 2;}
+@font-face
+	{font-family:"Gill Sans MT Ext Condensed Bold";
+	panose-1:2 11 9 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans MT";
+	panose-1:2 11 5 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans MT Condensed";
+	panose-1:2 11 5 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans Ultra Bold";
+	panose-1:2 11 10 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans Ultra Bold Condensed";
+	panose-1:2 11 10 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gloucester MT Extra Condensed";
+	panose-1:2 3 8 8 2 6 1 1 1 1;}
+@font-face
+	{font-family:"Goudy Old Style";
+	panose-1:2 2 5 2 5 3 5 2 3 3;}
+@font-face
+	{font-family:"Goudy Stout";
+	panose-1:2 2 9 4 7 3 11 2 4 1;}
+@font-face
+	{font-family:Haettenschweiler;
+	panose-1:2 11 7 6 4 9 2 6 2 4;}
+@font-face
+	{font-family:"Harlow Solid Italic";
+	panose-1:4 3 6 4 2 15 2 2 13 2;}
+@font-face
+	{font-family:Harrington;
+	panose-1:4 4 5 5 5 10 2 2 7 2;}
+@font-face
+	{font-family:"High Tower Text";
+	panose-1:2 4 5 2 5 5 6 3 3 3;}
+@font-face
+	{font-family:"Imprint MT Shadow";
+	panose-1:4 2 6 5 6 3 3 3 2 2;}
+@font-face
+	{font-family:Jokerman;
+	panose-1:4 9 6 5 6 13 6 2 7 2;}
+@font-face
+	{font-family:"Juice ITC";
+	panose-1:4 4 4 3 4 10 2 2 2 2;}
+@font-face
+	{font-family:"Kristen ITC";
+	panose-1:3 5 5 2 4 2 2 3 2 2;}
+@font-face
+	{font-family:"Kunstler Script";
+	panose-1:3 3 4 2 2 6 7 13 13 6;}
+@font-face
+	{font-family:"Lucida Bright";
+	panose-1:2 4 6 2 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Lucida Calligraphy";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"Lucida Fax";
+	panose-1:2 6 6 2 5 5 5 2 2 4;}
+@font-face
+	{font-family:"Lucida Handwriting";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"Lucida Sans";
+	panose-1:2 11 6 2 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Lucida Sans Typewriter";
+	panose-1:2 11 5 9 3 5 4 3 2 4;}
+@font-face
+	{font-family:"MS Outlook";
+	panose-1:5 1 1 0 1 0 0 0 0 0;}
+@font-face
+	{font-family:Magneto;
+	panose-1:4 3 8 5 5 8 2 2 13 2;}
+@font-face
+	{font-family:"Maiandra GD";
+	panose-1:2 14 5 2 3 3 8 2 2 4;}
+@font-face
+	{font-family:"Matura MT Script Capitals";
+	panose-1:3 2 8 2 6 6 2 7 2 2;}
+@font-face
+	{font-family:Mistral;
+	panose-1:3 9 7 2 3 4 7 2 4 3;}
+@font-face
+	{font-family:"Modern No\. 20";
+	panose-1:2 7 7 4 7 5 5 2 3 3;}
+@font-face
+	{font-family:"Monotype Corsiva";
+	panose-1:3 1 1 1 1 2 1 1 1 1;}
+@font-face
+	{font-family:"Niagara Engraved";
+	panose-1:4 2 5 2 7 7 3 3 2 2;}
+@font-face
+	{font-family:"Niagara Solid";
+	panose-1:4 2 5 2 7 7 2 2 2 2;}
+@font-face
+	{font-family:"OCR A Extended";
+	panose-1:2 1 5 9 2 1 2 1 3 3;}
+@font-face
+	{font-family:"Old English Text MT";
+	panose-1:3 4 9 2 4 5 8 3 8 6;}
+@font-face
+	{font-family:Onyx;
+	panose-1:4 5 6 2 8 7 2 2 2 3;}
+@font-face
+	{font-family:"Palace Script MT";
+	panose-1:3 3 3 2 2 6 7 12 11 5;}
+@font-face
+	{font-family:Papyrus;
+	panose-1:3 7 5 2 6 5 2 3 2 5;}
+@font-face
+	{font-family:Parchment;
+	panose-1:3 4 6 2 4 7 8 4 8 4;}
+@font-face
+	{font-family:Perpetua;
+	panose-1:2 2 5 2 6 4 1 2 3 3;}
+@font-face
+	{font-family:"Perpetua Titling MT";
+	panose-1:2 2 5 2 6 5 5 2 8 4;}
+@font-face
+	{font-family:Playbill;
+	panose-1:4 5 6 3 10 6 2 2 2 2;}
+@font-face
+	{font-family:"Poor Richard";
+	panose-1:2 8 5 2 5 5 5 2 7 2;}
+@font-face
+	{font-family:Pristina;
+	panose-1:3 6 4 2 4 4 6 8 2 4;}
+@font-face
+	{font-family:"Rage Italic";
+	panose-1:3 7 5 2 4 5 7 7 3 4;}
+@font-face
+	{font-family:Ravie;
+	panose-1:4 4 8 5 5 8 9 2 6 2;}
+@font-face
+	{font-family:Rockwell;
+	panose-1:2 6 6 3 2 2 5 2 4 3;}
+@font-face
+	{font-family:"Rockwell Condensed";
+	panose-1:2 6 6 3 5 4 5 2 1 4;}
+@font-face
+	{font-family:"Rockwell Extra Bold";
+	panose-1:2 6 9 3 4 5 5 2 4 3;}
+@font-face
+	{font-family:"Informal Roman";
+	panose-1:3 6 4 2 3 4 6 11 2 4;}
+@font-face
+	{font-family:"Script MT Bold";
+	panose-1:3 4 6 2 4 6 7 8 9 4;}
+@font-face
+	{font-family:"Showcard Gothic";
+	panose-1:4 2 9 4 2 1 2 2 6 4;}
+@font-face
+	{font-family:"Snap ITC";
+	panose-1:4 4 10 7 6 10 2 2 2 2;}
+@font-face
+	{font-family:Stencil;
+	panose-1:4 4 9 5 13 8 2 2 4 4;}
+@font-face
+	{font-family:"Tw Cen MT";
+	panose-1:2 11 6 2 2 1 4 2 6 3;}
+@font-face
+	{font-family:"Tw Cen MT Condensed";
+	panose-1:2 11 6 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Tempus Sans ITC";
+	panose-1:4 2 4 4 3 13 7 2 2 2;}
+@font-face
+	{font-family:"Viner Hand ITC";
+	panose-1:3 7 5 2 3 5 2 2 2 3;}
+@font-face
+	{font-family:Vivaldi;
+	panose-1:3 2 6 2 5 5 6 9 8 4;}
+@font-face
+	{font-family:"Vladimir Script";
+	panose-1:3 5 4 2 4 4 7 7 3 5;}
+@font-face
+	{font-family:"Wide Latin";
+	panose-1:2 10 10 7 5 5 5 2 4 4;}
+@font-face
+	{font-family:"Wingdings 2";
+	panose-1:5 2 1 2 1 5 7 7 7 7;}
+@font-face
+	{font-family:"Wingdings 3";
+	panose-1:5 4 1 2 1 8 7 7 7 7;}
+@font-face
+	{font-family:"Berlin Sans FB Demi";
+	panose-1:2 14 8 2 2 5 2 2 3 6;}
+@font-face
+	{font-family:"MS Reference Sans Serif";
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"MS Reference Specialty";
+	panose-1:5 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Tw Cen MT Condensed Extra Bold";
+	panose-1:2 11 8 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:"MT Extra";
+	panose-1:5 5 1 2 1 2 5 2 2 2;}
+@font-face
+	{font-family:"Bookshelf Symbol 7";
+	panose-1:5 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"OCR-B 10 BT";
+	panose-1:2 11 6 1 2 2 2 2 2 4;}
+@font-face
+	{font-family:"OCR-A BT";
+	panose-1:2 15 5 1 2 2 4 2 3 4;}
+@font-face
+	{font-family:"WP MultinationalA Courier";
+	panose-1:5 0 0 9 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalB Courier";
+	panose-1:2 6 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"WP MultinationalA Helve";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalB Helve";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalA Roman";
+	panose-1:2 2 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"WP MultinationalB Roman";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Nina;
+	panose-1:2 11 6 6 3 5 4 4 2 4;}
+@font-face
+	{font-family:sshlinedraw;
+	panose-1:0 0 4 9 0 0 0 0 0 0;}
+@font-face
+	{font-family:Candara;
+	panose-1:2 14 5 2 3 3 3 2 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Constantia;
+	panose-1:2 3 6 2 5 3 6 3 3 3;}
+@font-face
+	{font-family:Corbel;
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 6 6 2 2 2 3 2 4;}
+@font-face
+	{font-family:"DejaVu Sans";
+	panose-1:2 11 6 3 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Condensed";
+	panose-1:2 11 6 6 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Mono";
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Serif";
+	panose-1:2 6 6 3 5 6 5 2 2 4;}
+@font-face
+	{font-family:"DejaVu Serif Condensed";
+	panose-1:2 6 6 6 5 6 5 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Light";
+	panose-1:2 11 2 3 3 8 4 2 2 4;}
+@font-face
+	{font-family:"Myriad Pro";
+	panose-1:2 11 6 6 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Myriad Web";
+	panose-1:2 11 8 3 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Myriad Web Pro";
+	panose-1:2 11 5 3 3 4 3 2 2 4;}
+@font-face
+	{font-family:Myriade;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Myriad Web Pro Condensed";
+	panose-1:2 11 5 6 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Segoe Condensed";
+	panose-1:2 11 6 6 4 2 0 2 2 3;}
+@font-face
+	{font-family:ZWAdobeF;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@StarSymbol";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:.5in;
+	margin-left:0in;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:24.0pt;
+	font-family:"Verdana","sans-serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Verdana","sans-serif";}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Verdana","sans-serif";}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:9.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Verdana","sans-serif";}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:9.9pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:20.15pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:30.05pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:14.15pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-14.15pt;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	background:navy;
+	font-size:10.0pt;
+	font-family:"Tahoma","sans-serif";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Cambria","serif";
+	color:#243F60;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-family:"Cambria","serif";
+	color:#404040;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+span.Code
+	{mso-style-name:Code;
+	font-family:"Courier New";
+	font-weight:bold;}
+p.WarningMessage, li.WarningMessage, div.WarningMessage
+	{mso-style-name:"Warning Message";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+p.WarningMessageAfter6pt, li.WarningMessageAfter6pt, div.WarningMessageAfter6pt
+	{mso-style-name:"Warning Message + After\: 6 pt";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold}
+span.msoIns
+	{mso-style-name:"";
+	text-decoration:underline;
+	color:teal;}
+span.msoDel
+	{mso-style-name:"";
+	text-decoration:line-through;
+	color:red;}
+ /* Page Definitions */
+ @page Section1
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section1
+	{page:Section1;}
+@page Section2
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section2
+	{page:Section2;}
+@page Section3
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section3
+	{page:Section3;}
+@page Section4
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section4
+	{page:Section4;}
+@page Section5
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section5
+	{page:Section5;}
+@page Section6
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section6
+	{page:Section6;}
+@page Section7
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section7
+	{page:Section7;}
+@page Section8
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section8
+	{page:Section8;}
+@page Section9
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section9
+	{page:Section9;}
+@page Section10
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section10
+	{page:Section10;}
+@page Section11
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section11
+	{page:Section11;}
+@page Section12
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section12
+	{page:Section12;}
+@page Section13
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section13
+	{page:Section13;}
+@page Section14
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section14
+	{page:Section14;}
+@page Section15
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section15
+	{page:Section15;}
+@page Section16
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section16
+	{page:Section16;}
+@page Section17
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section17
+	{page:Section17;}
+@page Section18
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section18
+	{page:Section18;}
+@page Section19
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section19
+	{page:Section19;}
+@page Section20
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section20
+	{page:Section20;}
+@page Section21
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section21
+	{page:Section21;}
+@page Section22
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section22
+	{page:Section22;}
+@page Section23
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section23
+	{page:Section23;}
+@page Section24
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section24
+	{page:Section24;}
+@page Section25
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section25
+	{page:Section25;}
+@page Section26
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section26
+	{page:Section26;}
+@page Section27
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section27
+	{page:Section27;}
+@page Section28
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section28
+	{page:Section28;}
+@page Section29
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section29
+	{page:Section29;}
+@page Section30
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section30
+	{page:Section30;}
+@page Section31
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section31
+	{page:Section31;}
+@page Section32
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section32
+	{page:Section32;}
+@page Section33
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section33
+	{page:Section33;}
+@page Section34
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section34
+	{page:Section34;}
+@page Section35
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section35
+	{page:Section35;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section8>
+
+<h1><a name="_Toc218278538"></a><a name="_Toc218195453"><span lang=BG>Предговор</span></a></h1>
+
+<p class=MsoNormal><span lang=BG>Ако искате да се захванете сериозно с
+програмиране, попаднали сте на правилната книга. Наистина! Това е книгата, с
+която можете да направите първите си стъпки в програмирането. Тя ще ви даде
+солидни основи от знания, с които да поемете по дългия път на изучаване на
+съвременните езици за програмиране</span>,<span lang=BG> платформи и технологии
+за разработка на софтуер. Това е книга за програмиране, която учи на
+фундаменталните концепции за разработка на компютърни програми, които не са се
+променили съществено през последните 15 години.</span></p>
+
+<p class=MsoNormal><span lang=BG>Не се притес­нявайте да прочетете тази книга,
+дори Java да не е езикът, с който искате да се занимавате. С който и друг език
+да продължите по-нататък, знанията, които ще ви дадем, ще ви останат трайно,
+защото тази книга ще ви научи да мислите като програмисти. Ще ви покажем как да
+пишете програми, с които да решавате практически задачи по програми­ране, ще ви
+научим да измисляте и реализирате алгоритми и да ползвате различни структури от
+данни.</span></p>
+
+<p class=MsoNormal><span lang=BG>Колкото и да ви се струва невероятно, базовите
+принципи на писане на компютърни програми не са се променили съществено през
+последните 15 години. Езиците за програмиране се променят, технологиите се
+променят, средствата за разработка се развиват, но принципите на програмирането
+си остават едни и същи. Когато човек се научи да мисли алгоритмично, когато се
+научи инстинктивно да разделя проблемите на последовател­ност от стъпки и да ги
+решава, когато се научи да подбира подходящи структури от данни и да пише
+качествен програмен код, тогава той става програмист. Когато придобиете тези
+умения, лесно можете да научите нови езици и различни технологии, като уеб
+програмиране, бази от данни, </span>HTML, XML, SQL и <span lang=BG>още стотици
+други.</span></p>
+
+<p class=MsoNormal><span lang=BG>Тази книга е именно за това да ви научи да
+мислите като програмисти, а езикът Java е само един инструмент, който може да
+се замени с всеки друг съвременен език.</span><span lang=BG> </span><b><span
+lang=BG>Това е книга за програмиране, а не книга за </span></b><b>J<span
+lang=BG>ava!</span></b><span lang=BG> Тя ще ви даде концепции за разработка на
+компютърни програми, а не просто някакви знания за един конкретен програмен
+език.</span></p>
+
+<h2><a name="_Toc218195454"><span lang=BG>За кого е предназначена тази книга?</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Тази книга е за начинаещи. Тя е предназначена
+за всички, които не са се занимавали до момента сериозно с програмиране и имат
+желание да започнат. Тази книга започва от нулата и ви запознава стъпка по
+стъпка с основните на програмирането. Тя няма да ви научи на всичко, което ви
+трябва, за да станете софтуерен инженер и да работите в софтуерна фирма, но ще
+ви даде основи, върху които да градите технологични знания и умения, а с тях
+вече ще можете да превърнете програмирането в професия.</span></p>
+
+<p class=MsoNormal><span lang=BG>Ако никога не сте писали компютърни програми,
+не се притеснявайте. Винаги има първи път. В тази книга ще ви научим на
+програмиране от нулата. Не очакваме да знаете и можете нещо предварително.
+Достатъчно е да имате компютърна грамотност и желание да се занимавате с програ­миране.
+Останалото ще го прочетете от тази книга.</span></p>
+
+<p class=MsoNormal><span lang=BG>Ако вече можете да пишете прости програмки или
+сте учили програмиране в училище или в университета или сте писали програмен
+код с приятели, не си мислете, че знаете всичко! Прочетете тази книга и ще се
+убедите колко много неща сте пропуснали. Книгата е за начинаещи, но ви дава
+концепции, които дори някои програмисти с опит не владеят. По софтуер­ните
+фирми са се навъдили възмутително много самодейци, които, въп­реки, че
+програмират на заплата от години, не владеят основите на прог­рамирането и не
+знаят какво е хеш-таблица, как работи полиморфизмът и как се работи с битови
+операции. Не бъдете като тях! Научете първо основите на програмирането, а след
+това технологиите. Иначе рискувате да останете осакатени като програмисти за
+много дълго време (а може би и за цял живот).</span></p>
+
+<p class=MsoNormal><span lang=BG>Ако път имате опит с програмирането, за да
+прецените дали тази книга е за вас, я разгледайте подробно и вижте дали са ви
+познати всички теми, които сме разгледали. Обърнете особено внимание на главите
+&quot;<a href="#_Глава_16._Линейни">Структури от данни</a></span> (<span
+lang=BG><a href="#_Глава_16._Линейни">линейни</a>, <a href="#_Глава_17._Дървета">дървовидни</a>,
+<a href="#_Глава_18._Речници,">хеш-таблици</a>)&quot;, &quot;<a
+href="#_Глава_20._Принципи">Принципи на обектно-ориентираното програми­ране</a>&quot;,
+&quot;<a href="#_Глава_22._Как">Как да решаваме задачи по програми­ране</a>?&quot;
+и &quot;<a href="#_Глава_21._Качествен">Качествен програмен код</a>&quot;.
+Много е вероятно дори ако имате няколко години опит, да не владеете добре
+работата със структури от данни, концепциите на обектно-ориентираното
+програмиране (включи­телно UML</span> и<span lang=BG> design patterns) и да не
+познавате добрите практики за писане на качествен програмен код. Това са много
+важни теми, които не се срещат във всяка книга за програмиране!</span></p>
+
+<h3><a name="_Toc218195455"><span lang=BG>Не са необходими начални познания</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В тази книга не очакваме от читателите да имат
+предварителни знания по програмиране. Не е необходимо да сте учили
+информационни технологии или компютърни науки, за да четете и разбирате учебния
+материал. Книгата започва от нулата и постепенно ви въвлича в програми­рането.
+Всички технически понятия, които ще срещнете, са обяснени преди това и не е
+нужно да ги знаете от друго място. Ако не знаете какво е компила­тор, дебъгер,
+среда за разработка, променлива, масив, цикъл, конзола, символен низ, структура
+от данни, клас или обект, не се притеснявайте. Ще научите всички тези понятия и
+много други и ще се научите да ги ползвате непрестанно в ежедневната си работа.
+Просто четете книгата пос­ледова­телно.</span></p>
+
+<p class=MsoNormal><span lang=BG>Не се очаква да имате познания по компютърни
+науки и информационни технологии, но ако все пак имате такива, при всички
+положения ще са ви от полза. Ако учите университетска специалност, свързана с
+компютър­ните технологии или в училище учите информационни технологии, това
+само ще ви помогне, но не е задължително. Ако учите туризъм или право, също
+можете да станете добър програмист, стига да имате желание.</span></p>
+
+<p class=MsoNormal><span lang=BG>Би било полезно да имате начална компютърна
+грамотност, тъй като няма да обясняваме какво е файл, какво е твърд диск, какво
+е мрежова карта, как се движи мишката и как се пише на клавиатурата. Очакваме
+да знаете как да си служите с компютъра и как да ползвате Интернет.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Препоръчва се
+читателите да имат някакви знания по английски език, поне начални. Всичката
+документация, която ще ползвате ежедневно, и почти всички сайтове за
+програмиране, които ще четете постоянно, са на английски език. В професията на
+програмиста английският е просто задължителен. Колкото по-рано го научите,
+толкова по-добре.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Не си правете илюзии, че можете да
+  станете програмисти, без да научите поне малко английски език! Това е просто
+  наивно очакване. Ако не знаете английски, започнете да четете технически
+  текстове и си вадете непознатите думи и ги заучавайте. Ще видите, че
+  техническият английски се учи лесно и не отнема много време.</span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="_Toc218195456"><span lang=BG>Какво обхваща тази книга?</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Настоящата книга обхваща основите на програмирането.
+Тя ще ви научи как да дефинирате и използвате променливи, как да работите с
+прими­тивни структури от данни (като например числа), как да организирате
+логически конструкции, условни конструкции и цикли, как да печатате на
+конзолата, как да ползвате масиви, как да работите с бройни системи, как да
+дефинирате и използвате методи и да създавате и използвате обекти. Наред с
+началните познания по програмиране книгата ще ви помогне да възприемете и малко
+по-сложни концепции като обработка на символни низове, работа с изключения,
+използване на сложни структури от данни (като списъци, дървета и хеш-таблици),
+работа с текстови файлове и дефиниране на собствени класове. Ще бъдат застъпени
+в дълбочина концепциите на обектно-ориентираното програмиране като утвърден
+подход при съвре­менната разработка на софтуер. Накрая ще се сблъскате с
+практиките за писане на висококачествени програми и с решаването на реални проб­леми
+от програмирането. Книгата излага цялостна методо­логия за реша­ване на задачи
+по програмиране и въобще на алгоритмични проблеми и показва как се прилага тя
+на практика с няколко примерни теми от изпити по програмиране. Това е нещо,
+което няма да срещнете в никоя друга книга за програмиране.</span></p>
+
+<h2><a name="_Toc218195457"><span lang=BG>На какво няма да ви научи тази книга?</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Тази книга няма да ви даде професията &quot;софтуерен
+инженер&quot;! Тази книга няма да ви научи да ползвате цялата </span>Java <span
+lang=BG>платформа</span>, <span lang=BG>да работите с бази от данни, да правите
+динамични уеб сайтове и да боравите с прозоречен графичен потребителски
+интерфейс. Няма да се научите да пишете сериозни софтуерни приложения като
+Skype, Firefox или MS Word. За това са нужни много, много години работа.</span></p>
+
+<p class=MsoNormal><span lang=BG>От книгата няма да се научите софтуерно
+инженерство и работа в екип и няма да можете да се подгот­вите за работа по
+реални проекти в софтуерна фирма. За да се научите на всичко това ще ви трябват
+още няколко книги и допълнителни обучения, но не съжалявайте. Правите правилен
+избор като започвате от основите на програмирането вместо директно от уеб
+приложения. Това ви дава шанс да станете добър програмист, който разбира
+технологиите в дълбочина. След като усвоите основите на програмирането, ще ви е
+много по-лесно да четете за бази данни и уеб приложения и ще разбирате това,
+което четете, много по-лесно, отколкото, ако се захванете директно със SQL и
+JavaServer </span>F<span lang=BG>aces или ASP.NET.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Някои ваши колеги
+започват да програмират директно от уеб приложения и бази от данни, без да
+знаят какво е масив, какво е списък и какво е хеш-таблица. Не им завиждайте</span>!<span
+lang=BG> Те са тръгнали по трудния път, отзад напред. И вие ще научите тези
+неща, но преди да се захванете с тях, се научете да програмирате. Това е много
+по-важно. Да научите една или друга технология е много по-лесно, след като
+имате основата, след като можете да мислите алгоритмично и знаете как да
+подхождате към пробле­мите на програмирането.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Да започнете с програмирането от уеб
+  приложения и бази данни е също толкова неправилно, колкото и да започнете да
+  учите чужд език от някой класически роман вместо от буквар или учебник за
+  начинаещи. Не е невъзможно, но като ви липсват основите, е много по-трудно.
+  Възможно е след това с години да останете без важни фундаментални знания и да
+  ставате за смях на колегите си.</span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="_Toc218195458"><span lang=BG>Как е представена информацията?</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Въпреки големия брой автори, съавтори и
+редактори, стилът на текста в книгата е изключително достъпен. Съдържанието е
+представено в добре структуриран вид, разделено с множество заглавия и
+подзаглавия, което позволява лесното му възприемане, както и бързото търсене на
+инфор­мация в текста.</span></p>
+
+<p class=MsoNormal><span lang=BG>Настоящата книга е написана от програмисти за
+програмисти. Авто­рите са действащи софтуерни разработчици, хора с реален опит
+както в разра­ботването на софтуер, така и в обучението по програмиране. Благо­даре­ние
+на това качеството на изложението е на мно­го високо ниво.</span></p>
+
+<p class=MsoNormal><span lang=BG>Всички автори ясно съзнават, че примерният
+сорс код е едно от най-важните неща в една книга за програ­ми­ране. Именно
+поради тази причи­на текстът е съпроводен с много, много примери, илюстрации и
+картинки.</span></p>
+
+<p class=MsoNormal><span lang=BG>Няма как, когато всяка глава е писана от
+различен автор, да няма разминаване между стиловете на изказ и между качеството
+на отделните глави. Някои автори вложиха много старание (месеци наред) и много
+усилия, за да станат перфектни техните глави. Други не вложиха доста­тъчно
+усилия и затова някои глави не са така хубави и изчерпателни като другите. Не
+на последно място опитът на авторите е различен: някои програмират
+професионално от 1-2 години, докато други – от 15 години насам. Няма как това
+да не се отрази на качеството, но ви уверяваме, че всяка глава е минала
+редакция и отговаря поне минимално на високите изисквания на водещия автор на
+книгата – Светлин Наков.</span></p>
+
+<h2><a name="_Toc218195459"><span lang=BG>Какво е </span></a>Java<span lang=BG>?</span></h2>
+
+<p class=MsoNormal><span lang=BG>Вече обяснихме, че тази книга не е за Java, а
+за програмирането като концепция и основни принципи. Ние използваме езика и
+платформата Java само като средство за писане на програмен код и не наблягаме
+върху спецификите на езика. Настоящата книга може да бъде намерена и във
+варианти за други езици като C# и C++, но разликите не са съществени</span>.</p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Все пак, нека
+разкажем с няколко думи какво е Java.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Java e съвременен език за програмиране
+  и платформа за разработка и изпълнение на софтуерни приложения.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Някои си мислят, че Java е само език за
+програмиране, други го бъркат с JavaScript и си мислят, че служи за раздвижване
+на статични уеб сайтове, а трети се чудят дали Java е сорт кафе или остров в
+Индонезия. За да разсеяме съмненията, ще разкажем с няколко думи за езика и
+платфор­мата Java, а в <a href="#_Глава_1._Въведение">следващата глава</a> ще
+научите за тях много повече.</span></p>
+
+<h3><a name="_Toc218195460"><span lang=BG>Езикът </span></a>Java</h3>
+
+<p class=MsoNormal><span lang=BG>Java е съвременен обектно-ориентиран език за
+програмиране с общо предназначение. На Java се разработва изключително
+разнообразен софтуер: офис приложения, уеб приложения, настолни приложения, при­ложения
+за мобилни телефони, игри и много други.</span></p>
+
+<p class=MsoNormal><span lang=BG>Java е език от високо ниво, който прилича на
+C# и C++ и донякъде на езици като Delphi, VB.NET и C. Java програмите са
+обектно-ориентирани. Те представляват съвкупност от дефиниции на класове, които
+съдържат в себе си методи, а в методите е разположена програмната логика.
+Повече детайли за това какво е клас, какво е метод и какво представляват </span>J<span
+lang=BG>ava програмите ще научите в <a href="#_Глава_1._Въведение">следващата
+глава</a>.</span></p>
+
+<p class=MsoNormal><span lang=BG>В днешно време Java е един от най-популярните
+езици за програмиране. На него пишат милиони разработчици по цял свят. Най-големите
+световни софтуерни корпорации като IBM, Oracle и SAP базират своите решения на
+Java платформата и използват Java като основен език за разработка на своите
+продукти. Сред &quot;големите&quot; Java не се ползва единствено от Microsoft,
+тъй като те разра­ботват и поддържат собствена платформа, подобна на Java
+платформата, наречена .NET Framework и език подобен на Java, наречен C#.</span></p>
+
+<p class=MsoNormal><span lang=BG>Езикът Java</span><span lang=BG> </span><span
+lang=BG>е първоначално разработен и поддържан от Sun Microsystems, но през 2006
+г. Java плат­формата става проект с отворен код</span><span lang=BG> </span><span
+lang=BG>и в момента се поддържа и развива от световната Java общност</span><span
+lang=BG> </span><span lang=BG>съвместно със Sun. Благодарение на отворения код
+популярността на Java постоянно се увеличава и броят </span>Java <span lang=BG>разработчици
+непрекъснато расте.</span></p>
+
+<p class=MsoNormal><span lang=BG>Езикът Java се разпро­странява заедно със
+специална среда, върху която се изпълнява, наре­чена <b>Java Runtime Environment
+(JRE)</b>. Тази среда включва т. нар. Java виртуална машина (JVM) и пакет
+стандартни библиотеки, предоставящи базова функционалност. Благодарение на нея
+Java програмите са преносими и след като веднъж бъдат написани, след това почти
+без промени могат да работят на стотици хардуерни платформи и операционни
+системи.</span></p>
+
+<h3><a name="_Toc218195461">Java <span lang=BG>платформата</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Езикът Java не се разпространява
+самостоятелно, а е част от платформата Java. Java платформата най-общо
+представлява среда за разработка и изпълнение на програми, написани на езика
+Java. Тя се състои от езика Java, <b>виртуалната машина на Java (JVM)</b>,
+която изпълнява Java програ­мите и от съвкупност от стандартни библиотеки и
+инструменти за разра­ботка, като например компилаторът, който превръща </span>Java
+<span lang=BG>програ­мите в разбираем за виртуалната машина междинен код (Java
+bytecode).</span></p>
+
+<p class=MsoNormal><span lang=BG>За изпълнението на програми, написани на Java,
+е необходимо да имате инсталиран т. нар. Java Runtime Enviroment (JRE). Това е
+специален софтуер, част от Java платформата, който съдържа виртуалната машина и
+стандартните Java библиотеки и се поддържа за различни хардуерни платформи и
+операционни системи. JRE е софтуер, който крайният потребител инсталира
+еднократно върху компютъра си, за да може да работи с Java. JRE не е стандартна
+част от Windows и трябва да се инсталира допълнително, точно както </span>“Adobe
+<span lang=BG>Flash </span>P<span lang=BG>layer</span>&quot;<span lang=BG> се
+инсталира допъл­нително във вашия уеб браузър, за да отваряте уеб сайтове с
+Flash.</span></p>
+
+<p class=MsoNormal><span lang=BG>За разработката на Java приложения е
+необходимо да имате инсталиран <b>Java Development Kit (JDK)</b>. Това е пакет инструменти,
+с които вие като програмисти можете да пишете Java програми, да ги компилирате
+и изпълнявате. JDK не е необходим на крайния потребител, а само на </span>Java <span
+lang=BG>разработчиците. Крайните потребители ползват JRE.</span></p>
+
+<h2><a name="_Toc218195462"><span lang=BG>Защо </span></a>Java?</h2>
+
+<p class=MsoNormal><span lang=BG>Има много причини да изберем езика Java за
+нашата книга. Той е съвременен език за програмиране, широкоразпространен,
+използван от милиони програмисти. Същевременно </span>J<span lang=BG>ava е
+изключително прост и лесен за научаване език (за разлика от C и C++). Нормално
+е да започнем от език, който е подходящ за начинаещи и се ползва много в
+практиката. Именно такъв език избрахме – лесен и много популярен, език, който
+се ползва широко в индустрията от най-големите и сериозни фирми.</span></p>
+
+<p class=MsoNormal><span lang=BG>Java е обектно-ориентиран език за
+програмиране. Такива са всички съвременни езици, на които се разработват
+сериозни софтуерни системи. За предимствата на обектно-ориентираното
+програмиране (ООП) ще гово­рим подробно на много места в книгата, но за момента
+може да си представяте обектно-ориентираните езици като езици, които позволяват
+да работите с обекти от реалния свят (примерно човек, училище, учебник и
+други). Обектите имат характеристики (примерно име, цвят и т.н.) и могат да
+извършват действия (примерно да се движат, да говорят и т.н).</span></p>
+
+<p class=MsoNormal><span lang=BG>Започвайки с програмирането от езика и
+платформата Java вие поемате по един много перспективен път. Ако отворите някой
+сайт с обяви за работа за програмисти, ще се убедите, че търсенето на Java
+специалисти е огромно и е по-голямо в сравнение с всякакви други езици и
+платформи (примерно C#, PHP или </span>C++)<span lang=BG>.</span></p>
+
+<p class=MsoNormal><span lang=BG>За добрия програмист езикът, на който пише,
+няма съществено значение, защото той умее да програмира. Каквито и езици и
+технологии да му трябват, той бързо ги овладява. Нашата цел е не да ви научим
+на Java, а да ви научим на програмиране! След като овладеете основите на програ­мирането
+и се научите да мислите алгоритмично, можете да научите и други езици и ще се
+убедите колко много приличат те на Java, тъй като програмирането се гради на
+принципи, които почти не се променят с годините и тази книга ви учи точно на
+тези принципи.</span></p>
+
+<h2><a name="_Toc218195463"><span lang=BG>Примерите са върху </span></a>Java 6 <span
+lang=BG>и </span>Eclipse 3.4</h2>
+
+<p class=MsoNormal><span lang=BG>Всички примери в книгата се отнасят за версия
+6 на езика и платформата Java, която към момента на публикуване на книгата е
+последната. Всички примери за използване на средата за разработка Eclipse се
+отнасят за версия 3.4 на продукта, която също е последна към момента на публи­куване
+на книгата.</span></p>
+
+<p class=MsoNormal><span lang=BG>Разбира се, знанията, които придобивате за
+работа с Java 6 и Eclipse 3.4, ще можете да прилагате и за програмиране с други
+версии на Java и Eclipse</span>, <span lang=BG>както и за работа с други езици
+за програмиране и други среди за разработка, защото всички те си приличат малко
+или много. Важното е да се научите да програмирате!</span></p>
+
+<h2><a name="_Toc218195464"><span lang=BG>Как да четем тази книга?</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Четенето на тази книга трябва да бъде
+съпроводено с много, много практика. Няма да се научите да програмирате, ако не
+го правите! Все едно да се научите да плувате от книга, без да пробвате. Няма
+начин! Колкото повече пишете по задачите след всяка глава, толкова повече ще
+научите от книгата.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Всичко, което
+прочетете тук, трябва да изпробвате сами на компютъра. Иначе няма да научите
+нищо. Примерно, когато прочетете за </span>Eclipse<span lang=BG> и как да си
+направите първата проста програмка, трябва непременно да си изтеглите и
+инсталирате Eclipse и да пробвате да си направите някаква програмка. Иначе няма
+да се научите! На теория винаги е по-лесно, но програмирането е практика.
+Запомнете това и правете упражненията от книгата. Те са внимателно подбрани –
+хем не са много трудни, за да не ви откажат, хем не са много лесни, за да ви
+мотивират да приемете решава­нето им като предизвикателство.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Четенето на тази книга без практика е
+  безсмислено! Трябва да отделите за писане на програми много повече време, отколкото
+  отделяте да четете текста.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Всеки е учил математика в училище и знае, че
+за да се научи да решава задачи по математика, му трябва много практика.
+Колкото и да гледа и да слуша учителя, без да седне да решава задачи никой не
+може да се научи. Така е и с програмирането. Трябва ви много практика. Трябва
+да пишете много, да решавате задачи, да експериментирате, да се мъчите и да се
+борите с проблемите. Само така ще напреднете.</span></p>
+
+<h3><a name="_Toc218195465"><span lang=BG>Не пропускайте упражненията!</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>На края на всяка
+глава има сериозен списък със задачи за упражнения. Не ги пропускайте! Без
+упражненията нищо няма да научите. След като прочетете дадена глава, трябва да
+седнете на компютъра и да пробвате примерите, които сте видели в книгата. След
+това трябва да се хванете и да решите всички задачи. Ако не можете да решите
+всички задачи, трябва поне да се помъчите да го направите. Ако нямате време,
+трябва да решите поне първите няколко задачи от всяка глава. Не преминавайте
+напред, без да решавате задачите след всяка глава! Просто няма смисъл. Задачите
+са малки реални ситуации, в които прилагате прочетеното. В практиката, един
+ден, когато станете програмисти, ще решавате всеки ден подобни задачи, но
+по-големи и по-сложни.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Непременно решавайте задачите за
+  упражнения след всяка глава от книгата! Иначе рискувате нищо да не научите и
+  просто да си загубите времето.</span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc218195466"><span lang=BG>Колко време ще ни трябва за тази
+книга?</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Усвояването на основите на програмирането е
+много сериозна задача и отнема много време. Дори и силно да ви се отдава, няма
+начин да се научите да програмирате на добро ниво за седмица или две, освен,
+ако нямате много стабилни предварителни знания и умения.</span></p>
+
+<p class=MsoNormal><span lang=BG>Ако искате да прочетете, разберете, научите и
+усвоите цялостно и в дъл­бочина целия</span><span lang=BG> </span><span
+lang=BG>учебния материал от тази книга, ще трябва да инвес­тирате поне 2 месеца
+целодневно или поне 4-5 месеца, ако четете и се упраж­нявате по малко всеки
+ден. Това е минималното време, за което можете да усвоите в дълбочина основните
+на програмирането.</span></p>
+
+<p class=MsoNormal><span lang=BG>Основният учебен материал в книгата е изложен
+в около 830 страници, за които ще ви трябват около месец (по цял ден), за да го
+прочетете внима­телно и да изпробвате примерните програми. Разбира се, трябва
+да отделите достатъчно внимание и на упражненията, защото без тях почти нищо
+няма да научите.</span></p>
+
+<p class=MsoNormal><span lang=BG>Упражненията съдър­жат около 220 задачи с
+различна трудност. За някои от тях ще ви трябват по няколко минути, докато за
+други ще ви трябват по няколко часа (ако въобще успеете да ги решите без чужда
+помощ). Това означава, че ще ви трябва повече от месец по цял ден да се
+упражнявате или да го правите по малко в продължение на няколко месеца.</span></p>
+
+<p class=MsoNormal><span lang=BG>Ако не разполагате с толкова време, замислете
+се дали наистина искате да се занимавате с програмиране. Това е много сериозно
+начинание, в което трябва да вложите наистина много усилия. Ако наистина искате
+да се научите да програмирате на добро ниво, планувайте си достатъчно време и
+следвайте книгата.</span></p>
+
+<h2><a name="_Toc218195467"><span lang=BG>Защо фокусът е върху структурите от
+данни и алгоритмите?</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Настоящата книга наред с основните познания по
+програмиране ви учи и на правилно алгоритмично мислене и работа с основните
+структури от данни в програмирането. Структурите от данни и алгоритмите са
+най-важните фундаментални знания на един програмист! Ако ги овладеете добре,
+след това няма да имате никакви проблеми да овладеете която и да е софтуерна
+технология, библиотека, framework или API. Именно на това разчитат и
+най-сериозните софтуерни фирми в света</span>, <span lang=BG>когато наемат
+служители.</span></p>
+
+<h3><a name="_Toc218195468"><span lang=BG>Интервютата за работа в Google</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>На интервютата за работа като софтуерен
+инженер в Google в Цюрих 100% от въпросите са съсредоточени върху структури от
+данни, алго­ритми и алгоритмично мислене. На такова интервю могат да ви накарат
+да реализирате на бяла дъска свързан списък (вж. главата &quot;<a
+href="#_Глава_16._Линейни">Линейни структури от данни</a>&quot;) или да измис­лите
+алгоритъм за запълване на растерен многоъгълник (зададен като </span>GIF<span
+lang=BG> изображение) с даден цвят (вж. <a href="#_Обхождане_на_директориите">метод
+на вълната</a> в главата &quot;<a href="#_Глава_17._Дървета">Дървета и графи</a>&quot;).
+Изглежда Google ги интересува да наемат хора, които имат алгоритмично мислене и
+владеят основните структури от данни и базовите компютърни алгоритми. Всички
+технологии, които избраните кандидати ще използват след това в рабо­тата си,
+могат бързо да бъдат усвоени. Разбира се, не си мислете, че тази книга ще ви
+даде всички знания и умения, за да преминете успешно интервю за работа с
+Google. Знанията от книгата са абсолютно необхо­дими, но не са достатъчни. Те
+са само първите стъпки.</span></p>
+
+<h3><a name="_Toc218195469"><span lang=BG>Интервютата за работа в </span></a>Microsoft</h3>
+
+<p class=MsoNormal><span lang=BG>На интервютата за работа като софтуерен
+инженер в </span>Microsoft<span lang=BG> в Дъблин голяма част от въпросите са
+съсредоточени върху структури от данни, алго­ритми и алгоритмично мислене.
+Например могат да ви накарат да обърнете на обратно всички думи в даден
+символен низ (вж. главата &quot;<a href="#_Глава_13._Символни">Символни низове</a>&quot;)
+или да реализирате топологично сортиране в неори­ентиран граф (вж. главата
+&quot;<a href="#_Глава_17._Дървета">Дървета и графи</a>&quot;). За разлика от
+Google в Microsoft питат и за много инженерни въпроси, свързани със софтуерни
+архитектури, паралелна обработка (multithreding), писане на сигурен код, работа
+с много големи обеми от данни и тестване на софтуера. Настоя­щата книга далеч
+не е достатъчна, за да кандидатствате в Microsoft, но със сигурност знанията от
+нея могат да са ви полезни за една част от въпросите.</span></p>
+
+<h2><a name="_Toc218195470"><span lang=BG>Запишете се в Национална академия по
+разработка на софтуер (НАРС)</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Ако самостоятелната работа вкъщи не ви е
+достатъчна, запишете се на курс. Всеки знае, че когато има срещу себе си
+квалифициран препода­вател, ученето е много по-ефективно. Именно такава
+възможност ви дава Националната академия по разработка на софтуер (НАРС).</span></p>
+
+<h3><a name="_Toc218195471"><span lang=BG>Какво е НАРС?</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Национална академия по разработка на софтуер
+(НАРС) е частно учебно заведение, създадено от софтуерни инженери с 15-годишен
+опит по иници­атива на водещия автор на настоящия учебник по програмиране
+Светлин Наков. Академията обучава безплатно софтуерни инженери по основи на програмирането
+и съвременни софтуерни технологии (Java, .NET, C++, Embedded C, бази от данни,
+уеб приложения и др.). Завър­шилите успешно получават професията &quot;софтуерен
+инженер&quot; и започват работа в ИТ фирма.</span></p>
+
+<h3><a name="_Toc218195472"><span lang=BG>Учете безплатно в Академията!</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Академията предоставя безплатни курсове по
+програмиране за всички, които имат желание и сериозни интереси към професията &quot;софту­ерен
+инженер&quot;. В НАРС учите безплатно и след това задължително започвате работа
+по специалността. Във вашето обучение инвестират стотиците софтуерни фирми, с
+които Академията работи. Те ви спонсорират обуче­нието, а вие след това
+работите при тях. По този начин фирмите си осигуряват специалисти, които на
+пазара постоянно не достигат, а вие си осигурявате добра професия и сериозна и
+дългосрочна работа.</span></p>
+
+<h3><a name="_Toc218195473"><span lang=BG>Изисквания за кандидатстване в НАРС</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Разбира се, НАРС не е благотворителна
+организация. Ние не приемаме за обучение всички кандидати, които подадат
+документи. За да учите безплатно в НАРС, трябва да отговаряте на следните
+условия:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Най важното: трябва да имате желание и възможност да работите
+дългосрочно на пълен работен ден (8 часа на ден). По изключение приемаме
+кандидати, които могат да отделят по 6 часа на ден.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Трябва да имате сериозни интереси към програмирането и силно желание да
+овладеете професията &quot;софтуерен инженер&quot;.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Трябва да сте сериозни, което означава да се отнасяте сериозно към
+процеса на кандидатстване и към процеса на обучение: да подадете прилежно
+всички необходими документи, да се явите на интервюта и приемни изпити, да не
+отсъствате от занятия, да подготвяте старателно домашните си и да се справяте
+добре на всички изпити.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Трябва да подхождате с хъс и желание към обучението, да му отделяте
+достатъчно време и да се стараете да усвоите пълноценно целия учебен материал.
+Ако не вложите достатъчно старание, няма да успеете да завършите обучението си,
+дори да ни подведете да ви приемем. Всичко зависи от вас!</span></p>
+
+<p class=MsoNormal><span lang=BG>Ако имате наистина голямо желание да станете
+програмист, ще успеете да влезете в Академията и да преминете успешно
+обученията. Ще намерите и време и сили да се посветите (поне за няколко месеца)
+напълно на прог­рамирането, ще решавате задачи и в час и вкъщи, ще четете много
+и ще питате преподавателите, ще решавате задачи и ще пишете домашни. Истинското
+желание да научите програмирането може да направи чудеса. То е най-важното.</span></p>
+
+<h3><a name="_Toc218195474"><span lang=BG>Професията &quot;софтуерен инженер&quot;</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Може би се питате защо в тази книга говорим за
+професията &quot;софтуерен инженер&quot;, а не &quot;програмист&quot;. Когато
+навлезете в професията на профе­сионалното производство на софтуер, ще
+разберете разликата. Да си програмист означава да пишеш програмен код, докато
+да си софтуерен инженер означава да си специалист по цялостния процес на
+изграждане на софтуерни решения: от анализ на изискванията, изготвяне на
+архитек­тура, софтуерен дизайн, програмиране, тестване и дебъгване, до внедря­ване
+на решението, неговата поддръжка и развитие, включително автома­тизация на
+тестването, писане на техническа документация, управ­ление на проекта, задачите
+и ресурсите за неговото изпълнение и не на последно място работата в екип,
+съвместно с колегите. Всичко това съставлява професията софтуерен инженер, а
+програмирането е само една малка частица от нея!</span></p>
+
+<p class=MsoNormal><span lang=BG>В Национална академия по разработка на софтуер
+ние обучаваме софтуерни инженери, а не просто програмисти. Ние наблягаме не
+само на програмирането и софтуерните технологии, но и на методологията за
+практическа разработка на софтуерни решения и работата в екип. Всичко това се
+осъществява под надзора на опитни инструктори, които работят ежедневно по
+реални софтуерни проекти. Накрая всеки курсист завършва с практически проект
+или стаж в софтуерна фирма, където се сблъсква с проблеми отвъд програмирането
+и технологиите и натрупва много ценен практически опит. НАРС не само ви научава
+да програмирате, но ви дава професия. Само трябва да имате силно желание и да
+се отнасяте сериозно към обученията.</span></p>
+
+<h3><a name="_Toc218195475"><span lang=BG>Какво представлява обучението в НАРС?</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Обученията в НАРС се състоят от лекции и
+практически упражнения, които се провеждат в учебните зали на Академията и
+завършват с изпити, практически проекти и стажове. Учебните занятия се
+извършват най-вече вечерно време, тъй като са съобразени със заетостта на
+курсистите в университета, в училище или на работа.</span></p>
+
+<h4><span lang=BG>Лекции</span></h4>
+
+<p class=MsoNormal><span lang=BG>Лекциите представляват теоретични занятия, на
+които преподавателите обясняват материала от учебния план, като се ръководят от
+старателно приготвена презентация, придружена с много примери и демонстрации на
+живо. Всичко, което ще видите в книгата, нашите преподаватели го показват и
+обясняват на живо, като междувременно отговарят на въпроси от залата и задават
+въпроси към курсистите, за да ги включват активно в учебния процес. Лекциите
+съдържат същината на учебния материал, представена в сбит вид, под формата на </span>PowerPoint<span
+lang=BG> презентация.</span></p>
+
+<h4><span lang=BG>Практически упражнения</span></h4>
+
+<p class=MsoNormal><span lang=BG>Упражненията са неразделна част от учебния
+процес в Академията. Те се състоят в практическо решаване на задачи, свързани с
+изучаваното в текущата лекция. След като завърши дадена лекция, преподавателят
+дава задачите за упражнения на курсистите и ги наставлява как да ги решават.
+Всеки курсист разполага с работно място (компютър с необходимия му софтуер) и
+има възможност да решава поставените му задачи в клас. Поставените задачи след
+всяка тема от учебния план са съобразени с учебния материал за съответната тема
+и започват от няколко лесни задачки към по-трудни и по-сериозни задачи.
+Понякога има и по-сложни задачи, които изискват повече време и са предвидени за
+домашно.</span></p>
+
+<p class=MsoNormal><span lang=BG>Упражненията, които курсистите не успеят да
+решат по време на учебните занятия, остават за самостоятелна работа вкъщи.
+Различните курсисти напредват с различна скорост и затова някои се налага да
+отделят много време вкъщи, докато други успяват да решат почти всички задачи в
+клас.</span></p>
+
+<p class=MsoNormal><span lang=BG>Упражненията като брой часове са обикновено
+повече от теоретичните занятия. Целта е курсистите да се научат на практическа
+работа с изуча­ваните програмни техники и софтуерни технологии, а не толкова на
+фундаменталната теория, която ги съпътства. На един час лекция средно се пада
+по час и половина - два упражнения.</span></p>
+
+<p class=MsoNormal><span lang=BG>По време на упражненията преподавателите
+обикалят около компютрите на всеки от курсистите и помагат на всеки
+индивидуално с решаването на задачите. Преподавателите следят за това
+курсистите не само да решават поста­вените им задачи, но и да ги решават
+качествено. Това е нещо, което няма как да се случи при домашно самообучение.
+Когато някой програ­мира некадърно, лекторите му показват къде и какво греши,
+за да тръгне в правилната посока. Качеството на усвояване на учебния мате­риал
+и въобще писането на качествен програмен код и използването на утвърде­ните
+практики в софтуерното инженерство са основен приоритет при всички обучения в
+НАРС. Заедно с техническите умения курсистите се обучават и на добрите практики
+в програмирането и въобще в софтуер­ното инженерство.</span></p>
+
+<p class=MsoNormal><span lang=BG>Лекторите отделят индивидуално внимание на
+всеки един курсист, независимо дали той има въпроси, дали има трудности или се
+справя отлично. При всички случаи преподавателят разглежда всеки какво е
+написал по всяка от поставените задачи и дава персонални наставления за
+подобряване на кода, идеи за решаване на задачите и препоръки за преработка,
+когато се установи некачествен код.</span></p>
+
+<h4><span lang=BG>Изпити</span></h4>
+
+<p class=MsoNormal><span lang=BG>Изпитите в НАРС биват теоретични и
+практически, като основната тежест пада върху практическото решаване на изпитни
+задачи.</span></p>
+
+<p class=MsoNormal><span lang=BG>Теоретичните изпити представляват въпроси
+върху изучавания учебен материал, на които студентите отговарят чрез посочване
+на верния отговор сред списък от възможни отговори.</span></p>
+
+<p class=MsoNormal><span lang=BG>Практическите изпити са по-важни и
+по-сериозни. При тях на всеки курсист се възлагат няколко задачи, за които той
+трябва да напише решение. Курсистът разполага с компютър, на който пише
+решенията във вид на програма или малък софтуерен проект. Докато курсистите
+пишат, могат да използват всякакви учебни материали и Интернет (ситуация много
+подобна на реалната работа в софтуерна фирма), но нямат право да получават
+чужда помощ от никого (по телефон, чат, e-mail и всякакви други начини). При
+изтичане на определеното време за работа преподава­телите проверяват задачите
+на всички и поставят оценки. При незадово­лително представяне съответният
+студент се явява на поправка след 1 или 2 седмици. Курсистите, които системно
+показват слаби резултати, се отстраняват от обученията.</span></p>
+
+<h4><span lang=BG>Практически проекти</span></h4>
+
+<p class=MsoNormal><span lang=BG>Практическите проекти в Академията
+представляват цялостен проект за разработване на софтуерна система, близка до
+реалните системи, по които се работи в индустрията, само че с по-малък обхват.
+Практическите проекти включват не само програмиране, но и всички останали
+елементи от софтуерното инженерство: анализ на изискванията, изготвяне на спецификация,
+изготвяне на прототип на потребителския интерфейс, моделиране на база данни,
+построяване на слой за достъп до данните, изграждане на уеб базиран
+потребителски интерфейс, изграждане на desktop базиран потребителски интерфейс,
+тестване, отстраняване на бъгове, работа с</span><span lang=BG> </span><span
+lang=BG>хранилище за сорс код с контрол на версиите (source control repository)
+и съвместна работа в екип, заедно с колеги от курса.</span></p>
+
+<p class=MsoNormal><span lang=BG>Практическите проекти дават на курсистите
+реален опит при разработката на софтуер, тъй като само уменията по програмиране
+не са достатъчни за работа в софтуерна фирма. Практическите проекти подготвят
+курсистите за реалния живот на софтуерния инженер, за неговата ежедневна
+работа.</span></p>
+
+<h4><span lang=BG>Практически стажове</span></h4>
+
+<p class=MsoNormal><span lang=BG>Стажовете в НАРС или партньорски фирми са предназначени
+само за отбрани курсисти, които се справят по-добре от останалите</span><span
+lang=BG> </span><span lang=BG>и правят силно положително впечатление на
+преподавателския екип. Понякога на стаж биват приемани повече от половината
+курсисти, а понякога само 2-3 от група. Възмож­ностите за стажове зависят от заявките
+на фирмите за стажанти и имат променлив характер.</span></p>
+
+<p class=MsoNormal><span lang=BG>По време на стажовете курсистите се включват в
+разработката на реален софтуерен проект, като идват на работа в съответната
+фирма, където са на стаж, и участват в екипа на разработка наравно с останалите
+служи­тели от фирмата. По този начин курсистите натрупват ценен реален опит за
+работа по реални проекти в истинска софтуерна компания. Ако ком­панията оцени
+високо работата на стажанта, обикновено му предоставя и заплащане за периода на
+стажа (по нейна преценка).</span></p>
+
+<h4><span lang=BG>Профили на курсистите</span></h4>
+
+<p class=MsoNormal><span lang=BG>Профилите на курсистите са вътрешни документи,
+които НАРС поддържа за всеки курсист, който се обучава в Академията. В тях се
+съдържат автобиографиите на курсистите, информацията от проведеното в началото
+интервю, данните от психологическия профил на курсиста, резултати от всички
+изпити, на които се е явявал, включи­телно и сорс кода на прог­рамите, които е
+написал по време на изпитите. Профилът съдържа още мнение за курсиста от
+преподавателския състав и история на интервю­тата, на които е ходил.</span></p>
+
+<p class=MsoNormal><span lang=BG>До профилите на курсистите достъп имат
+фирми-работодатели, които са партньори на Академията. Към момента на писането
+на този текст (октомври 2008) всички фирми, с които НАРС работи надвишават 100.
+Сред тях са световноизвестни софтуерни компании като SAP, VMWare, Telerik,
+Software A. G., Seeburger Informatik, Sirma Group и много, много други ИТ
+фирми. Всички тези фирми предлагат позиции за работа на курсистите от НАРС,
+които си харесат.</span></p>
+
+<h4><span lang=BG>Интервюта за работа</span></h4>
+
+<p class=MsoNormal><span lang=BG>Интервютата за работа, организирани от НАРС са
+част от цялостния процес, в който се включва всеки един курсист, започвайки
+безплатното си обучение в Академията. По време на обучението в НАРС и след
+неговото завършване курсистите получават покани за интервюта с рабо­тодатели,
+на които са длъжни да се явят и да се представят максимално добре. Всеки
+курсист получава инструктаж как да се подготви и как да се държи на интервюто,
+какви въпроси да очаква, какво е добре и какво не е добре да приказва на
+евентуалния си работодател и други полезни препоръки. Повечето интервюта
+протичат в офисите на работодателите.</span></p>
+
+<p class=MsoNormal><span lang=BG>По време на едно интервю представители на
+работодателите задават технически и други въпроси на кандидатите, опитват се да
+преценят до къде се простират техните знания и умения, както и да извлекат
+инфор­мация за личностните им качества. Решенията дали да отправят предло­жение
+за работа към всеки един кандидат и при какви условия се вземат от самата
+фирма-работодател след интервюто. Условията могат да са много различни и
+зависят както от самия работодател и спецификата на неговите проекти, така и от
+представянето на курсиста по време на персоналното интервю.</span></p>
+
+<p class=MsoNormal><span lang=BG>Работодателите не канят на интервю всички
+курсисти, а само някои от тях в зависимост от много фактори: автобиография,
+изпитни резултати, специфични личностни качества, владеене на чужди езици,
+евентуален предишен опит и др. Фирмите-работодатели имат много различни (и
+понякога дори странни) кри­терии кого да повикат на интервю и на кого да
+предложат работа. Различните фирми предпочитат различни профили курсисти. Не
+винаги най-силните от курса първи започват работа. Обик­новено всички започват
+работа до завършване на курса или най-много месец след това.</span></p>
+
+<p class=MsoNormal><span lang=BG>Когато курсист започне работа, той продължава
+да посещава курса докато не завърши успешно. Работодателите следят стриктно
+резултатите на техните курсисти и могат да променят отношенията с курсиста
+(включи­телно и да коригират заплатата му) според постигнатите резултати на
+изпитите в Академията.</span></p>
+
+<p class=MsoNormal><span lang=BG>В редки случаи може да се случи някой курсист
+да не бъде предпочитан и канен на интервюта, както и да не бъде харесван от
+работодателите по време на интервютата. Причините за това обикновено са в самия
+курсист, който с поведението си показва безотговорност и излъчва усещане, че не
+му се работи. Например, ако на интервю за работа кажете нещо в стил &quot;<i>аз
+искам малко да поработя във вашата фирма, че да понатрупам опит и след това ще
+заминавам за чужбина</i>&quot;, няма как да ви предложат оферта. Друг пример е
+изказване в стил &quot;<i>ами чувал съм, че програмистите взимат по няколко
+хиляди лева заплата, аз искам и аз толкова като за начало</i>&quot;. Такива
+неадекватни очаквания и изказвания гарантират неуспех по интервютата. В НАРС се
+стараем да обучаваме курсистите как да се държат на интервютата, за да получат
+работата, за която кандидатстват, но успехът зависи най-вече от самия курсист,
+а не от обученията.</span></p>
+
+<p class=MsoNormal><span lang=BG>Ако кандидатът за работа се държи неадекватно
+по интервю­тата, е нормално фирмите да не му предлагат работа. В НАРС се
+стремим въобще да не приемаме в курсовете несериозни и неамбицирани курсисти,
+хора с неадекватни очаквания и хора, на които не им се работи, но винаги се
+случва някой &quot;тарикат&quot; да се промъкне. Такива случаи са рядкост и се
+решават инди­видуално.</span></p>
+
+<h3><a name="_Toc218195476"><span lang=BG>Договорите с НАРС</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Вече споменахме, че Национална академия по
+разработка на софтуер не е благотворителна организация. Обучението в Академията
+се регламентира от договори, които обучаемите сключват с НАРС, с които те се
+ангажират да се отнасят сериозно към учебния процес и да започнат работа след
+завършване на обучението си или още от преди това.</span></p>
+
+<p class=MsoNormal><span lang=BG>Фирмите-работодатели, които спонсорират
+безплатните обучения, също изискват подписване на договор, с който служителят
+се ангажира да работи при своя работодател за най-малко 1-2 години, с което
+оправдава неговата първоначалната инвестиция. Условията по договорите са
+индивидуални и различни за различните работодатели, но като цяло работодателите
+се стремят да предлагат адекватни за пазара условия на работа и добро ниво на
+заплащане, за да задържат кадрите, в които инвестират дългосрочно. Фирмите, с
+които НАРС работи, имат висок имидж, изграден върху коректни отношения със
+своите служители, клиенти и партньори.</span></p>
+
+<p class=MsoNormal><span lang=BG>Обученията в НАРС са наистина безплатни, но
+само, ако наистина ви се учи и ви се работи сериозно. Ако нямате желание и сили
+да отделите цялото си време за курсовете и след това да работите сериозно на
+пълен работен ден, помислете за платения вариант на курсовете.</span></p>
+
+<h3><a name="_Toc218195477"><span lang=BG>Има ли платено обучение?</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Всичко, което до момента ви разказахме, се
+отнася за безплатните обучения, при които курсистите учат, без да плащат, но се
+ангажират след завършване на курса (или още по време на обучението си) да започ­нат
+работа в софтуерна компания (която реално поема таксите по тяхното обучение) и
+да работят в нея поне 1-2 години (зависи от конкретната оферта).</span></p>
+
+<p class=MsoNormal><span lang=BG>В НАРС се предлага и платен прием, при който
+отпадат ограниченията и ангажи­ментите към Академията и към работодателите.
+Всеки може сам да прецени дали да се обвърже с фирма-работодател, която да
+спонсорира обучението му, или да заплати самостоятелно таксите за курсовете, по
+които се обучава, и след това да не работи или да работи, където си поиска
+(включително и в чужбина). Това е въпрос на личен избор и, разбира се, на
+възможностите, с които всеки разполага.</span></p>
+
+<h3><a name="_Toc218195478"><span lang=BG>Курсовете за начинаещи</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Курсовете за начинаещи в Академията обхващат в
+най-общи линии учебния материал от настоящата книга. Те са с продължителност 1
+месец, по 2-3 пъти в седмицата по 4 часа на ден. Те не ви дават професия, нито
+ви осигуряват работа, но ви дават основата, от която да тръгнете в изучаването
+на професията &quot;софтуерен инженер&quot;.</span></p>
+
+<p class=MsoNormal><span lang=BG>Въведителните курсове се предлагат в няколко
+варианта, които са долу-горе равностойни като обхват на учебния материал и обем
+на натрупаните знания, но се различават по езика за програмиране. Това са
+курсовете за начинаещи към настоящия момент (октомври 2008):</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>&quot;<b>Въведение в програмирането с Java</b>&quot; – този курс
+обхваща учебния материал от настоящата книга и ви подготвя за следващото ниво
+на обучение. След него може да се обучавате за софтуерен инженер в направления
+Java, Microsoft .NET или други платформи.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>&quot;<b>Въведение в програмирането със C#</b>&quot; – този курс
+обхваща учебния материал от настоящата книга, но с езика C#, и ви подготвя за
+следващото ниво на обучение. След него може да се обучавате за софтуерен
+инженер в направления Microsoft .NET, Java или други платформи.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>&quot;<b>Въведение в програмирането със C</b>&quot;</span><span
+lang=BG> </span><span lang=BG>и &quot;<b>Въведение в програ­мира­нето със C++</b>&quot;
+са курсове, които се провеждат само при поръчка от фирма, партньор на
+Академията, тъй като търсенето на C и C++ специалисти не е достатъчно голямо,
+за да инвестираме в подготовката на такива кадри.</span></p>
+
+<p class=MsoNormal><span lang=BG>Курсовете за начинаещи се провеждат регулярно
+на всеки 1-2 месеца. Записването става с подаване на документи и успешно
+преминаване на няколко теста и интервюта. Целта на тестовете и интервютата е да
+се направи първоначален подбор на по-сериозните кандидати сред големия брой
+желаещи, които са несериозни и не им се работи.</span></p>
+
+<p class=MsoNormal><span lang=BG>Курсовете за начинаещи служат като филтър,
+през който преминават само курсистите, на които материята им се отдава, и се
+отнасят сериозно към обучението. Обикновено не повече от половината, които са
+приети за обучение по въведителните курсове в Академията, успяват да завършват
+успешно. Само те продължават по-нататък, в курсовете за напреднали, и достигат
+в някой момент до достатъчно знания и умения, за да получат предло­жения за
+работа.</span></p>
+
+<h3><a name="_Toc218195479"><span lang=BG>Курсовете за напреднали</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Курсовете за напреднали са много сериозни,
+задъл­бочени и продължи­телни (от 3 до 6 месеца). Те имат за задача да
+предоставят изчерпателни технологични знания и умения за практическа разработка
+на софтуер и да ви дадат основите на професията &quot;софтуерен инженер&quot;,
+след което да започнете работа в ИТ фирма. Тези курсове обхващат всички
+фундамен­тални технологии, които се използват при практическата разработка на
+софтуер (при платформи Java, .NET и други):</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Основи на програмирането и основни библиотеки</span>, <span lang=BG>използвани
+в съответната платформа.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Релационни бази от данни, SQL и средства за достъп до данни в
+съответната платформа.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Интернет технологии и уеб приложения – библиотеки и рамки за изграждане
+на уеб приложения в съответна платформа.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Технологии за разработка на настолни приложения за съответната
+платформа</span>.</p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Софтуерно инженерство и работа в екип.</span></p>
+
+<p class=MsoNormal><span lang=BG>Курсовете за напреднали в НАРС са строго
+профилирани в някоя от водещите платформи за разработка на софтуерни системи.
+За момента фокусираме върху две платформи: Java</span><span lang=BG> </span><span
+lang=BG>и</span><span lang=BG> </span><span lang=BG>.NET.</span></p>
+
+<p class=MsoNormal><span lang=BG>Курсът &quot;<b>Core Java Developer</b>&quot;
+обхваща всички основни технологии за разработка на софтуер върху Java / Java EE
+платформата:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Езикът </span>Java<span lang=BG> и основните библиотеки, които се
+използват в Java платформата: JDK, обектно-ориентирано програмиране в Java,
+обработка на изключения, работа със символни низове, регулярни изрази, структури
+от данни и колекции в Java, вход-изход и работа с потоци и много други. Работа
+със средата за разработка Eclipse.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Релационни бази от данни (RDBMS) и работа с Oracle. Моделиране на бази
+данни с CASE Studio. Езикът SQL</span> и <span lang=BG>неговото разширение
+PL/SQL. Работа с инструмента Oracle SQL Developer.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Средства за достъп от Java до релационни бази от данни: JDBC и ORM
+инструменти (Hibernate и JPA).</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>XML програмиране със средствата на Java: XML, XSchema, DTD, XPath, </span>XSLT,
+XML <span lang=BG>парсери в Java</span> (<span lang=BG>DOM, SAX, StAX и JAXP).</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Разработка на настолни </span>Java <span lang=BG>приложения с </span>AWT
+<span lang=BG>и</span><span lang=BG> </span><span lang=BG>Swing.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Интернет технологии, работа със сокети, разработка </span>н<span
+lang=BG>а уеб сайтове с HTML, CSS и JavaScript.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Разработка на Java уеб приложения с технологиите Servlets, JSP, сървър
+за уеб приложения Tomcat, потребителски тагове, Unified EL, JSTL, JavaServer
+Faces (JSF) и AJAX.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Софтуерно инженерство и работа в екип. Работа със Subversion и
+TortoiseSVN, JUnit,</span> Log4J и Ant.</p>
+
+<p class=MsoNormal><span lang=BG>За курсистите по направление &quot;<b>Core
+.NET Developer</b>&quot; фокусът е върху технологиите на Майкрософт за
+разработка на софтуерни приложения. Този курс обхваща всички по-важни
+технологии от Microsoft .NET плат­формата:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Езикът </span>C#<span lang=BG> и основните библиотеки, които се
+използват в </span>.NET<span lang=BG> платформата: </span>.NET Framework<span
+lang=BG>, обектно-ориентирано програмиране в </span>C#<span lang=BG>, обработка
+на изключения, работа със символни низове, регулярни изрази, структури от данни
+и колекции, вход-изход и работа с потоци</span>, <span lang=BG>извличане на
+данни с LINQ и много други. Работа със средата за разработка </span>Microsoft
+Visual Studio<span lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Релационни бази от данни (RDBMS) и работа с </span>MS SQL Server<span
+lang=BG>. Моделиране на бази данни със SQL</span> Server Management Studio<span
+lang=BG>. Езикът SQL</span> и <span lang=BG>неговото разширение </span>T-<span
+lang=BG>SQL.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Средства за достъп от </span>.NET<span lang=BG> до релационни бази от данни:
+</span>ADO.NET и LINQ-to-SQL<span lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>XML програмиране със средствата на</span> .NET Framework<span lang=BG>:
+XML, XSchema, DTD, XPath, </span>XSLT, <span lang=BG>XML парсери</span> (<span
+lang=BG>DOM, SAX и StAX</span>)<span lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Разработка на настолни </span>.NET <span lang=BG>приложения с </span>Windows
+Forms<span lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Интернет технологии, работа със сокети, разработка </span>н<span
+lang=BG>а уеб сайтове с HTML, CSS и JavaScript.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Разработка на уеб приложения с </span>ASP.NET, ASP.NET AJAX <span
+lang=BG>и всички останали технологии от.NET Framework.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Софтуерно инженерство и работа в екип. Работа с </span>Visual Studio
+Team System (VSTS)<span lang=BG>, </span>N<span lang=BG>Unit,</span> Log4Net и
+MSBuild.</p>
+
+<p class=MsoNormal><span lang=BG>Освен по основните направления </span>J<span
+lang=BG>ava и .NET в Академията се провеждат и задълбочени курсове по други
+технологии, които, обаче се организират нерегулярно, по пръчка на партньорски
+фирми, които търсят да назначат голям брой млади специалисти. Ето няколко
+специалности, в които НАРС провежда нерегулярни задълбочени курсове:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+lang=BG>Embedded Software Engineering and Real Time Operations Systems</span></b><span
+lang=BG> – разработка на софтуер на езика C за вградени устройства (най-вече за
+автомобилната промишленост). Този курс подготвя специалисти със специфични
+умения за програмиране върху устройства със силно ограничени ресурси (например
+64 KB оперативна памет и 1 MHz микропроцесор), операционни системи за реално
+време, управление на периферни устройства и комуникация в реално време.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+lang=BG>Web Sites Development with PHP and MySQL</span></b><span lang=BG> –
+разработка на динамични уеб сайтове и уеб приложения с PHP, MySQL, DHTML,
+JavaScript и AJAX.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b>Core
+C++ Developer</b> – <span lang=BG>разработка на софтуер с езика и платфор­мата
+C++. Обхваща задълбочено всички основни C++ технологии, като STL, Boost и
+други.</span></p>
+
+<h3><a name="_Toc218195480"><span lang=BG>Обучението в НАРС – стъпка по стъпка</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Ако един ден решите, че програмирането е нещо,
+с което искате да се занимавате сериозно и ако не сте мързеливи и несериозни и
+ако ви е дошло времето да се захванете да работите сериозно, на пълен работен
+ден, можете да се възползвате от безплатните обучения в националната академия
+по разработка на софтуер (НАРС). Стъпките, през които преми­нава едно такова
+обучение са следните:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>1.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Кандидатстване</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>2.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Приемни изпити и интервюта</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>3.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Договор за обучение и работа</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>4.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Курс &quot;Въведение в програмирането&quot; – 1 месец</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>5.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Курс за напреднали (</span>Core Java / Core .NET) <span lang=BG>– от 3
+до 6 месеца</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>6.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Интервюта за работа</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>7.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Постъпване на работа</span></p>
+
+<p class=MsoNormal><span lang=BG>Ще разгледаме в детайли всяка от тези стъпки.</span></p>
+
+<h4><span lang=BG>Стъпка 1: Кандидатстване</span></h4>
+
+<p class=MsoNormal><span lang=BG>Кандидатстването в Академията изисква да
+отворите нейния уеб сайт (<a href="http://academy.devbg.org/">http://academy.devbg.org</a>)
+и да прочетете кои са в момента курсовете, за които се набират кандидати, след
+което да подадете своите документи. Можете да попитате за това и по телефоните,
+обявени на сайта.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Внимателно
+прочетете изискванията за кандидатстване! Със сигур­ност се изисква да
+подготвите автобиографията си по образеца, който е даден на сайта и да напишете
+мотивационно писмо, но с времето изискванията се променят.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Ако не подходите старателно към
+  кандидатстването в НАРС, ще отпаднете още преди да ви повикат на интервю!</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Никоя фирма не иска да работи с хора, които не
+четат какви са изискванията и не ги спазват. Ами те такива хора и като започнат
+работа пак няма да четат какво трябва да се направи и ще си правят, каквото си
+знаят. Нито фирмите, нито ние като учебно заведение нямаме нужда от хора, които
+не са старателни.</span></p>
+
+<p class=MsoNormal><span lang=BG>Ако на сайта пише, че трябва да изпратите
+актуална снимка, значи това е важно и трябва да го направите. Ако пише, че
+трябва да напишете моти­вационно писмо, значи трябва да го направите. Ако пише,
+че трябва да представите документи за владеене на чужд език, значи трябва да
+представите. Иначе ще създадете впечатление за някой, който е несе­риозен още
+от самото начало.</span></p>
+
+<p class=MsoNormal><span lang=BG>Имайте предвид, че всичко, което изпратите в
+НАРС (документи за завър­шено обучение, мотивационно писмо, автобиография и
+т.н.), става част от вашия профил и един ден, когато очаквате предло­жения за
+работа, работодателите ще гледат всички тези документи и може да не ви повикат
+на интервю само защото примерно не сте написали грамотно мотиваци­онно писмо.
+Гледайте на постъпването в НАРС като на първи стъпки за постъпване на работа –
+ако не се отнасяте старателно, работодателите няма да ви харесат.</span></p>
+
+<p class=MsoNormal><span lang=BG>Може би сте забелязали колко пъти споменахме
+фразите &quot;сериозно отношение&quot;, &quot;сериозен интерес&quot;, &quot;адекватни
+очаквания&quot;, &quot;силно желание за работа&quot; и подобни. Това не е
+случайно. Ние предлагаме безплатно обучение и работа на всички сериозни
+кандидати, на които им се работи. Предложението не важи за останалите.</span></p>
+
+<p class=MsoNormal><span lang=BG>Ние не искаме да обучаваме някой, който се е
+записал в НАРС само защото е безплатно. Ако нямате сериозен интерес към
+програмирането и към дългосрочна работа като софтуерен инженер, не канди­датствайте.
+Обуче­нието в Академията не е игра и не е за забавление. Това е сериозна
+инвестиция във вашето бъдеще (макар и непарична) и трябва да подхо­дите към нея
+сериозно. Може би го написах за 20-ти път, но наистина е важно да го разберете.
+Лигльовци не ни трябват нито на нас, нито на работодателите!</span></p>
+
+<h4><span lang=BG>Стъпка 2: Приемни изпити и интервюта</span></h4>
+
+<p class=MsoNormal><span lang=BG>Преди постъпване на обучение в НАРС трябва да
+преминете успешно през процеса на одобрение. Това включва попълване на анкета,
+преминаване на тест по компютърна грамотност, тест по английски език, тест за
+изгот­вяне на психологически профил и персонално интервю. Резултатите от вашето
+представяне докато преминавате през тези стъпки стават част от вашия профил и
+могат да влияят на работодателите при решението им дали да ви поканят на
+интервю.</span></p>
+
+<p class=MsoNormal><span lang=BG>Дори да постигнете високи резултати по всички
+приемни изпити, това не ви гарантира, че ще ви приемем за обучение.</span></p>
+
+<p class=MsoNormal><span lang=BG>Всички курсисти в НАРС постъпват след
+одобрение по време на персо­нално интервю с наш специалист. Интервюто има за
+цел да прецени дали кандидат е достатъчно мотивиран да учи и да работи, дали
+има адекватни очаквания и дали му се работи наистина. То е най-важния елемент
+от процеса на кандидатстване.</span></p>
+
+<h4><span lang=BG>Стъпка 3: Договор за обучение и работа</span></h4>
+
+<p class=MsoNormal><span lang=BG>Ако успешно преминете процедурата по
+кандидатстването, изпитите и интервюто, ще ви бъде предложено да подпишете
+договор за обучение в НАРС, с който се ангажирате да преминете двата курса на
+обучение (курсът за начинаещи и при добър резултат и курса за напреднали) и
+след обучението да постъпите на работа по специалността.</span></p>
+
+<p class=MsoNormal><span lang=BG>Разбира се, с времето условията на договорите
+се променят, а при някои курсове има и индивидуални изисквания и ангажименти,
+но като цяло с този договор вие се задължавате да учите сериозно и да работите
+след това, а Академията се задължава да ви научи и да ви предложи работа по
+изучаваната специалност.</span></p>
+
+<h4><span lang=BG>Стъпка 4: Курс &quot;Въведение в програмирането&quot;</span></h4>
+
+<p class=MsoNormal><span lang=BG>Всички успешно постъпили на обучение в НАРС
+започват от курс &quot;Въве­дение в програмирането&quot;, който както вече
+обяснихме, обхваща основите на програмирането. Може да преминете &quot;Въведение
+в програмирането с Java&quot; или &quot;Въведение в програмирането със C#&quot;
+или друг еквивалентен курс, след което можете да продължите във всяка от
+специалностите в следващото ниво на обучение.</span></p>
+
+<p class=MsoNormal><span lang=BG>Нормално е не всички да се справят с
+обучението. Обикновено по-малко от половината завършват успешно курса по
+програмиране за начинаещи. Някои се оказват несериозни, други осъзнават, че
+програмирането не е за тях, трети не отделят достатъчно време за обучението и
+за задачите вкъщи, а други просто се отказват преди завърши обучението.</span></p>
+
+<p class=MsoNormal><span lang=BG>Ако наистина се борите да овладеете професията
+&quot;софтуерен инженер&quot; и да работите в индустрията, трябва да преминете
+курса за начинаещи и да се стремите да бъдете сред най-добрите в курса. Това ще
+ви даде предимство при класирането за следващите нива на обучение, както и след
+това при интервютата за работа. Не е важно само да изкарате курса, а да го завършите
+с отличие, за да изпреварите останалите и да изберете най-добрите фирми и
+предложения за работа.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Курсът, заедно с
+последващите изпити, отнема между месец и месец и половина, през които трябва
+да отделяте най-малко по 4-5 часа всеки ден, за да успеете да овладеете учебния
+материал. Иначе е много веро­ятно да не се справите и да отпаднете.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Ако се захванете да учите основите на
+  програмирането в НАРС, трябва да отделяте за това най-малко по 4-5 часа всеки
+  ден. Ако искате да научите всичко, ще трябва да посветите на обучението
+  цялото си време!</span></p>
+  </td>
+ </tr>
+</table>
+
+<h4><span lang=BG>Стъпка 5: Курс за напреднали</span></h4>
+
+<p class=MsoNormal><span lang=BG>Завършилите с добри резултати курса &quot;Въведение
+в програмирането&quot; продължават обучението си в следващото ниво на обучение
+по едно от направленията &quot;Core Java Developer&quot;, &quot;Core .NET
+Developer&quot; или друго.</span></p>
+
+<p class=MsoNormal><span lang=BG>Курсовете за напреднали са много по-сериозни и
+задълбочени, отколкото курсовете за начинаещи. За тях е необходимо да отделите
+също много време и усилия в продължение на от 3 до 6 месеца. Повечето такива
+курсове продължават 5 месеца и се провеждат вечерно време и събота и неделя
+(през седмица). По този начин курсовете не ви ограничават да работите или да
+учите през останалото време, въпреки че е препоръ­чително, когато започнете
+курса, да посветите цялото си време на него и да ограничите максимално всички
+останали ангажименти.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>За да научите
+учебния материал от курсовете за напреднали, трябва да отделяте най-малко по
+5-6 часа всеки ден в продължение на целия курс. В това няма нищо страшно,
+защото след като завършите курса, ви очаква работа на пълен работен ден (или
+поне на 6 часа на ден) и е добре да свиквате от възможно най-рано.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Софтуерен инженер не се става лесно и
+  бързо. Ако се захванете да учите за софтуерен инженер в НАРС, ще трябва да
+  сте много сериозни и мотивирани и да отде­ляте най-малко по 5-6 часа всеки
+  ден в продължение на няколко месеца!</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Отново трябва да припомним, че цялата програма
+за безплатно обучение и постъпване на работа, която Академията предлага, е за
+сериозни хора, които имат и желание и мотивация и възможност да отделят цялото
+си време на това занимание, след което да отделят пълен работен ден за работа
+при своя работодател.</span></p>
+
+<h4><span lang=BG>Стъпка 6: Интервюта за работа</span></h4>
+
+<p class=MsoNormal><span lang=BG>Още по време на курса за всеки курсист се
+изготвя и поддържа профил, съдържащ всички негови резултати от изпити,
+автобиография и други документи. По този профил софтуерните компании преценяват
+кои курсисти да поканят на интервю.</span></p>
+
+<p class=MsoNormal><span lang=BG>Един курсист може да бъде поканен на едно или
+повече интервюта, но силните студенти от курса обикновено се справят още на
+първото интервю и постъпват на работа.</span></p>
+
+<p class=MsoNormal><span lang=BG>При покана за интервю трябва добре да се подготвите.
+Това е вашето представяне, от което зависи дали ще ви предложат работа. Трябва
+добре да проучите фирмата, в която ви канят: с какво се занимава, по какви
+проекти работи, какви технологии използва и т. н. Трябва да се държите
+адекватно на самото интервю, за което ще получите препоръки от НАРС. Освен
+техническите задачки, ще ви питат каква заплата очаквате и други въпроси. Много
+е важно да не се &quot;изцепвате&quot; с неадекватно очакване за заплащане.
+Никой не започва с директорска позиция и огромна заплата, така че имайте
+търпение. Ако работите сериозно и давате сериозен принос за проектите, в които
+ви включват, заплатата ви постепенно ще расте. Така е във всяка фирма.</span></p>
+
+<h4><span lang=BG>Как протича едно интервю за работа?</span></h4>
+
+<p class=MsoNormal><span lang=BG>Едно типично интервю за работа протича в
+следните стъпки:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>1.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Интервюиращия ви се представя и ви разказва накратко за фирмата и
+отдела, за който кандидатствате. Обяснява ви за проек­тите и технологиите,
+които използват и други общи приказки.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>2.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Вие се представяте накратко с няколко думи. Може да споменете какво сте
+учили, от кога се занимавате с програмиране, какво ви е запалило и т.н. Трябва
+да покажете силен интерес към професията.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>3.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Интервюиращият (често пъти може да са няколко души) ви задава техни­чески
+въпроси. Целта е да провери знанията ви. Примерно може да ви пита &quot;<i>какво
+е хеш-таблица и как работи</i>&quot; или &quot;<i>как работи полиморфизмът в
+ООП</i>&quot;, може да ви накара да напишете парче код, примерно да
+имплементирате свързан списък или да разбъркате тесте карти в случаен ред. Това
+е първата задачка – тя обикновено не е свързана с технологии, а просто
+проверява дали имате алгорит­мично мислене.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt'><span lang=BG>Каквото и да ви
+питат, трябва да се мъчите да стигнете до някакво решение. Вземете лист и
+химикал, направете скица на задачата и разсъждавайте на глас. Не е толкова
+важно дали ще решите задачата, а дали ще подходите към нея правилно. В главата &quot;<a
+href="#_Глава_22._Как">Как да решаваме задачи по програми­ране?</a>&quot; има
+много полезни съвети как да подхождате при решава­нето на задачи по програ­миране.
+След­вайте тези съвети и на интервюто за работа.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt'><span lang=BG>След това може да
+ви питат за технологични задачки, примерно да моделирате проста база данни, да
+напишете някаква SQL заявка, могат да ви питат за XML, за HTML, за уеб
+технологии и за много други неща, които сте учили или ще учите в курса на НАРС.
+Трябва винаги да търсите решение, да разсъждавате, дори да не знаете отговора.
+Ако почнете да мислите дълго, без да говорите, това е лош знак. Трябва да
+мислите и разсъждавате на глас!</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>4.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Следват нетехническите въпроси. Те могат да са изключително разнообразни,
+дори понякога странни. Примерно може да ви помолят да се опишете с 3 думи, или
+да кажете 3 добри и 3 лоши ваши качества. Очаквайте такива въпроси и се
+подгответе. Могат да ви питат и странни въпроси, като примерно дали спортувате,
+дали играете футбол и на каква позиция. Целта на всички тези въпроси е най-вече
+да ви преценят дали ще работите добре в екип.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt'><span lang=BG>Сред нетехническите
+въпроси ще ви питат къде сте учили, какво сте научили, къде смятате да учите и
+как си представяте разви­тието си след няколко години. Подгответе се за такива
+въпроси. Винаги ги задават. Най-голямата глупост, която можете да кажете е нещо
+в стил &quot;<i>искам да поработя малко, че ще заминавам да уча в чужбина и ми
+трябват пари</i>&quot; или &quot;<i>не ми се работи, ама нямам пари</i>&quot;
+или &quot;<i>все ми е тая какво ще работя, само да плащат</i>&quot;. Отговор,
+заради който можете да си тръгнете от интервюто е нещо в стил &quot;<i>мисля
+след 1 година да стана шеф на отдел, че не може само да програмирам</i>&quot;.
+Дори да не сте скромен, проявете скромност на интервюто! Ще ви помогне.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt'><span lang=BG>Много е важно да
+вдъхвате усещане в отсрещната страна, че имате огромно желание да работите и то
+точно това, което ви предлагат (дори да не е вярно!) и че сте готови да четете
+много, да учите и да се справите, защото това е мечтаната за вас позиция и това
+е най-добрата фирма за вас. Трябва да казвате не само, че много ви се работи, а
+че много ви се работи точно в тази фирма и точно на тази позиция и че точно
+тези проекти, за които ви разказват, са ви супер интересни. За целта трябва
+предварително да проучите фирмата, в която отивате на интервю – да разгледате
+техния уеб сайт, да разпитате познати, да се поровите из Интернет и т.н.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>5.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>В един момент ще ви питат колко пари очаквате да получавате. Винаги
+задават този въпрос. Може да отговорите &quot;<i>вие преценете колко да ми
+предложите</i>&quot;. Ако след това не ви отправят предло­жение, кажете някакво
+разумно число. Пригответе се за този въпрос. Абсо­лютно е сигурно, че ще ви го
+зададат!</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt'><span lang=BG>Този въпрос винаги
+е труден. От една страна не искате да се прецакате и да поискате по-малко, отколкото
+те биха ви дали, а от друга – не искате да ви откажат работата само защото сте
+се полакомили за пари. Наистина, по-важното за вас е да започнете работа,
+отколкото да започнете на висока заплата. Ако не ви оценяват, след като
+понатрупате опит лесно ще си намерите по-добра работа, нали? Сега най-важното е
+да не се изцепвате – да поискате малко пари и да обясните, че очаквате
+повишаване с времето според справянето ви с поставените задачи. Това е
+най-нормалното нещо, което се случва в една фирма – всички ново­бранци започват
+от ниска заплата и с времето им я вдигат.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>6.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>В един момент ще ви питат дали имате някакви въпроси. Има два начина да
+сгрешите тук: да не питате нищо или да започнете да предявявате големи
+претенции. И в двата случая ще направи лошо впечатление и ще си намалите
+шансовете да ви предложат работа.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt'><span lang=BG>Ако не питате нищо,
+това означава, че не сте комуникативен (което ще ви пречи да работите в екип)
+или че не ви интересува нищо, стига да имате работа и да получавате заплата
+(което означава липса на мотива­ция).</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt'><span lang=BG>Ако почнете да
+отправяте претенции за какво ли не, това е много лошо! Не е добре изкарвате на
+преден план въпроси като &quot;<i>колко е отпуската при вас</i>&quot;, &quot;<i>има
+ли кафе в офиса</i>&quot;, &quot;<i>има ли тенис маса</i>&quot; и подобни.
+Такива въпроси показват, че не се интересувате от работата, а само от
+забавления, пари и облаги. Никой не иска такива служители.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt'><span lang=BG>Бъдете внимателни с
+претенции в стил &quot;аз съм студент и в сесията няма да идвам на работа&quot;.
+Това наистина е въпрос, който трябва да поставите, но го поставете внимателно,
+примерно кажете така: &quot;<i>Тъй като съм студент, около сесията става
+напрегнато с изпитите. Имате ли възможност в такива случаи, ако проектът
+позволява, да отсъствам по малко от работа. Аз, разбира се ще предупредя за
+това месец по-рано, но ме интересува как решавате проблема във вашата фирма,
+тъй като сигурно има и други студенти</i>&quot;.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt'><span lang=BG>Не задълбавайте
+много по темата &quot;<i>пари, бонуси, осигуровки</i>&quot;. Това показва, че
+за вас парите са най-важното и че ще напуснете фир­мата веднага, щом някой ви
+предложи малко по-висока заплата. Във всяка фирма се надяват да наемат служител
+дългосрочно. Трябва да правите впечатление, че ви е много интересно и че сте
+сериозни и ще работите дълго в компанията и ще се развивате вътре в нея
+дългосрочно.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt'><span lang=BG>Питайте въпроси
+около проекта, около технологиите и около работата. Това показва, че се
+интересувате какво ще работите, т. е. мотивирани сте и ви се работи. Питайте
+примерно &quot;<i>ако започна евентуално при вас, какъв ще ми е първият проект</i>&quot;.
+Това е въпрос, който е 100% положителен и ви представя в добра светлина. Може
+да го запомните като &quot;дежурния въпрос&quot;. Може да питате и други
+въпроси, свързани с работата и технологиите, примерно &quot;<i>при вас Oracle
+ли ползвате или друга база данни?</i>&quot;. Може да питате каква е структурата
+на екипа, кой оставя задачите, по какъв начин, какво хранилище за сорс код се
+ползва, на какви езици и платформи се пише, колко голям е един екип и т.н. Това
+са все въпроси, които показват, че се интересувате какво ще работите, а не
+какви са облагите (пари, отпуски и подобни).</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>7.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Накрая интервюиращият ще ви благодари за срещата и ще ви обещае да се
+свърже с вас, веднага, след като обсъдят с колегите дали могат да ви отправят
+предложение за работа. Дори да ви харесат, няма да ви кажат &quot;<i>нает сте,
+честито</i>&quot;. Ще трябва да изчакате. Има и други кандидати и те трябва да
+преценят.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Описаният сценарий
+малко или много се повтаря на всяко едно интервю за работа, така че пригответе
+се за него. Очаквайте въпросите и ситуа­циите, които описахме по-горе и това ще
+увеличи значително шансовете ви да преминете успешно интервюто.</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Имайте адекватни очаквания за заплащане
+  и се дръжте скромно. Когато ви питат технически въпроси, разсъжда­вайте на
+  глас и си рисувайте проблема на лист хартия или на дъската. Питайте за
+  проектите и за работата, а не за заплатата и за отпуските. Бъдете учтиви и
+  възпитани. Не прекъсвайте другите докато говорят. Не правете изцепки!</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Някои път силни кандидати се притесняват по
+интервютата и по тази причина се държат несвойствено, което им пречи да се
+справят добре. За да не се притеснявате на интервюто, можете да тренирате
+интервюта с ваши познати или просто да отворите обявите в Интернет и да
+подадете документи в няколко фирми. Така ще можете да отидете на няколко
+интервюта за работа и да натрупате опит. Може пък да ви одобрят. Тогава ще им
+обясните за Академията, курсовете и всичко останало. Запомнете какви въпроси ви
+питат и помислете какво трябва да отговаряте. Ако н</span>e<span lang=BG>
+знаете кои са добрите отговори, питайте.</span></p>
+
+<h4><span lang=BG>Стъпка 7: Постъпване на работа</span></h4>
+
+<p class=MsoNormal><span lang=BG>Няколко дни след интервюто можете да очаквате
+предложение за работа. Ще ви се обадят и ще ви предложат договор за работа.
+Най-добре е да приемете, освен, ако няма нещо много фрапиращо в условията. Дори
+и условията да не са блестящи, важно е да започнете работа. Започването на
+първа работа е най-трудно. След като натрупате опит, можете да преговаряте за
+по-добри условия или да се преместите в друга фирма. Всички фирми търсят
+специалисти с опит.</span></p>
+
+<p class=MsoNormal><span lang=BG>Може да ви предложат пробен период. Това
+означава или че не са убедени, че ще се справите с работата, която ще ви
+възложат, или просто такива са процедурите им. И в двата случая е най-добре да
+се съгласите, дори да ви предложат по-ниско заплащане за първия месец или два,
+когато тече пробният период. При всички положения вие първият месец на една
+нова работа основно ще се запознавате с проекта и с технологии­те и реално няма
+да свършите работа, с която да си изкарате заплатата, така че помислете и за
+това. Фирмата ви плаща таксата за обучение, инвестира във вас в дълго­срочен
+план, с ясната идея, че в началото повече ще учите и ще навлизате в материята,
+отколкото ще допринасяте за проек­тите. След време ще навлезете в работата и ще
+станете наистина полезни на фирмата. Едва тогава тя ще има някаква
+възвращаемост. Затова не гледайте на пробния период само като една добра
+причина да ви плащат по-малко в първите месеци.</span></p>
+
+<p class=MsoNormal><span lang=BG>Най-вероятно от фирмата ще ви повикат на още
+една среща. Това е моментът да уточните детайлите по вашите отношения:
+ангажиментът към фирмата, осигуровките, отпуските, работното време и всякакви
+други въпроси. Можете да уточнявате по тези въпроси без притеснения, сега не
+сте на интервю и това няма да направи лошо впечатление.</span></p>
+
+<h3><a name="_Toc218195481"><span lang=BG>Възпитаниците на НАРС</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>От създаването си през 2005 г. до октомври
+2008 г. по пълната програма на НАРС за обучение по въведение в програмирането и
+последващи курсове за напреднали (Core .NET, Core Java, Core C++ и Embedded C)
+преминаха успешно и започнаха работа по специал­ността над 350 души:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Core Java Developer – 166 завършиха и започнаха работа като Java
+софтуерни инженери.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Core .NET Developer – 136 завършиха и започнаха работа като .NET
+софтуерни инженери.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Core C++ </span>Developer <span lang=BG>– 25 завършиха и започнаха
+работа</span><span lang=BG> </span><span lang=BG>като C++ софтуерни инженери.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Core
+C &amp; Embedded C Developer <span lang=BG>– </span>31<span lang=BG> завършиха
+и започнаха работа</span><span lang=BG> </span><span lang=BG>като </span>Embedded
+<span lang=BG>C софтуерни инженери.</span></p>
+
+<p class=MsoNormal><span lang=BG>В това число не броим около 7% от студентите,
+които завършиха успешно, но не започнаха веднага работа, защото фирмите, които
+инвестираха в тяхното обучение, не ги одобриха за работа при тях.</span></p>
+
+<p class=MsoNormal><span lang=BG>От успешно завършилите Академията и започнали
+работа след това курсисти, посочени по-горе, едва около 12% осигуриха собствено
+финан­сиране за обучението си. Всички останали учиха безплатно и получиха
+успешен старт в кариерата си на софтуерен инженер безплатно!</span></p>
+
+<p class=MsoNormal><span lang=BG>Това са данните за всички успешно завършили. В
+това число не броим студентите, преминали обученията &quot;Въведение в
+програмирането&quot; (над 1000 души), защото голяма част от тях не успяха да
+завършат успешно и да преминат в следващото ниво на обучение.</span></p>
+
+<p class=MsoNormal><span lang=BG>Всички тези данни се отнасят за учебния център
+на Академията в София. В същото време в НАРС Варна обучения преминаха още
+десетки млади хора, които успешно започнаха работа след това.</span></p>
+
+<h4><span lang=BG>Къде работят възпитаниците на НАРС?</span></h4>
+
+<p class=MsoNormal><span lang=BG>Националната академия по разработка на софтуер
+даде безплатно знания, умения, професия и работа на стотици млади хора и
+продължава да го прави успешно и в момента. Сред фирмите, които наемат на
+работа възпи­таници на Академията са световноизвестни компании като SAP,
+Telerik, Siemens и Johnson Controls.</span></p>
+
+<p class=MsoNormal><span lang=BG>Следва списък с имена на фирми, в които
+започнаха работа възпитаници на НАРС, преми­нали през безплатните обучения в
+периода 2005-2008 г.:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><a
+name="OLE_LINK2"></a><a name="OLE_LINK1"><span lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>От курсовете Core Java </span></a>Developer <span
+lang=BG>възпитаници на НАРС започнаха работа в следните фирми (дадени са по
+азбучен ред): </span><span lang=BG>Abritus, Acsior, Antipodes, Bank Service,
+Bianor, Borica, Comsoft, Fadata, GB Services, Glaxo SK, I:FAO, Insight
+Technologies, ITSS, Johnson Controls, Lex BG, Logical Factor, MAG Studio,
+Merkatis, Micro Focus, MusalaSoft, Ocean Solutions, Prolet IT, Rila Solutions,
+Rushmore Digital, SAP, Sciant, Seeburger Informatik, Sentido, Siemens,
+Solitron, Stemo, ИДМ, Инфор</span>­<span lang=BG>мационно Обслужване, Пиранко
+БГ, Спийди.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>От курсовете Core </span>.NET Developer <span lang=BG>възпитаници на
+НАРС започнаха работа в следните фирми (дадени са по азбучен ред):</span><span
+lang=BG> </span><span lang=BG>Amexis, Applied Language Solutions, Easy Credit,
+Insight Technologies, Interconsult Bulgaria (ICB), Kontrax, MAG Studio, Micro
+Focus, Musala Soft, Omnisoft, Portelus, Propeople, Rila Solutions, RISK
+Engineering, Sysconsulting, Telerik, Unicoders, Wasmar Solutions, Wohnfinder,
+Валвет, Информационно Обслужване, Мелон България, Омегасофт.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Курсовете по C++ бяха основно спонсорирани от фирма Euro Games </span>T<span
+lang=BG>echnology (EGT), където работят десетки възпитаници на НАРС.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Курсовете по Embedded C</span><span lang=BG> </span><span lang=BG>бяха
+основно спонсорирани от фирма Johnson Controls и повечето завършили тези
+обучения работят там.</span></p>
+
+<p class=MsoNormal><span lang=BG>За някои фирми като Telerik, SAP, InterConsult
+Bulgaria (ICB), Johnson Controls, Euro Games Technology (EGT), Acsior</span>,
+Fadata<span lang=BG> и Seeburger Informatik НАРС проведе индивидуални програми
+за обучение и сега във всяка от тях работят по над 10 възпитаници на Академията.</span></p>
+
+<h2><a name="_Toc218195482"><span lang=BG>Поглед към съдържанието на книгата</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Нека сега разгледаме накратко какво ни
+предстои следващите глави на книгата. Ще разка­жем по няколко изречения за
+всяка от тях, за да знаете какво ви очаква да научите.</span></p>
+
+<h3><a name="_Toc218195483"><span lang=BG>Глава 1. Въведение в програмирането</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_1._Въведение">Въведение
+в програмирането</a>&quot; ще разгледаме основните термини от програмирането и
+ще напишем първата си прог­рама. Ще се запознаем с това какво е програмиране и
+каква е връзката му с компю­трите и програмните езици. Накратко ще разгледаме
+основните етапи при писането на софтуер. Ще въведем езика Java и ще се
+запознаем с Java платформата и Java технологиите. Ще разгледаме какви помощни
+сред­ства са ни необходими, за да можем да програмираме на Java. Ще използваме
+Java, за да напишем първата си програма, ще я компилираме и изпълним както от
+командния ред, така и от среда за разработка Eclipse. Ще се запознаем с
+документацията на Java, която позволява по-ната­тъшно изследване на
+възможностите на езика.</span></p>
+
+<h3><a name="_Toc218195484"><span lang=BG>Глава 2. Примитивни типове и
+променливи</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_2._Примитивни">Примитивни
+типове и променливи</a>&quot; ще разгледаме примитив­ните типове и променливи в
+Java –</span><span lang=BG> </span><span lang=BG>какво представляват и как се
+работи с тях. Първо ще се спрем на типовете данни – целочислени типове, реални
+типове с плаваща запетая, булев тип, символен тип, обектен тип и стрингов тип.
+Ще продължим с това какво е променлива, какви са нейните характеристики, как се
+декларира, как се присвоява стойност и какво е инициализация на променлива. Ще
+се запознаем и с другото наимено­вание на променливата, а по-точно –</span><span
+lang=BG> </span><span lang=BG>&quot;идентификатор&quot;. Към края на главата ще
+се спрем на литералите.</span></p>
+
+<h3><a name="_Toc218195485"><span lang=BG>Глава 3. Оператори и изрази</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_3._Оператори">Оператори,
+изрази</a>&quot; ще се запознаем с операторите и действи­ята, които те
+извършват върху различните типове данни. Ще разясним приоритета на операторите
+и групите оператори според броя на аргумен­тите, които приемат и това какво
+действие извършват. След това ще разгледаме преобразуването на типове, защо е
+нужно и как да се работим с него. Накрая ще разясним какво представляват
+изразите и как се използват.</span></p>
+
+<h3><a name="_Toc218195486"><span lang=BG>Глава 4. Вход и изход от конзолата</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_4._Вход">Вход
+и изход от конзолата</a>&quot; ще се запознаем с конзолата. Ще обясним какво
+пред­ставлява тя, кога и как се използва, какви са принци­пите на пове­чето
+програмни езици за достъп до конзо­лата. Ще се запоз­наем с някой от
+възможностите на Java за взаимодей­ствие с потребителя. Ще разгледаме основните
+потоци за входно-изходни операции </span><span class=Code><span lang=BG>System.in</span></span><span
+class=Code><span lang=BG>, System.out</span></span><span lang=BG> и </span><span
+class=Code><span lang=BG>System.err</span></span><span lang=BG>, класът </span><span
+class=Code><span lang=BG>Scanner</span></span><span lang=BG> и използ­ването на
+формати­ращи низове за отпечатване на данни в различни формати.</span></p>
+
+<h3><a name="_Toc218195487"><span lang=BG>Глава 5. Условни конструкции</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_5._Условни">Условни
+конструкции</a>&quot; ще разгледаме условните конструкции в Java, чрез които
+можем да изпълняваме различни действия в зависимост от някакво условие. Ще
+обясним синтаксиса на условните оператори: </span><span class=Code><span
+lang=BG>if</span></span><span lang=BG> и </span><span class=Code><span lang=BG>if</span></span><span
+lang=BG>-</span><span class=Code><span lang=BG>else</span></span><span lang=BG>
+с подходящи примери и ще разясним практичес­кото приложение на опера­тора за
+избор </span><span class=Code><span lang=BG>switch</span></span><span lang=BG>.
+Ще обърнем внимание на добрите прак­тики, които е нужно да бъдат следвани, с
+цел постигане на по-добър стил на програмиране при изпол­зването на вложени и други
+видове условни конструкции.</span></p>
+
+<h3><a name="_Toc218195488"><span lang=BG>Глава 6. Цикли</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_6._Цикли">Цикли</a>&quot;
+ще разгледаме конструкциите за цикли, с които можем да изпълняваме даден
+фрагмент програмен код многократно. Ще разгле­даме как се реализират повторения
+с условие (</span><span class=Code><span lang=BG>while</span></span><span
+lang=BG> и </span><span class=Code><span lang=BG>do</span></span><span lang=BG>-</span><span
+class=Code><span lang=BG>while</span></span><span lang=BG> цикли) и как се
+работи с </span><span class=Code><span lang=BG>for</span></span><span lang=BG>-цикли.
+Ще дадем примери за различните възмож­ности за дефиниране на цикъл, за начина
+им на конструиране и за някои от основните им приложения. Накрая ще разгледаме
+как можем да използ­ваме няколко цикъла един в друг (вложени цикли).</span></p>
+
+<h3><a name="_Toc218195489"><span lang=BG>Глава 7. Масиви</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_7._Масиви">Масиви</a>&quot;
+ще се запознаем с масивите като средства за обра­ботка на поредица от еднакви
+по тип елементи. Ще обясним какво представляват масивите, как можем да
+декларираме, съз­даваме и инициа­лизираме масиви. Ще обърнем внимание на
+едномерните и много­мерните масиви. Ще разгледаме различни начини за обхождане
+на масив, четене от стандартния вход и отпечатване на стандартния изход. Ще
+дадем много примери за задачи, които се решават с използването на масиви и ще
+ви покажем колко полезни са те.</span></p>
+
+<h3><a name="_Toc218195490"><span lang=BG>Глава 8. Бройни системи</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_8._Бройни">Бройни
+системи</a>&quot; ще разгледаме начините на работата с различни бройни системи
+и представянето на числата в тях. Повече внимание ще отделим на представянето
+на числата в десетична, двоична и шестнаде­сетична бройна система, тъй като те
+се използват масово в компютърната техника и в програмирането. Ще обясним и
+начините за кодиране на числовите данни в компютъра и видовете кодове, а
+именно: прав код, обратен код, допълнителен код и двоично-десетичен код.</span></p>
+
+<h3><a name="_Toc218195491"><span lang=BG>Глава 9. Методи</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_9._Методи">Методи</a>&quot;
+ще се запознаем подробно с това какво е метод и защо се използват методи. Ще
+разберем как се декларират методи и какво е сигнатура на метод. Ще научим как
+да създадем собствен метод и съответно как да го използваме (извикваме) в
+последствие. Ще разбе­рем как можем да използваме параметри в методи и как да
+върнем резултат от метод. Накрая ще препоръчаме някои утвърдени практики при
+работата с методи.</span></p>
+
+<h3><a name="_Toc218195492"><span lang=BG>Глава 10. Рекурсия</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_10._Рекурсия">Рекурсия</a>&quot;
+ще се запознаем с рекурсията и нейните приложе­ния. Рекурсията представлява
+мощна техника, при която един метод извиква сам себе си. С нея могат да се
+решават сложни комбинаторни задачи, при които с лекота могат да бъдат
+изчерпвани различни комбина­торни конфи­гурации. Ще ви покажем много примери за
+правилно и неправилно използване на рекурсия и ще ви убедим колко полезна може
+да е тя.</span></p>
+
+<h3><a name="_Toc218195493"><span lang=BG>Глава 11. Създаване и използване на
+обекти</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_11._Създаване">Създаване
+и използване на обекти</a>&quot; ще се запоз­наем накратко с основните понятия
+в обектно-ориентираното програми­ране – класовете и обектите – и ще обясним как
+да използваме класовете от стандартните библиотеки на Java. Ще се спрем на
+някои често използ­вани системни класове и ще видим как се създават и използват
+техни инстанции (обекти). Ще разгледаме как можем да осъществяваме достъп до
+полетата на даден обект, как да извикваме конструктори и как да работим със
+статичните полета в класовете. Накрая ще се запознаем с понятието пакети –
+какво ни помагат, как да ги включваме и използваме.</span></p>
+
+<h3><a name="_Toc218195494"><span lang=BG>Глава 12. Обработка на изключения</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_12._Обработка">Обработка
+на изключения</a>&quot; ще се запознаем с изключенията в Java и обектно</span>-<span
+lang=BG>ориентираното програмиране. Ще се научим как да ги прихващаме чрез конструкцията
+</span><span class=Code><span lang=BG>try-catch</span></span><span lang=BG>,
+как да ги предаваме на предходните методи чрез </span><span class=Code><span
+lang=BG>throws </span></span><span lang=BG>и как да хвърляме соб­ствени или
+прихванати изключения. Ще дадем редица примери за използ­ването им. Ще
+разгледаме типовете изключения и йерархията, която образуват. Накрая ще се
+запознаем с предимствата при използва­нето на изключения и с това как
+най-правилно да ги прилагаме в кон­кретни ситуации.</span></p>
+
+<h3><a name="_Toc218195495"><span lang=BG>Глава 13. Символни низове</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_13._Символни">Символни
+низове</a>&quot; ще се запознаем със символ­ните низове: как са реализирани те
+в Java и по какъв начин можем да обработваме текстово съдържание. Ще прегледаме
+различни методи за манипулация на текст; ще научим как да извличаме поднизове
+по зададени параметри, как да търсим за ключови думи, както и да отделяме един
+низ по разделители. Ще се запознаем с методи и класове за по-елегантно и
+стриктно формати­ране на текстовото съдържание на конзо­лата, с различни
+методики за извеждане на числа, а също и с извежда­нето на отделни компоненти
+на текущата дата. Накрая ще предоставим полезна информация за регу­лярните
+изрази и ще научим по какъв начин да извличаме данни, отговарящи на определен
+шаблон.</span></p>
+
+<h3><a name="_Toc218195496"><span lang=BG>Глава 14. Дефиниране на класове</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a
+href="#_Глава_14._Дефиниране">Дефиниране на класове</a>&quot; ще разберем как
+можем да дефини­раме собствени класове и кои са елементите на класовете. Ще се
+научим да декларираме полета, конструктори и свойства в класовете. Ще припомним
+какво е метод и ще разширим знанията си за модифи­катори и нива на достъп до
+полетата и методите на класовете. Ще разгле­даме особеностите на конструкторите
+и подробно ще обясним как обек­тите се съхраняват в динамичната памет и как се
+инициализират полетата им. Накрая ще обясним какво представляват статичните
+елементи на класа – полета (включително константи), свойства и методи и как да
+ги ползваме.</span></p>
+
+<h3><a name="_Toc218195497"><span lang=BG>Глава 15. Текстови файлове</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_15._Текстови">Текстови
+файлове</a>&quot; ще се запознаем с основните похвати при работа с текстови
+файлове в Java. Ще разясним какво е това поток, за какво служи и как се ползва.
+Ще обясним какво е текстов файл и как се чете и пише в текстови файлове. Ще
+демонстрираме и обясним добрите практики за прихващане и обра­ботка на
+изключения, възникващи при работата с файлове. Разбира се, всичко това ще
+онагледим и демон­стрираме на практика с много примери.</span></p>
+
+<h3><a name="_Toc218195498"><span lang=BG>Глава 16. Линейни структури от данни</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_16._Линейни">Линейни
+структури от данни</a>&quot; ще се запознаем с някои от основните представяния
+на данните в програмирането. Ще видим как при определена задача една структура
+е по-ефективна и удобна от друга. Ще разгледаме структурите &quot;списък&quot;,
+&quot;стек&quot; и &quot;опашка&quot; и тяхното приложе­ние. Подробно ще се
+запознаем и с някои от реализациите на тези структури.</span></p>
+
+<h3><a name="_Toc218195499"><span lang=BG>Глава 17. Дървета и графи</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_17._Дървета">Дървета
+и графи</a>&quot; ще разгледаме т. нар. дърво­видни структури от данни, каквито
+са дърветата</span><span lang=BG> </span><span lang=BG>и графите. Познаването
+на свойствата на тези стру­ктури е важно за съвременното програмиране. Всяка от
+тях се използва за моде­лирането на проблеми от реалността, които се решават
+ефективно с тяхна помощ. Ще разгледаме в детайли какво представляват дърво­видните
+структури данни и ще покажем тех­ните основни предимства и недос­татъци. Ще
+дадем примерни реализа­ции и задачи, демонстриращи реалната им употреба. Ще се
+спрем по-подробно на двоичните дървета, наредените двоични дървета за претър­сване
+и балансираните дървета. Ще разгледаме структу­рата от данни &quot;граф&quot;,
+видовете графи и тяхната употреба. Ще покажем как се работи с вградените в Java
+платформата имплементации на балансирани дървета.</span></p>
+
+<h3><a name="_Toc218195500"><span lang=BG>Глава 18. Речници, хеш-таблици и
+множества</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_18._Речници,">Речници,
+хеш-таблици и множества</a>&quot; ще разгле­даме някои по-сложни структури от
+данни като речници и множества, и техните реализации с хеш-таблици и балан­сирани
+дървета. Ще обясним в детайли какво представляват хеширането и хеш-таблиците и
+защо са толкова важни в програмирането. Ще дискути­раме понятието &quot;колизия&quot;
+и как се полу­чават колизиите при реализация на хеш-таблици и ще пред­ложим
+различни подходи за разрешаването им. Ще разгледаме абстракт­ната структура
+данни &quot;множество&quot; и ще обясним как може да се реали­зира чрез речник
+и чрез балансирано дърво. Ще дадем при­мери, които илю­стрират приложението на
+описаните структури от данни в практиката.</span></p>
+
+<h3><a name="_Toc218195501"><span lang=BG>Глава 19. Структури от данни – съпоставка
+и препоръки</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_19._Структури">Структури
+от данни – съпоставка и препоръки</a>&quot; ще съпоставим една с друга
+структурите данни, които разгледахме до момента, по отношение на скоростта, с
+която извършват основните опера­ции (доба­вяне, търсене, изтриване и т.н.). Ще
+дадем конкретни препо­ръки в какви ситуации какви структури от данни да
+ползваме. Ще обясним кога да предпочетем хеш-таблица, кога масив, кога
+динамичен масив, кога множество, реализирано чрез хеш-таблица и кога баланси­рано
+дърво. Всички тези структури имат вградена в Java платфор­мата импле­мен­тация.
+От нас се иска единствено да можем да преценяваме кога коя структура да
+ползваме, за да пишем ефективен и надежден програмен код. Именно на това е
+посветена тази глава – на ефек­тивната работа със структури от данни.</span></p>
+
+<h3><a name="_Toc218195502"><span lang=BG>Глава 20. Принципи на
+обектно-ориентираното програмиране</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_20._Принципи">Принципи
+на обектно-ориентираното програмиране</a>&quot; ще се запознаем с принципите на
+обектно-ориен­тираното програми­ране: насле­дяване на класове и имплементиране
+на интерфейси, абстрак­ция на данните и поведението, капсулация на данните и
+скриване на информа­ция за имплементацията на класовете, полиморфизъм и вирту­ални
+методи. Ще обясним в детайли принципите за свързаност на отговор­ностите и
+функционално обвързване (cohesion и coupling). Ще опишем накратко как се
+извършва обектно-ориентирано моделиране и как се създава обектен модел по
+описание на даден бизнес проблем. Ще се запознаем с езика UML и ролята му в
+процеса на обектно-ориентираното моделиране. Накрая ще разгледаме съвсем
+накратко концепцията &quot;шаб­лони за дизайн&quot; и ще дадем няколко типични
+примера за шаблони, широко използвани в практиката.</span></p>
+
+<h3><a name="_Toc218195503"><span lang=BG>Глава 21. Качествен програмен код</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_21._Качествен">Качествен
+програмен код</a>&quot; ще разгледаме основ­ните правила за писане на качествен
+програмен код. Ще бъде обърнато внимание на именуването на елементите от
+програмата (променливи, методи, класове и други), прави­лата за форматиране и
+подреждане на кода, добрите прак­тики за изграж­дане на висококачествени методи
+и принципите за качествена докумен­тация на кода. Ще бъдат дадени много примери
+за качествен и некаче­ствен код. Ще бъдат описани и официал­ните конвен­ции от
+Sun за писане на Java, както и JavaBeans специфика­цията. В процеса на работа
+ще бъде обяснено как да се използва средата за програмиране, за да се автомати­зират
+някои операции като форма­тиране и преработка на кода.</span></p>
+
+<h3><a name="_Toc218195504"><span lang=BG>Глава 22. Как да решаваме задачи по
+програмиране?</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главата &quot;<a href="#_Глава_22._Как">Как
+да решаваме задачи по програмиране?</a>&quot; ще дискутираме един
+препоръчителен подход за решаване на задачи по прог­рамиране и ще го
+илюстрираме нагледно с реални примери. Ще дискути­раме инже­нерните принципи,
+които трябва да следваме при решаването на задачи (които важат в голяма степен
+и за задачи по математика, физика и други дисциплини) и ще ги покажем в
+действие. Ще опишем стъпките, през които преминаваме при решаването на няколко
+примерни задачи и ще демонстрираме какви грешки се получават, ако не следваме
+тези стъпки. Ще обърнем внимание на някои важни стъпки от решаването на задачи
+(като например тестване), които обикновено се пропускат.</span></p>
+
+<h3><a name="_Toc218195505"><span lang=BG>Глави 23, 24, 25. Примерни теми от
+изпити в НАРС</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В главите &quot;<a href="#_Глава_23._Примерна">Примерни
+теми от изпити в НАРС</a>&quot; ще разгледаме условията и ще предложим решения
+на девет примерни задачи от три примерни изпита в НАРС, проведени <a
+href="#_Глава_23._Примерна">на 30.09.2005 г.</a>, <a href="#_Глава_24._Примерна">на
+8.04.2006 г.</a> и на <a href="#_Глава_25._Примерна">11.12.2005 г.</a> При
+решаването им ще приложим на практика описаната методология в темата &quot;<a
+href="#_Глава_22._Как">Как да решаваме задачи по програмиране</a>&quot;.</span></p>
+
+<h2><a name="_Toc218195506"><span lang=BG>За използваната терминология</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Тъй като настоящият текст е на български език,
+ще се опитаме да ограни­чим употребата на английски термини, доколкото е
+възможно. Съществу­ват обаче основателни причини да използваме и англий­ските
+тер­мини наред с българските им еквиваленти:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>По-голямата част от техническата документация за </span>Java<span
+lang=BG> е на английски език (повечето книги и в частност официалната докумен­тация)
+и затова е много важно читателите да знаят английския еквивалент на всеки
+използван термин</span>.</p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>Много от използваните термини не са пряко свързани
+с </span>Java<span lang=BG> и са навлезли отдавна в програмисткия жаргон от
+английски език (напри­мер &quot;дебъгвам&quot;, &quot;компилирам&quot; и &quot;плъгин&quot;).
+Тези термини ще бъдат изписвани най-често на кирилица.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>Някои термини (например &quot;framework&quot; и &quot;deployment&quot;)
+са трудно преводими и трябва да се използват заедно с оригинала в скобки. В
+настоящата книга на места такива термини са превеждани по раз­лични начини
+(според контекста), но винаги при първо срещане се дава и оригинални­ят термин
+на английски език.</span></p>
+
+<h2><a name="_Toc218195507"><span lang=BG>Как възникна тази книга?</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Често се случва някой да ме попита от коя
+книга да започне да се учи на програмиране. Срещат се ентусиазирани младежи,
+които искат да се учат да програмират, но не знаят от къде да започнат. За съжаление
+и аз не знам коя книга да им препоръчам. Сещам се за много книги за Java – и на
+български и на английски, но никоя от тях не учи на програмиране. Няма много
+книги (особено на български език), които да учат на концепциите на
+програмирането, на алгоритмично мислене, на структури от данни. Има книги за
+начинаещи, които учат на езика Java, но не и на основите на прог­рамирането.
+Има и няколко хубави книги за програмиране на бъл­гарски език, но са вече остарели.
+Знам няколко такива книги за C и Паскал, но не и за Java или C#. В крайна
+сметка няма хубава книга, която горещо да препоръчам на всеки, който иска да се
+захване с програ­миране от нулата.</span></p>
+
+<p class=MsoNormal><span lang=BG>Липсата на хубава книга по програмиране за
+начинаещи в един момент ни мотивира да се хванем и да напишем такава книга.
+Решихме, че можем да помогнем и да дадем знания и вдъхновение на много млади
+хора да се захванат сериозно с програмиране.</span></p>
+
+<h3><a name="_Toc218195508"><span lang=BG>Историята на тази книга</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Историята на тази книга е дълга и интересна. Тя
+започва с въведителните курсовете по програмиране в Национална академия по
+разработка на софтуер (НАРС) през 2005 г., когато под ръководството на Светлин
+Наков за тях е изготвено учебно съдържание за курс &quot;Въведение в програмира­нето
+със C#&quot;. След това то е адаптирано към Java и така се получава курсът &quot;Въведение
+в програмирането с Java&quot;. През годините това учебно съдържание претърпява
+доста промени и подобрения и достига до един изчистен и завършен вид.</span></p>
+
+<p class=MsoNormal><span lang=BG>Към стартирането на проекта (август 2008)
+курсът &quot;Въведе­ние в програ­ми­рането с Java&quot; се преподава в Националната
+академия по разработка на софтуер по учебни материали с обем 720 </span>PowerPoint
+<span lang=BG>слайда, заедно с около 110 демонстрационни примера и над 200
+задачи за упражнения, разделени в 15 отделни теми. Това е учебен материал по
+основи на програмирането, който съдържа най-важните концепции, с които един
+начинаещ трябва да стартира. Това е материал, който преработван и редак­тиран
+десетки пъти, добил вече зрялост, добре систематизиран и с проверена
+ефективност. Защо да не го ползваме като основа за съдържанието на книгата? Ние
+точно това направихме – решихме да напишем книгата ръководейки се от учебните
+материали на НАРС, като добавим от себе си нашия опит и допълним с още
+информация, примери и интересни задачи.</span></p>
+
+<h3><a name="_Toc218195509"><span lang=BG>Събиране на авторския екип</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Работата по книгата започва в един топъл летен
+ден, когато основният автор Светлин Наков, вдъхновен от идеята за написване на
+учебник за курсовете по &quot;Въведение в програмирането&quot; събира екип от
+двадесетина млади софту­ерни инженери, ентусиасти, които имат желание да
+споделят знанията си и да напишат по една глава от книгата.</span></p>
+
+<p class=MsoNormal><span lang=BG>Светлин Наков дефинира учебното съдържание и
+го разделя в глави</span><span lang=BG> </span><span lang=BG>и създава шаблон
+за съдържанието на всяка глава. Шаблонът съдържа структурата на текста – всички
+основни заглавия в дадената глава и всички подзаглавия. Остава да се напишат
+текста, примерите и задачите.</span></p>
+
+<p class=MsoNormal><span lang=BG>На първата среща на екипа учебното съдържание
+претърпява малко промени. По-обемните глави се разделят на няколко отделни
+части (например структурите от данни), възникват няколко нови глави (напри­мер
+работа с изключения) и се определят автори и редактори за всяка глава. Идеята е
+проста: всеки да напише по 1 глава от книгата и накрая да ги съединим. За да
+няма голяма разлика в стиловете, форматирането и начина на представяне на
+информацията авторите приемат единно ръководство на писателя, в което строго се
+описват всички правила за писане. В крайна сметка всеки си има тема и писането
+започва.</span></p>
+
+<p class=MsoNormal><span lang=BG>За проекта се създава сайт за съвместна работа
+в екип в Google Code на адрес <a href="http://code.google.com/p/introjavabook/">http://code.google.com/p/introjavabook/</a>,
+където стои последната версия на всички текстове и материали по книгата.</span></p>
+
+<h3><a name="_Toc218195510"><span lang=BG>Задачите и сроковете</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Както във всеки проект, след разпределяне на
+задачите се слагат крайни срокове за всяка от тях, за да се планира работата
+във времето. По план книгата трябва да излезе от печат през октомври, но това
+не се случва в срок, защото много от авторите се забавят, а някои въобще не
+изпълняват поетия ангажимент.</span></p>
+
+<p class=MsoNormal><span lang=BG>Когато идва първия краен срок едва половината
+от авторите са готови на време. Сроковете се удължават и голяма част от
+авторите завършват работата по своята глава. Започва работата на редакторите.
+Паралелно някои автори дописват. За някои глави се търсят нови автори, защото
+оригиналният автор се проваля и бива отстранен.</span></p>
+
+<p class=MsoNormal><span lang=BG>Няколко месеца по-късно книгата е готова на
+90%, авторите загубват ентусиазъм работата започва да върви много бавно и
+мъчно. Светлин Наков се опитва да компенсира и да дописва недовършените теми,
+но работата е много. Въпреки 30-те часа, които той влага като труд всеки
+свободен уикенд, работата е много и все не свършва месеци наред.</span></p>
+
+<p class=MsoNormal><span lang=BG>Всички автори подценяват сериозно обема на
+работата и това е основно причината за забавянето на нейната поява. Авторите си
+мислят, че писането става бързо, но истината е, че за една страница текст
+(четене, писане, редактиране, преправяне и т.н.) отива средно по 1 час работа,
+та дори и повече. Сумарно за написването на цялата книга са вложени около
+800-1000 работни часа труд, разпределени сред всички автори и редак­тори, което
+се равнява на над 6 месеца работа на един автор на пълен работен ден. Понеже
+всички автори пишеха в свободното си време, рабо­тата вървеше бавно и отне 4-5
+месеца.</span></p>
+
+<h2><a name="_Toc218195511"><span lang=BG>Авторският колектив</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Авторският колектив е наистина главният
+виновник за съществуването на тази книга. Написването на текст с такъв обем и
+такова качество е сериозна задача, която изисква много време.</span></p>
+
+<p class=MsoNormal><span lang=BG>Идеята за участие на толкова много автори е
+добре проверена, тъй като по подобен начин са написани вече няколко други книги
+(като &quot;Програ­миране за </span>.NET Framework<span lang=BG>&quot;</span>).
+<span lang=BG>Въпреки, че отделните глави от книгата са писани от различни
+автори, те следват единен стил и високо качество. Всички глави са добре
+структурирани, с много заглавия и подза­главия, с много и подходящи примери, с
+добър стил на изказ и еднакво форма­тиране.</span></p>
+
+<p class=MsoNormal><span lang=BG>Екипът, написал настоящата книга, е съставен
+от хора, които имат силен интерес към програмирането и желаят безвъзмездно да
+споделят своите знания като участват в написването на една или няколко от
+темите. Някои от участниците в екипа са бивши студенти от НАРС, преминали
+успешно обученията в Академията. Други са щатни лектори в НАРС. Трети са просто
+ентусиасти. Най-хубавото е, че всички автори, съавтори и редак­тори от екипа по
+разработката на книгата са програмисти с реален практически опит, което
+означава, че читателят ще почерпи знания, практики и съвети от хора,
+реализирали се в софтуерната индустрия.</span></p>
+
+<p class=MsoNormal><span lang=BG>Участниците в проекта дадоха своя труд
+безвъзмездно, без да получат материални или други облаги, защото подкрепяха
+идеята за написване на добра книга за начинаещи програмисти на български език и
+имаха силно желание да помогнат на своите бъдещи колеги да навлязат бързо в
+програмирането.</span></p>
+
+<p class=MsoNormal><span lang=BG>Следва кратко представяне на авторите (по
+азбучен ред).</span></p>
+
+<h3><a name="_Toc218195512"><span lang=BG>Борис Вълков</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Борис Вълков е софтуерен инженер във фирма CSC
+(<a href="http://www.csc.com">www.csc.com</a>). Той е </span><span lang=BG>преподавател
+във Факултета по математика и информатика на Пловдивски университет &quot;Паисий
+Хилендарски&quot;, където е завършил своите бакала­върска и магистърска степени.
+Има опит с разработката на висококачест­вен софтуер в областта на
+застраховането и здравеопазването. Борис е сертифициран разработчик, използвал
+широк спектърът от технологии, предимно свързани със C/C++ и Java. Неговите
+професионални интереси включват софтуерни архитектури, дизайн и процеси за
+ефективно управление на софтуерни проекти. Можете да се свържете с него по
+e-mail: <a href="mailto:b.valkov@gmail.com">b.valkov@gmail.com</a>.</span></p>
+
+<h3><a name="_Toc218195513"><span lang=BG>Веселин Колев</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Веселин Колев е старши софтуерен инженер,
+ръководил различни екипи и проекти. Като програмист има опит с разнообразни
+технологии, част от които са C/C++, .NET и Java. Проектите, по които е работил,
+включват големи уеб базирани системи, системи за машинен превод, икономически
+софтуер и др. Интересите му обхващат разработването на съвременни приложения от
+всякакъв характер, в които се държи на качеството. Веселин има опит като лектор
+в Националната академия по разработка на софтуер в областта на .NET
+технологиите. В момента той следва Компю­търни науки във Факултета по
+математика и информатика на Софийски университет &quot;Св. Климент Охридски&quot;.
+Можете да се свържете с него по e-mail: <a href="mailto:vesko.kolev@gmail.com"
+title="blocked::mailto:vesko.kolev@gmail.com">vesko.kolev@gmail.com</a>. Неговият
+личен блог е достъпен от адрес: <a href="http://veskokolev.blogspot.com/">http://veskokolev.blogspot.com</a>.</span></p>
+
+<h3><a name="_Toc218195514"><span lang=BG>Владимир Цанев </span></a>(Tsachev)</h3>
+
+<p class=MsoNormal><span lang=BG>Владимир Цанев е софтуерен разработчик в
+Национална академия по разработка на софтуер (НАРС). Интересите му са свързани най-вече
+с </span>open-source <span lang=BG>технологиите, използвани с </span>Java<span
+lang=BG> платформата.</span><span lang=BG> </span><span lang=BG>Участвал е в
+разработката на проекти в областта на Интернет услугите, големи и малки
+информационни системи за управление и други.</span></p>
+
+<p class=MsoNormal><span lang=BG>Владимир е лектор в Националната академия по
+разработка на софтуер (НАРС), където води различни курсове свързани с
+разработката на софтуерни продукти с </span>Java<span lang=BG>.</span></p>
+
+<p class=MsoNormal><span lang=BG>Завършил е бакалавърска степен по специалност &quot;Приложна
+математика&quot; във Факултета по математика и информатика на Софийски Университет
+&quot;Св. Климент Охридски&quot;. По време на следването си там води упражнения
+по програмиране с </span>Java.<span lang=BG> В момента следва магистратура със
+специалност &quot;Софтуерни технологии&quot; в същия факултет.</span></p>
+
+<p class=MsoNormal><span lang=BG>Личната му уеб страница се намира на адрес <a
+href="http://info.tsachev.org/">http://info.tsachev.org/</a>.</span></p>
+
+<h3><a name="_Toc218195515"><span lang=BG>Данаил Алексиев</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Данаил Алексиев е студент в трети курс в
+Техническия Университет – София, специалност “Компютърни системи и технологии&quot;.
+Работи като програмист във фирма Insight Technologies (<a
+href="http://www.insight-bg.net/" target="_blank">www.insight-bg.net</a>) и
+лектор към <a href="http://www.academy.devbg.org/" target="_blank">Национална
+академия по разработка на софтуер (НАРС)</a>. Основните му професионални
+интереси са насочени към уеб програмирането. Данаил е основен участник в Java
+проектите в учебната лаборатория Unidevelop (<a href="http://unidevelop.org/">http://unidevelop.org/</a>)
+към ТУ-София. Можете да се свържете с него по e-mail: <span class=MsoHyperlink>danail_al@abv.bg</span>.</span></p>
+
+<h3><a name="_Toc218195516"><span lang=BG>Лъчезар Божков</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Лъчезар Божков е студент, последен курс, в
+Технически Университет – София, специалност ИИ на английски език. Той има значителен
+опит в работата с .NET Framework, Visual Studio и Microsoft SQL Server. Работил
+е като програмист и преподавател за Национална академия по разработка на
+софтуер (НАРС) и ИТ отдела на Кока-Кола Ботлърс, Ирландия, Дъблин. Можете да се
+свържете с Лъчезар по e-mail: <a href="mailto:lachezar.bozhkov@gmail.com">lachezar.bozhkov@gmail.com</a>.</span></p>
+
+<h3><a name="_Toc218195517"><span lang=BG>Лъчезар Цеков</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Лъчезар Цеков е софтуерен инженер и
+изследовател в областта на семантичните технологии във фирма Ontotext Lab (<a
+href="http://www.ontotext.com" title="blocked::http://www.ontotext.com/">www.ontotext.com</a>).
+Завършил е Технически Университет София специалност &quot;Комуникационна
+Техника и Технологии&quot;. Лъчезар е работил в няколко фирми като старши
+програмист и има поглед над цялостния производствен цикъл на софту­ерните
+продукти. Основната експертиза на Лъчезар е в проектирането и реализацията
+на&nbsp; големи корпоративни приложения базирани на Java и SOA технологиите.
+Лъчезар е голям привърженик на правилното използ­ване на принципите на обектно
+ориентираното програмиране и прилага­нето на подходящите структури от данни. За
+връзка можете да използвате неговия e-mail: <a
+href="mailto:viktor.zhivkov@gmail.com" target="_blank"
+title="blocked::mailto:viktor.zhivkov@gmail.com">luchesar.cekov@gmail.com</a>.</span></p>
+
+<h3><a name="_Toc218195518"><span lang=BG>Марин Георгиев</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Марин Георгиев е SAP консултант в Coca Cola
+HBC IT Shared services. Получава своята бакалавърска степен в Технически
+университет - София след частичното си следване и разработване на дипломната си
+работа в Италия, в Universita degli Studi di Pavia. Завършил е <a
+href="http://academy.devbg.org/">Националната акаде­мия за разработване на
+софтуер (НАРС)</a> и е сертифициран като Sun Certified Java Programmer. Професионалните
+интереси на Марин са насо­чени към уеб-базираните Java технологии –</span><span
+lang=BG> </span><span lang=BG>EJB, Seam, JSF и внедряване на SAP ERP решения. Можете
+да се свържете с Марин Георгиев на e-mail: <a href="mailto:adalmirant@abv.bg">adalmirant@abv.bg</a>.</span></p>
+
+<h3><a name="_Toc218195519"><span lang=BG>Марио Пешев</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Марио Пешев е софтуерен разработчик във фирма
+Nonillion (<a href="http://www.nonillion.com"
+title="blocked::http://www.nonillion.com/">www.nonillion.com</a>). Той участва
+активно в писането на технически статии и материали, разработка на външни
+проекти като freelance developer и водене на курсове по програмиране с Java. В
+момента Марио следва Информатика в Нов български университет. Професионалните
+му интереси включват работа с иновативни технологии, информационна сигурност,
+софтуерни архитектури и дизайн. Личният блог на Марио е <a
+href="http://peshev.net/blog" title="blocked::http://peshev.net/blog">http://peshev.net/blog</a></span></p>
+
+<h3><a name="_Toc218195520"><span lang=BG>Мариян Ненчев</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Мариян Ненчев</span><span lang=BG> е софтуерен
+разработчик в </span><span lang=BG>Insight Technologies</span><span lang=BG> (<a
+href="http://www.insight-bg.net/">www.insight-bg.net</a>) и лектор в Национална
+академия по разработка на софтуер (<a href="http://academy.devbg.org/">academy.devbg.org</a>).
+Водил е редица курсове за </span><span lang=BG>обучение и пре­квалифициране на
+софтуерни специалисти в ИТ индустрията.</span><span lang=BG> </span><span
+lang=BG>Той е студент, последен курс, във Факултета по математика и информа­тика
+на Софийски университет &quot;Св. Кли­мент Охридски&quot;, специалност информа­тика.
+Професионалните му инте­реси са насочени към разработката на enterprise
+приложения с Java технологиите, .NET платформата и информа­ционната сигурност в
+</span>W<span lang=BG>eb среда. Може­те да се свържете с Мариян по e-mail: <a
+href="mailto:nenchev.mariyan@gmail.com">nenchev.mariyan@gmail.com</a></span>.</p>
+
+<h3><a name="_Toc218195521"><span lang=BG>Михаил Стойнов</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Михаил Стойнов е магистър &quot;Стопанско
+Управление&quot; в Софийски Универ­ситет. Той е завършил е Информатика отново в
+Софийски Университет. В момента е софтуерен разработчик в голяма българска
+компания.</span></p>
+
+<p class=MsoNormal><span lang=BG>От няколко години Михаил е хоноруван
+преподавател във Факултета по математика и информатика като досега е водил част
+от лекциите на &quot;Съвременни Java технологии&quot;, &quot;Програми­ране за
+.NET Framework&quot;, &quot;Раз­работка на Java уеб приложения&quot;, &quot;Шаблони
+за дизайн&quot; и &quot;Качествен програмен код&quot;. Активно е участвал в
+създаването на учебните материали за курсовете. Водил е софтуерен курс в Нов
+Български Университет.</span></p>
+
+<p class=MsoNormal><span lang=BG>Михаил е участвал като автор в книгата &quot;<a
+href="http://www.devbg.org/dotnetbook/" target="_blank">Програмиране за .NET
+Framework</a>&quot;. Той е водил множество лекции свързани с Java и .NET
+Framework на различни конференции и семинари. Участвал е като лектор в акаде­мичните
+дни на Майкрософт.</span></p>
+
+<p class=MsoNormal><span lang=BG>Михаил е водил IT обучения в няколко компании
+в България и една в чужбина. Бил е лектор на курсове по Java, </span>Java <span
+lang=BG>EE, SOA, Spring в <a href="http://academy.devbg.org/">Нацио­налната
+академия по разработка на софтуер<span lang=EN-US> (</span>НАРС)</a>.</span></p>
+
+<p class=MsoNormal><span lang=BG>Михаил е работил в офисите на компании като
+Siemens, HP, EDS в Холандия, Германия и други държави, като там е натрупал
+сериозен опит както за софтуерното изкуство, така и за качественото писане на
+софтуер чрез участието си в големи софтуерни проекти.</span></p>
+
+<p class=MsoNormal><span lang=BG>Личният му блог е достъпен на адрес: <a
+href="http://mihail.stoynov.com/blog/">http://mihail.stoynov.com/blog/</a>. </span></p>
+
+<h3><a name="_Toc218195522"><span lang=BG>Николай Василев</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Николай Василев е завършил бакалавърската си
+степен във Факултета по математика и информатика на Софийски университет &quot;Св.
+Климент Охридски&quot;</span>, <span lang=BG>специалност &quot;Математика и
+информатика&quot;.</span><span lang=BG> </span><span lang=BG>В момента е сту­дент
+към магистърските програми на Софийски университет &quot;Св. Климент Охридски&quot;,
+специалност &quot;Уравнения на математическата физика и приложения&quot; и
+университета в Малага, Испания, специалност &quot;Софтуерно инженерство и
+изкуствен интелект&quot;.</span></p>
+
+<p class=MsoNormal><span lang=BG>По време на създаване на книгата, е програмист
+във фирма &quot;Сирма Солюшънс&quot; (<a href="http://www.sirma.bg/">www.sirma.bg</a>).</span></p>
+
+<p class=MsoNormal><span lang=BG>Той е сертифициран </span>Sun<span lang=BG>
+програмист за </span><span lang=ES>Java </span><span lang=BG>2 </span>Platform,
+<span lang=ES>SE 5.0</span>.</p>
+
+<p class=MsoNormal><span lang=BG>В периода 2002-2005 г е бил асистент към
+курсовете по програмиране водени от доц. Божидар Сендов, &quot;Увод в
+програмирането&quot; и &quot;Структури от данни и програмиране&quot;.</span></p>
+
+<p class=MsoNormal><span lang=BG>Интересите му са свързани с проектирането и
+имплементацията на софтуер и участие в академични дейности.</span></p>
+
+<h3><a name="_Toc218195523"><span lang=BG>Николай Недялков</span></a></h3>
+
+<p class=MsoNormal><span lang=BG><a href="http://www.nedyalkov.com/"
+target="_blank">Николай Недялков</a> е президент на <a
+href="http://www.iseca.org/" target="_blank">Асоциация за информационна
+сигурност</a></span>, <span lang=BG>технически директор на</span><span lang=BG>
+</span><span lang=BG>портала за електронни разплащания и услуги <a
+href="http://www.ebg.bg/">eBG.bg</a> и бизнес консултант в други компании</span><span
+lang=BG>. Николай е професионален разработчик на софтуер, консултант и
+преподавател с дългогодишен опит. Той е автор на редица статии и публикации и
+лектор на множество конференции и семинари в областта на софтуерните технологии
+и информационната сигурност. Преподавателският му опит се простира от асистент
+по &quot;Структури от данни в програмирането&quot;, &quot;Обектно-ориентирано
+програмиране със C++&quot; и “Visual C++&quot; до лектор в курсовете &quot;Мрежова
+сигурност&quot;, “Сигурен програмен код&quot;, &quot;Интернет програмиране с
+Java&quot;, “Конструиране на качествен програмен код&quot;, &quot;Програмиране
+за платформа .NET&quot; и &quot;Разработка на приложения с Java&quot;.
+Интересите на Николай са концентрирани върху техническата и бизнес страната на
+информационната сигурност, Java и .NET технологиите и моделирането и
+управлението на бизнес процеси в големи организации. Николай има бакалавърска и
+магистърска степен от Факултета по математика и информатика на Софийски
+университет &quot;Св. Климент Охридски&quot;. Като ученик е дългогодишен
+състезател по програмиране, с редица призови отличия. Неговият уеб сайт е на
+адрес: </span><a href="http://www.nedyalkov.com/">http://www.nedyalkov.com</a>.</p>
+
+<h3><a name="_Toc218195524"><span lang=BG>Петър Велев</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Петър Велев е софтуерен инженер и
+изследовател. Завършил е Техни­чески университет в София по специалност
+Информационни техно­логии към факултета по &quot;Компютърни системи и
+управление&quot;. Петър е работил в различни фирми като младши програмист на
+Java. Понастоящем е докторант в </span><span lang=BG>Института по информационни
+технологии при БАН – София. Основните му интереси са в областта на софтуерното </span><span
+lang=BG>инженерство и обектно</span>-<span lang=BG>ориентираното програмиране.
+Той проявява интерес и в областите на динамичните онтологии, многоагентните
+системи и структу­рите от данни. За връзка с Петър можете да използвате неговия
+e-mail: <a href="mailto:petone681@gmail.com">petone681@gmail.com</a>.</span></p>
+
+<h3><a name="_Toc218195525"><span lang=BG>Радослав Иванов</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Радослав Иванов е софтуерен инженер в
+Европейската организация за ядрени изследвания (CERN) – <a
+href="http://www.cern.ch/">www.cern.ch</a>. Завършил е Факултета по математика
+и информатика на Софийски университет &quot;Св. Климент Охридски&quot; и има
+сериозен професионален опит в разработката на софтуер. Той е лектор в редица
+курсове  в Софийски университет &quot;Св. Климент Охридски&quot;, частни
+компании и организации и е съавтор на книгата &quot;Програмиране за .NET
+Framework&quot;. Сред професионалните му интереси са Java технологиите, .NET
+платформата, архитектура и дизайн на софтуерни системи и др.</span></p>
+
+<h3><a name="_Toc218195526"><span lang=BG>Румяна Топалска</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Румяна Топалска е софтуерен разработчик във
+фирма</span> Fadata<span lang=BG> (<a href="http://www.fadata.bg/">www.fadata.bg</a>).
+Завършила е своята бакалавърска степен в немския факултет на Техническия
+университет в гр. София, специалност &quot;Компю­търни системи и технологии&quot;
+и в момента следва своята магистратура в същия университет. Основните професио­нални
+интереси на Румяна са в уеб програмирането, уеб услугите и интеграцията. Може
+да се свържете с нея на mail: <a href="mailto:rumchoto@abv.bg">rumchoto@abv.bg</a>.</span></p>
+
+<h3><a name="_Toc218195527"><span lang=BG>Стефан Стаев</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Стефан Стaев</span><span lang=BG> е софтуерен
+разработчик във фирма </span><span lang=BG>ICB (</span><span lang=BG><a
+href="http://www.icb.bg/">www.icb.bg</a></span><span lang=BG>). Занимава се с
+разработката на уеб базирани системи върху .NET платфор­мата. В момента той
+следва Информатика във Факултета по математика и информатика на Софийски
+университет &quot;Св. Климент Охридски&quot;. Профе­сионалните му интереси са в
+областта на уеб технологиите. Можете да се свържете с него по e-mail: <a
+href="mailto:s.staev@gmail.com">s.staev@gmail.com</a>.</span></p>
+
+<h3><a name="_Toc218195528"><span lang=BG>Светлин Наков</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Светлин Наков е директор на направление &quot;обучение
+и консултации&quot; в Национална академия по разработка на софтуер (<a
+href="http://academy.devbg.org/">НАРС</a>), където ръководи екипи за разработка
+на софтуерни проекти и обучава софтуерни специа­листи за практическа работа в
+ИТ индустрията.</span></p>
+
+<p class=MsoNormal><span lang=BG>Неговите интереси обхващат изграждането на
+софтуерни архитектури, Java технологиите, .NET платформата, уеб приложенията,
+базите данни, обучението на софтуерни специалисти и управлението на проекти и
+екипи за разработка на софтуер.</span></p>
+
+<p class=MsoNormal><span lang=BG>Той има 15-годишен опит като софтуерен
+инженер, програмист, препо­давател и консултант, преминал от Assembler, Basic и
+Pascal през C и C++ до PHP, Java и C#. Участвал е като софтуерен инженер,
+консултант и ръководител на екипи в десетки проекти за изграждане на информа­ционни
+системи, уеб приложения, системи за управление на бази от данни, бизнес
+приложения, ERP системи и криптографски модули.</span></p>
+
+<p class=MsoNormal><span lang=BG>Светлин има сериозен опит в изграждането на
+учебни материали, подго­товката и провеждането на курсове за обучения по
+програмиране и съвре­менни софтуерни технологии, натрупан по време на
+преподавателската му практика. Години наред той е хоноруван пре­подавател по
+съвременни софтуерни технологии в Софийски университет &quot;Св. Климент
+Охридски&quot;, където води курсове по &quot;Проектиране и анализ на компютърни
+алго­ритми&quot;, &quot;Интернет програ­миране с Java&quot;, &quot;Мрежова
+сигурност&quot;, &quot;Програми­ране за .NET Framework&quot;, &quot;Разработка
+на </span>Java <span lang=BG>уеб</span><span lang=BG> </span><span lang=BG>приложения&quot;,</span><span
+lang=BG> </span>&quot;<span lang=BG>Шаблони за дизайн</span>&quot;<span
+lang=BG> и &quot;Качествен програмен код&quot;. Светлин е основател на <a
+href="http://academy.devbg.org/">Нацио­налната академия по разработка на
+софтуер (НАРС)</a>, където води курсове за софтуерни инженери по направления &quot;</span>Core
+Java Developer<span lang=BG>&quot;</span> и &quot;Core .NET Developer&quot;, <span
+lang=BG>както и много други курсове (</span>J<span lang=BG>ava EE</span>,
+Hibernate, SQL, Software Engineering и <span lang=BG>други).</span></p>
+
+<p class=MsoNormal><span lang=BG>Светлин има десетки научни и технически
+публикации, свързани с раз­работката на софтуер, в български и чуждестранни
+списа­ния и е автор на книгите &quot;<a
+href="http://www.nakov.com/books/inetjava/">Интернет програмиране с Java</a>&quot;,
+&quot;<a href="http://www.nakov.com/books/signatures/">Java за цифрово подпис­ване
+на документи в уеб</a>&quot;</span> и <span lang=BG>&quot;<a
+href="http://www.devbg.org/dotnetbook/">Програмиране за .NET Framework (част 1
+и 2)</a>&quot;. Той е редовен лектор по технически конференции и семинари</span>
+и <span lang=BG>до момента е изнесъл над 100 технически лекции по такива
+събития</span>.</p>
+
+<p class=MsoNormal><span lang=BG>Той е завършил бакалавър­ската и магистърската
+си степен във Факултета по математика и информа­тика на Софийски университет &quot;Св.
+Климент Охридски&quot; и понастоящем е докторант по изчислителна лингвистика.</span></p>
+
+<p class=MsoNormal><span lang=BG>Като ученик и студент Светлин е победител в
+десетки национални състе­зания по програ­миране и е носител на 4 медала от
+международни олимпи­ади по информа­тика.</span></p>
+
+<p class=MsoNormal><span lang=BG>През 2003 г. той е носител на наградата &quot;Джон
+Атанасов&quot; на фондация Еврика. През 2004 г. получава награда &quot;Джон
+Атанасов&quot; от президента на България Георги Първанов за приноса му към
+развитието на информаци­онните технологии и информа­ционното общест­во.</span></p>
+
+<p class=MsoNormal><span lang=BG>Той е един от учредителите на Българската асо­циация
+на разра­ботчиците на софтуер (<a href="http://www.devbg.org/">www.devbg.org</a>)
+и понастоящем неин председател.</span></p>
+
+<p class=MsoNormal><span lang=BG>Неговият личен блог е достъпен от адрес: <a
+href="http://www.nakov.com/blog/">http://www.nakov.com/blog/</a></span>.</p>
+
+<h3><a name="_Toc218195529"><span lang=BG>Теодор Стоев</span></a></h3>
+
+<p class=MsoNormal style='text-autospace:none'><span lang=BG>Теодор Стоев</span><span
+lang=BG> е софтуерен разработчик във фирма </span>Wizefish<span lang=BG> (<a
+href="http://www.wizefish.com/">www. wizefish.com</a>)</span>. <span lang=BG>Завършил
+е специалност Информатика във Факултета по математика и информатика на </span><span
+lang=BG>Софийски университет</span><span lang=BG> &quot;Св. Климент Охридски&quot;.
+В момента следва магистърска програма в същия факултет, специалност Софтуерни
+технологии. Неговите про­фесио­нални интереси са в областта на обектно-ориен­тирания
+анализ, моделиране и изграждане на софтуерни приложения, уеб технологиите и в
+част­ност изграждането на RIA (Rich Internet Applications). Зад гърба си има
+сериозен опит с алгорит­мично програмиране; участвал е в редица ученически и
+студентски наци­онални състезания по информатика.</span></p>
+
+<h3><a name="_Toc218195530"><span lang=BG>Христо Тодоров</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Христо Тодоров е софтуерен разработчик във
+фирма Fadata (<a href="http://www.fadata.bg/">www. fadata.bg</a>). Завършил е
+своята бакалавърска степен във Факултета  по компютърни системи и управление на
+ТУ-София, където следва своята магистратура. Занимава се с разработката на уеб
+приложения</span>,<span lang=BG> базирани на Jаva. Неговите професионални
+интереси включват дизайн, разработка и защита на уеб информационни системи.
+Можете да се свържете с него по e-mail: <a href="mailto:hgt.todorov@gmail.com">hgt.todorov@gmail.com</a>.</span></p>
+
+<h3><a name="_Toc218195531"><span lang=BG>Цвятко Конов</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Цвятко Конов е софтуерен разработчик и
+инструктор в <a href="http://www.academy.devbg.org/" target="_blank">Национална
+академия по разработка на софтуер (НАРС)</a>. Той има опит с</span><span
+lang=RU> .</span>NET <span lang=BG>и </span>Java <span lang=BG>технологиите. В
+момента следва Приложна математика в Софийски университет &quot;Св. Климент
+Охридски&quot;. Професионалните му интереси включват работа с иновативни
+технологии, софтуерни архитектури и дизайн, както и преподавателска дейност.
+Личният му блог е на адрес <a href="http://tsvyatkokonov.blogspot.com/"
+title="blocked::http://peshev.net/blog">http://tsvyatkokonov.blogspot.com/</a>.</span></p>
+
+<h2><a name="_Toc218195532"><span lang=BG>Редакторите</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Освен авторите сериозен принос за създаването
+на книгата имат и редак­торите, които участваха безвъзмездно в проверката на
+текста и примерите и отстраняването на грешки и проблеми. Следват редакторите и
+техния принос (по азбучен ред).</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>Георги Пенчев – редактор на главата &quot;Линейни
+структури от данни&quot;.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>Ивайло Иванов – редактор на главите &quot;Примитивни
+типове и променливи&quot;, &quot;Оператори и изрази&quot; и &quot;Вход и изход
+от конзолата&quot;.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>Мирослав Николов – редактор на главите &quot;Цикли&quot;
+и &quot;Методи&quot;.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>Николай Давков – редактор на главата &quot;Масиви&quot;.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>Марио Пешев – редактор на главите &quot;Принципи на
+обектно-ориентираното програмиране&quot;.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>Пламен Табаков – редактор на главите &quot;Въведение
+в програмира­нето&quot;, &quot;Примитивни типове и променливи&quot;, &quot;Оператори
+и изрази&quot; и &quot;Вход и изход от конзолата&quot;.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>Радко Люцканов – редактор на главата &quot;Обработка
+на изключения&quot;.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>Светлин Наков – редактирал детайлно почти всички
+глави (с дребни изключения).</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>Тодор Балабанов – редактор на главите &quot;Рекурсия&quot;,
+&quot;Примерна тема от изпит в НАРС – 8.04.2006&quot;.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>Тодор Сираков – редактор на главите &quot;Условни
+конструкции&quot; и &quot;Символни низове&quot;.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>Цветан Василев – редактор на главите &quot;Масиви&quot;,
+&quot;Методи&quot; и &quot;Дефи­ниране на класове&quot;.</span></p>
+
+<h2><a name="_Toc218195533"><span lang=BG>Книгата е безплатна!</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Настоящата книга се разпространява напълно
+безплатно в елек­тронен вид по лиценз, който позволява използването й за
+всякакви цели, включи­телно и в комерсиални проекти. Книгата се разпространява
+и в хартиен вид срещу заплащане, което покрива разходите по отпечатването и
+разпрост­ранението й, без да се реализира печалба.</span></p>
+
+<h2><a name="_Toc218195534"></a><a name="_Лиценз"></a><span lang=BG>Лиценз</span></h2>
+
+<p class=MsoNormal><span lang=BG>Книгата и учебните материали към нея се
+разпространяват свободно по следния лиценз:</span></p>
+
+<h3><a name="_Toc218195535"><span lang=BG>Общи дефиниции</span></a></h3>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>1.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Настоящият лиценз дефинира условията за използване и разпрост­ранение
+на учебни материали и книга “Въведение в програмирането с </span>Java<span
+lang=BG>&quot;, разработени от екип под ръководството на Светлин Наков (</span><a
+href="http://www.nakov.com/">http://<span lang=BG>www.nakov.com</span></a><span
+lang=BG>) като проект на Национална академия по разработка на софтуер (</span><a
+href="http://academy.devbg.org/">http://academy<span lang=BG>.devbg.org</span></a><span
+lang=BG>).</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>2.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Учебните материали се състоят от:</span></p>
+
+<p class=MsoNormal style='margin-left:42.55pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>книга (учебник) по “Въведение в програмирането с </span>Java<span
+lang=BG>&quot;</span>;</p>
+
+<p class=MsoNormal style='margin-left:42.55pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>примерен сорс-код;</span></p>
+
+<p class=MsoNormal style='margin-left:42.55pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>демонстрационни програми;</span></p>
+
+<p class=MsoNormal style='margin-left:42.55pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>задачи за упражнения;</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>3.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Учебните материали са достъпни за свободно изтегляне при усло­вията на настоящия
+лиценз от официалния сайт на проекта:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt'><a
+href="http://academy.devbg.org/books/intro-java/">http://academy.devbg.org/books/intro-java/</a></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>4.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Автори на учебните материали са лицата, взели участие в тяхното
+изработване. Всеки автор притежава права само над продуктите на своя труд.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>5.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Потребител на учебните материали е всеки, който по някакъв начин
+използва тези материали или части от тях.</span></p>
+
+<h3><a name="_Toc218195536"><span lang=BG>Права и ограничения на потребителите</span></a></h3>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>3.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Потребителите <b>имат</b> право:</span></p>
+
+<p class=MsoNormal style='margin-left:42.55pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>да използват учебните материали или части от тях за
+всякакви некомерсиални цели;</span></p>
+
+<p class=MsoNormal style='margin-left:42.55pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>да използват сорс-кода от примерите и
+демонстрациите, включени към учебните материали или техни модификации, за
+всякакви нужди, включително и в комерсиални софтуерни продукти;</span></p>
+
+<p class=MsoNormal style='margin-left:42.55pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>да разпространяват безплатно непроменени копия на учебните
+материали в електронен или хартиен вид;</span></p>
+
+<p class=MsoNormal style='margin-left:42.55pt;text-indent:-14.2pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>да разпространяват безплатно извадки от учебните
+материали, но само при изричното споменаване на източника и авторите на
+съответния текст, програмен код или друг материал.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>4.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Потребителите <b>нямат</b> право:</span></p>
+
+<p class=MsoNormal style='margin-left:42.55pt;text-indent:-14.15pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>да модифицират, преправят за свои нужди или
+превеждат на друг език учебните материали без изричното съгласие на НАРС ООД.</span></p>
+
+<p class=MsoNormal style='margin-left:42.55pt;text-indent:-14.15pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>да разпространяват срещу заплащане учебните
+материали или части от тях, като изклю­чение прави само програмният код;</span></p>
+
+<p class=MsoNormal style='margin-left:42.55pt;text-indent:-14.15pt'><span
+lang=BG style='font-family:"Arial","sans-serif"'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=BG>да премахват настоящия лиценз от учебните
+материали.</span></p>
+
+<h3><a name="_Toc218195537"><span lang=BG>Права и ограничения на авторите</span></a></h3>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>1.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Всеки автор притежава неизключителни права върху продуктите на своя
+труд, с които взима участие в изработката на учебните мате­риали.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>2.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Авторите имат право да използват частите, изработени от тях, за
+всякакви цели, включително да ги изменят и разпространяват срещу заплащане.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>3.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Правата върху учебните материали, изработени в съавторство, са
+притежание на всички съавтори заедно.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>4.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Авторите нямат право да разпространяват срещу заплащане учебни
+материали или части от тях, изработени в съавторство, без изрич­ното съгласие
+на всички съавтори.</span></p>
+
+<h3><a name="_Toc218195538"><span lang=BG>Права и ограничения на НАРС ООД</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Ръководството на Национална академия по
+разработка на софтуер (НАРС) има право да разпространява учебните материали или
+части от тях (вклю­чително модифицирани) безплатно или срещу заплащане, както и
+да ги превежда на други езици, да ги адаптира за други програмни езици и среди
+и да ги препечатва.</span></p>
+
+<h2><a name="_Toc218195539"><span lang=BG>Сайтът на книгата</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Официалният уеб сайт на книгата &quot;Въведение
+в програмирането с </span>Java<span lang=BG>&quot; е достъпен от адрес:</span><span
+lang=BG> </span><a href="http://academy.devbg.org/books/intro-java/">http://academy.devbg.org/books/intro-java/</a><span
+lang=BG>. От него можете да изтеглите цялата книга в електронен вид, сорс кода
+на примерите и други ресурси.</span></p>
+
+<p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoNormal align=right style='margin-top:3.0pt;margin-right:0in;
+margin-bottom:3.0pt;margin-left:0in;text-align:right'><span lang=BG>Светлин
+Наков,</span></p>
+
+<p class=MsoNormal align=right style='margin-top:3.0pt;margin-right:0in;
+margin-bottom:3.0pt;margin-left:0in;text-align:right'><span lang=BG>Директор
+направление обучение и консултации,</span></p>
+
+<p class=MsoNormal align=right style='margin-top:3.0pt;margin-right:0in;
+margin-bottom:3.0pt;margin-left:0in;text-align:right'><span lang=BG>Национална
+академия по разработка на софтуер (НАРС),</span></p>
+
+<p class=MsoNormal align=right style='margin-top:3.0pt;margin-right:0in;
+margin-bottom:3.0pt;margin-left:0in;text-align:right'><span lang=BG>14.07.2008
+г.</span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,3508 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<title>Introduction to Programming with Java Book - Chapter 7</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 5 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"Tms Rmn";
+	panose-1:2 2 6 3 4 5 5 2 3 4;}
+@font-face
+	{font-family:Helv;
+	panose-1:2 11 6 4 2 2 2 3 2 4;}
+@font-face
+	{font-family:"New York";
+	panose-1:2 4 5 3 6 5 6 2 3 4;}
+@font-face
+	{font-family:System;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 1 6 1 0 1 1 1 1 1;}
+@font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:Dotum;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:SimHei;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:MingLiU;
+	panose-1:2 1 6 9 0 1 1 1 1 1;}
+@font-face
+	{font-family:Mincho;
+	panose-1:2 2 6 9 4 3 5 8 3 5;}
+@font-face
+	{font-family:Gulim;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Angsana New";
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:"Cordia New";
+	panose-1:2 11 3 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Latha;
+	panose-1:2 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sylfaen;
+	panose-1:1 10 5 2 5 3 6 3 3 3;}
+@font-face
+	{font-family:Vrinda;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Raavi;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Shruti;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sendnya;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Gautami;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Tunga;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Estrangelo Edessa";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Arial CYR";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:SunSans-Regular;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:SAfon;}
+@font-face
+	{font-family:"Courier New CYR";
+	panose-1:2 7 3 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:StarSymbol;}
+@font-face
+	{font-family:OpenSymbol;
+	panose-1:5 1 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sawasdee;}
+@font-face
+	{font-family:Marlett;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;}
+@font-face
+	{font-family:"Lucida Sans Unicode";
+	panose-1:2 11 6 2 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
+@font-face
+	{font-family:Impact;
+	panose-1:2 11 8 6 3 9 2 5 2 4;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;}
+@font-face
+	{font-family:"Franklin Gothic Medium";
+	panose-1:2 11 6 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Palatino Linotype";
+	panose-1:2 4 5 2 5 5 5 3 3 4;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Webdings;
+	panose-1:5 3 1 2 1 5 9 6 7 3;}
+@font-face
+	{font-family:"MV Boli";}
+@font-face
+	{font-family:"Microsoft Sans Serif";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Academy;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Antiqua;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Baltica;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Bookvar;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Ariel";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Courier";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Dutch Roman";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Garamond";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Garamond Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Kursiv";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Palatia";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Roman";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Roman Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Times";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Times Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Domkrat;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Geneva;
+	panose-1:2 2 226 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Hebar;
+	panose-1:2 11 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Izhitsa;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Kaliakra;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Karina;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:KarinaBlack;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:OldCyr;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Opal;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:OpalB;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:TimesNakov;
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:Timok;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:TmsCyr;
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:Zhikaryov;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Agency FB";
+	panose-1:2 11 5 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Algerian;
+	panose-1:4 2 7 5 4 10 2 6 7 2;}
+@font-face
+	{font-family:"Arial Rounded MT Bold";
+	panose-1:2 15 7 4 3 5 4 3 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Baskerville Old Face";
+	panose-1:2 2 6 2 8 5 5 2 3 3;}
+@font-face
+	{font-family:"Bauhaus 93";
+	panose-1:4 3 9 5 2 11 2 2 12 2;}
+@font-face
+	{font-family:"Bell MT";
+	panose-1:2 2 5 3 6 3 5 2 3 3;}
+@font-face
+	{font-family:"Berlin Sans FB";
+	panose-1:2 14 6 2 2 5 2 2 3 6;}
+@font-face
+	{font-family:"Bernard MT Condensed";
+	panose-1:2 5 8 6 6 9 5 2 4 4;}
+@font-face
+	{font-family:"Blackadder ITC";
+	panose-1:4 2 5 5 5 16 7 2 13 2;}
+@font-face
+	{font-family:"Bodoni MT";
+	panose-1:2 7 6 3 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Black";
+	panose-1:2 7 10 3 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Condensed";
+	panose-1:2 7 6 6 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Poster Compressed";
+	panose-1:2 7 7 6 8 6 1 5 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+@font-face
+	{font-family:"Bookman Old Style";
+	panose-1:2 5 6 4 5 5 5 2 2 4;}
+@font-face
+	{font-family:"Bradley Hand ITC";
+	panose-1:3 7 4 2 5 3 2 3 2 3;}
+@font-face
+	{font-family:"Britannic Bold";
+	panose-1:2 11 9 3 6 7 3 2 2 4;}
+@font-face
+	{font-family:Broadway;
+	panose-1:4 4 9 5 8 11 2 2 5 2;}
+@font-face
+	{font-family:"Brush Script MT";
+	panose-1:3 6 8 2 4 4 6 7 3 4;}
+@font-face
+	{font-family:"Californian FB";
+	panose-1:2 7 4 3 6 8 11 3 2 4;}
+@font-face
+	{font-family:"Calisto MT";
+	panose-1:2 4 6 3 5 5 5 3 3 4;}
+@font-face
+	{font-family:Castellar;
+	panose-1:2 10 4 2 6 4 6 1 3 1;}
+@font-face
+	{font-family:Centaur;
+	panose-1:2 3 5 4 5 2 5 2 3 4;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Century Schoolbook";
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Chiller;
+	panose-1:4 2 4 4 3 16 7 2 6 2;}
+@font-face
+	{font-family:"Colonna MT";
+	panose-1:4 2 8 5 6 2 2 3 2 3;}
+@font-face
+	{font-family:"Cooper Black";
+	panose-1:2 8 9 4 4 3 11 2 4 4;}
+@font-face
+	{font-family:"Copperplate Gothic Bold";
+	panose-1:2 14 7 5 2 2 6 2 4 4;}
+@font-face
+	{font-family:"Copperplate Gothic Light";
+	panose-1:2 14 5 7 2 2 6 2 4 4;}
+@font-face
+	{font-family:"Curlz MT";
+	panose-1:4 4 4 4 5 7 2 2 2 2;}
+@font-face
+	{font-family:"Edwardian Script ITC";
+	panose-1:3 3 3 2 4 7 7 13 8 4;}
+@font-face
+	{font-family:Elephant;
+	panose-1:2 2 9 4 9 5 5 2 3 3;}
+@font-face
+	{font-family:"Engravers MT";
+	panose-1:2 9 7 7 8 5 5 2 3 4;}
+@font-face
+	{font-family:"Eras Bold ITC";
+	panose-1:2 11 9 7 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Eras Demi ITC";
+	panose-1:2 11 8 5 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Eras Light ITC";
+	panose-1:2 11 4 2 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Eras Medium ITC";
+	panose-1:2 11 6 2 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Felix Titling";
+	panose-1:4 6 5 5 6 2 2 2 10 4;}
+@font-face
+	{font-family:"Footlight MT Light";
+	panose-1:2 4 6 2 6 3 10 2 3 4;}
+@font-face
+	{font-family:Forte;
+	panose-1:3 6 9 2 4 5 2 7 2 3;}
+@font-face
+	{font-family:"Franklin Gothic Book";
+	panose-1:2 11 5 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Demi";
+	panose-1:2 11 7 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Demi Cond";
+	panose-1:2 11 7 6 3 4 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Heavy";
+	panose-1:2 11 9 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Medium Cond";
+	panose-1:2 11 6 6 3 4 2 2 2 4;}
+@font-face
+	{font-family:"Freestyle Script";
+	panose-1:3 8 4 2 3 2 5 11 4 4;}
+@font-face
+	{font-family:"French Script MT";
+	panose-1:3 2 4 2 4 6 7 4 6 5;}
+@font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;}
+@font-face
+	{font-family:Gigi;
+	panose-1:4 4 5 4 6 16 7 2 13 2;}
+@font-face
+	{font-family:"Gill Sans MT Ext Condensed Bold";
+	panose-1:2 11 9 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans MT";
+	panose-1:2 11 5 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans MT Condensed";
+	panose-1:2 11 5 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans Ultra Bold";
+	panose-1:2 11 10 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans Ultra Bold Condensed";
+	panose-1:2 11 10 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gloucester MT Extra Condensed";
+	panose-1:2 3 8 8 2 6 1 1 1 1;}
+@font-face
+	{font-family:"Goudy Old Style";
+	panose-1:2 2 5 2 5 3 5 2 3 3;}
+@font-face
+	{font-family:"Goudy Stout";
+	panose-1:2 2 9 4 7 3 11 2 4 1;}
+@font-face
+	{font-family:Haettenschweiler;
+	panose-1:2 11 7 6 4 9 2 6 2 4;}
+@font-face
+	{font-family:"Harlow Solid Italic";
+	panose-1:4 3 6 4 2 15 2 2 13 2;}
+@font-face
+	{font-family:Harrington;
+	panose-1:4 4 5 5 5 10 2 2 7 2;}
+@font-face
+	{font-family:"High Tower Text";
+	panose-1:2 4 5 2 5 5 6 3 3 3;}
+@font-face
+	{font-family:"Imprint MT Shadow";
+	panose-1:4 2 6 5 6 3 3 3 2 2;}
+@font-face
+	{font-family:Jokerman;
+	panose-1:4 9 6 5 6 13 6 2 7 2;}
+@font-face
+	{font-family:"Juice ITC";
+	panose-1:4 4 4 3 4 10 2 2 2 2;}
+@font-face
+	{font-family:"Kristen ITC";
+	panose-1:3 5 5 2 4 2 2 3 2 2;}
+@font-face
+	{font-family:"Kunstler Script";
+	panose-1:3 3 4 2 2 6 7 13 13 6;}
+@font-face
+	{font-family:"Lucida Bright";
+	panose-1:2 4 6 2 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Lucida Calligraphy";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"Lucida Fax";
+	panose-1:2 6 6 2 5 5 5 2 2 4;}
+@font-face
+	{font-family:"Lucida Handwriting";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"Lucida Sans";
+	panose-1:2 11 6 2 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Lucida Sans Typewriter";
+	panose-1:2 11 5 9 3 5 4 3 2 4;}
+@font-face
+	{font-family:"MS Outlook";
+	panose-1:5 1 1 0 1 0 0 0 0 0;}
+@font-face
+	{font-family:Magneto;
+	panose-1:4 3 8 5 5 8 2 2 13 2;}
+@font-face
+	{font-family:"Maiandra GD";
+	panose-1:2 14 5 2 3 3 8 2 2 4;}
+@font-face
+	{font-family:"Matura MT Script Capitals";
+	panose-1:3 2 8 2 6 6 2 7 2 2;}
+@font-face
+	{font-family:Mistral;
+	panose-1:3 9 7 2 3 4 7 2 4 3;}
+@font-face
+	{font-family:"Modern No\. 20";
+	panose-1:2 7 7 4 7 5 5 2 3 3;}
+@font-face
+	{font-family:"Monotype Corsiva";
+	panose-1:3 1 1 1 1 2 1 1 1 1;}
+@font-face
+	{font-family:"Niagara Engraved";
+	panose-1:4 2 5 2 7 7 3 3 2 2;}
+@font-face
+	{font-family:"Niagara Solid";
+	panose-1:4 2 5 2 7 7 2 2 2 2;}
+@font-face
+	{font-family:"OCR A Extended";
+	panose-1:2 1 5 9 2 1 2 1 3 3;}
+@font-face
+	{font-family:"Old English Text MT";
+	panose-1:3 4 9 2 4 5 8 3 8 6;}
+@font-face
+	{font-family:Onyx;
+	panose-1:4 5 6 2 8 7 2 2 2 3;}
+@font-face
+	{font-family:"Palace Script MT";
+	panose-1:3 3 3 2 2 6 7 12 11 5;}
+@font-face
+	{font-family:Papyrus;
+	panose-1:3 7 5 2 6 5 2 3 2 5;}
+@font-face
+	{font-family:Parchment;
+	panose-1:3 4 6 2 4 7 8 4 8 4;}
+@font-face
+	{font-family:Perpetua;
+	panose-1:2 2 5 2 6 4 1 2 3 3;}
+@font-face
+	{font-family:"Perpetua Titling MT";
+	panose-1:2 2 5 2 6 5 5 2 8 4;}
+@font-face
+	{font-family:Playbill;
+	panose-1:4 5 6 3 10 6 2 2 2 2;}
+@font-face
+	{font-family:"Poor Richard";
+	panose-1:2 8 5 2 5 5 5 2 7 2;}
+@font-face
+	{font-family:Pristina;
+	panose-1:3 6 4 2 4 4 6 8 2 4;}
+@font-face
+	{font-family:"Rage Italic";
+	panose-1:3 7 5 2 4 5 7 7 3 4;}
+@font-face
+	{font-family:Ravie;
+	panose-1:4 4 8 5 5 8 9 2 6 2;}
+@font-face
+	{font-family:Rockwell;
+	panose-1:2 6 6 3 2 2 5 2 4 3;}
+@font-face
+	{font-family:"Rockwell Condensed";
+	panose-1:2 6 6 3 5 4 5 2 1 4;}
+@font-face
+	{font-family:"Rockwell Extra Bold";
+	panose-1:2 6 9 3 4 5 5 2 4 3;}
+@font-face
+	{font-family:"Informal Roman";
+	panose-1:3 6 4 2 3 4 6 11 2 4;}
+@font-face
+	{font-family:"Script MT Bold";
+	panose-1:3 4 6 2 4 6 7 8 9 4;}
+@font-face
+	{font-family:"Showcard Gothic";
+	panose-1:4 2 9 4 2 1 2 2 6 4;}
+@font-face
+	{font-family:"Snap ITC";
+	panose-1:4 4 10 7 6 10 2 2 2 2;}
+@font-face
+	{font-family:Stencil;
+	panose-1:4 4 9 5 13 8 2 2 4 4;}
+@font-face
+	{font-family:"Tw Cen MT";
+	panose-1:2 11 6 2 2 1 4 2 6 3;}
+@font-face
+	{font-family:"Tw Cen MT Condensed";
+	panose-1:2 11 6 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Tempus Sans ITC";
+	panose-1:4 2 4 4 3 13 7 2 2 2;}
+@font-face
+	{font-family:"Viner Hand ITC";
+	panose-1:3 7 5 2 3 5 2 2 2 3;}
+@font-face
+	{font-family:Vivaldi;
+	panose-1:3 2 6 2 5 5 6 9 8 4;}
+@font-face
+	{font-family:"Vladimir Script";
+	panose-1:3 5 4 2 4 4 7 7 3 5;}
+@font-face
+	{font-family:"Wide Latin";
+	panose-1:2 10 10 7 5 5 5 2 4 4;}
+@font-face
+	{font-family:"Wingdings 2";
+	panose-1:5 2 1 2 1 5 7 7 7 7;}
+@font-face
+	{font-family:"Wingdings 3";
+	panose-1:5 4 1 2 1 8 7 7 7 7;}
+@font-face
+	{font-family:"Berlin Sans FB Demi";
+	panose-1:2 14 8 2 2 5 2 2 3 6;}
+@font-face
+	{font-family:"MS Reference Sans Serif";
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"MS Reference Specialty";
+	panose-1:5 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Tw Cen MT Condensed Extra Bold";
+	panose-1:2 11 8 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:"MT Extra";
+	panose-1:5 5 1 2 1 2 5 2 2 2;}
+@font-face
+	{font-family:"Bookshelf Symbol 7";
+	panose-1:5 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"OCR-B 10 BT";
+	panose-1:2 11 6 1 2 2 2 2 2 4;}
+@font-face
+	{font-family:"OCR-A BT";
+	panose-1:2 15 5 1 2 2 4 2 3 4;}
+@font-face
+	{font-family:"WP MultinationalA Courier";
+	panose-1:5 0 0 9 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalB Courier";
+	panose-1:2 6 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"WP MultinationalA Helve";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalB Helve";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalA Roman";
+	panose-1:2 2 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"WP MultinationalB Roman";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Nina;
+	panose-1:2 11 6 6 3 5 4 4 2 4;}
+@font-face
+	{font-family:sshlinedraw;
+	panose-1:0 0 4 9 0 0 0 0 0 0;}
+@font-face
+	{font-family:Candara;
+	panose-1:2 14 5 2 3 3 3 2 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Constantia;
+	panose-1:2 3 6 2 5 3 6 3 3 3;}
+@font-face
+	{font-family:Corbel;
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 6 6 2 2 2 3 2 4;}
+@font-face
+	{font-family:"DejaVu Sans";
+	panose-1:2 11 6 3 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Condensed";
+	panose-1:2 11 6 6 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Mono";
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Serif";
+	panose-1:2 6 6 3 5 6 5 2 2 4;}
+@font-face
+	{font-family:"DejaVu Serif Condensed";
+	panose-1:2 6 6 6 5 6 5 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Light";
+	panose-1:2 11 2 3 3 8 4 2 2 4;}
+@font-face
+	{font-family:"Myriad Pro";
+	panose-1:2 11 6 6 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Myriad Web";
+	panose-1:2 11 8 3 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Myriad Web Pro";
+	panose-1:2 11 5 3 3 4 3 2 2 4;}
+@font-face
+	{font-family:Myriade;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Myriad Web Pro Condensed";
+	panose-1:2 11 5 6 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Segoe Condensed";
+	panose-1:2 11 6 6 4 2 0 2 2 3;}
+@font-face
+	{font-family:ZWAdobeF;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@StarSymbol";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:.5in;
+	margin-left:0in;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:24.0pt;
+	font-family:"Verdana","sans-serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Verdana","sans-serif";}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Verdana","sans-serif";}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:9.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Verdana","sans-serif";}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:9.9pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:20.15pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:30.05pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:14.15pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-14.15pt;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	background:navy;
+	font-size:10.0pt;
+	font-family:"Tahoma","sans-serif";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Cambria","serif";
+	color:#243F60;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-family:"Cambria","serif";
+	color:#404040;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+span.Code
+	{mso-style-name:Code;
+	font-family:"Courier New";
+	font-weight:bold;}
+p.WarningMessage, li.WarningMessage, div.WarningMessage
+	{mso-style-name:"Warning Message";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+p.WarningMessageAfter6pt, li.WarningMessageAfter6pt, div.WarningMessageAfter6pt
+	{mso-style-name:"Warning Message + After\:  6 pt";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.msoIns
+	{mso-style-name:"";
+	text-decoration:underline;
+	color:teal;}
+span.msoDel
+	{mso-style-name:"";
+	text-decoration:line-through;
+	color:red;}
+ /* Page Definitions */
+ @page Section1
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section1
+	{page:Section1;}
+@page Section2
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section2
+	{page:Section2;}
+@page Section3
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section3
+	{page:Section3;}
+@page Section4
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section4
+	{page:Section4;}
+@page Section5
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section5
+	{page:Section5;}
+@page Section6
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section6
+	{page:Section6;}
+@page Section7
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section7
+	{page:Section7;}
+@page Section8
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section8
+	{page:Section8;}
+@page Section9
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section9
+	{page:Section9;}
+@page Section10
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section10
+	{page:Section10;}
+@page Section11
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section11
+	{page:Section11;}
+@page Section12
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section12
+	{page:Section12;}
+@page Section13
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section13
+	{page:Section13;}
+@page Section14
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section14
+	{page:Section14;}
+@page Section15
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section15
+	{page:Section15;}
+@page Section16
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section16
+	{page:Section16;}
+@page Section17
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section17
+	{page:Section17;}
+@page Section18
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section18
+	{page:Section18;}
+@page Section19
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section19
+	{page:Section19;}
+@page Section20
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section20
+	{page:Section20;}
+@page Section21
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section21
+	{page:Section21;}
+@page Section22
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section22
+	{page:Section22;}
+@page Section23
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section23
+	{page:Section23;}
+@page Section24
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section24
+	{page:Section24;}
+@page Section25
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section25
+	{page:Section25;}
+@page Section26
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section26
+	{page:Section26;}
+@page Section27
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section27
+	{page:Section27;}
+@page Section28
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section28
+	{page:Section28;}
+@page Section29
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section29
+	{page:Section29;}
+@page Section30
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section30
+	{page:Section30;}
+@page Section31
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section31
+	{page:Section31;}
+@page Section32
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section32
+	{page:Section32;}
+@page Section33
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section33
+	{page:Section33;}
+@page Section34
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section34
+	{page:Section34;}
+@page Section35
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section35
+	{page:Section35;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section15>
+
+<h1><a name="_Toc218278545"></a><a name="_Toc218195709"></a><a
+name="_Глава_7._Масиви"></a><span lang=BG>Глава 7. Масиви</span></h1>
+
+<h2><a name="_Toc218195710"><span lang=BG>Автор</span></a></h2>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>Мариян Ненчев</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>Светлин Наков</span></p>
+
+<h2><a name="_Toc218195711"><span lang=BG>В тази тема...</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>В настоящата тема ще се запознаем с масивите
+като средства за обра­ботка на поредица от еднакви по тип елементи. Ще обясним
+какво пред­ставляват масивите, как можем да декларираме, съз­даваме и
+инициализи­раме масиви. Ще обърнем внимание на едномерните и много­мерните
+масиви. Ще разгледаме различни начини за обхождане на масив, четене от
+стандартния вход и отпечатване на стандартния изход. Ще дадем много примери за
+задачи, които се решават с използването на масиви и ще ви покажем колко полезни
+са те.</span></p>
+
+<b><span lang=BG style='font-size:14.0pt;font-family:"Verdana","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<h2><a name="_Toc218195712"><span lang=BG>Какво е &quot;масив&quot;?</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Масивите са неизменна част от езиците за
+програмиране. Те представля­ват съвкупности от променливи, които наричаме <b>елементи</b>:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG><img
+border=0 width=422 height=137
+src="image063.gif"></span></p>
+
+<p class=MsoNormal><span lang=BG>Елементите на масивите са номерирани с числата
+0, 1, 2, ... N-1. Тези номера на елементи се наричат <b>индекси</b>. Броят
+елементи в даден масив се нарича <b>дължина на масива</b>.</span></p>
+
+<p class=MsoNormal><span lang=BG>Всички елементи на даден масив са от един и
+същи тип</span>,<span lang=BG> независимо дали е <b>примитивен</b> или <b>референтен</b>.
+Това ни помага да представим група от еднородни елементи като подредена свързана
+последователност и да ги обработваме като едно цяло.</span></p>
+
+<p class=MsoNormal><span lang=BG>Масивите могат да бъдат от различни
+размерности, като най-често използвани са <b>едномерните</b> и <b>двумерните</b>
+масиви. Едномерните масиви се наричат още вектори, а двумерните матрици.</span></p>
+
+<h2><a name="_Toc218195713"><span lang=BG>Деклариране и заделяне на масиви</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>В Java масивите имат фиксирана дължина, която
+се указва при инициа­лизирането му и определя броя на елементите му. След като
+веднъж сме задали дължината на масив не е възможно да я променяме.</span></p>
+
+<h3><a name="_Toc218195714"><span lang=BG>Деклариране на масив</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Масиви в Java
+декларираме по следния начин:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'><pre><b><span lang=BG style='color:#7F0055'>int</span></b><span
+  lang=BG style='color:black'>[] myArray</span><span lang=BG>;</span></pre></td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Тук променливата </span><span class=Code><span
+lang=BG>myArray</span></span><span lang=BG> е името на масива, който е от тип (</span><span
+class=Code><span lang=BG>int[]</span></span><span lang=BG>) т.е. декларирали
+сме масив от цели числа. С </span><span class=Code><span lang=BG>[]</span></span><span
+lang=BG> се обозначава, че промен­ливата, която декларираме ще е масив, а не
+единичен елемент.</span></p>
+
+<p class=MsoNormal><span lang=BG>При декларация името на променливата, която е
+от тип масив, пред­ставлява референция (<b>reference</b>), която сочи към </span><span
+class=Code><span lang=BG>null</span></span><span lang=BG>, тъй като още не е
+заделена памет за елементите на масива.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ето как изглежда
+една променлива от тип масив, която е декларирана, но още не е заделена памет
+за елементите на масива:</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG><img border=0
+width=520 height=164
+src="image064.gif"></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В стека за
+изпълнение на програмата се заделя променлива с име </span><span class=Code><span
+lang=BG>myArray</span></span><span lang=BG> и в нея се поставя стойност </span><span
+class=Code><span lang=BG>null</span></span><span lang=BG> (липса на стойност).</span></p>
+
+<h3><a name="_Toc218195715"><span lang=BG>Създаване (заделяне) на масив –
+оператор new</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В Java масив се
+създава с ключовата дума </span><span class=Code><span lang=BG>new</span></span><span
+lang=BG>, която служи за заделяне (алокиране) на памет</span>:</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'><pre><b><span lang=BG style='color:#7F0055'>int</span></b><span
+  lang=BG>[] <span style='color:black'>myArray = </span><b><span
+  style='color:#7F0055'>new</span></b><span style='color:black'> </span><b><span
+  style='color:#7F0055'>int</span></b><span style='color:black'>[6];</span></span></pre></td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В примера заделяме
+масив с размер 6 елемента от целочислен тип. Това означава, че в динамичната
+памет (heap) се заделя участък от 6 после­дователни цели числа:</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG><img border=0
+width=520 height=164
+src="image065.gif"></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Картинката
+показва, че след заделянето на масива променливата </span><span class=Code><span
+lang=BG>myArray</span></span><span lang=BG> сочи някакъв адрес (</span><span
+class=Code><span lang=BG>0x42e816</span></span><span lang=BG>) в динамичната
+памет, където се намира нейната стойност</span>.<span lang=BG> Елементите на
+масивите винаги се съхраняват в динамичната памет (в т. нар.</span><span
+lang=BG> </span><b><span lang=BG>heap</span></b><span lang=BG>).</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>При заделянето на
+масив в квадратните скоби задаваме броя на елемен­тите му (цяло неотрицателно
+число) и така се фиксира неговата дължина. Типът на елементите се пише след </span><span
+class=Code><span lang=BG>new</span></span><span lang=BG>, за да се укаже за
+какви точно елементи трябва да се задели памет. Масив с вече зададена дължина
+не може да се промени т.е. масивите са с фиксирана дължина.</span></p>
+
+<h3><a name="_Toc218195716"><span lang=BG>Инициализация на масив. Стойности по
+подразбиране</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Преди да използваме елемент от даден масив той
+трябва да има начална стойност. В някои езици за програмиране не се задават
+начални стойности по подразбиране, и тогава при опит за достъпване да даден
+елемент възниква грешка. В Java всички променливи, включително и елементите на
+масивите имат начална стойност по подразбиране (default initial value)&gt; Тази
+стройност е равна на 0 при числените типове или неин еквивалент при нечислени
+типове (например </span><span class=Code><span lang=BG>null</span></span><span
+lang=BG> </span><span lang=BG>за обекти и </span><span class=Code><span
+lang=BG>false</span></span><span lang=BG> за булевия тип).</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Разбира се, начални
+стойности можем да задаване и изрично. Това може да стане по различни начини.
+Един възможен е чрез използване на литера­лен израз за елементите на масива (<b>array
+literal expression</b>):</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'><pre><b><span lang=BG style='color:#7F0055'>int</span></b><span
+  lang=BG>[] <span style='color:black'>myArray = {1, 2, 3, 4, 5, 6}</span>;</span></pre></td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>В този случай създаваме и инициализираме
+масива едновременно. Ето как изглежда масива в паметта, след като стойностите
+му са инициализирани още в момента на деклариране:</span></p>
+
+<p class=MsoNormal><span lang=BG><img border=0 width=520 height=164
+src="image066.gif"></span></p>
+
+<p class=MsoNormal><span lang=BG>При този синтаксис къдравите скоби заместват
+оператора </span><span class=Code><span lang=BG>new</span></span><span lang=BG>
+и между тях има изброени началните стойности на масива, разделени със запетаи.
+Техния брой определя дължината му.</span></p>
+
+<h3><a name="_Toc218195717"><span lang=BG>Деклариране и инициализиране на масив
+– пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ето още един
+пример за деклариране и непосредствено инициализиране на масив:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>String[] daysOfWeek = { </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Monday&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Tuesday&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Wednesday&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Thursday&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>,</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Friday&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Saturday&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Sunday&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'> };</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В случая масивът
+се заделя със 7 елемента от тип </span><span class=Code><span lang=BG>String</span></span>.<span
+lang=BG> Типът String е референтен тип (обект) и неговите стойности се пазят в
+динамичната памет. Ето как изглежда масивът в паметта:</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG><img border=0
+width=505 height=420
+src="image067.gif"></span></p>
+
+<p class=MsoNormal><span lang=BG>В стека се заделя променливата </span><span
+class=Code><span lang=BG>daysOfWeek</span></span><span lang=BG>, която сочи към
+участък в динамичната памет, който съдържа елементите на масива. Всеки от тези
+7 елементи е обект от тип символен низ, който сам по себе си сочи към друга
+област от динамичната памет, в която се пази стойността му.</span></p>
+
+<h2><a name="_Toc218195718"><span lang=BG>Достъп до елементите на масив</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Достъпът до елементите на масивите е пряк, по
+индекс. Всеки елемент може да се достъпи с името на масива и съответния му
+индекс, поставен в квадратни скоби. Можем да осъществим достъп до даден елемент
+както за четене така и за писане т.е. да го третираме като обикновена
+променлива.</span></p>
+
+<p class=MsoNormal><span lang=BG>Масивите могат да се обхождат с помощта на
+някоя от структурите за <b>цикъл</b>, като най-често използван е класическият </span><span
+class=Code><span lang=BG>for</span></span><span lang=BG> цикъл.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Пример за достъп
+до елемент на масив:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>myArray[index]
+  = 100;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>В горния пример присвояваме стойност 100 на
+елемента, намиращ се на позиция </span><span class=Code><span lang=BG>index</span></span><span
+lang=BG>, където </span><span class=Code><span lang=BG>index</span></span><span
+lang=BG> е валиден за масива индекс.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ето един пример, в
+който заделяме масив от числа и след това променяме някои от елементите му:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[] myArray = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[6];</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>myArray[1] = 1;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>myArray[5] = 5</span><span lang=BG style='font-family:"Courier New"'>;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>След промяната на
+елементите, масивът се представя в паметта по следния начин:</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG><img border=0
+width=520 height=164
+src="image068.gif"></span></p>
+
+<h3><a name="_Toc218195719"><span lang=BG>Граници на масив</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Масивите обикновено са <b>нулево-базирани</b>,
+т.е. номерацията на елемен­тите започва от <b>0</b>. Първият елемент има индекс
+0, вторият 1 и т.н. Ако един масив има </span><b>N</b><span lang=BG> елемента,
+то последният елемент се намира на индекс </span><b>N<span lang=BG>-1</span></b><span
+lang=BG>.</span></p>
+
+<h4><span lang=BG>Излизане от границите на масив</span></h4>
+
+<p class=MsoNormal><span lang=BG>Достъпът до елементите на масивите се
+проверява по време на изпълне­ние от виртуалната машина на Java</span><span
+lang=BG> </span><span lang=BG>и тя не допуска изли­зане извън границите и
+размерностите им. При всеки достъп до елемент на масива по се прави проверка,
+дали индексът е валиден или не. Ако не е се хвърля изключение от тип</span><span
+class=Code><span lang=BG> java.lang.ArrayIndexOutOfBoundsException</span></span><span
+lang=BG>. Естест­вено, тази проверка си има и своята цена и тя е леко
+намаляване на про­изводителността.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ето един пример, в
+който се опитваме да извлечен елемент, който се намира извън границите на
+масива:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  background:#F3F3F3;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  class=Code><span lang=BG>TestArrayIndexOutOfBounds.java</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>public</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>class</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> TestArrayIndexOutOfBounds { </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>public</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>static</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>void</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> main(String[] args) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[] myArray = { 1, 2, 3, 4, 5, 6 };</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(myArray[6]);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В горния пример
+създаваме масив, който съдържа 6 цели числа. Първият елемент се намира на
+индекс 0, последният на индекс 5. Опитваме се да изведем на конзолата елемент,
+който се намира на индекс 6, но такъв не съществува и това води до подаване на
+изключение:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-size:9.0pt;font-family:"Courier New";
+  color:red'>Exception in thread &quot;main&quot; </span><u><span lang=BG
+  style='font-size:9.0pt;font-family:"Courier New";color:navy'>java.lang.ArrayIndexOutOfBoundsException</span></u><span
+  lang=BG style='font-size:9.0pt;font-family:"Courier New";color:red'>: 6</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-size:9.0pt;font-family:"Courier New";
+  color:red'>   at Tst.main(</span><u><span lang=BG style='font-size:9.0pt;
+  font-family:"Courier New";color:navy'>Tst.java:5</span></u><span lang=BG
+  style='font-size:9.0pt;font-family:"Courier New";color:red'>)</span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc218195720"><span lang=BG>Обръщане на масив в обратен ред –
+пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В следващия пример
+ще видим как може да променяме елементите на даден масив като ги достъпваме по
+индекс. Ще обърнем елементите на масива, като използваме помощен масив, в който
+да запазим елементите на първия, но в обратен ред. Забележете, че дължината и
+на масивите е еднаква и остава непроменена след първоначалното им заделяне:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  background:#F3F3F3;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><b><span
+  lang=BG style='font-family:"Courier New";color:black'>ArrayReverseExample</span></b><span
+  class=Code><span lang=BG>.java</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>import</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> java.util.Arrays;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>public</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>class</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> ArrayReverseExample {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>public</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>static</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>void</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> main(String[] args) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[] array = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[] { 1, 2, 3, 4, 5 };</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Get array size</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> length = array.</span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>length</span><span lang=BG style='font-family:"Courier New";
+  color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Declare and create the reversed array</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[] reversed = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[length];</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Initialize the reversed array</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> index = 0; index &lt; length; index++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       reversed[length - index - 1] = array[index];</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Print the reversed array</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(Arrays.<i>toString</i>(reversed));</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ако изпълним
+примера, ще получим следния резултат:</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:black'>[5, 4, 3, 2, 1]</span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Примерът работи така: първоначално създаваме
+едномерен масив от тип</span><span class=Code><span lang=BG> int</span></span><span
+lang=BG>, и го ини­циа­ли­зи­ра­ме с цифрите от 1 до 5. След това си запазваме
+дължината на масива в целочислената променлива </span><span class=Code><span
+lang=BG>length</span></span><span lang=BG>. Забележете, че се използва полето </span><span
+class=Code><span lang=BG>length</span></span><span lang=BG>, което връща броя
+на елементите на масива. В Java всеки масив знае своята дъл­жина.</span></p>
+
+<p class=MsoNormal><span lang=BG>След това декларираме масив </span><span
+class=Code><span lang=BG>reversed</span></span><span lang=BG> с размер </span><span
+class=Code><span lang=BG>length</span></span><span lang=BG>, в който ще си
+пазим елементите на първия, но в обратен ред.</span></p>
+
+<p class=MsoNormal><span lang=BG>За да извършим обръщането на елементите
+ползваме цикъл </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG>, като на всяка итерация увеличаваме </span><span class=Code><span
+lang=BG>index</span></span><span lang=BG> с единица и така си осигуряваме
+последователен достъп до всеки елемент на масива </span><span class=Code><span
+lang=BG>array</span></span><span lang=BG>. Критерия за край на цикъла ни
+подсигурява, че масива ще бъде обходен от край до край.</span></p>
+
+<p class=MsoNormal><span lang=BG>Нека проследим последователно какво се случва
+при итериране върху масива </span><span class=Code><span lang=BG>array</span></span><span
+lang=BG>. При първата итерация на цикъла, </span><span class=Code><span
+lang=BG>index</span></span><span lang=BG> има стойност 0. С </span><span
+class=Code><span lang=BG>array[index]</span></span><span lang=BG> достъпваме
+първия елемент на </span><span class=Code><span lang=BG>array</span></span><span
+lang=BG>, а с </span><span class=Code><span lang=BG>reversed[length – index –
+1]</span></span><span lang=BG> достъпваме последния елемент на </span><span
+class=Code><span lang=BG>reversed</span></span><span lang=BG> и извършваме
+присвояване. Така на последния елемент на </span><span class=Code><span
+lang=BG>reversed</span></span><span lang=BG> присвоихме първия елемент на </span><span
+class=Code><span lang=BG>array</span></span><span lang=BG>. На всяка следваща
+итерация </span><span class=Code><span lang=BG>index</span></span><span
+lang=BG> се увеличава с единица, позицията в </span><span class=Code><span
+lang=BG>array</span></span><span lang=BG> се увеличава с единица, а в </span><span
+class=Code><span lang=BG>reversed</span></span><span lang=BG> се намаля с
+единица.</span></p>
+
+<p class=MsoNormal><span lang=BG>В резултат обърнахме масива в обратен ред. В
+примера показахме последователно обхождане на масив, което може да се извърши и
+с другите видове цикли.</span></p>
+
+<p class=MsoNormal><span lang=BG>Отпечатването на масив правим като се
+възползваме от помощния клас </span><span class=Code><span lang=BG>java.util.Arrays</span></span><span
+lang=BG> и метода му </span><span class=Code><span lang=BG>toString()</span></span><span
+lang=BG>, с който получаваме текстово представяне на масива.</span></p>
+
+<h2><a name="_Toc218195721"><span lang=BG>Четене на масив от конзолата</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Нека разгледаме как можем да прочетем
+стойностите на масив от конзолата. Ще използваме </span><span class=Code><span
+lang=BG>for</span></span><span lang=BG> цикъл и средствата на Java за четене на
+числа от конзолата.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Първоначално, за
+да заделим памет за масива, може да прочетем цяло число </span><span
+class=Code><span lang=BG>n</span></span><span lang=BG> </span><span lang=BG>от
+конзолата и да го ползваме като негов размер</span>:</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'><b><span lang=BG style='font-family:
+  "Courier New";color:#7F0055'>int</span></b><span lang=BG style='font-family:
+  "Courier New";color:black'> n = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[] </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>array</span><span lang=BG style='font-family:"Courier New";
+  color:black'> = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[n];</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Отново използваме
+цикъл, за да обходим масива. На всяка итерация присвояваме на текущия елемент
+прочетеното от конзолата число. Цикъла ще се завърти <b>n</b> пъти т.е. ще
+обходи целия масив и така ще прочетем стойност за всеки елемент от масива</span>:</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>i</span><span lang=BG style='font-family:"Courier New";
+  color:black'> = 0; i &lt; n; i++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  array[i] = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc218195722"><span lang=BG>Проверка за симетрия на масив –
+пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Един масив е
+симетричен, ако първият и последният му елемент са еднакви и вторият и
+предпоследният му елемент също са еднакви и т.н. На картинката са дадени
+няколко примера за симетрични масиви:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><span
+lang=BG><img border=0 width=407 height=61
+src="image069.gif"></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В следващия примерен
+код ще видим как може да проверим дали даден масив е симетричен:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> n = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[] array = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[n];</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i = 0; i &lt; n; i++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  array[i] = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>boolean</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> symmetric = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>true</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i = 0; i &lt; (array.length + 1) / 2; i++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>if</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (array[i] != array[n - i - 1])</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  symmetric = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>false</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.out.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Symmetric? %b%n&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>, symmetric);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Тук отново създаваме масив и прочитаме
+елементите му от конзолата. За да проверим дали масива е симетричен трябва да
+го обходим само до средата му. Тя е равна на </span><span class=Code><span
+lang=BG>(array.length + 1) / 2</span></span><span lang=BG>, понеже не знаем
+дали масива има четна или нечетна дължина.</span></p>
+
+<p class=MsoNormal><span lang=BG>За да определим дали дадения масив е
+симетричен ще ползваме <b>булева</b> променлива, като по начало приемаме, че
+масивът е симетричен.</span></p>
+
+<p class=MsoNormal><span lang=BG>Обхождаме масива и сравняваме първия с
+последния елемент, втория с предпоследния и т.н. Ако за някоя итерация се
+окаже, че стойностите на елементите не съвпадат булевата променлива получава
+стойност </span><span class=Code><span lang=BG>false</span></span><span
+lang=BG>, т.е. масивът не е симетричен.</span></p>
+
+<p class=MsoNormal><span lang=BG>Най-накрая извеждаме на конзолата резултата на
+булевата променлива.</span></p>
+
+<h2><a name="_Toc218195723"><span lang=BG>Отпечатване на масив на конзолата</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Често се налага след като сме обработвали
+даден масив да изведем елементите му на конзолата, било то за тестови или други
+цели.</span></p>
+
+<p class=MsoNormal><span lang=BG>Отпечатването на елементите на масив става по
+подобен начин на инициализирането на елементите му, а именно като използваме
+цикъл, който обхожда масива. Няма строги правила за извеждането на данните. Разбира
+се, добра практика е те да бъдат добре форматирани.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Често срещана
+грешка е опит да се изведе на конзолата масив директно, по следния начин:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>String[] array = { </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;one&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;two&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;three&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;four&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'> };</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(array);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Този код за съжаление
+не отпечатва съдържанието на масива, а неговия адрес в динамичната памет
+(защото масивите са референтни типове). Ето как изглежда резултатът от
+изпълнението на горния код:</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr style='height:10.2pt'>
+  <td width=530 valign=top style='width:397.4pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt;height:10.2pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left'><span
+  lang=BG style='font-family:"Courier New";color:black'>[Ljava.lang.String;@42e816</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>За да изведем
+коректно елементите на масив на конзолата можем да използваме </span><span
+class=Code><span lang=BG>for</span></span><span lang=BG> цикъл:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>String[] array = { </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;one&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;two&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;three&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;four&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'> };</span></p>
+  <p class=MsoNormal align=left style='text-align:left;text-autospace:none'><span
+  lang=BG style='font-family:"Courier New";color:#006600'>// Process all
+  elements of the array</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> index = 0; index &lt; array.</span><span lang=BG
+  style='font-family:"Courier New";color:#0000C0'>length</span><span lang=BG
+  style='font-family:"Courier New";color:black'>; index++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Print each element on a separate line</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;element[%d] = %s%n&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>, index, array[index]);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Обхождаме масива с
+цикъл </span><span class=Code><span lang=BG>for</span></span><span lang=BG>,
+който извършва </span><span class=Code><span lang=BG>array.length</span></span><span
+lang=BG> на брой итерации, с помощта на метода </span><span class=Code><span
+lang=BG>System.out.printf</span></span><span lang=BG>,</span><span lang=BG>
+извеждаме данните на конзолата във <b>форматиран</b> вид. Резултатът е
+следният:</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr style='height:10.2pt'>
+  <td width=530 valign=top style='width:397.4pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt;height:10.2pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>element[0] = one</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>element[1] = two</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>element[2] = three</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left'><span
+  lang=BG style='font-family:"Courier New";color:black'>element[3] = four</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Има и още един,
+по-лесен начин да отпечатаме съдържанието на масив:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>String[] array = { </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;one&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;two&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;three&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;four&quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'> };</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(java.util.Arrays.<i>toString</i>(array));</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Резултатът е добре
+форматиран символен низ, съдържащ всички елементи на масива, изброени със
+запетайка:</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr style='height:10.2pt'>
+  <td width=530 valign=top style='width:397.4pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt;height:10.2pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left'><span
+  lang=BG style='font-family:"Courier New";color:black'>[one, two, three, four]</span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="_Toc218195724"><span lang=BG>Итерация по елементите на масив</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Както разбрахме до тук, итерирането по
+елементите на масив е една от основните операции при обработката на масиви.
+Итерирайки последова­телно по даден масив можем да достъпим всеки елемент с
+помощта на индекс и да го манипулираме по желан от нас начин. Това може да
+стане с всички видове конструкции за цикъл, които разгледахме в предните теми,
+но най-подходящ за това е стандартният </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG> цикъл. Нека разгледаме как точно става обхождането на масив.</span></p>
+
+<h3><a name="_Toc218195725"><span lang=BG>Итерация с for цикъл</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Добра практика е
+да използваме </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG> цикъл при работа с масиви и изобщо при индексирани структури. Ето един
+пример, в който удвояваме стой­ността на всички елементи от даден масив с
+числа:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[] array = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[] {1, 2, 3, 4, 5};</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> index = 0; index &lt; array.</span><span lang=BG
+  style='font-family:"Courier New";color:#0000C0'>length</span><span lang=BG
+  style='font-family:"Courier New";color:black'>; index++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  array[index] = 2 * array[index];</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(Arrays.<i>toString</i>(array));</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Output: [2, 4, 6, 8, 10]</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Чрез </span><span
+class=Code><span lang=BG>for</span></span><span lang=BG> цикъла можем да имаме
+постоянен поглед върху текущия индекс на масива и да достъпваме точно тези
+елементи, от които имаме нужда. Итерирането може да не се извършва
+последователно т.е. индексът, който </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG> цикъла ползва може да прескача по елементите според нуждите на нашия
+алгоритъм. Например можем да обходим част от даден масив, а не целия. Ето един
+пример:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> index = 0; index &lt; array.length; index += 2) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  array[index] = array[index] * array[index];</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>В горния пример обхождаме всички елементи на
+масива, намиращи се на четни позиции и повдигаме на квадрат стойността във всеки
+от тях.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Понякога е полезно
+да обходим масив отзад напред. Можем да постигнем това по напълно аналогичен
+начин, с разликата, че </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG> цикълът ще започва с начален индекс, равен на индекса на последния
+елемент на масива, и ще се намаля на всяка итерация. Ето един такъв пример:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[] array = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[] {1, 2, 3, 4, 5};</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.print(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Reversed: &quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i = array.</span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>length</span><span lang=BG style='font-family:"Courier New";
+  color:black'> - 1; i &gt;= 0; i--) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.print(array[i] + </span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot; &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Reversed: 5 4 3 2 1</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>В горния пример обхождаме масива от зад напред
+последователно и извеждаме всеки негов елемент на конзолата.</span></p>
+
+<h3><a name="_Toc218195726"><span lang=BG>Итерация с разширен for цикъл
+(for-each)</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Една често използвана вариация на </span><span
+class=Code><span lang=BG>for</span></span><span lang=BG> цикълът е така
+наречения <b>разширен</b> <b>for</b> цикъл, който наричаме </span><span
+class=Code><span lang=BG>for-each</span></span><span lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Конструкцията на </span><span
+class=Code><span lang=BG>for-each</span></span><span lang=BG> цикъла в Java е
+следната:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (type value : array) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Process the value here</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>При тази конструкция </span><span class=Code><span
+lang=BG>type</span></span><span lang=BG> е типът на елементите, които обхождаме
+т.е. типа на масива, </span><span class=Code><span lang=BG>array</span></span><span
+lang=BG> е масивът, а </span><span class=Code><span lang=BG>value</span></span><span
+lang=BG> е текущият елемент от масива на всяка една стъпка от обхождането.</span></p>
+
+<p class=MsoNormal><span class=Code><span lang=BG>For-each</span></span><span
+lang=BG> притежава свойствата на </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG> цикъла. Отличава се с това, че обхождането на масива, въобще на
+структурата, която обхожда, се извършва от край до край. При него се скрива
+индекса на текущата позиция т.е. не знаем, на кой индекс се намира текущия
+елемент.</span></p>
+
+<p class=MsoNormal><span lang=BG>Този цикъл се използва когато не се нуждаем да
+променяме елементите на масива, а само да ги четем и да обхождаме целия масив.</span></p>
+
+<p class=MsoNormal><span class=Code><span lang=BG>For-each</span></span><span
+lang=BG> е по-бърз от обикновения </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG> цикъл.</span></p>
+
+<h4><span lang=BG>Итерация с разширен for цикъл (for-each) – пример</span></h4>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В следващия пример
+ще видим как да използваме конструкцията за разширен </span><span class=Code><span
+lang=BG>for</span></span><span lang=BG> цикъл за обхождане на масиви:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>String[] capitals = {</span><span lang=BG style='font-family:
+  "Courier New";color:#2A00FF'>&quot;Sofia&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>, </span><span lang=BG
+  style='font-family:"Courier New";color:#2A00FF'>&quot;Washington&quot;</span><span
+  lang=BG style='font-family:"Courier New";color:black'>, </span><span lang=BG
+  style='font-family:"Courier New";color:#2A00FF'>&quot;London&quot;</span><span
+  lang=BG style='font-family:"Courier New";color:black'>, </span><span lang=BG
+  style='font-family:"Courier New";color:#2A00FF'>&quot;Paris&quot;</span><span
+  lang=BG style='font-family:"Courier New";color:black'>};</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (String capital : capitals) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(capital);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>След като сме си
+декларирали масив от низове </span><span class=Code><span lang=BG>capitals</span></span><span
+lang=BG>, с </span><span class=Code><span lang=BG>for-each</span></span><span
+lang=BG> го обхождаме и извеждаме елементите му в конзолата. Текущия елемент на
+всяка една стъпка се пази в променливата </span><span class=Code><span lang=BG>capital</span></span><span
+lang=BG>. Ето какъв резултат се получава при изпълнението на примера:</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr style='height:6.35pt'>
+  <td width=529 valign=top style='width:396.85pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt;height:6.35pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Sofia</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Washington</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>London</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Paris</span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="_Toc218195727"><span lang=BG>Многомерни масиви</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>До момента разгледахме работата с едномерни
+масиви, известни в математиката като &quot;вектори&quot;. В практиката, обаче,
+често се ползват масиви с повече от едно измерения. Например стандартна
+шахматна дъска се представя лесно с двумерен масив с размер 8 на 8 (8 полета в
+хори­зонтална посока и 8 полета във вертикална посока).</span></p>
+
+<h3><a name="_Toc218195728"><span lang=BG>Какво е &quot;многомерен масив&quot;?
+Какво е &quot;матрица&quot;?</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Всеки допустим в Java тип може да бъде
+използван за тип на елементите на масив. Масивите също може да се разглеждат
+като допустим тип. Така можем да имаме масив от масиви. </span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Едномерен масив от
+цели числа декларираме с </span><span class=Code><span lang=BG>int[]</span></span><span
+lang=BG>. Ако желаем да декларираме масив от масиви от тип </span><span
+class=Code><span lang=BG>int[]</span></span><span lang=BG>, трябва всеки
+елемент да е от тип </span><span class=Code><span lang=BG>int[]</span></span><span
+lang=BG>, т.е. получаваме декларацията:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[][] </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>twoDimentionalArray</span><span lang=BG style='font-family:
+  "Courier New";color:black'>;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Такива масиви ще наричаме <b>двумерни</b>,
+защото имат две измерения</span><span lang=BG> </span><span lang=BG>или още <b>матрици</b>
+(терминът идва от математиката). Масиви с повече от едно измерение ще наричаме <b>многомерни</b>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Аналогично можем
+да декларираме и <b>тримерни</b> масиви като добавим още едно измерение:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[][][] </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>threeDimentionalArray</span><span lang=BG style='font-family:
+  "Courier New";color:black'>;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>На теория няма ограничения за броя на
+размерностите на тип на масив, но в практиката масиви с повече от две
+размерности са рядко използвани, затова ще се спрем по-подробно на двумерните
+масиви.</span></p>
+
+<h3><a name="_Toc218195729"><span lang=BG>Деклариране и заделяне на многомерен
+масив</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Многомерните
+масиви се декларират по начин аналогичен на едномер­ните. Всяка размерност
+означаваме с квадратни скоби:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[][] intMatrix;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>float</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[][] floatMatrix;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>String[][][] strCube;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Горният пример показва как да създадем
+двумерни и тримерни масиви. Всяка размерност отговаря на едни </span><span
+class=Code><span lang=BG>[]</span></span><span lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Памет за
+многомерни размери се заделя като се използва ключовата дума </span><span
+class=Code><span lang=BG>new</span></span><span lang=BG> и за всяка размерност
+в квадратни скоби се задава размера, който е необходим:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[][] </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>intMatrix</span><span lang=BG style='font-family:"Courier New";
+  color:black'> = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[3][4];</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>float</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[][] </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>floatMatrix</span><span lang=BG style='font-family:"Courier New";
+  color:black'> = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>float</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[8][2];</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>String[][][] </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>stringCube</span><span lang=BG style='font-family:"Courier New";
+  color:black'> = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> String[5][5][5];</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В горния пример </span><span
+class=Code><span lang=BG>intMatrix</span></span><span lang=BG> е двумерен масив
+с 3 елемента от тип </span><span class=Code><span lang=BG>int[]</span></span><span
+lang=BG> и всеки от тези 3 елемента има размерност 4. Така представени,
+двумерните масиви изглеждат трудни за осмисляне. Затова може да ги разглеждаме
+като двумерни <b>матрици</b>, които имат редове и колони за размерности:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><span
+lang=BG><img border=0 width=108 height=89
+src="image070.gif"></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Редовете и
+колоните се номерират с индекси от 0 до големината на съответната размерност
+минус едно. Ако един двумерен масив има размер </span><span class=Code><span
+lang=BG>m</span></span><span lang=BG> на </span><span class=Code><span lang=BG>n</span></span><span
+lang=BG>, той има </span><span class=Code><span lang=BG>m*n</span></span><span
+lang=BG> елемента.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Понякога можем да имаме
+неправоъгълни двумерни масиви, в които на всеки ред има различен брой колони.</span></p>
+
+<h3><a name="_Toc218195730"><span lang=BG>Инициализация на многомерен масив</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Инициализацията на
+многомерни масиви е аналогична на инициали­за</span>­<span lang=BG>цията на
+едномерните. Стойностите на елементите могат да се изброяват непосредствено
+след декларацията:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[][] matrix = {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  {1, 2, 3, 4}, </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// row 0 values  </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  {5, 6, 7, 8}, </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// row 1 values</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}; </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// The matrix size is 2 x 4 (2 rows, 4 cols)</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>В горния пример инициализираме двумерен масив
+с цели числа с 2 реда и 4 колони. Във външните фигурни скоби се поставят
+елементите от първата размерност, т.е. редовете на двумерната матрица. Всеки
+ред представлява едномерен масив, който се инициализира по познат за нас начин.</span></p>
+
+<h3><a name="_Toc218195731"><span lang=BG>Двумерните масиви и паметта</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В паметта
+двумерните и многомерните масиви съхраняват стойностите си в динамичната памет
+като референция (указател) към област, съдържаща референции към други масиви.
+На практика всяка променлива от тип масив (едномерен или многомерен)
+представлява референция към място в динамичната памет, където се съхраняват
+елементите на масива. Ако масивът е двумерен, неговите елементи са съответно
+масиви и за тях се пазят референции към динамичната памет, където стоят
+съответните им елементи. За да си представим визуално това, нека разгледаме
+следния масив:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[][] myInts = { {1, 2, 3}, {91, 92, 93, 94}, {2001, 2002} };</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Този масив не е стандартна матрица, защото е с
+неправоъгълна форма. Той се състои от 3 реда, като всеки от тях има различен
+брой колони. Това в Java е позволено и след като бъде инициализиран, масивът се
+представя в паметта по следния начин:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><span
+lang=BG><img border=0 width=529 height=255
+src="image071.jpg"></span></p>
+
+<h3><a name="_Toc218195732"><span lang=BG>Достъп до елементите на многомерен
+масив</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Матриците имат две
+размерности и съответно всеки техен елемент се достъпва с помощта на два
+индекса – един за редовете и един за коло­ните. Многомерните масиви имат различен
+индекс за всяка размерност.</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><b><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></b></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Всяка размерност в многомерен започва
+  от индекс нула.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Нека разгледаме
+следния пример:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[][] matrix = { </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  { 1, 2, 3, 4 }, </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  { 5, 6, 7, 8 },</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>};</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Масивът </span><span
+class=Code><span lang=BG>matrix</span></span><span lang=BG> има 8 елемента,
+разположени в 2 реда и 4 колони. Всеки елемент може да се достъпи по следния
+начин:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>matrix</span><span lang=BG style='font-family:"Courier New";
+  color:black'>[0][0]  </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>matrix</span><span lang=BG style='font-family:"Courier New";
+  color:black'>[0][1]  </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>matrix</span><span lang=BG style='font-family:"Courier New";
+  color:black'>[0][2]  </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>matrix</span><span lang=BG style='font-family:"Courier New";
+  color:black'>[0][3]</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>matrix</span><span lang=BG style='font-family:"Courier New";
+  color:black'>[1][0]  </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>matrix</span><span lang=BG style='font-family:"Courier New";
+  color:black'>[1][1]  </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>matrix</span><span lang=BG style='font-family:"Courier New";
+  color:black'>[1][2]  </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>matrix</span><span lang=BG style='font-family:"Courier New";
+  color:black'>[1][3]</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В горния пример
+виждаме как да достъпим всеки елемент по индекс. Ако означим индекса по редове
+с </span><span class=Code><span lang=BG>i</span></span><span lang=BG>, а
+индекса по колони с </span><span class=Code><span lang=BG>j</span></span><span
+lang=BG>, тогава достъпа до елемент от двумерен масив има следния общ вид:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>matrix</span><span lang=BG style='font-family:"Courier New";
+  color:black'>[i][j]</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>При многомерните
+масиви всеки елемент се идентифицира уникално с толкова на брой индекси,
+колкото е размерността на масива:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>nDimensionalArray</span><span lang=BG style='font-family:"Courier New";
+  color:black'>[index1]…[indexN]</span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc218195733"><span lang=BG>Дължина на многомерен масив</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Всяка размерност
+на многомерен масив има собствена дължина, която е достъпна по време на
+изпълнение на програмата. Нека разгледаме след­ния пример за двумерен масив:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[][] matrix = {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  { 1, 2, 3, 4 }, </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  { 5, 6, 7, 8 },</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>};</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Можем да извлечем броя на редовете на този
+двумерен масив чрез </span><span class=Code><span lang=BG>matrix.length</span></span><span
+lang=BG>. Това на практика е дължината на едномерния масив, съдържащ
+референциите към своите елементи (които са също масиви). Извличането на
+дължината на </span><span class=Code><span lang=BG>i</span></span><span
+lang=BG>-ия ред става с </span><span class=Code><span lang=BG>matrix[i].length</span></span><span
+lang=BG>.</span></p>
+
+<h3><a name="_Toc218195734"><span lang=BG>Отпечатване на матрица – пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Със следващия
+пример ще демонстрираме как можем да отпечатваме двумерни масиви на конзолата:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Declare and initialize a matrix of size 2 x 4</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[][] matrix = {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  { 1, 2, 3, 4 }, </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// row 0 values</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  { 5, 6, 7, 8 }, </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// row 1 values</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>};</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Print the matrix on the console</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>row</span><span lang=BG style='font-family:"Courier New";
+  color:black'> = 0; row &lt; matrix.</span><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>length</span><span lang=BG style='font-family:
+  "Courier New";color:black'>; row++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>   </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> col = 0; col &lt; matrix[0].</span><span lang=BG
+  style='font-family:"Courier New";color:#0000C0'>length</span><span lang=BG
+  style='font-family:"Courier New";color:black'>; col++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;%d &quot;</span><span lang=BG style='font-family:"Courier New";
+  color:black'>, matrix[row][col]);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>   }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>   System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Първо декларираме
+и инициализираме масива, който искаме да обходим и да отпечатаме на конзолата.
+Масивът е двумерен и за това използваме един цикъл, който ще се движи по
+редовете и втори, вложен цикъл, който за всеки ред ще се движи по колоните на
+масива. За всяка итерация по подходящ начин извеждаме текущия елемент на масива
+като го достъп­ваме по неговите два индекса. В крайна сметка, ако изпълним
+горния програмен фрагмент, ще получим следния резултат:</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr style='height:10.2pt'>
+  <td width=530 valign=top style='width:397.4pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt;height:10.2pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>1 2 3 4 </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>5 6 7 8 </span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc218195735"><span lang=BG>Четене на матрица от конзолата – пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Нека видим как
+можем да прочетем двумерен масив (матрица) от кон­золата. Това става като първо
+въведем големините на двете размерности, а след това с два вложени цикъла
+въвеждаме всеки от елементите му:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Scanner input = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> Scanner(System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>in</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> rows = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> cols = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[][] matrix = </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>new</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[rows][cols];</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> row = 0; row &lt; rows; row++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> col = 0; col &lt; cols; col++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>      System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;matrix[%d,%d] = &quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>, row, col);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>      matrix[row][col] = input.nextInt();</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(Arrays.<i>deepToString</i>(matrix));</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Както се вижда от
+примера, отпечатването на матрица може да стане с метода </span><span
+class=Code><span lang=BG>Arrays.deepToString()</span></span><span lang=BG>. Ето
+как може да изглежда програмата в действие (в случая въвеждаме масив с размер 3
+на 2):</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr style='height:10.2pt'>
+  <td width=530 valign=top style='width:397.4pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt;height:10.2pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>3</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>2</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>matrix[0,0]
+  = 6</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>matrix[0,1]
+  = 8</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>matrix[1,0]
+  = 4</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>matrix[1,1]
+  = 5</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>matrix[2,0]
+  = 3</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>matrix[2,1]
+  = 9</span></span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span class=Code><span lang=BG style='font-weight:normal'>[[6,
+  8], [4, 5], [3, 9]]</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc218195736"><span lang=BG>Максимална площадка в матрица –
+пример</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В следващия пример
+ще решим една интересна задача: Дадена е правоъ­гълна матрица с числа. Трябва
+да намерим в нея максималната подмат­рица с размер 2 х 2 и да я отпечатаме на
+конзолата. Под максимална подматрица ще разбираме подматрица, която има
+максимална сума на елементите, които я съставят. Ето едно примерно решение на
+задачата:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  background:#F3F3F3;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><span
+  class=Code><span lang=BG>MaxPlatform2x2.java</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>public</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>class</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> MaxPlatform2x2 {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>public</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>static</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>void</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> main(String[] args) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Declare and initialize the matrix</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>[][] matrix = { </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       { 0, 2, 4, 0, 9, 5 },</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       { 7, 1, 3, 3, 2, 1 },</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       { 1, 3, <b>9, 8</b>, 5, 6 },</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       { 4, 6, <b>7, 9</b>, 1, 0 }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     };</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Find the maximal sum platform of size 2 x 2</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> bestSum = Integer.</span><i><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>MIN_VALUE</span></i><span lang=BG
+  style='font-family:"Courier New";color:black'>;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> bestRow = 0;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> bestCol = 0;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> row = 0; row &lt; matrix.</span><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>length</span><span lang=BG style='font-family:
+  "Courier New";color:black'> - 1; row++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> col = 0; col &lt; matrix[0].</span><span lang=BG
+  style='font-family:"Courier New";color:#0000C0'>length</span><span lang=BG
+  style='font-family:"Courier New";color:black'> - 1; col++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>          </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> sum = matrix[row][col] + matrix[row][col + 1]</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>              + matrix[row + 1][col] + matrix[row + 1][col + 1];</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>          </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>if</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> (sum &gt; bestSum) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>            bestSum = sum;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>            bestRow = row;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>            bestCol = col;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>          }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><span lang=BG style='font-family:"Courier New";
+  color:#006600'>// Print the result</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;The best platform is:&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;  %d %d%n&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>, </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       matrix[bestRow][bestCol],</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       matrix[bestRow][bestCol + 1]);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;  %d %d%n&quot;</span><span lang=BG style='font-family:
+  "Courier New";color:black'>, </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       matrix[bestRow + 1][bestCol],</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       matrix[bestRow + 1][bestCol + 1]);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.printf(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;The maximal sum is: %d%n&quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'>, bestSum);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ако изпълним
+програмата, ще се убедим, че работи коректно:</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr style='height:10.2pt'>
+  <td width=530 valign=top style='width:397.4pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt;height:10.2pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>The best platform is:</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  9 8</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  7 9</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>The maximal sum is: 33</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Нека сега обясним реализирания алгоритъм. В
+началото на програмата си създаваме двумерен масив, състоящ се от цели числа.
+Декларираме помощни променливи </span><span class=Code><span lang=BG>bestSum</span></span><span
+lang=BG>, </span><span class=Code><span lang=BG>bestRow</span></span><span
+lang=BG>, </span><span class=Code><span lang=BG>bestCol, </span></span><span
+lang=BG>които инициализираме с минималните за тях стойности.</span></p>
+
+<p class=MsoNormal><span lang=BG>В променливата </span><span class=Code><span
+lang=BG>bestSum</span></span><span lang=BG> ще пазим текущата максимална сума,
+а в </span><span class=Code><span lang=BG>bestRow</span></span><span lang=BG> и
+</span><span class=Code><span lang=BG>bestCol</span></span><span lang=BG>
+текущия ред и колона, които са начало на подматрицата с размери 2 х 2, имаща
+сума на елементите </span><span class=Code><span lang=BG>bestSum</span></span><span
+lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>За да достъпим
+всички елементи на подматрица 2х2 са ни необходими индексите на първия й
+елемент. Като ги имаме лесно можем да достъпим другите 3 елемента по следния
+начин:</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr style='height:10.2pt'>
+  <td width=530 valign=top style='width:397.4pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt;height:10.2pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>matrix[row][col]</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>matrix[row][col+1]</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>matrix[row+1][col]</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>matrix[row+1][col+1]</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>В горния пример </span><span class=Code><span
+lang=BG>row</span></span><span lang=BG> и </span><span class=Code><span
+lang=BG>col</span></span><span lang=BG> са индексите на отговарящи на първия
+елемент на матрица с размер 2 х 2, която е част от матрицата </span><span
+class=Code><span lang=BG>matrix</span></span><span lang=BG>.</span></p>
+
+<p class=MsoNormal><span lang=BG>След като вече разбрахме как да достъпим
+всички елементи на матрица с размер 2 х 2 можем да разгледаме алгоритъма, по
+който ще я намерим.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Трябва да обходим
+всеки елемент от главната матрица до предпоследния ред и предпоследната колона.
+Забележете, че не обхождаме матрицата от край до край, защото при опит да
+достъпим </span><span class=Code><span lang=BG>row+1</span></span><span
+lang=BG> или </span><span class=Code><span lang=BG>col+1</span></span><span
+lang=BG> индекс ще излезем извън границите на масива.</span></p>
+
+<p class=MsoNormal><span lang=BG>Достъпваме съседните елементи на всеки текущ
+начален елемент на подматрица с размер 2 х 2 и ги събираме. След това
+проверяваме дали текущата ни сума е по голяма от текущата най-голяма сума. Ако
+е така текущата сума става текуща най-голяма сума и текущите индекси стават </span><span
+class=Code><span lang=BG>bestRow</span></span><span lang=BG> и </span><span
+class=Code><span lang=BG>bestCol</span></span><span lang=BG>. Така след
+обхождане на главната матрица ще имаме индексите на началния елемент на
+подматрицата, имаща най-голяма сума.</span></p>
+
+<p class=MsoNormal><span lang=BG>В края на примера си извеждаме на конзолата по
+подходящ начин търсената подматрица и нейната сума.</span></p>
+
+<h2><a name="_Toc218195737"><span lang=BG>Упражнения</span></a></h2>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Да се напише програма, която създава масив с 20 елемента от целочислен
+тип и инициализира всеки от елементите със стойност равна на индекса на
+елемента умножен по 5. Елементите на масива да се изведат на конзолата.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Да се напише програма, която чете два масива от конзолата и прове­рява
+дали са еднакви.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Да се напише програма, която сравнява два масива от тип </span><span
+class=Code><span lang=BG>char</span></span><span lang=BG> лексикографски (буква
+по буква) и проверява кой от двата е по-рано в лексикографската подредба.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която намира максималната редица от еднакви елементи
+в масив. Пример: {2, 1, 1, 2, 3, 3, <b>2, 2, 2</b>, 1} </span><span lang=BG
+style='font-family:Wingdings'>&agrave;</span><span lang=BG> {2, 2, 2}</span><span
+lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която намира максималната редица от нараст­ващи
+елементи в масив. Пример: {3, <b>2, 3, 4</b>, 2, 2, 4} </span><span lang=BG
+style='font-family:Wingdings'>&agrave;</span><span lang=BG> {2, 3, 4}</span><span
+lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Да се напише програма, която чете от конзолата две цели числа N и K, и
+масив от N елемента. Да се намерят тези K елемента, които имат максимална сума.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Сортиране на масив означава да подредим елементите му в нарастващ
+(намаляващ) ред. Напишете програма, която сортира масив. Да се използва
+алгоритъма &quot;</span><span class=Code><span lang=BG>Selection sort</span></span><span
+lang=BG>&quot;.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Напишете програма, която намира най-често срещания елемент в масив.
+Пример: {<b>4</b>, 1, 1, <b>4</b>, 2, 3, <b>4</b>, <b>4</b>, 1, 2, <b>4</b>, 9,
+3} </span><span lang=BG style='font-family:Wingdings'>&agrave;</span><span
+lang=BG> 4 (5 times).</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Да се напише програма, която намира последователност от числа в масив,
+които имат сума равна на число, въведено от конзолата (ако има такава). Пример:
+{4, 3, 1, <b>4, 2, 5</b>, 8}, S=11 </span><span lang=BG style='font-family:
+Wingdings'>&agrave;</span><span lang=BG> {4, 2, 5}.</span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.25in;text-indent:-.25in'><span lang=BG>10.<span style='font:7.0pt "Times New Roman"'>
+</span></span><span lang=BG>Напишете програма, която създава следните квадратни
+матрици и ги извежда на конзолата във форматиран вид. Размерът на матриците се
+въвежда от конзолата. Пример за </span><span class=Code><span lang=BG>(4,4)</span></span><span
+lang=BG>:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><span
+lang=BG><img border=0 width=304 height=178
+src="image072.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.25in;text-indent:-.25in'><span lang=BG>11.<span style='font:7.0pt "Times New Roman"'>
+</span></span><span lang=BG>Да се напише програма, която създава правоъгълна
+матрица с размер </span><span class=Code><span lang=BG>(n, m)</span></span><span
+lang=BG>. Размерността и елементите на матрицата да се четат от конзолата. Да
+се намери подматрицата с размер </span><span class=Code><span lang=BG>(3,3)</span></span><span
+lang=BG>, която има максимална сума.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>12.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Да се напише
+програма, която създава масив с всички букви от латинската азбука. Да се даде
+възможност на потребител да въвежда дума от конзолата и в резултат да се
+извеждат индексите на буквите от думата.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>13.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Да се
+реализира двоично търсене </span><span class=Code><span lang=BG>(binary search)</span></span><span
+lang=BG> в <b>сортиран </b>целочислен масив.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>14.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Напишете
+програма, която сортира целочислен масив по алгоритъма </span><span class=Code><span
+lang=BG>&quot;merge sort&quot;</span></span><span lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>15.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Напишете
+програма, която сортира целочислен масив по алгоритъма </span><span class=Code><span
+lang=BG>&quot;quick sort&quot;</span></span><span lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>16.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Напишете
+програма, която намира всички прости числа в диапазона [1..10 000 000].</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>17.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Напишете
+програма, която по подадена матрица намира най-голямата област от еднакви
+числа. Под област разбираме съвкупност от съседни (по ред и колона) елементи.</span><span
+lang=BG> </span><span lang=BG>Ето един пример, в който имаме област, съставена
+от 13 на брой еднакви елементи със стойност 3:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG><img
+border=0 width=226 height=107
+src="image073.gif"></span></p>
+
+<h2><a name="_Toc218195738"><span lang=BG>Решения и упътвания</span></a></h2>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Използвайте масив </span><span class=Code><span lang=BG>int[]</span></span><span
+lang=BG> и </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG> цикъл.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Два масива са еднакви, когато имат еднаква дължина и стойностите на
+елементите в тях съответно съвпадат. Второто условие можете да проверите с </span><span
+class=Code><span lang=BG>for</span></span><span lang=BG> цикъл.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>При лексикографската наредба символите се сравняват един по един като
+се започне от най-левия. При несъвпадащи символи по-рано е масивът, чийто текущ
+символ е по-рано в азбуката. При съвпадение се продължава със следващия символ
+вдясно. Ако се стигне до края на единия масив, по-краткият е лексикографски
+по-рано.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Реализирайте цикъл, който сравнява буквите в масивите на позиции от 0
+до дължината на по-късия масив -1, една по една докато намери разлика. Ако бъде
+намерена разлика, е ясно кой масив е по-рано лексикографски. Ако разлика не
+бъде намерена, по-късият масив е по-рано лексико­графски. Ако масивите
+съвпадат, никой не от тях е лекси­ко­графски по-рано.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Сканирайте масива отляво надясно и във всеки един момент пазете в една
+променлива последните колко позиции (до текущата включи­телно) има еднакви
+стойности. Пазете най-добрия старт и най-добрата дължина за момента в отделни
+две променливи.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Сканирайте масива отляво надясно и във всеки един момент пазете в
+променлива колко елемента има в нарастващ ред, които завършват с текущия
+елемент. Пазете най-добрия старт и най-добрата дължина за момента в отделни две
+променливи.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Потърсете в Интернет информация за алгоритъма &quot;</span><span
+class=Code><span lang=BG>Selection sort</span></span><span lang=BG>&quot; и
+негови реализации.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>10.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Помислете за
+подходящи начини за итерация върху масивите с два вложени цикъла.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span lang=BG>За d)</span><span
+lang=BG> </span><span lang=BG>можете да приложите следната стратегия: започвате
+от позиция (0,0) и се движите надолу N пъти. След това се движите надясно N-1
+пъти, след това нагоре N-1 пъти, след това наляво N-2 пъти, след това надолу
+N-2 пъти и т.н. При всяко преместване слагате в клетката, която напускате
+поредното число 1, 2, 3, ..., N.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>11.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Модифицирайте
+примера за максимална площадка с размер 2</span><span lang=BG> </span><span
+lang=BG>x 2.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>12.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Задачата
+можем да решим с масив и два вложени </span><span class=Code><span lang=BG>for</span></span><span
+lang=BG> цикъла (по буквите на думата и по масива за всяка буква). Задачата има
+и хитро решение без масив: индексът на дадена буква </span><span class=Code><span
+lang=BG>ch</span></span><span lang=BG> </span><span lang=BG>от азбуката може да
+се сметне чрез израза: </span><span class=Code><span lang=BG>(int) ch – (int)
+'A'</span></span>.</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>13.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Потърсете в Интернет
+информация за алгоритъма &quot;</span><span class=Code><span lang=BG>binary
+search&quot;</span></span><span lang=BG>. Какво трябва да е изпълнено, за да използваме
+този алгоритъм?</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>14.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Потърсете в
+интернет информация за алгоритъма &quot;</span><span class=Code><span lang=BG>merge
+sort&quot;</span></span><span lang=BG> и негови реализации.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>15.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Потърсете в
+интернет информация за алгоритъма &quot;</span><span class=Code><span lang=BG>quick
+sort&quot;</span></span><span lang=BG> и негови реализации.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>16.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Потърсете в
+интернет информация за &quot;</span><span class=Code><span lang=BG>sieve of
+Erathostenes&quot;</span></span><span lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>17.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Тази задача е
+доста по-трудна от останалите. Може да използвате алгоритми за обхождане на
+граф, известни с названията </span>&quot;<span lang=BG>DFS</span>&quot; <span
+lang=BG>(</span>Depth-first-search<span lang=BG>) или </span>&quot;<span
+lang=BG>BFS</span>&quot; (Breadth-first-search)<span lang=BG>. Потърсете
+информация и примери за тях в Интернет.</span></p>
+
+<p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+
+</div>
+
+<span lang=BG style='font-size:10.0pt;font-family:"Verdana","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,3937 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<title>Introduction to Programming with Java Book - Chapter 8</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 5 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"Tms Rmn";
+	panose-1:2 2 6 3 4 5 5 2 3 4;}
+@font-face
+	{font-family:Helv;
+	panose-1:2 11 6 4 2 2 2 3 2 4;}
+@font-face
+	{font-family:"New York";
+	panose-1:2 4 5 3 6 5 6 2 3 4;}
+@font-face
+	{font-family:System;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 1 6 1 0 1 1 1 1 1;}
+@font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:Dotum;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:SimHei;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:MingLiU;
+	panose-1:2 1 6 9 0 1 1 1 1 1;}
+@font-face
+	{font-family:Mincho;
+	panose-1:2 2 6 9 4 3 5 8 3 5;}
+@font-face
+	{font-family:Gulim;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Angsana New";
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:"Cordia New";
+	panose-1:2 11 3 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Latha;
+	panose-1:2 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sylfaen;
+	panose-1:1 10 5 2 5 3 6 3 3 3;}
+@font-face
+	{font-family:Vrinda;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Raavi;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Shruti;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sendnya;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Gautami;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Tunga;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Estrangelo Edessa";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Arial CYR";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:SunSans-Regular;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:SAfon;}
+@font-face
+	{font-family:"Courier New CYR";
+	panose-1:2 7 3 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:StarSymbol;}
+@font-face
+	{font-family:OpenSymbol;
+	panose-1:5 1 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sawasdee;}
+@font-face
+	{font-family:Marlett;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;}
+@font-face
+	{font-family:"Lucida Sans Unicode";
+	panose-1:2 11 6 2 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
+@font-face
+	{font-family:Impact;
+	panose-1:2 11 8 6 3 9 2 5 2 4;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;}
+@font-face
+	{font-family:"Franklin Gothic Medium";
+	panose-1:2 11 6 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Palatino Linotype";
+	panose-1:2 4 5 2 5 5 5 3 3 4;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Webdings;
+	panose-1:5 3 1 2 1 5 9 6 7 3;}
+@font-face
+	{font-family:"MV Boli";}
+@font-face
+	{font-family:"Microsoft Sans Serif";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Academy;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Antiqua;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Baltica;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Bookvar;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Ariel";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Courier";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Dutch Roman";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Garamond";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Garamond Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Kursiv";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Palatia";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Roman";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Roman Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Times";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Bulgarian Times Italic";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Domkrat;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Geneva;
+	panose-1:2 2 226 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Hebar;
+	panose-1:2 11 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Izhitsa;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Kaliakra;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Karina;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:KarinaBlack;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:OldCyr;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Opal;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:OpalB;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:TimesNakov;
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:Timok;
+	panose-1:2 11 114 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:TmsCyr;
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:Zhikaryov;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Agency FB";
+	panose-1:2 11 5 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Algerian;
+	panose-1:4 2 7 5 4 10 2 6 7 2;}
+@font-face
+	{font-family:"Arial Rounded MT Bold";
+	panose-1:2 15 7 4 3 5 4 3 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Baskerville Old Face";
+	panose-1:2 2 6 2 8 5 5 2 3 3;}
+@font-face
+	{font-family:"Bauhaus 93";
+	panose-1:4 3 9 5 2 11 2 2 12 2;}
+@font-face
+	{font-family:"Bell MT";
+	panose-1:2 2 5 3 6 3 5 2 3 3;}
+@font-face
+	{font-family:"Berlin Sans FB";
+	panose-1:2 14 6 2 2 5 2 2 3 6;}
+@font-face
+	{font-family:"Bernard MT Condensed";
+	panose-1:2 5 8 6 6 9 5 2 4 4;}
+@font-face
+	{font-family:"Blackadder ITC";
+	panose-1:4 2 5 5 5 16 7 2 13 2;}
+@font-face
+	{font-family:"Bodoni MT";
+	panose-1:2 7 6 3 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Black";
+	panose-1:2 7 10 3 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Condensed";
+	panose-1:2 7 6 6 8 6 6 2 2 3;}
+@font-face
+	{font-family:"Bodoni MT Poster Compressed";
+	panose-1:2 7 7 6 8 6 1 5 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+@font-face
+	{font-family:"Bookman Old Style";
+	panose-1:2 5 6 4 5 5 5 2 2 4;}
+@font-face
+	{font-family:"Bradley Hand ITC";
+	panose-1:3 7 4 2 5 3 2 3 2 3;}
+@font-face
+	{font-family:"Britannic Bold";
+	panose-1:2 11 9 3 6 7 3 2 2 4;}
+@font-face
+	{font-family:Broadway;
+	panose-1:4 4 9 5 8 11 2 2 5 2;}
+@font-face
+	{font-family:"Brush Script MT";
+	panose-1:3 6 8 2 4 4 6 7 3 4;}
+@font-face
+	{font-family:"Californian FB";
+	panose-1:2 7 4 3 6 8 11 3 2 4;}
+@font-face
+	{font-family:"Calisto MT";
+	panose-1:2 4 6 3 5 5 5 3 3 4;}
+@font-face
+	{font-family:Castellar;
+	panose-1:2 10 4 2 6 4 6 1 3 1;}
+@font-face
+	{font-family:Centaur;
+	panose-1:2 3 5 4 5 2 5 2 3 4;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Century Schoolbook";
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Chiller;
+	panose-1:4 2 4 4 3 16 7 2 6 2;}
+@font-face
+	{font-family:"Colonna MT";
+	panose-1:4 2 8 5 6 2 2 3 2 3;}
+@font-face
+	{font-family:"Cooper Black";
+	panose-1:2 8 9 4 4 3 11 2 4 4;}
+@font-face
+	{font-family:"Copperplate Gothic Bold";
+	panose-1:2 14 7 5 2 2 6 2 4 4;}
+@font-face
+	{font-family:"Copperplate Gothic Light";
+	panose-1:2 14 5 7 2 2 6 2 4 4;}
+@font-face
+	{font-family:"Curlz MT";
+	panose-1:4 4 4 4 5 7 2 2 2 2;}
+@font-face
+	{font-family:"Edwardian Script ITC";
+	panose-1:3 3 3 2 4 7 7 13 8 4;}
+@font-face
+	{font-family:Elephant;
+	panose-1:2 2 9 4 9 5 5 2 3 3;}
+@font-face
+	{font-family:"Engravers MT";
+	panose-1:2 9 7 7 8 5 5 2 3 4;}
+@font-face
+	{font-family:"Eras Bold ITC";
+	panose-1:2 11 9 7 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Eras Demi ITC";
+	panose-1:2 11 8 5 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Eras Light ITC";
+	panose-1:2 11 4 2 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Eras Medium ITC";
+	panose-1:2 11 6 2 3 5 4 2 8 4;}
+@font-face
+	{font-family:"Felix Titling";
+	panose-1:4 6 5 5 6 2 2 2 10 4;}
+@font-face
+	{font-family:"Footlight MT Light";
+	panose-1:2 4 6 2 6 3 10 2 3 4;}
+@font-face
+	{font-family:Forte;
+	panose-1:3 6 9 2 4 5 2 7 2 3;}
+@font-face
+	{font-family:"Franklin Gothic Book";
+	panose-1:2 11 5 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Demi";
+	panose-1:2 11 7 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Demi Cond";
+	panose-1:2 11 7 6 3 4 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Heavy";
+	panose-1:2 11 9 3 2 1 2 2 2 4;}
+@font-face
+	{font-family:"Franklin Gothic Medium Cond";
+	panose-1:2 11 6 6 3 4 2 2 2 4;}
+@font-face
+	{font-family:"Freestyle Script";
+	panose-1:3 8 4 2 3 2 5 11 4 4;}
+@font-face
+	{font-family:"French Script MT";
+	panose-1:3 2 4 2 4 6 7 4 6 5;}
+@font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;}
+@font-face
+	{font-family:Gigi;
+	panose-1:4 4 5 4 6 16 7 2 13 2;}
+@font-face
+	{font-family:"Gill Sans MT Ext Condensed Bold";
+	panose-1:2 11 9 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans MT";
+	panose-1:2 11 5 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans MT Condensed";
+	panose-1:2 11 5 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans Ultra Bold";
+	panose-1:2 11 10 2 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gill Sans Ultra Bold Condensed";
+	panose-1:2 11 10 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Gloucester MT Extra Condensed";
+	panose-1:2 3 8 8 2 6 1 1 1 1;}
+@font-face
+	{font-family:"Goudy Old Style";
+	panose-1:2 2 5 2 5 3 5 2 3 3;}
+@font-face
+	{font-family:"Goudy Stout";
+	panose-1:2 2 9 4 7 3 11 2 4 1;}
+@font-face
+	{font-family:Haettenschweiler;
+	panose-1:2 11 7 6 4 9 2 6 2 4;}
+@font-face
+	{font-family:"Harlow Solid Italic";
+	panose-1:4 3 6 4 2 15 2 2 13 2;}
+@font-face
+	{font-family:Harrington;
+	panose-1:4 4 5 5 5 10 2 2 7 2;}
+@font-face
+	{font-family:"High Tower Text";
+	panose-1:2 4 5 2 5 5 6 3 3 3;}
+@font-face
+	{font-family:"Imprint MT Shadow";
+	panose-1:4 2 6 5 6 3 3 3 2 2;}
+@font-face
+	{font-family:Jokerman;
+	panose-1:4 9 6 5 6 13 6 2 7 2;}
+@font-face
+	{font-family:"Juice ITC";
+	panose-1:4 4 4 3 4 10 2 2 2 2;}
+@font-face
+	{font-family:"Kristen ITC";
+	panose-1:3 5 5 2 4 2 2 3 2 2;}
+@font-face
+	{font-family:"Kunstler Script";
+	panose-1:3 3 4 2 2 6 7 13 13 6;}
+@font-face
+	{font-family:"Lucida Bright";
+	panose-1:2 4 6 2 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Lucida Calligraphy";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"Lucida Fax";
+	panose-1:2 6 6 2 5 5 5 2 2 4;}
+@font-face
+	{font-family:"Lucida Handwriting";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"Lucida Sans";
+	panose-1:2 11 6 2 3 5 4 2 2 4;}
+@font-face
+	{font-family:"Lucida Sans Typewriter";
+	panose-1:2 11 5 9 3 5 4 3 2 4;}
+@font-face
+	{font-family:"MS Outlook";
+	panose-1:5 1 1 0 1 0 0 0 0 0;}
+@font-face
+	{font-family:Magneto;
+	panose-1:4 3 8 5 5 8 2 2 13 2;}
+@font-face
+	{font-family:"Maiandra GD";
+	panose-1:2 14 5 2 3 3 8 2 2 4;}
+@font-face
+	{font-family:"Matura MT Script Capitals";
+	panose-1:3 2 8 2 6 6 2 7 2 2;}
+@font-face
+	{font-family:Mistral;
+	panose-1:3 9 7 2 3 4 7 2 4 3;}
+@font-face
+	{font-family:"Modern No\. 20";
+	panose-1:2 7 7 4 7 5 5 2 3 3;}
+@font-face
+	{font-family:"Monotype Corsiva";
+	panose-1:3 1 1 1 1 2 1 1 1 1;}
+@font-face
+	{font-family:"Niagara Engraved";
+	panose-1:4 2 5 2 7 7 3 3 2 2;}
+@font-face
+	{font-family:"Niagara Solid";
+	panose-1:4 2 5 2 7 7 2 2 2 2;}
+@font-face
+	{font-family:"OCR A Extended";
+	panose-1:2 1 5 9 2 1 2 1 3 3;}
+@font-face
+	{font-family:"Old English Text MT";
+	panose-1:3 4 9 2 4 5 8 3 8 6;}
+@font-face
+	{font-family:Onyx;
+	panose-1:4 5 6 2 8 7 2 2 2 3;}
+@font-face
+	{font-family:"Palace Script MT";
+	panose-1:3 3 3 2 2 6 7 12 11 5;}
+@font-face
+	{font-family:Papyrus;
+	panose-1:3 7 5 2 6 5 2 3 2 5;}
+@font-face
+	{font-family:Parchment;
+	panose-1:3 4 6 2 4 7 8 4 8 4;}
+@font-face
+	{font-family:Perpetua;
+	panose-1:2 2 5 2 6 4 1 2 3 3;}
+@font-face
+	{font-family:"Perpetua Titling MT";
+	panose-1:2 2 5 2 6 5 5 2 8 4;}
+@font-face
+	{font-family:Playbill;
+	panose-1:4 5 6 3 10 6 2 2 2 2;}
+@font-face
+	{font-family:"Poor Richard";
+	panose-1:2 8 5 2 5 5 5 2 7 2;}
+@font-face
+	{font-family:Pristina;
+	panose-1:3 6 4 2 4 4 6 8 2 4;}
+@font-face
+	{font-family:"Rage Italic";
+	panose-1:3 7 5 2 4 5 7 7 3 4;}
+@font-face
+	{font-family:Ravie;
+	panose-1:4 4 8 5 5 8 9 2 6 2;}
+@font-face
+	{font-family:Rockwell;
+	panose-1:2 6 6 3 2 2 5 2 4 3;}
+@font-face
+	{font-family:"Rockwell Condensed";
+	panose-1:2 6 6 3 5 4 5 2 1 4;}
+@font-face
+	{font-family:"Rockwell Extra Bold";
+	panose-1:2 6 9 3 4 5 5 2 4 3;}
+@font-face
+	{font-family:"Informal Roman";
+	panose-1:3 6 4 2 3 4 6 11 2 4;}
+@font-face
+	{font-family:"Script MT Bold";
+	panose-1:3 4 6 2 4 6 7 8 9 4;}
+@font-face
+	{font-family:"Showcard Gothic";
+	panose-1:4 2 9 4 2 1 2 2 6 4;}
+@font-face
+	{font-family:"Snap ITC";
+	panose-1:4 4 10 7 6 10 2 2 2 2;}
+@font-face
+	{font-family:Stencil;
+	panose-1:4 4 9 5 13 8 2 2 4 4;}
+@font-face
+	{font-family:"Tw Cen MT";
+	panose-1:2 11 6 2 2 1 4 2 6 3;}
+@font-face
+	{font-family:"Tw Cen MT Condensed";
+	panose-1:2 11 6 6 2 1 4 2 2 3;}
+@font-face
+	{font-family:"Tempus Sans ITC";
+	panose-1:4 2 4 4 3 13 7 2 2 2;}
+@font-face
+	{font-family:"Viner Hand ITC";
+	panose-1:3 7 5 2 3 5 2 2 2 3;}
+@font-face
+	{font-family:Vivaldi;
+	panose-1:3 2 6 2 5 5 6 9 8 4;}
+@font-face
+	{font-family:"Vladimir Script";
+	panose-1:3 5 4 2 4 4 7 7 3 5;}
+@font-face
+	{font-family:"Wide Latin";
+	panose-1:2 10 10 7 5 5 5 2 4 4;}
+@font-face
+	{font-family:"Wingdings 2";
+	panose-1:5 2 1 2 1 5 7 7 7 7;}
+@font-face
+	{font-family:"Wingdings 3";
+	panose-1:5 4 1 2 1 8 7 7 7 7;}
+@font-face
+	{font-family:"Berlin Sans FB Demi";
+	panose-1:2 14 8 2 2 5 2 2 3 6;}
+@font-face
+	{font-family:"MS Reference Sans Serif";
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"MS Reference Specialty";
+	panose-1:5 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Tw Cen MT Condensed Extra Bold";
+	panose-1:2 11 8 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:"MT Extra";
+	panose-1:5 5 1 2 1 2 5 2 2 2;}
+@font-face
+	{font-family:"Bookshelf Symbol 7";
+	panose-1:5 1 1 1 1 1 1 1 1 1;}
+@font-face
+	{font-family:"OCR-B 10 BT";
+	panose-1:2 11 6 1 2 2 2 2 2 4;}
+@font-face
+	{font-family:"OCR-A BT";
+	panose-1:2 15 5 1 2 2 4 2 3 4;}
+@font-face
+	{font-family:"WP MultinationalA Courier";
+	panose-1:5 0 0 9 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalB Courier";
+	panose-1:2 6 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"WP MultinationalA Helve";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalB Helve";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP MultinationalA Roman";
+	panose-1:2 2 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"WP MultinationalB Roman";
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Nina;
+	panose-1:2 11 6 6 3 5 4 4 2 4;}
+@font-face
+	{font-family:sshlinedraw;
+	panose-1:0 0 4 9 0 0 0 0 0 0;}
+@font-face
+	{font-family:Candara;
+	panose-1:2 14 5 2 3 3 3 2 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Constantia;
+	panose-1:2 3 6 2 5 3 6 3 3 3;}
+@font-face
+	{font-family:Corbel;
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 6 6 2 2 2 3 2 4;}
+@font-face
+	{font-family:"DejaVu Sans";
+	panose-1:2 11 6 3 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Condensed";
+	panose-1:2 11 6 6 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Mono";
+	panose-1:2 11 6 9 3 8 4 2 2 4;}
+@font-face
+	{font-family:"DejaVu Serif";
+	panose-1:2 6 6 3 5 6 5 2 2 4;}
+@font-face
+	{font-family:"DejaVu Serif Condensed";
+	panose-1:2 6 6 6 5 6 5 2 2 4;}
+@font-face
+	{font-family:"DejaVu Sans Light";
+	panose-1:2 11 2 3 3 8 4 2 2 4;}
+@font-face
+	{font-family:"Myriad Pro";
+	panose-1:2 11 6 6 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Myriad Web";
+	panose-1:2 11 8 3 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Myriad Web Pro";
+	panose-1:2 11 5 3 3 4 3 2 2 4;}
+@font-face
+	{font-family:Myriade;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Myriad Web Pro Condensed";
+	panose-1:2 11 5 6 3 4 3 2 2 4;}
+@font-face
+	{font-family:"Segoe Condensed";
+	panose-1:2 11 6 6 4 2 0 2 2 3;}
+@font-face
+	{font-family:ZWAdobeF;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@StarSymbol";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:.5in;
+	margin-left:0in;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:24.0pt;
+	font-family:"Verdana","sans-serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Verdana","sans-serif";}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Verdana","sans-serif";}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:9.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Verdana","sans-serif";}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:9.9pt;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:20.15pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:30.05pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:14.15pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-14.15pt;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	background:navy;
+	font-size:10.0pt;
+	font-family:"Tahoma","sans-serif";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Cambria","serif";
+	color:#243F60;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-family:"Cambria","serif";
+	color:#404040;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Cambria","serif";
+	color:#404040;
+	font-style:italic;}
+span.Code
+	{mso-style-name:Code;
+	font-family:"Courier New";
+	font-weight:bold;}
+p.WarningMessage, li.WarningMessage, div.WarningMessage
+	{mso-style-name:"Warning Message";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+p.WarningMessageAfter6pt, li.WarningMessageAfter6pt, div.WarningMessageAfter6pt
+	{mso-style-name:"Warning Message + After\:  6 pt";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+span.msoIns
+	{mso-style-name:"";
+	text-decoration:underline;
+	color:teal;}
+span.msoDel
+	{mso-style-name:"";
+	text-decoration:line-through;
+	color:red;}
+ /* Page Definitions */
+ @page Section1
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section1
+	{page:Section1;}
+@page Section2
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section2
+	{page:Section2;}
+@page Section3
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section3
+	{page:Section3;}
+@page Section4
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section4
+	{page:Section4;}
+@page Section5
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 42.55pt 28.35pt 42.55pt;}
+div.Section5
+	{page:Section5;}
+@page Section6
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section6
+	{page:Section6;}
+@page Section7
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section7
+	{page:Section7;}
+@page Section8
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section8
+	{page:Section8;}
+@page Section9
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section9
+	{page:Section9;}
+@page Section10
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section10
+	{page:Section10;}
+@page Section11
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section11
+	{page:Section11;}
+@page Section12
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section12
+	{page:Section12;}
+@page Section13
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section13
+	{page:Section13;}
+@page Section14
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section14
+	{page:Section14;}
+@page Section15
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section15
+	{page:Section15;}
+@page Section16
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section16
+	{page:Section16;}
+@page Section17
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section17
+	{page:Section17;}
+@page Section18
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section18
+	{page:Section18;}
+@page Section19
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section19
+	{page:Section19;}
+@page Section20
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section20
+	{page:Section20;}
+@page Section21
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section21
+	{page:Section21;}
+@page Section22
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section22
+	{page:Section22;}
+@page Section23
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section23
+	{page:Section23;}
+@page Section24
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section24
+	{page:Section24;}
+@page Section25
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section25
+	{page:Section25;}
+@page Section26
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section26
+	{page:Section26;}
+@page Section27
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section27
+	{page:Section27;}
+@page Section28
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section28
+	{page:Section28;}
+@page Section29
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section29
+	{page:Section29;}
+@page Section30
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section30
+	{page:Section30;}
+@page Section31
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section31
+	{page:Section31;}
+@page Section32
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section32
+	{page:Section32;}
+@page Section33
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section33
+	{page:Section33;}
+@page Section34
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section34
+	{page:Section34;}
+@page Section35
+	{size:467.8pt 666.25pt;
+	margin:49.6pt 35.45pt 28.35pt 35.45pt;}
+div.Section35
+	{page:Section35;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section16>
+
+<h1><a name="_Toc218278546"></a><a name="_Toc218195739"></a><a
+name="_Глава_8._Бройни"></a><span lang=BG>Глава 8. Бройни системи</span></h1>
+
+<h2><a name="_Toc218195740"><span lang=BG>Автор</span></a></h2>
+
+<p class=MsoNormal style='text-indent:14.2pt'><span lang=BG>Петър Велев</span></p>
+
+<p class=MsoNormal style='text-indent:14.2pt'><span lang=BG>Светлин Наков</span></p>
+
+<h2><a name="_Toc218195741"><span lang=BG>В тази тема...</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>В настоящата тема ще разгледаме начините на
+работата с различни бройни системи и представянето на числата в тях. Повече
+внимание ще отделим на представянето на числата в десетична, двоична и шестнаде­сетична
+бройна система, тъй като те се използват масово в компютърната техника и в
+програмирането. Ще обясним и начините за кодиране на числовите данни в
+компютъра и видовете кодове, а именно: прав код, обратен код, допълнителен код
+и двоично-десетичен код.</span></p>
+
+<b><span lang=BG style='font-size:14.0pt;font-family:"Verdana","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<h2><a name="_Toc218195742"><span lang=BG>История в няколко реда</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>Използването на различни бройни системи е
+започнало още в дълбока древност. Това твърдение се доказва от обстоятелството,
+че още в Египет са използвани слънчевите часовници, а техните принципи за
+измерване на времето ползват бройни системи. По-голямата част от историците
+смятат древноегипетската цивилизация за първата цивилизация, която е разделила
+деня на по-малки части. Те постигат това, посредством употре­бата на първите в
+света слънчеви часовници, които не са нищо друго освен обикновени пръти, забити
+в земята и ориентирани по дължината и посоката на сянката.</span></p>
+
+<p class=MsoNormal><span lang=BG>По-късно е изобретен по-съвършен слънчев
+часовник, който прилича на буквата Т и е градуиран по начин, по който да
+разделя времето между изгрев и залез слънце на 12 части. Това доказва
+използването на двана­десетична бройна система в Египет, важността на числото
+12 обикновено се свързва и с обстоятелството, че лунните цикли за една година
+са 12, или с броя на фалангите на пръстите на едната ръка (по три на всеки от
+четирите пръста, като не се смята палеца).</span></p>
+
+<p class=MsoNormal><span lang=BG>В днешно време</span><span lang=BG>
+десетичната бройна система е най-разпространената бройна система. Може би това
+се дължи на улесненията, които тя предо­ставя на човека, когато той брои с
+помощта на своите пръсти.</span></p>
+
+<p class=MsoNormal><span lang=BG>Древните цивилизации са разделили денонощието
+на по-малки части, като за целта са използвали различни бройни системи,
+дванадесетични и шестдесетични съответно с основи – 12 и 60. Гръцки астрономи
+като Хипарх са използвали астрономични подходи, които преди това са били
+използвани и от вавилонците в Месопотамия. Вавилонците извършвали астрономич­ните
+изчисления в шестдесетична система, която били насле­дили от шумерите, а те от
+своя страна да я развили около 2000 г. пр. н. е. Не е известно от какви
+съображения е избрано точно числото 60 за основа на бройната система, но е
+важно да се знае че, тази система е много подходяща за представяне на дроби, тъй
+като числото 60 е най-малкото число, което се дели без остатък съответно на 1,
+2, 3, 4, 5, 6, 10, 12, 15, 20 и 30.&nbsp;</span></p>
+
+<h3><a name="_Toc218195743"><span lang=BG>Някои приложения на </span></a><span
+lang=BG>шестдесетичната</span><span lang=BG> бройна система</span></h3>
+
+<p class=MsoNormal><span lang=BG>Днес шестдесетичната система все още се
+използва за измерване на ъгли, географски координати и време. Те все още
+намират приложение при часовниковия циферблат и сферата на глобуса.
+Шестдесетичната бройна система е използвана и от Ератостен за разделянето на
+окръжността на 60 части с цел създаване на една ранна система от географски
+ширини, съставена от хоризонтални линии, минаващи през известни в миналото
+места от земята. Един век след Ератостен Хипарх нормирал тези линии, като за
+целта ги направил успоредни и съобразени с геометрията на Земята. Той въвежда
+система от линии на географската дължина, в които включват 360 градуса и
+съответно минават от север до юг и от полюс до полюс. В книгата &quot;Алмагест&quot;
+(150 г. от н. е.) Клавдий Птолемей доразвива разработките на Хипарх чрез
+допълнително разделяне на 360-те градуса на географската ширина и дължина на
+други по-малки части. Той разделил всеки един от градусите на 60 равни части,
+като всяка една от тези части в последствие била разделена на нови 60 по-малки
+части, които също били равни. Така получените при деленето части, били наречени
+partes minutae primae, или &quot;първа минута&quot; и съответно partes minutae
+secundae, или &quot;втора минута&quot;. Тези части се ползват и днес и се
+наричат съответно &quot;минути&quot; и &quot;секунди&quot;.</span></p>
+
+<h3><a name="_Toc218195744"><span lang=BG>Кратко обобщение</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Направихме кратка историческа разходка през
+хилядолетията, от която научаваме, че бройните системи са били създадени,
+използвани и развивани още по времето на шумерите. От изложените факти става
+ясно защо денонощието съдържа (само) 24 часа, часът съдържа 60 минути, а
+минутата 60 секунди. Това се дължи на факта, че древните египтяни са разделили
+по такъв начин денонощието, като са въвели употребата на дванадесетична бройна
+система. Разделянето на часовете и минутите на 60 равни части, е следствие от
+работата на древногръцките астрономи, които извършват изчисленията в
+шестдесетична бройна система, която е създадена от шумерите и използвана от
+вавилонците.</span></p>
+
+<h2><a name="_Toc218195745"><span lang=BG>Бройни системи</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>До момента разгледахме историята на бройните
+системи. Нека сега разгледаме какво представляват те и каква е тяхната роля в
+изчислител­ната техника.</span></p>
+
+<h3><a name="_Toc218195746"><span lang=BG>Какво представляват бройните системи?</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Бройните системи са начин за представяне
+(записване) на числата, чрез краен набор от графични знаци наречени цифри. Към
+тях трябва да се добавят и правила за представяне на числата. Символите, които
+се използват при представянето на числата в дадена бройна система, могат да се
+възприемат като нейна <b>азбука</b>.</span></p>
+
+<p class=MsoNormal><span lang=BG>По време на различните етапи от развитието на
+човечеството, различни бройни системи са придобивали известност. Трябва да се
+отбележи, че днес най-широко разпространение е получила арабската бройна
+система. Тя използва цифрите 0, 1, 2, 3, 4, 5, 6, 7, 8 и 9, като своя азбука.
+(Интересен е фактът, че изписването на арабските цифри в днешно време се
+различава от представените по-горе десет цифри, но въпреки това, те пак се
+отнасят за същата бройна система т.е. десетичната).</span></p>
+
+<p class=MsoNormal><span lang=BG>Освен азбука, всяка бройна система има и <b>основа</b>.
+Основата е число, равно на броя различни цифри, използвани от системата за
+записване на числата в нея. Например арабската бройна система е десетична,
+защото има 10 цифри. За основа може да се избере произволно число, чиято
+абсолютна стойност трябва да бъде различна от 0 и 1. Тя може да бъде и реално
+или комплексно число със знак.</span></p>
+
+<p class=MsoNormal><span lang=BG>В практическо отношение, възниква въпросът: коя
+е най-добрата бройна система, която трябва да използваме? За да си отговорим на
+този въпрос, трябва да решим, как ще се представи по оптимален начин едно число
+като записване (т.е. брой на цифрите в числото) и брой на цифрите, които
+използва съответната бройна система т.е. нейната основа. По математи­чески път,
+може да се докаже, че най-доброто съотношение между дължи­ната на записа и броя
+на използваните цифри, се постига при основа на бройната система Неперовото
+число (</span><i><span lang=BG>e</span></i><span lang=BG> = 2,718281828</span><span
+lang=BG>), което е </span><span lang=BG>основата на естествените логаритми</span><span
+lang=BG>. Да се работи в система с тази основа, е изключително неудобно, защото
+това число не може да се представи като отношение на две цели числа. Това ни
+дава основание да заключим, че оптималната основа на бройната система е 2 или
+3. Въпреки, че 3 е по-близо до </span><span lang=BG>Неперовото число, то е неподходящо
+за техническа реализация. Поради тази причина,</span><span lang=BG> </span><span
+lang=BG>двоичната бройна система, е единствената подхо­дяща за практическа
+употреба и тя се използва в съвременните елек­тронноизчислителни машини.</span></p>
+
+<h3><a name="_Toc218195747"><span lang=BG>Позиционни бройни системи</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Бройните системи се наричат <b>позиционни</b>,
+тогава, когато мястото (пози­цията) на цифрите има значение за стойността на
+числото. Това означава, че стойността на цифрата в числото не е строго
+определена и зависи от това на коя позиция се намира съответната цифра в дадено
+число. Например в числото 351 цифрата 1 има стойност 1, докато при числото 1024
+тя има стойност 1000. Трябва да се отбележи, че основите на бройните системи се
+прилагат само при позиционните бройни системи. В позиционна бройна система
+числото</span><span lang=BG> </span><i><span lang=BG>A<sub>(p)</sub> = </span></i><span
+lang=BG>(<i>a</i><sub>(n)</sub><i>a</i><sub>(n-1)</sub><i>...a</i><sub>(0)</sub><i>,a</i><sub>(-1)</sub><i>a</i><sub>(-2)</sub><i>...a</i><sub>(-k)</sub>)
+</span><span lang=BG>може де се представи във вида:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG><sub><img
+border=0 width=110 height=50
+src="image074.gif"></sub></span></p>
+
+<p class=MsoNormal><span lang=BG>В тази сума </span><i>T<sub>m</sub></i><span
+lang=BG> има значение на теглови коефициент за </span><i>m</i><span lang=BG>-тия
+разряд на числото. В повечето случаи обикновено</span><span lang=BG> </span><i>T<sub>m</sub></i>
+= <i>P<sup>m</sup></i><span lang=BG>, което означава</span>,<span lang=BG> че</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG><sub><img
+border=0 width=103 height=45
+src="image075.gif"></sub></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Образувано по
+горната сума, числото <i>A<sub>(p)</sub></i> е съставено съответно от цяла си част
+(<i>a</i><sub>(n)</sub><i>a</i><sub>(n-1)</sub><i>...a</i><sub>(0)</sub>) и от
+дробна си част (<i>a</i><sub>(-1)</sub><i>a</i><sub>(-2)</sub><i>...a</i><sub>(-k)</sub>),
+където всяко</span><span lang=BG> </span><i>a</i> <span lang=BG>принадлежи на
+множеството от цели числа <i>M={0,</i></span><i><span lang=BG> </span><span
+lang=BG>1,</span></i><i><span lang=BG> </span><span lang=BG>2,</span></i><i><span
+lang=BG> </span><span lang=BG>...</span></i><i>, <span lang=BG>p-1}</span></i>.<span
+lang=BG> Лесно се вижда, че, </span><span lang=BG>при позиционните бройни
+системи стойността на всеки разряд е по-голяма от стойността на предходния
+разряд (съседния разряд отдясно, който е по-младши) с толкова пъти, колкото е
+основата на бройната система. Това обстоятелство, налага при събиране да
+прибавяме единица към левия (по-старшия) разряд, ако трябва да представим цифра
+в текущия разряд, която е по-голяма от основата. Системите с основи 2, 8, 10 и
+16 са полу­чили по-широко разпространение в изчислителната техника, и в следва­щата
+таблица е показано съответното представяне на числата от 0 до 15 в тях</span>:</p>
+
+<table class=MsoCaption border=1 cellspacing=0 cellpadding=0 width=528
+ style='width:5.5in;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;background:
+  #F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><b><span
+  lang=BG>Двоична</span></b></p>
+  </td>
+  <td width=120 style='width:1.25in;border:solid windowtext 1.0pt;border-left:
+  none;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><b><span
+  lang=BG>Осмична</span></b></p>
+  </td>
+  <td width=120 style='width:1.25in;border:solid windowtext 1.0pt;border-left:
+  none;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><b><span
+  lang=BG>Десетична</span></b></p>
+  </td>
+  <td width=156 style='width:117.0pt;border:solid windowtext 1.0pt;border-left:
+  none;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><b><span
+  lang=BG>Шестнадесетична</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0000</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0001</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0010</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>2</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>2</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0011</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>3</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>3</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0100</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>4</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>4</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>4</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0101</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>5</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>5</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0110</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>6</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>6</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>6</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0111</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>7</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>7</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>7</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1000</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>10</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>8</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>8</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1001</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>11</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>9</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>9</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1010</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>12</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>10</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>A</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1011</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>13</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>11</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>B</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1100</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>14</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>12</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>C</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1101</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>15</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>13</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>D</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1110</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>16</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>14</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>E</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 style='width:99.0pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1111</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>17</span></p>
+  </td>
+  <td width=120 style='width:1.25in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>15</span></p>
+  </td>
+  <td width=156 style='width:117.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>F</span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc218195748"><span lang=BG>Непозиционни бройни системи</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Освен позиционни, съществуват и непозиционни
+бройни системи, при които стойността на всяка цифра е постоянна и не зависи по
+никакъв начин от нейното място в числото. Като примери за такива бройни системи
+могат да се посочат съответно </span><span lang=BG>римската, гръцката,
+милетската и др. Като основен недостатък, на </span><span lang=BG>непозиционните
+бройни системи</span><span lang=BG> трябва да се посочи това, че чрез тях
+големите числа се представят неефективно. Заради този си недостатък те са
+получили по-ограничена употреба. Често това би могло да бъде източник на грешка
+при определяне на стойността на числата. Съвсем накратко ще разгледаме римската
+и гръцката бройни системи.</span></p>
+
+<h4><span lang=BG>Римска бройна система</span></h4>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Римската бройна
+система използва следните символи за представяне на числата:</span></p>
+
+<div align=center>
+
+<table class=MsoCaption border=1 cellspacing=0 cellpadding=0 width=357
+ style='width:267.45pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;background:
+  #F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt'><b><span lang=BG>Римска цифра</span></b></p>
+  </td>
+  <td width=222 style='width:166.85pt;border:solid windowtext 1.0pt;border-left:
+  none;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt'><b><span lang=BG>Десетична
+  равностойност</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>I</span></p>
+  </td>
+  <td width=222 style='width:166.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>V</span></p>
+  </td>
+  <td width=222 style='width:166.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>X</span></p>
+  </td>
+  <td width=222 style='width:166.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>10</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>L</span></p>
+  </td>
+  <td width=222 style='width:166.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>50</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>C</span></p>
+  </td>
+  <td width=222 style='width:166.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>100</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>D</span></p>
+  </td>
+  <td width=222 style='width:166.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>500</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>М</span></p>
+  </td>
+  <td width=222 style='width:166.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1000</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><span lang=BG>Както вече споменахме, в тази бройна система
+позицията на цифрата не е от значение за стойността на числото, но за нейното
+определяне се прилагат следните правила:</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-indent:-14.2pt'><span
+lang=BG>1.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Ако две последователно записани римски цифри, са записани така, че
+стойността на първата е по-голяма или равна на стойността на втората, то
+техните стойности се събират. Пример:</span></p>
+
+<p class=MsoNormal style='text-indent:14.2pt'><span lang=BG>Числото III=3, а
+числото MMD=2500.</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-indent:-14.2pt'><span
+lang=BG>2.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Ако две последователно записани римски цифри, са в намаляващ ред на
+стойностите им, то техните стойности се изваждат. Пример:</span></p>
+
+<p class=MsoNormal style='text-indent:14.2pt'><span lang=BG>Числото IX=9,
+числото XML=1040, а числото MXXIV=1024.</span></p>
+
+<h4><span lang=BG>Гръцка бройна система</span></h4>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Гръцката бройна
+система, е десетична система, при която се извършва групиране по петици. Тя
+използва следните цифри:</span></p>
+
+<div align=center>
+
+<table class=MsoCaption border=1 cellspacing=0 cellpadding=0 width=357
+ style='width:267.45pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;background:
+  #F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt'><b><span lang=BG>Гръцка цифра</span></b></p>
+  </td>
+  <td width=222 style='width:166.85pt;border:solid windowtext 1.0pt;border-left:
+  none;background:#F3F3F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:6.0pt'><b><span lang=BG>Десетична
+  равностойност</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:4.5pt;margin-right:0in;
+  margin-bottom:4.5pt;margin-left:0in;text-align:center'><span lang=BG
+  style='color:black'>&#921;</span></p>
+  </td>
+  <td width=222 style='width:166.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:4.5pt;margin-right:0in;
+  margin-bottom:4.5pt;margin-left:0in;text-align:left'><span lang=BG
+  style='color:black'>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:4.5pt;margin-right:0in;
+  margin-bottom:4.5pt;margin-left:0in;text-align:center'><span lang=BG
+  style='color:black'>&#928;</span></p>
+  </td>
+  <td width=222 style='width:166.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:4.5pt;margin-right:0in;
+  margin-bottom:4.5pt;margin-left:0in;text-align:left'><span lang=BG
+  style='color:black'>5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:4.5pt;margin-right:0in;
+  margin-bottom:4.5pt;margin-left:0in;text-align:center'><span lang=BG
+  style='color:black'>&#916;</span></p>
+  </td>
+  <td width=222 style='width:166.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:4.5pt;margin-right:0in;
+  margin-bottom:4.5pt;margin-left:0in;text-align:left'><span lang=BG
+  style='color:black'>10</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:4.5pt;margin-right:0in;
+  margin-bottom:4.5pt;margin-left:0in;text-align:center'><span lang=BG
+  style='color:black'>&#919;</span></p>
+  </td>
+  <td width=222 style='width:166.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:4.5pt;margin-right:0in;
+  margin-bottom:4.5pt;margin-left:0in;text-align:left'><span lang=BG
+  style='color:black'>100</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:4.5pt;margin-right:0in;
+  margin-bottom:4.5pt;margin-left:0in;text-align:center'><span lang=BG
+  style='color:black'>&#935;</span></p>
+  </td>
+  <td width=222 style='width:166.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:4.5pt;margin-right:0in;
+  margin-bottom:4.5pt;margin-left:0in;text-align:left'><span lang=BG
+  style='color:black'>1 000</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 style='width:100.6pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:4.5pt;margin-right:0in;
+  margin-bottom:4.5pt;margin-left:0in;text-align:center'><span lang=BG
+  style='color:black'>&#924;</span></p>
+  </td>
+  <td width=222 style='width:166.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:4.5pt;margin-right:0in;
+  margin-bottom:4.5pt;margin-left:0in;text-align:left'><span lang=BG
+  style='color:black'>10 000</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><span lang=BG>Следват примери на числа от тази система:</span></p>
+
+<p class=MsoNormal style='text-indent:14.2pt'><span lang=BG>&#915;&#916; = 50,
+&#915;H = 500, &#915;X = 5000, &#915;M = 50 000.</span></p>
+
+<h3><a name="_Toc218195749"><span lang=BG>Двоичната бройна система – основа на
+електронноизчислителната техника</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Двоичната бройна система, е системата, която
+се използва за представяне и обработка на числата в съвременните
+електронноизчислителни машини. Главната причина, поради която тя се е наложила
+толкова широко, се обяснява с обстоятелството, че устройства с две устойчиви
+състояния се реализират просто, а разходите за производство на двоични
+аритметични устройства са много ниски.</span></p>
+
+<p class=MsoNormal><span lang=BG>Двоичните цифри 0 и 1 лесно се представят в
+изчислителната техника като &quot;има ток&quot; / &quot;няма ток&quot; или като
+&quot;</span>+5V<span lang=BG>&quot;</span> и &quot;-5V&quot;.</p>
+
+<p class=MsoNormal><span lang=BG>Наред със своите пре­димства, двоичната система
+за представяне на числата в компютъра си има и недостатъци. Един от големите
+практически недоста­тъци, е, че числата, представени с помощта на тази система
+са много дълги, т. е. имат голям брой разреди (битове). Това я прави неудобна
+за непосредствена употреба от човека. За избягване на това неудобство, в
+практиката се ползват бройни системи с по-големи основи.</span></p>
+
+<h3><a name="_Toc218195750"><span lang=BG>Десетични числа</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Числата представени в десетична бройна
+система, се задават в първичен вид т.е. вид удобен за възприемане от човека.
+Тази бройна система има за основа числото 10. Числата записани в нея са
+подредени по степените на числото 10. Младшият разряд (първият отдясно на ляво)
+на десетичните числа се използва за представяне на единиците (10<sup>0</sup>=1),
+следващият за десетиците (10<sup>1</sup>=10), следващият за стотиците (10<sup>2</sup>=100)
+и т.н. Казано с други думи, всеки следващ разряд е десет пъти по-голям от
+предшест­ващия го разряд. Сумата от отделните разряди определя стойността на
+числото. За пример ще вземем числото 95031, което в десетична бройна система се
+представя като:</span></p>
+
+<p class=MsoNormal style='text-indent:14.2pt'><span lang=BG>95031 = (<b>9</b>x10<sup>4</sup>)
++ (<b>5</b>x10<sup>3</sup>) + (<b>0</b>x10<sup>2</sup>) + (<b>3</b>x10<sup>1</sup>)
++ (<b>1</b>x10<sup>0</sup>)</span></p>
+
+<p class=MsoNormal><span lang=BG>Представено в този вид, числото 95031 е записано
+по естествен за човека начин, защото принципите на десетичната система са
+възприети като фун­даментални за хората. Много е важно да се отбележи, че тези
+подходи важат и за останалите бройни системи. Те имат същата логическа поста­новка,
+но тя е приложена за бройна система с друга основа. Последното твърдение, се
+отнася включително и за двоичната и шестнайсетината бройни системи, които ще
+разгледаме в детайли след малко.</span></p>
+
+<h3><a name="_Toc218195751"><span lang=BG>Двоични числа</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Числата представени в тази бройна система, се
+задават във вторичен вид т.е. вид удобен за възприемане от изчислителната
+машина. Този вид е малко по-трудно разбираем за човека. За представянето на
+двоичните числа, се използва двоичната бройна система, която има за основа
+числото 2. Числата записани в нея са подредени по степените на двойката. За
+тяхното представяне, се използват само цифрите 0 и 1.</span></p>
+
+<p class=MsoNormal><span lang=BG>Прието е, когато едно число се записва в
+бройна система, различна от десетичната, </span><span lang=BG>във вид на индекс
+в долната му част да се отразява, коя </span><span lang=BG>бройна система</span><span
+lang=BG> е използвана за представянето му. Например със записа <b>1110<sub>(2)</sub></b>
+означаваме число в двоична бройна система. Ако не бъде указана изрично,
+бройната система се приема, че е десетична. Числото се произ­нася, като се
+прочетат последователно неговите цифри, започвайки от ляво на дясно (т.е.
+прочитаме го от старшия към младия разряд </span><span lang=BG>&quot;</span><span
+lang=BG>бит</span><span lang=BG>&quot;</span><span lang=BG>).</span></p>
+
+<p class=MsoNormal><span lang=BG>Както и при десетичните числа, </span><span
+lang=BG>гледано от дясно наляво, всяко двоично число изразява степените на
+числото 2 в съответната последователност. На младшата позиция в двоично число съответства
+нулевата степен (2<sup>0</sup>=1), на втората позиция съответства първа степен
+(2<sup>1</sup>=2), на третата позиция съответства втора степен (2<sup>2</sup>=4)
+и т.н. Ако числото е 8-битово, степените достигат до седма (2<sup>7</sup>=128).
+Ако числото е 16-битово, степените достигат до петнадесета (2<sup>15</sup>=32768).
+Чрез 8 двоични цифри (0 или 1) могат да се представят общо 256 числа, защото 2<sup>8</sup>=256.
+Чрез 16 двоични цифри могат да се представят общо 65536 числа, защото 2<sup>16</sup>=65536.</span></p>
+
+<p class=MsoNormal><span lang=BG>Нека даден един пример за числа в двоична
+бройна система. Да вземем десетичното число <b>148</b>.</span><span lang=BG> </span><span
+lang=BG>То е съставено от три цифри: <b>1</b>, <b>4</b> и <b>8</b>, и
+съответства на следното двоично число:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><b><span
+lang=BG>10010100<sub>(2)</sub></span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><b><span
+lang=BG>148</span></b><span lang=BG> = (<b>1</b>x2<sup>7</sup>) + (<b>1</b>x2<sup>4</sup>)
++ (<b>1</b>x2<sup>2</sup>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Пълното
+представяне на това число е изобразено в следващата таблица:</span></p>
+
+<div align=center>
+
+<table class=MsoCaption border=1 cellspacing=0 cellpadding=0 width=487
+ style='width:365.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=86 style='width:64.35pt;border:solid windowtext 1.0pt;background:
+  #E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>Число</span></b></p>
+  </td>
+  <td width=56 style='width:42.15pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>1</span></b></p>
+  </td>
+  <td width=52 style='width:38.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>0</span></b></p>
+  </td>
+  <td width=49 style='width:37.1pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>0</span></b></p>
+  </td>
+  <td width=52 style='width:39.2pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>1</span></b></p>
+  </td>
+  <td width=48 style='width:35.7pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>0</span></b></p>
+  </td>
+  <td width=48 style='width:.5in;border:solid windowtext 1.0pt;border-left:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>1</span></b></p>
+  </td>
+  <td width=48 style='width:.5in;border:solid windowtext 1.0pt;border-left:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>0</span></b></p>
+  </td>
+  <td width=48 style='width:.5in;border:solid windowtext 1.0pt;border-left:
+  none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>0</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=86 style='width:64.35pt;border:solid windowtext 1.0pt;border-top:
+  none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>Степен</span></b></p>
+  </td>
+  <td width=56 style='width:42.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>2<sup>7</sup></span></p>
+  </td>
+  <td width=52 style='width:38.9pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>2<sup>6</sup></span></p>
+  </td>
+  <td width=49 style='width:37.1pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>2<sup>5</sup></span></p>
+  </td>
+  <td width=52 style='width:39.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>2<sup>4</sup></span></p>
+  </td>
+  <td width=48 style='width:35.7pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>2<sup>3</sup></span></p>
+  </td>
+  <td width=48 style='width:.5in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>2<sup>2</sup></span></p>
+  </td>
+  <td width=48 style='width:.5in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>2<sup>1</sup></span></p>
+  </td>
+  <td width=48 style='width:.5in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>2<sup>0</sup></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=86 style='width:64.35pt;border:solid windowtext 1.0pt;border-top:
+  none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>Стойност</span></b></p>
+  </td>
+  <td width=56 style='width:42.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>1</span></b><span
+  lang=BG>x2<sup>7</sup>=128</span></p>
+  </td>
+  <td width=52 style='width:38.9pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>0</span></b><span
+  lang=BG>x2<sup>6</sup>=0</span></p>
+  </td>
+  <td width=49 style='width:37.1pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>0</span></b><span
+  lang=BG>x2<sup>5</sup>=0</span></p>
+  </td>
+  <td width=52 style='width:39.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>1</span></b><span
+  lang=BG>x2<sup>4</sup>=16</span></p>
+  </td>
+  <td width=48 style='width:35.7pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>0</span></b><span
+  lang=BG>x2<sup>3</sup>=0</span></p>
+  </td>
+  <td width=48 style='width:.5in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>1</span></b><span
+  lang=BG>x2<sup>2</sup>=4</span></p>
+  </td>
+  <td width=48 style='width:.5in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>0</span></b><span
+  lang=BG>x2<sup>1</sup>=0</span></p>
+  </td>
+  <td width=48 style='width:.5in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>0</span></b><span
+  lang=BG>x2<sup>0</sup>=0</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Последователността
+от осем на брой нули и единици представлява един <b>байт</b>, т.е. това е едно
+обикновено осем-разредно двоично число. Чрез един байт могат да се запишат
+всички числа от 0 до 255 включи­телно. Много често това е не достатъчно и
+затова се използват по няколко последователни байта за представянето на едно
+число. Два байта образуват т.н. &quot;машинна дума&quot; <b>(word)</b>,<b> </b>която
+отговаря на 16 бита (при 16-разредните изчислителни машини). Освен нея, в
+изчислителните машини се използва и т.н. &quot;двойна дума&quot;<b> (double
+word) </b>или <b>(dword), </b>съответстваща на 32 бита.</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=54 style='width:40.6pt;border:solid windowtext 1.0pt;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;text-align:center'><b><span
+  lang=BG><img border=0 width=34 height=34
+  src="image002.gif"></span></b></p>
+  </td>
+  <td width=477 style='width:357.9pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=WarningMessage><span lang=BG>Ако едно двоично число завършва на 0,
+  то е четно, а ако завършва на 1, то е нечетно.</span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc218195752"><span lang=BG>Преминаване от двоична в десетична
+бройна система</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>При преминаване от двоична в десетична бройна
+система, се извършва преобразуване на двоичното число в десетично. Всяко число
+може да се преобразува от една бройна система в друга, като за целта се
+извършат последователност от действия, които са възможни и в двете бройни
+системи. Както вече споменахме, числата записани в двоична бройна система се
+състоят от двоични цифри, които са подредени по степените на двойката. </span><span
+lang=BG>Нека да вземем за пример числото <b>11001<sub>(2)</sub></b><sub>. </sub></span><span
+lang=BG>Преобразуването му в десетично се извършва чрез пресмятането на
+следната сума:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=BG>11001</span></b><sub><span
+lang=BG>(2) <b>= </b></span></sub><b><span lang=BG>1</span></b><span lang=BG>x2<sup>4</sup><b><sub>
+</sub></b>+ <b>1</b>x2<sup>3</sup><b><sub> </sub></b>+<b><sub> </sub>0</b>x2<sup>2
+</sup>+<b><sub> </sub>0</b>x2<sup>1</sup><b><sub> </sub></b>+<b><sub> </sub>1</b>x2<sup>0</sup>
+=</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG>=  </span><b><span
+lang=BG>16</span></b><sub><span lang=BG>(10)<b> </b></span></sub><span lang=BG>+
+</span><b><span lang=BG>8</span></b><sub><span lang=BG>(10)<b> </b></span></sub><span
+lang=BG>+ </span><b><span lang=BG>1</span></b><sub><span lang=BG>(10)</span></sub><span
+lang=BG> = </span><b><span lang=BG>25</span></b><sub><span lang=BG>(10)</span></sub></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG>От това
+следва, че </span><b><span lang=BG>11001</span></b><sub><span lang=BG>(2)<b> </b></span></sub><span
+lang=BG>= </span><b><span lang=BG>25</span></b><sub><span lang=BG>(10)</span></sub></p>
+
+<p class=MsoNormal><span lang=BG>С други думи, всяка една двоична цифра се
+умножава по 2 на степен, позицията, на която се намира (в двоичното число). Накрая
+се извършва събиране, на числата, получени за всяка от двоичните цифри, за да
+се получи десетичната равностойност на двоичното число.</span></p>
+
+<p class=MsoNormal><span lang=BG>Съществува и още един начин за преобразуване,
+който е известен като схема на Хорнер. При тази схема се извършва умножение на
+най-лявата цифра по две и събиране със съседната й вдясно. Този резултат се
+умножава по две и се прибавя следващата съседна цифра от числото (цифрата
+вдясно). Това продължава до изчерпване на всички цифри в числото, като
+последната цифра от числото се добавя без умножаване. Ето един пример:</span></p>
+
+<p class=MsoNormal style='text-indent:14.2pt'><b><span lang=BG>1001</span></b><sub><span
+lang=BG>(2)</span></sub><span lang=BG> = ((1.2+0).2+0).2+1 = 2.2.2+1 = <b>9</b></span></p>
+
+<h3><a name="_Toc218195753"><span lang=BG>Преминаване от десетична към двоична
+бройна система</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>При преминаване от десетична в двоична бройна
+система, се извършва преобразуване на десетичното число в двоично. За целите на
+преобразу­ването се извършва делене на две с остатък. Така се получават частно
+и остатък, който се отделя.</span></p>
+
+<p class=MsoNormal><span lang=BG>Отново ще вземем за пример числото 148. То се
+дели целочислено на основата, към която ще преобразуваме (в примера тя е 2).
+След това, от остатъците получени при деленето (те са само нули и единици), се
+записва преобразуваното число. Деленето продължава, докато получим частно нула.
+Ето пример:</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>148:2=74 имаме
+остатък 0;</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>74:2=37   имаме
+остатък 0;</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>37:2=18   имаме
+остатък 1;</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>18:2=9     имаме
+остатък 0;</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>9:2=4       имаме
+остатък 1;</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>4:2=2       имаме
+остатък 0;</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>2:2=1       имаме
+остатък 0;</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>1:2=0       имаме
+остатък 1;</span></p>
+
+<p class=MsoNormal><span lang=BG>След като вече семе извършили деленето,
+записваме стойностите на остатъците в ред, обратен на тяхното получаване, както
+следва:</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>10010100</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>т.е. 148<sub>(10)</sub>
+= 10010100<sub> (2)</sub></span></p>
+
+<h3><a name="_Toc218195754"><span lang=BG>Действия с двоични числа</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>При двоичните числа за един двоичен разряд са
+в сила аритметичните правила за събиране, изваждане и умножение.</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>0+0=0      0-0=0       0.0=0</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>1+0=1      1-0=1       1.0=0</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>0+1=1      1-1=0       0.1=0</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>1+1=10    10-1=1     1.1=1</span></p>
+
+<p class=MsoNormal><span lang=BG>С двоичните числа могат да се извършват и
+логически действия, като логическо умножение (конюнкция), логическо събиране
+(дизюнкция) и сума по модул две (изключващо или).</span></p>
+
+<p class=MsoNormal><span lang=BG>Трябва да се отбележи, че при извършване на
+аритметични действия над многоразредни числа трябва да се отчита връзката между
+отделните разреди чрез пренос или заем, когато извършваме съответно събиране
+или изваждане.</span></p>
+
+<h3><a name="_Toc218195755"><span lang=BG>Шестнайсетични числа</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>При тези числа имаме за основа на бройната
+система числото 16, което налага да бъдат използвани 16 знака (цифри) за
+представянето на всички възможни стойности от 0 до 15 включително. Както вече
+беше показано в една от таблиците в предходните точки, за представянето на
+шестнайсе­тичните числа се използват числата от 0 до 9 и латинските букви от A
+до F. Всяка от тях има съответната стойност:</span></p>
+
+<p class=MsoNormal align=left style='margin-left:14.2pt;text-align:left'><span
+lang=BG>A=10, B=11, C=12, D=13, E=14, F=15</span></p>
+
+<p class=MsoNormal><span lang=BG>Като примери за шестнайсетични числа могат да
+бъдат посочени съответно, D2, 1F2 F1, D1E и др.</span></p>
+
+<p class=MsoNormal><span lang=BG>Преминаването към десетична система става като
+се умножи по 16<sup>0</sup> стойността на най-дясната цифра, по 16<sup>1</sup>
+следващата вляво, по 16<sup>2</sup> следващата вляво и т.н. и накрая се
+съберат. Например:</span></p>
+
+<p class=MsoNormal style='text-indent:14.2pt'><span lang=BG>D1E<sub>(16)</sub>
+= Е*16<sup>0</sup> + 1*16<sup>1</sup> + D*16<sup>2</sup> = </span>14*1 + 1*16 +
+13*256 = 3358<sub>(10)</sub>.</p>
+
+<p class=MsoNormal><span lang=BG>Преминаването от десетична към шестнайсетична
+бройна система става като се дели десетичното число на 16 и се вземат
+остатъчите в обратен ред. Например:</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>3358 / 16 = 209 +
+остатък 14 (Е)</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>209 / 16 = 13 +
+остатък 1 (1)</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>13 / 16 = 0 +
+остатък 13 (</span>D<span lang=BG>)</span></p>
+
+<p class=MsoNormal>    <span lang=BG>Взимаме остатъците в обратен ред и
+получаваме числото D1E<sub>(16)</sub>.</span></p>
+
+<h3><a name="_Toc218195756"><span lang=BG>Бързо преминаване от двоични към
+шестнайсетични числа</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Бързото преобразуване, от двоични в
+шестнайсетични числа се извършва бързо и лесно, чрез разделяне на двоичното
+число на групи от по четири бита (разделяне на полубайтове). Ако броят на
+цифрите в числото не е кратен на четири, то се добавят водещи нули в старшите
+разреди. След разделянето и евентуалното добавяне на нули, се заместват всички
+полу­чени групи със съответстващите им цифри. Ето един пример:</span></p>
+
+<p class=MsoNormal><span lang=BG>Нека да ни е дадено следното число: 1110011110<sub>(2)</sub>.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>1.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Разделяме го на полубайтове и добавяме водещи нули</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-indent:14.2pt'><span lang=BG>Пример:
+0011 1001 1110.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>2.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Заместваме всеки полубайт със съответната шестнайсетична цифра и така
+получаваме 39E<sub>(16)</sub>.</span></p>
+
+<p class=MsoNormal><span lang=BG>Следователно 1110011110<sub> (2) </sub>= 39E<sub>(16)</sub>.</span></p>
+
+<h2><a name="_Toc218195757"><span lang=BG>Представяне на числата</span></a></h2>
+
+<p class=MsoNormal><span lang=BG>За съхраняване на данните в оперативната памет
+на електронноиз­чис­лителните </span><span lang=BG>машини, се използва двоичен
+код. В зависимост от това какви данни съхраняваме (символи, цели или реални
+числа с цяла и дробна част) информацията се представя по различен начин. Този
+начин се опре­деля от типа на данните.</span></p>
+
+<p class=MsoNormal><span lang=BG>Дори и програмистът на език от високо ниво
+трябва да знае, какъв вид имат данните разположени </span><span lang=BG>в
+оперативната памет на машината. Това се отнася, и за случаите, когато данните
+се намират на външен носител, защото при обработката им те се разполагат в
+оперативната памет.</span></p>
+
+<p class=MsoNormal><span lang=BG>В тази глава са разгледани начините за
+представяне и обработка на различни типове данни. Най-общо те се основават на
+понятията бит, байт и машинна дума.</span></p>
+
+<p class=MsoNormal><b><span lang=BG>Бит</span></b><span lang=BG> е една двоична
+единица от информация, със стойност 0 или 1.</span></p>
+
+<p class=MsoNormal><span lang=BG>Информацията в паметта се групира в
+последовател­ности от 8 бита, които образуват един <b>байт</b>.</span></p>
+
+<p class=MsoNormal><span lang=BG>За да бъдат обработени от аритметичното
+устройство, данните се пред­ставят в паметта от определен брой байтове (2, 4
+или 8), които образуват машинната дума. Това са концепции, които всеки
+програмист трябва задължи­телно да знае и разбира.</span></p>
+
+<h3><a name="_Toc218195758"><span lang=BG>Представяне на цели числа в паметта</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Едно от нещата, на които до сега на обърнахме
+внимание е знакът на числата. Представянето на цели числата в паметта на
+компютъра, може да се извърши по два начина: със знак или без знак. Когато
+числата се представят със знак се въвежда знаков разред. Той е най-старшият
+разред и има стойност 1 за отрицателните числа и 0 за положителните. Останалите
+разреди са информационни и отразяват (съдържат) стойността числото. В случая на
+числа без знак всички битове се използват за записване на стойността на
+числото.</span></p>
+
+<h3><a name="_Toc218195759"><span lang=BG>Цели числа без знак</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>За целите числа
+без знак се заделят по 1, 2, 4 или 8 байта от паметта. В зависимост, от броя на
+байтовете използвани при представянето на едно число, се образуват обхвати на
+представяне с различна големина. Посред­ством</span><span lang=BG> </span><i>n </i><span
+lang=BG>на брой бита могат да се представят цели числа без знак в обхвата </span>[0,
+2<sup>n</sup><span lang=BG>-1]. Следващата таблица, показва обхват</span>a<span
+lang=BG> от стойности на целите числа без знак:</span></p>
+
+<div align=center>
+
+<table class=MsoCaption border=1 cellspacing=0 cellpadding=0 style='border-collapse:
+ collapse;border:none'>
+ <tr style='height:.3in'>
+  <td width=168 rowspan=2 style='width:125.75pt;border:solid windowtext 1.0pt;
+  background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:.3in'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>Брой
+  байтове за представяне на числото в паметта</span></b></p>
+  </td>
+  <td width=358 colspan=2 style='width:268.8pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:.3in'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>Обхват</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=110 style='width:82.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>Запис
+  чрез порядък</span></b></p>
+  </td>
+  <td width=248 style='width:186.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>Обикновен
+  запис</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=168 style='width:125.75pt;border:solid windowtext 1.0pt;border-top:
+  none;background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1</span></p>
+  </td>
+  <td width=110 style='width:82.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0
+  &divide; 2<sup>8</sup>-1</span></p>
+  </td>
+  <td width=248 style='width:186.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0
+  &divide; 255</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=168 style='width:125.75pt;border:solid windowtext 1.0pt;border-top:
+  none;background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>2</span></p>
+  </td>
+  <td width=110 style='width:82.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0
+  &divide; 2<sup>16</sup>-1</span></p>
+  </td>
+  <td width=248 style='width:186.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0
+  &divide; 65 535</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=168 style='width:125.75pt;border:solid windowtext 1.0pt;border-top:
+  none;background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>4</span></p>
+  </td>
+  <td width=110 style='width:82.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0
+  &divide; 2<sup>32</sup>-1</span></p>
+  </td>
+  <td width=248 style='width:186.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0
+  &divide; 4&nbsp;294&nbsp;967 295</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=168 style='width:125.75pt;border:solid windowtext 1.0pt;border-top:
+  none;background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>8</span></p>
+  </td>
+  <td width=110 style='width:82.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0
+  &divide; 2<sup>64</sup>-1</span></p>
+  </td>
+  <td width=248 style='width:186.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>0
+  &divide; 9 223 372 036 854 775 807</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><span lang=BG>Ще покажем пример при еднобайтово и двубайтово
+представяне на числото 158, което се записва в двоичен вид като 10011110<sub>
+(2)</sub>:</span></p>
+
+<p class=MsoNormal><span lang=BG>1. Представяне с </span>1<span lang=BG> байт:</span></p>
+
+<div align=right>
+
+<table class=MsoCaption border=1 cellspacing=0 cellpadding=0 style='border-collapse:
+ collapse;border:none'>
+ <tr style='height:16.4pt'>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;padding:1.4pt 4.25pt 1.4pt 4.25pt;
+  height:16.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>1</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:16.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:16.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:16.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>1</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:16.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>1</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:16.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>1</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:16.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>1</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:16.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><span lang=BG>2. Представяне с </span>2<span lang=BG> байта:</span></p>
+
+<p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+
+<div align=right>
+
+<table class=MsoCaption border=1 cellspacing=0 cellpadding=0 style='border-collapse:
+ collapse;border:none'>
+ <tr style='height:17.0pt'>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;padding:1.4pt 4.25pt 1.4pt 4.25pt;
+  height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>1</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>1</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>1</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>1</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>1</span></span></p>
+  </td>
+  <td width=26 style='width:19.85pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:1.4pt 4.25pt 1.4pt 4.25pt;height:17.0pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span class=Code><span
+  lang=BG>0</span></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<h3><a name="_Toc218195760"></a><a name="_Представяне_на_отрицателни"></a><span
+lang=BG>Представяне на отрицателни числа</span></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>За отрицателните
+числа се заделят по един, два или четири байта от паметта на компютъра, като
+най-старшият разред има значение на знаков и ни носи информация за знака на
+числото. Както вече споменахме, когато знаковият бит има стойност 1 числото е
+отрицателно, а в противен случай – положително. Следващата таблица, показва
+обхвата от стойно­сти на целите числа със знак:</span></p>
+
+<div align=center>
+
+<table class=MsoCaption border=1 cellspacing=0 cellpadding=0 width=528
+ style='width:395.95pt;border-collapse:collapse;border:none'>
+ <tr style='height:23.25pt'>
+  <td width=160 rowspan=2 style='width:119.7pt;border:solid windowtext 1.0pt;
+  background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:23.25pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>Брой
+  байтове за представяне на числото в паметта</span></b></p>
+  </td>
+  <td width=368 colspan=2 style='width:276.25pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt;height:23.25pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>Обхват</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=113 style='width:84.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>Запис
+  чрез порядък</span></b></p>
+  </td>
+  <td width=256 style='width:191.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6E6E6;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><b><span lang=BG>Обикновен
+  запис</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=160 style='width:119.7pt;border:solid windowtext 1.0pt;border-top:
+  none;background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>1</span></p>
+  </td>
+  <td width=113 style='width:84.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>-2<sup>7
+  </sup>&divide; 2<sup>7</sup>-1</span></p>
+  </td>
+  <td width=256 style='width:191.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>-128
+  &divide; 127</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=160 style='width:119.7pt;border:solid windowtext 1.0pt;border-top:
+  none;background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>2</span></p>
+  </td>
+  <td width=113 style='width:84.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>-2<sup>15
+  </sup>&divide; 2<sup>15</sup>-1</span></p>
+  </td>
+  <td width=256 style='width:191.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>-32 768
+  &divide; 32 767</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=160 style='width:119.7pt;border:solid windowtext 1.0pt;border-top:
+  none;background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>4</span></p>
+  </td>
+  <td width=113 style='width:84.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>-2<sup>31
+  </sup>&divide; 2<sup>31</sup>-1</span></p>
+  </td>
+  <td width=256 style='width:191.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>-2 147
+  483 648 &divide; 2 147 483 647</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=160 style='width:119.7pt;border:solid windowtext 1.0pt;border-top:
+  none;background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>8</span></p>
+  </td>
+  <td width=113 style='width:84.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>-2<sup>63
+  </sup>&divide; 2<sup>63</sup>-1</span></p>
+  </td>
+  <td width=256 style='width:191.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;text-align:center'><span
+  lang=BG>-9 223 372 036 854 775 808 &divide;</span></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:3.0pt;margin-left:0in;text-align:center'><span lang=BG>9 223
+  372 036 854 775 807</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><span lang=BG>За кодирането на отрицателните числа, се
+използват прав, обратен и допълнителен код. И при трите представяния целите
+числа със знак са в границите: </span>[-2<sup>n-1</sup>, 2<sup>n-1</sup>-1].<span
+lang=BG> Положителните числа винаги се</span><span lang=BG> </span><span
+lang=BG>представят по един и същи начин и за тях правият, обратният и
+допълнителният код съвпадат.</span></p>
+
+<p class=MsoNormal><b><span lang=BG>Прав код:</span></b><span lang=BG> Правият
+код е най-простото представяне на числото. Старшият бит е знаков, а в
+оставащите битове е записана абсолютната стойност на числото. Ето няколко
+примера:</span></p>
+
+<p class=MsoNormal><span lang=BG>Числото 3 в прав код се представя в осембитово
+число като 00000011.</span></p>
+
+<p class=MsoNormal><span lang=BG>Числото -3 в прав код се представя в
+осембитово число като 10000011.</span></p>
+
+<p class=MsoNormal><b><span lang=BG>Обратен код:</span></b><span lang=BG>
+Получава се от правия код на числото, чрез инвертиране (заместване на всички
+нули с единици и единици с нули). Този код не е никак удобен за извършването на
+аритметичните действия събиране и изваждане, защото се изпълнява по различен
+начин, когато се налага изваждане на числа. Освен това се налага знаковите
+битове да се обра­ботват отделно от информационните. Този недостатък се избягва
+с употре­бата на допълнителен код, при който вместо изваждане се извършва
+събиране с отрицателно число. Последното е представено чрез неговото допълнение
+т.е. разликата между 2</span><sup><span lang=BG>n</span></sup><span lang=BG> и
+самото число. Пример:</span></p>
+
+<p class=MsoNormal><span lang=BG>Числото -127 в прав код се представя като 1
+1111111, а в обратен код като 1&nbsp;0000000.</span></p>
+
+<p class=MsoNormal><span lang=BG>Числото 3 в прав код се представя като 0
+0000011, а в обратен код има вида 0 1111100.</span></p>
+
+<p class=MsoNormal><b><span lang=BG>Допълнителен код:</span></b><span lang=BG>
+Допълнителният код е число в обратен код, към което е прибавена (чрез събиране)
+единица. Пример:</span></p>
+
+<p class=MsoNormal><span lang=BG>Числото -127 представено в допълнителен код
+има вида 1&nbsp;0000001.</span></p>
+
+<p class=MsoNormal><b><span lang=BG>Двоично-десетичен код: </span></b><span
+lang=BG>Известен е още като BCD код (Binary Coded Decimal). При този код в един
+байт се записват по две десетични цифри. Това се постига, като чрез всеки
+полубайт се кодира една десетична цифра. Числа представени чрез този код могат
+да се пакетират т.е. да се представят в пакетиран формат. Ако представим една
+десетична цифра в един байт се получава непакетиран формат.</span></p>
+
+<p class=MsoNormal><span lang=BG>Съвременните микропроцесори използват един или
+няколко от разгле­даните кодове за представяне на отрицателните числа, като
+най-разпро­страненият начин е представянето в допълнителен код.</span></p>
+
+<h3><a name="_Toc218195761"><span lang=BG>Типовете int и long в Java</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Както знаем, в
+Java има четири целочислени типа данни със знак и те са </span><span
+class=Code><span lang=BG>byte</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>short</span></span><span lang=BG>, </span><span
+class=Code><span lang=BG>int</span></span><span lang=BG>, и </span><span
+class=Code><span lang=BG>long</span></span><span lang=BG>. За представянето на
+променливи от тези типове се използват двоични числа в допълнителен код. В
+зависимост от броя байтове, които се заделят в паметта за тези типове, се
+определя и съответният диапазон от стойности, които те могат да заемат.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Съществено
+ограничение на езика Java е, че не поддържа цели числа без знак. Най-широко
+използваният целочис­лен тип е </span><span class=Code><span lang=BG>int</span></span><span
+lang=BG>. Той се представя като 32-битово число в допълнителен код и приема
+стойности в интервала [-2<sup>31</sup></span>, <span lang=BG>2<sup>31</sup>-1</span><span
+lang=BG>]. Променливите от този тип най-често се използват за управление на
+цикли, индексиране на масиви и други целочислени изчисления. В следващата
+таблица е даден пример за декларация на променливи от тип </span><span
+class=Code><span lang=BG>int</span></span>:</p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> decimalValue = 25;</span></p>
+  <p class=MsoNormal style='margin-top:0in'><b><span lang=BG style='font-family:
+  "Courier New";color:#7F0055'>int</span></b><span lang=BG style='font-family:
+  "Courier New";color:black'> octoInt = 0235;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Типът </span><span
+class=Code>l</span><span class=Code><span lang=BG>ong</span></span><span
+lang=BG> е най-големият целочислен тип със знак в Java. Той има размерност 64
+бита (8 байта). При присвояване на стойности на промен­ливите от тип </span><span
+class=Code><span lang=BG>long</span></span><span lang=BG> се използват
+латинските букви &quot;</span><span class=Code><span lang=BG>l</span></span><span
+lang=BG>&quot; или &quot;</span><span class=Code><span lang=BG>L</span></span><span
+lang=BG>&quot;, които се поставят в края на целочисления литерал. Поставен на
+това място, този модификатор означава, че литералът има стойност от тип </span><span
+class=Code><span lang=BG>long</span></span><span lang=BG>. Това се прави,
+защото по подразбиране целочислените литерали са от тип </span><span
+class=Code><span lang=BG>int</span></span><span lang=BG>. В следващия пример декларираме
+и присвояваме 64-битови цели числа на променливи от тип </span><span
+class=Code><span lang=BG>long</span></span><span lang=BG>:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>long</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> longValue = 9223372036854775807L;</span></p>
+  <p class=MsoNormal style='margin-top:0in'><b><span lang=BG style='font-family:
+  "Courier New";color:#7F0055'>long</span></b><span lang=BG style='font-family:
+  "Courier New";color:black'> newLongValue = 932145699054323689l;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Важно условие е да се внимава да не бъде
+надхвърлен обхватът на представимите числа и за двата типа.</span></p>
+
+<h3><a name="_Toc218195762"><span lang=BG>Представянията Big-Endian и
+Little-Endian</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>При цели числа, които се записват в повече от
+един байт</span>,<span lang=BG> има два варианта за наредба на байтовете в
+паметта:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Little<span
+lang=BG>-Endian (</span>L<span lang=BG>E) – байтовете се подреждат от ляво
+надясно от най-младшия към най-старшия. Това представяне се използва при </span>Intel
+x86, Intel x64 <span lang=BG>микропроцесорните архитектури.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Big-Endian (BE) – байтовете се подреждат от ляво надясно от най-старшия
+към най-младшия. Това представяне се използва при </span>PowerPC, SPARC и <span
+lang=BG>ARM</span><span lang=BG> </span><span lang=BG>микропроцесорните архитектури.</span></p>
+
+<p class=MsoNormal><span lang=BG>Ето един пример: числото A8B6E</span>A<span
+lang=BG>72</span><sub>(16)</sub><span lang=BG> се представя в двете наредби на
+байтовете</span><span lang=BG> </span><span lang=BG>по следния начин:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><span
+lang=BG><img border=0 width=487 height=92
+src="image076.gif"></span></p>
+
+<p class=MsoNormal><span lang=BG>Java използва Big-Endian представянето, което
+е типично за хардуера на Sun Microsystems,</span><span lang=BG> </span><span
+lang=BG>и това трябва да се съобразява при обмяната на числови данни с други
+системи, които не са Java базирани.</span></p>
+
+<h3><a name="_Toc218195763"><span lang=BG>Представяне на реални числа с плаваща
+запетая</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Реалните числа са съставени от цяла и дробна
+част. В компютрите, те се представят като числа с плаваща запетая. Всъщност
+това представяне идва от възприетия от водещите производители на микропроцесори
+<a href="http://en.wikipedia.org/wiki/IEEE_754" target="_blank">Standard for
+Floating-Point Arithmetic (IEEE 754)</a>. </span><span lang=BG>Повечето хардуерни
+плат­форми и езици за програмиране позволят или изискват изчисленията да се
+извършват съгласно изискванията на този стандарт. Стандартът определя:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Аритметични формати: набор от двоични и десетични данни с плаваща
+запетая, които са съставени от краен брой цифри</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Формати за обмен: </span><span lang=BG>кодировки (битови низове), които
+могат да бъдат използвани за обмен на данни в една ефективна и компактна форма</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Алгоритми за закръгляване: методи, които се използват за закръг­ляване
+на числата по време на изчисления</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Операции: аритметика и други операции на </span><span lang=BG>аритметичните</span><span
+lang=BG> формати</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Изключения: представляват сигнали за извънредни случаи като деление на
+нула, препълване и др.</span></p>
+
+<p class=MsoNormal><span lang=BG>Съгласно IEEE-754 стандарта произволно реално
+число </span><i>R</i> <span lang=BG>може да бъде представено във вида:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><i>R = M * q<sup>p</sup></i></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>където </span><i>M</i>
+e <b><span lang=BG>мантисата</span></b><span lang=BG> на числото, а </span><i>p</i>
+<span lang=BG>е <b>порядъкът</b> му (<b>експонента</b>), и съответно </span><i>q</i>
+<span lang=BG>е основа на бройната система, в която е представено числото.
+Мантисата трябва да бъде положителна или отрицателна правилна дроб т.е. </span>|<i>M</i>|&lt;1<span
+lang=BG>, а порядъкът </span>– <span lang=BG>положително или отрицателно цяло
+число.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>При посочения
+начин на представяне на числата, всяко число във формат с плаваща запетая, ще
+има следния обобщен вид <i>±</i>0,<i>M*q<sup>±p</sup></i>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В частност, когато
+представяме числата във формат с плаваща запетая чрез двоична бройна система</span>,<span
+lang=BG> ще имаме </span><i>R = M * 2<sup>p</sup></i>.<span lang=BG> При това
+представяне на реалните числа в паметта на компютъра, след промяна на порядъка
+се стига и до изместване </span><span lang=BG>&quot;</span><span lang=BG>плаване</span><span
+lang=BG>&quot;</span><span lang=BG> на десетичната запетая в мантисата.
+Форматът на представянето с плаваща запетая, има полулогаритмична форма. Той е
+изобразен нагледно на следващата фигура:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><span
+lang=BG><img border=0 width=472 height=84
+src="image077.gif"></span></p>
+
+<h4><span lang=BG>Представяне на числа с плаваща запетая – пример</span></h4>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Нека дадем един
+пример за представяне на число с плаваща запетая в паметта. Искаме да запишем
+числото -21,15625 в 32-битов (single precision) floating-point формат по
+стандарта IEEE-754. При този формат се използват 23 бита за мантиса, 8 бита за
+експонента и 1 бит за знак на числото. Представянето на числото е следното:</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:6.0pt;text-align:center'><span
+lang=BG><img border=0 width=464 height=117
+src="image078.gif"></span></p>
+
+<p class=MsoNormal><span lang=BG>Знакът на числото е отрицателен, т. е.
+мантисата има отрицателен знак:</span></p>
+
+<p class=MsoNormal style='text-indent:14.2pt'><i>S</i> = <span lang=BG>-1</span></p>
+
+<p class=MsoNormal><span lang=BG>Порядъкът (експонентата) има стойност 4
+(записана в допълнителен код)</span>:</p>
+
+<p class=MsoNormal style='text-indent:14.2pt'><i>p</i> = (2<sup>0</sup> + 2<sup>1</sup>
++ 2<sup>7</sup>) - 127 = (1+2+128) – 127 = 4</p>
+
+<p class=MsoNormal><span lang=BG>За преминаване към истинската стойност
+изваждаме 127 от стойността на допълнителния код</span>, защото работим с 8
+бита<span lang=BG> (</span>127 = 2<sup>8</sup>-1)<span lang=BG>.</span></p>
+
+<p class=MsoNormal><span lang=BG>Мантисата има следната стойност (без да
+взимаме предвид знака)</span>:</p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><i><span lang=BG>М</span></i><span
+lang=BG> </span> <span lang=BG>= 1 + 2<sup>-2</sup> + 2<sup>-4</sup> + 2<sup>-7</sup>
++ 2<sup>-9</sup> =</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-indent:14.2pt'>=<span
+lang=BG> 1 + 0,25 + 0,0625 + 0,0078125 + 0,001953125 =</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt;text-indent:14.2pt'>=<span
+lang=BG> 1,322265625</span></p>
+
+<p class=MsoNormal><span lang=BG>Забелязахте ли, че добавихме единица, която
+липсва в двоичния запис на мантисата</span>?<span lang=BG> Това е така, защото
+мантисата винаги е нормализирана и започва с единица, която се подразбира.</span></p>
+
+<p class=MsoNormal><span lang=BG>Стойността на числото се изчислява по
+формулата </span><i>R = M * 2<sup>p</sup></i><span lang=BG>, която в нашия
+пример добива вида:</span></p>
+
+<p class=MsoNormal style='text-indent:14.2pt'><i>R = <span lang=BG>-</span></i><span
+lang=BG>1,3222656</span><i> * 2<sup><span lang=BG>4</span></sup></i><i> =<span
+lang=BG> -</span></i><span lang=BG>1,322265625 * 16 = -21,1562496 &#8776; -21,15625</span></p>
+
+<h4><span lang=BG>Нормализация на мантисата</span></h4>
+
+<p class=MsoNormal><span lang=BG>За по-пълното използване на разрядната решетка
+мантисата трябва да съдържа единица в старшия си разред. Всяка мантиса удовлетворяваща
+това условие са нарича <b>нормализи­рана</b>. При IEEE-754 стандарта едини­цата
+в цялата част на мантисата се подразбира, т.е. мантисата е винаги число между 1
+и 2.</span></p>
+
+<p class=MsoNormal><span lang=BG>Ако по време на изчисленията се достигне до
+резултат, който не удовлет­ворява това условие, то имаме нарушение на нормализа­цията.
+Това изисква, преди да се пристъпи към по-нататъшна обработка на числото то да бъде
+нормализирано, като за целта се измества запетаята в мантисата и след това се
+извършва съответна промяна на порядъка.</span></p>
+
+<h3><a name="_Toc218195764"><span lang=BG>Типовете float и double в Java</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>В Java разполагаме
+с два типа данни за представяне на числата с плаваща запетая. Типът </span><span
+class=Code><span lang=BG>float</span></span><span lang=BG> е 32-битово реално
+число с плаваща запетая, за което е прието да се казва, че има единична точност</span>
+(<span lang=BG>single </span>precision floating-point number)<span lang=BG>.
+Типът </span><span class=Code><span lang=BG>double</span></span><span lang=BG>
+е 64</span>-<span lang=BG>битово реално число с плаваща запетая, за което е
+прието да се казва, че има двойна точност</span> (double precision
+floating-point number)<span lang=BG>. Тези реални типове данни и аритметич­ните
+операции върху тях съответстват на спецификацията, определена от стандарта IEEE
+754-1985.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>При тип </span><span
+class=Code><span lang=BG>float</span></span><span lang=BG> имаме мантиса, която
+съхранява 8-9 значещи цифри, докато при тип </span><span class=Code><span
+lang=BG>double</span></span><b><span lang=BG> </span></b><span lang=BG>тя
+съхранява 16-17 значещи цифри. Останалите битове се използват за задаването на
+знаците на мантисата и стойността на порядъка. Типът </span><span class=Code><span
+lang=BG>double</span></span><span lang=BG> освен с по-голям брой значещи цифри
+разпо­лага и с по-голям порядък т.е. обхват на приеманите стойности. Ето един
+пример за декларация на променливи от тип </span><span class=Code><span
+lang=BG>float</span></span><span lang=BG> и тип </span><span class=Code><span
+lang=BG>double</span></span><span lang=BG>:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>float</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> total = 5.0f;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>float</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> result = 5.0F;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>double</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> sum = 10.0;</span></p>
+  <p class=MsoNormal style='margin-top:0in'><b><span lang=BG style='font-family:
+  "Courier New";color:#7F0055'>double</span></b><span lang=BG style='font-family:
+  "Courier New";color:black'> div = 35.4/3.0;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Важно е да се знае, че в Java по подразбиране
+числата с плаваща запетая са от тип </span><span class=Code><span lang=BG>double</span></span><span
+lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Много от
+математическите операции могат да дадат резултати, които нямат конкретна
+числена стойност като например стойността &quot;</span>+/- <span lang=BG>безкрайност&quot;
+или стойността NaN (което означава “Not a Number&quot;), които не представляват
+числа. Ето един пример:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>double</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> d = 0;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(d);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(1/d);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(-1/d);</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>System.</span><i><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>out</span></i><span lang=BG style='font-family:
+  "Courier New";color:black'>.println(d/d);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ако го изпълним,
+ще получим следния резултат:</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>0.0</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Infinity</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>-Infinity</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>NaN</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Ако изпълним горния код с тип int вместо
+double, ще получим </span><span class=Code><span lang=BG>java.lang. ArithmeticException</span></span>,
+<span lang=BG>защото</span><span lang=BG> </span><span lang=BG>целочисленото
+деление на 0 е непозволена операция.</span></p>
+
+<h4><span lang=BG>Стриктен режим на изчисленията с плаваща запетая</span></h4>
+
+<p class=MsoNormal><span lang=BG>Изчисленията с плаваща запетая могат да се
+изпълняват и в стриктен режим. Стриктната аритметика при числата с плаваща
+запетая следва строги правила за операциите, които гарантират, че ще получим
+един и същ резултат от изчисленията при изпълнение на програмата на различни
+версии на виртуалната машина.</span></p>
+
+<p class=MsoNormal><span lang=BG>Ако се налага да гарантирате побитова
+еднаквост на резултата във всяка реализация на виртуалната машина, трябва да
+ползвате модификатора </span><span class=Code><span lang=BG>strictfp</span></span><span
+lang=BG>. Той може да се приложи към клас, интерфейс или метод. Повече
+информация относно този въпрос, може да се намери в &quot;The Java Language
+Specification&quot;: <a href="http://java.sun.com/docs/books/jls/">http://java.sun.com/docs/books/jls/</a>.</span></p>
+
+<h3><a name="_Toc218195765"><span lang=BG>Точност на числата с плаваща запетая</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>Точността на резултатите от изчисленията при
+работа с числа с плаваща запетая зависят от следните параметри:</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>1.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Точността на представяне на числата.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>2.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Точността на използваните числени методи.</span></p>
+
+<p class=MsoNormal style='margin-left:28.4pt;text-indent:-14.2pt'><span
+lang=BG>3.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=BG>Стойностите на грешките, получени при закръгляване и др.</span></p>
+
+<p class=MsoNormal><span lang=BG>При числата, представени посредством плаваща
+запетая, стойностите на абсолютната и относителната грешка се определят както
+следва:</span></p>
+
+<p class=MsoNormal><span lang=BG>Абсолютна грешка:</span></p>
+
+<p class=MsoNormal style='text-indent:14.2pt'><span lang=BG><sub><img border=0
+width=173 height=20
+src="image079.gif"></sub></span></p>
+
+<p class=MsoNormal><span lang=BG>Относителна грешка:</span></p>
+
+<p class=MsoNormal style='text-indent:14.2pt'><span lang=BG><sub><img border=0
+width=184 height=44
+src="image080.gif"></sub></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Поради това, че
+числата се представят с някаква точност, при изчисление и резултатите имат
+съответната точност. Нека като пример да разгледаме следния програмен фрагмент:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>double</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> sum = 0.0;    </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>(</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i=1; i&lt;=10; i++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  sum += 0.1;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>System.</span><i><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>out</span></i><span lang=BG style='font-family:
+  "Courier New";color:black'>.println(sum);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>По време на неговото
+изпълнение, в цикъл добавяме стойността 1/10 в променливата </span><span
+lang=BG style='font-family:"Courier New";color:black'>sum.</span><span lang=BG>
+Очаква се, че при изпълнението на тази програма ще получим резултат 1.0, но в
+действителност програмата ще изведе</span><span lang=BG> </span><span lang=BG>стой­ност,
+много близка до вярната, но все пак различна:</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>0.9999999999999999</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Причината за това
+е, че числото 0.1 няма точно представяне в типа </span><span class=Code><span
+lang=BG>double</span></span><span lang=BG> и се представя със закръгляне. Нека
+заменим </span><span class=Code><span lang=BG>double</span></span><span
+lang=BG> с </span><span class=Code><span lang=BG>float</span></span><span
+lang=BG>:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>float</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> sum = 0.0f;    </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>(</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i=1; i&lt;=10; i++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  sum += 0.1f;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>}</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>System.</span><i><span lang=BG style='font-family:
+  "Courier New";color:#0000C0'>out</span></i><span lang=BG style='font-family:
+  "Courier New";color:black'>.println(sum);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ако изпълним
+горния код ще получим съвсем друга сума:</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>1.0000001</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=BG>Причината за това отново е закръглянето, което
+е извършено този път нагоре, а не надолу, както в предходния пример.</span></p>
+
+<p class=MsoNormal><span lang=BG>Ако направим разследване, ще се убедим, че
+числото 0.1 се представя в типа </span><span class=Code><span lang=BG>float</span></span><span
+lang=BG> по следния начин:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=BG><img
+border=0 width=492 height=124
+src="image081.gif"></span></p>
+
+<p class=MsoNormal><span lang=BG>Всичко изглежда коректно с изключение на
+мантисата, която има стойност, малко по-голяма от 1.6</span>, <span lang=BG>а
+не точно 1.6, защото това число не може да се представи като сума от степени на
+2. Грешката настъпва не при събирането, а още преди това – при записването на
+0.1 в типа </span><span class=Code><span lang=BG>float</span></span><span
+lang=BG>.</span></p>
+
+<h3><a name="_Toc218195766"><span lang=BG>Числа с фиксирана запетая</span></a></h3>
+
+<p class=MsoNormal><span lang=BG>В някои езици за програмиране съществуват и
+числа с <b>фиксирана запетая</b>, например типът </span><span class=Code><span
+lang=BG>decimal</span></span><span lang=BG> в C#, типът </span><span
+class=Code><span lang=BG>money</span></span><span lang=BG> в SQL Server и типът
+</span><span class=Code><span lang=BG>number(10,2)</span></span><span lang=BG>
+в Oracle. В Java за съжаление няма такъв примитивен тип.</span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>Ако се нуждаем от
+точни изчисления (например за счетоводни или финансови цели), можем да ползваме
+класа </span><span class=Code><span lang=BG>BigDecimal</span></span><span
+lang=BG>, който не губи точност при пресмятанията, но за сметка на това работи чувствително
+по-бавно от </span><span class=Code><span lang=BG>float</span></span><span
+lang=BG> и </span><span class=Code><span lang=BG>double</span></span><span
+lang=BG>. Ето как изглежда в нов вариант нашата програма, която правеше грешки
+при сумиране на числа:</span></p>
+
+<table class=Heading6Char border=0 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>import</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> java.math.BigDecimal;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>public</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>class</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> Precision {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>public</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>static</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>void</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> main(String[] args) {   </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>double</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> sum = 0.0d;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     BigDecimal bdValue = </span><b><span lang=BG
+  style='font-family:"Courier New";color:#7F0055'>new</span></b><span lang=BG
+  style='font-family:"Courier New";color:black'> BigDecimal(</span><span
+  lang=BG style='font-family:"Courier New";color:#2A00FF'>&quot;0.1&quot;</span><span
+  lang=BG style='font-family:"Courier New";color:black'>); </span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     BigDecimal bdSum = </span><b><span lang=BG
+  style='font-family:"Courier New";color:#7F0055'>new</span></b><span lang=BG
+  style='font-family:"Courier New";color:black'> BigDecimal(</span><span
+  lang=BG style='font-family:"Courier New";color:#2A00FF'>&quot;0.0&quot;</span><span
+  lang=BG style='font-family:"Courier New";color:black'>);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     </span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>for</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'>(</span><b><span lang=BG style='font-family:"Courier New";
+  color:#7F0055'>int</span></b><span lang=BG style='font-family:"Courier New";
+  color:black'> i=1; i&lt;=10; i++) {</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       sum += 0.1d;</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>       bdSum = bdSum.add(bdValue);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     }</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;Double sum is: &quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'> + sum);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>     System.</span><i><span lang=BG style='font-family:"Courier New";
+  color:#0000C0'>out</span></i><span lang=BG style='font-family:"Courier New";
+  color:black'>.println(</span><span lang=BG style='font-family:"Courier New";
+  color:#2A00FF'>&quot;BigDecimal sum is: &quot;</span><span lang=BG
+  style='font-family:"Courier New";color:black'> + bdSum);</span></p>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>  }</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>}</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'><span lang=BG>По време на
+нейното изпълнение, отново добавяме в цикъл стойността една десета в
+променливата </span><span lang=BG style='font-family:"Courier New";color:black'>sum
+</span><span lang=BG>от тип </span><span lang=BG style='font-family:"Courier New";
+color:black'>double</span><span lang=BG> и обектната променливата от тип </span><span
+class=Code><span lang=BG>BigDecimal</span></span><span lang=BG
+style='font-family:"Courier New";color:black'>.</span><span lang=BG> След
+изпълнението на програмата ще получим:</span></p>
+
+<table class=MsoCaption border=0 cellspacing=0 cellpadding=0 style='margin-left:
+ 5.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=531 valign=top style='width:398.5pt;border:solid windowtext 1.0pt;
+  padding:5.65pt 5.4pt 5.65pt 5.4pt'>
+  <p class=MsoNormal align=left style='margin-top:0in;text-align:left;
+  text-autospace:none'><span lang=BG style='font-family:"Courier New";
+  color:black'>Double sum is: 0.9999999999999999</span></p>
+  <p class=MsoNormal style='margin-top:0in'><span lang=BG style='font-family:
+  "Courier New";color:black'>BigDecimal sum is: 1.0</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-autospace:none'><span lang=BG>Примерът ни
+доказва, че </span><span class=Code><span lang=BG>BigDecimal</span></span><span
+lang=BG> не прави грешка при събирането на 0.1 десет пъти, за разлика от тип </span><span
+class=Code><span lang=BG>double</span></span><span lang=BG>.</span></p>
+
+<h2><a name="_Toc218195767"><span lang=BG>Упражнения</span></a></h2>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Превърнете числата 151, 35, 43, 251 и -0,41 в двоична бройна система.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Превърнете числото </span><span class=Code><span lang=BG>1111010110011110</span></span><b><sub><span
+lang=BG>(2)</span></sub></b><sub><span lang=BG> </span></sub><span lang=BG>в
+шестнадесетична и десе­тична бройна система.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Превърнете шестнайсетичните числа 2A3E, FA, FFFF, 5A0E9 в двоична и
+десетична бройна система.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Да се напише програма, която преобразува десетично число в дво­ично.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Да се напише програма, която преобразува двоично число в десе­тично.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Да се напише програма, която преобразува десетично число в
+шестнадесетично.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Да се напише програма, която преобразува шестнадесетично число в
+десетично.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Да се напише програма, която преобразува шестнадесетично число в
+двоично.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Да се напише програма, която преобразува двоично число в шестна­десетично.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>10.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Да се напише
+програма, която преобразува двоично число в десетично по схемата на Хорнер.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>11.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Да се напише
+програма, която преобразува римските числа в арабски.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>12.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Да се напише
+програма, която преобразува арабските числа в римски.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>13.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Да се напише
+програма, която определя (отпечатва) стойността на мантисата, знака на
+мантисата и стойността на експонентата за числа от тип </span><span class=Code><span
+lang=BG>float</span></span><span lang=BG> и </span><span class=Code><span
+lang=BG>double</span></span><span lang=BG>.</span></p>
+
+<h2><a name="_Toc218195768"><span lang=BG>Решения и упътвания</span></a></h2>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Използвайте методите за превръщане от една бройна система в друга. Можете
+да сверите резултатите си с калкулатора на Windows, който поддържа работа с
+бройни системи след превключване в режим &quot;</span>Scientific<span lang=BG>&quot;</span>.</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Погледнете упътването за предходната задача.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Погледнете упътването за предходната задача.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Правилото е &quot;делим на 2 и долепяме остатъците в обратен ред&quot;.
+За делене с остатък използваме оператора </span><span class=Code><span lang=BG>%</span></span><span
+lang=BG>.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Започнете от сума 0. Умножете най-десния бит с 1 и го прибавете към
+сумата. Следващия бит вляво умножете по 2 и добавете към сумата. Следващия бит
+отляво умножете по 4 и добавете към сумата и т.н.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Правилото е &quot;делим на основата на системата (16) и долепяме остатъ­ците
+в обратен ред&quot;. Трябва да си напишем метод за отпечатване на
+шестнайсетична цифра по дадена стойност между 0 и 15.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Започнете от сума 0. Умножете най-дясната цифра с 1 и я прибавете към
+сумата. Следващата цифра вляво умножете по 16 и я добавете към сумата.
+Следващата цифра вляво умножете по 16*16 и я добавете към сумата и т.н.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Ползвайте бързия начин за преминаване между шестнайсетична и двоична
+бройна система (всяка шестнайсетична цифра съответства на 4 двоични бита).</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=BG>Ползвайте бързия начин за преминаване между двоична и шестнайсе­тична
+бройна система (всяка шестнайсетична цифра съответства на 4 двоични бита).</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>10.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Приложете
+директно схемата на Хорнер.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>11.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Сканирайте
+цифрите на римското число отляво надясно и ги добавяйте към сума, която
+първоначално е инициализирана с 0. При обработката на всяка римска цифра я
+взимайте с положителен или отрицателен знак в зависимост от следващата цифра
+(дали има по-малка или по-голяма десетична стойност).</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>12.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Разгледайте
+съответствията на числата от 1 до 9 с тяхното римско представяне с цифрите &quot;I&quot;,
+&quot;V&quot; и &quot;X&quot;:</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:53.85pt;margin-bottom:.0001pt'>1 -&gt; I</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:53.85pt;margin-bottom:.0001pt'>2 -&gt; II</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:53.85pt;margin-bottom:.0001pt'>3 -&gt; III</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:53.85pt;margin-bottom:.0001pt'>4 -&gt; IV</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:53.85pt;margin-bottom:.0001pt'>5 -&gt; V</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:53.85pt;margin-bottom:.0001pt'>6 -&gt; VI</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:53.85pt;margin-bottom:.0001pt'>7 -&gt; VII</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:53.85pt;margin-bottom:.0001pt'>8 -&gt; VIII</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:53.85pt;margin-bottom:.0001pt'>9 -&gt; IX</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:14.2pt;margin-bottom:.0001pt'><span lang=BG>Имаме абсолютно
+аналогични съответствия на числата 10, 20, ..., 90 с тяхното представяне с
+римските цифри &quot;X&quot;, &quot;L&quot; и &quot;C&quot;</span>, <span
+lang=BG>нали? Имаме аналогични съответствия между числата 100, 200, ..., 900 и
+тяхното представяне с римските цифри &quot;C&quot;, &quot;D&quot; и &quot;M&quot;
+и т.н.</span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span lang=BG>Сега сме готови да
+преобразуваме числото N в римска бройна система. То трябва да е в интервала
+[1...3999], иначе съобщаваме за грешка. Първо отделяме хилядите (N / 1000) и ги
+заместваме с римския им еквивалент. След това отделяме стотиците ((N / 100) %
+10) и ги заместваме с римския им еквивалент и т.н.</span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span lang=BG>13.<span
+style='font:7.0pt "Times New Roman"'> </span></span><span lang=BG>Използвайте
+специалните методи за извличане на побитовото предста­вяне на дадено реално
+число </span><span class=Code><span lang=BG>Float.floatToRawIntBits()</span></span><span
+lang=BG> и </span><span class=Code><span lang=BG>Double. doubleToRawLongBits()</span></span><span
+lang=BG>, след което използвайте подходящи побитови операции (измествания и
+битови маски).</span></p>
+
+<p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+
+</div>
+
+<span lang=BG style='font-size:10.0pt;font-family:"Verdana","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+</div>
+
+</body>
+
+</html>
