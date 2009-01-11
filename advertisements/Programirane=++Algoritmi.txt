@@ -1,1 +1,34 @@
 Да сложа на Панайот и Преслав на книгата реклама.
+
+
+
+ 
+The Number One book on Algorithms in Bulgaria 2002-2005. Called “the bible” among students.
+
+Used as primary or secondary textbook in all Bulgarian universities for related courses. Incomplete list includes:
+
+
+Sofia University "St. Kliment Ohridski"
+· Design and Analysis of Computer Algorithms I, Spring 2005
+· Design and Analysis of Computer Algorithms I, Fall 2003
+· Design and Analysis of Computer Algorithms II, Spring 2004
+· Design and Analysis of Computer Algorithms I, Fall 2001
+
+New Bulgarian University, Sofia
+· Advanced programming I (INF295/296), Fall 2004
+· Programming and Data Structures (INF201), Spring 2004
+· Advanced programming I (INF295), Fall 2003
+· Advanced programming II (INF298), Fall 2003
+
+Technical University of Varna
+· Algorithm Synthesis and Analysis
+
+University of Plovdiv "Paisij Hilendarski"
+· Algorithms and Programs
+
+National academy of software development
+· Part of the mandatory literature to consider for the academy admission examination 
+
+Bulgarian ministry of education
+· Part of the official list of books for preparation for the National Olympiads in Informatics
+
