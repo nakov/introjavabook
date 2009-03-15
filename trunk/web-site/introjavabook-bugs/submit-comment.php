@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	require("utils.php");
 	ConnectToDB();
 ?>
@@ -17,16 +18,21 @@
 <body>
 <?php
 	$bug_id = ereg_replace('[^0-9]','',$_POST['bug_id']);
-	$sender_name = trim(ltrim(ereg_replace('[^А-Яа-яA-Za-z _-]','',$_POST['name'])));
+	$sender_name = trim(ltrim(ereg_replace('[^А-Яа-яA-Za-z -]','',$_POST['name'])));
+	$sender_name = substr($sender_name, 0, 50);
 	$sender_email = ereg_replace('[^-_@.A-Za-z0-9]','',$_POST['email']);
 	$comment = trim(ltrim($_POST['comment']));
+	$captcha = ereg_replace('[^0-9]','',$_POST['captcha']);
 	
 	$message = "Коментарът ви е приет. Благодарим ви!";
 	if ($bug_id == '' || $sender_name == '' || $comment == '') {
 		$message = "Невалидни данни.<br>\n".
 			"Моля попълнете всички полета от формата според указанията!";
 	} else {
-		if (! AppendCommentToDB($bug_id, $sender_name, $sender_email, $comment)) {
+		if ($captcha != $_SESSION['captcha']) {
+			$message = "Забранено за ботове!<br>\n".
+				"Ако не сте бот, попълнете полето за защита от ботове според указанията.";
+			} else if (! AppendCommentToDB($bug_id, $sender_name, $sender_email, $comment)) {
 			$message = "Възникна проблем с базата данни. Моля опитайте по-късно.";
 		} else {
 			if (! SendEmailNotificationsForComment($bug_id, $sender_name, $sender_email, $comment)) {

@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	require("utils.php");
 	ConnectToDB();
 ?>
@@ -17,7 +18,8 @@
 <body>
 <?php
 	if (count($_POST) != 0) {
-		$sender_name = trim(ltrim(ereg_replace('[^А-Яа-яA-Za-z _-]','',$_POST['name'])));
+		$sender_name = trim(ltrim(ereg_replace('[^А-Яа-яA-Za-z -]','',$_POST['name'])));
+		$sender_name = substr($sender_name, 0, 50);
 		$sender_email = ereg_replace('[^-_@.A-Za-z0-9]','',$_POST['email']);
 		$page_number = ereg_replace('[^0-9,-]','',$_POST['page']);
 		$page_number = ereg_replace('[,]',', ',$page_number);
@@ -34,13 +36,17 @@
 		if ($_POST['agreed_to_be_listed'] != '') {
 			$sender_agreed_to_be_listed = 1;
 		}
+		$captcha = ereg_replace('[^0-9]','',$_POST['captcha']);
 		
 		$message = "Грешката е приета. Благодарим ви!";
-		if ($sender_name == '' || $page_number == '' || $row_number == '' || $bug_description == '') {
+		if ($sender_name == '' || $page_number == '' || $row_number == '' || $bug_description == '' || $captcha == '') {
 			$message = "Невалидни данни.<br>\n".
 				"Моля попълнете всички полета от формата според указанията!";
 		} else {
-			if (! AppendBugToDB($sender_name, $sender_email, $page_number, $row_number,
+			if ($captcha != $_SESSION['captcha']) {
+				$message = "Забранено за ботове!<br>\n".
+					"Ако не сте бот, попълнете полето за защита от ботове според указанията.";
+			} else if (! AppendBugToDB($sender_name, $sender_email, $page_number, $row_number,
 				$bug_description, $sender_agreed_to_be_listed)) {
 				$message = "Възникна проблем с базата данни. Моля опитайте по-късно.";
 			} else {
@@ -58,13 +64,13 @@
 	</p>
 
 	<p style="{text-align:center; font-size:85%;}">
-		<a href="submit-bug.php">Връщане към страницата за изпращане на грешки по книгата "Въведение в програмирането с Java"</a>
+		<a href="submit-bug.php">Връщане към страницата за изпращане на грешки в книгата "Въведение в програмирането с Java"</a>
 	</p>
 <?php
 	} else {
 ?>
 	<p style="{font-size:180%; text-align:center;}">
-		Въведение в програмирането с Java
+		Книга "Въведение в програмирането с Java"
 	</p>
 	
 	<p style="{font-size:150%; text-align:center;}">
@@ -84,6 +90,13 @@
 	<p>	
 <?php
 	include("show-bugs-table.php");
+	
+	$randnum1 = rand(1,20);
+	$randnum2 = rand(1,10);
+	$sum = $randnum1 + $randnum2;
+	$_SESSION['captcha'] = $sum;
+	$randnum1word = GetNumberAsWord($randnum1);
+	$randnum2word = GetNumberAsWord($randnum2);
 ?>
 	</p>
 	
@@ -155,6 +168,13 @@
 					&nbsp;
 					Желая името ми да бъде публикувано в следващото издание на книгата
 					в секцията "благодарности за открити грешки".
+				</td>
+			</tr>
+			<tr>
+				<td style="{border-left:0px; border-right:0px; border-top:0px;}">
+					Защита от ботове и спамери: моля въведете сумата на числата
+					<?= $randnum1word ?> и <?= $randnum2word ?> (като число).
+					<input type="text" name="captcha" maxLength="5" style="width:100%">
 				</td>
 			</tr>
 			<tr>

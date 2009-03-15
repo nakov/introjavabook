@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	require("utils.php");
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
@@ -31,7 +32,7 @@
 		$bug_description = $row['description'];
 ?>
 	<p style="{font-size:180%; text-align:center;}">
-		Въведение в програмирането с Java
+		Книга "Въведение в програмирането с Java"
 	</p>
 	
 	<p style="{font-size:150%; text-align:center;}">
@@ -87,6 +88,12 @@
 
 <?php
 	include("show-comments-table.php");
+	$randnum1 = rand(1,20);
+	$randnum2 = rand(1,10);
+	$sum = $randnum1 + $randnum2;
+	$_SESSION['captcha'] = $sum;
+	$randnum1word = GetNumberAsWord($randnum1);
+	$randnum2word = GetNumberAsWord($randnum2);
 ?>
 
 	<p style="{font-size:150%; text-align:center;}">
@@ -129,6 +136,13 @@
 					Коментар. Моля формулирайте старателно и обосновано вашия коментар
 					относно докладваната грешка:<br>
 					<textarea name="comment" rows="16" style="width:100%"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td style="{border-left:0px; border-right:0px; border-top:0px;}">
+					Защита от ботове и спамери: моля въведете сумата на числата
+					<?= $randnum1word ?> и <?= $randnum2word ?> (като число).
+					<input type="text" name="captcha" maxLength="5" style="width:100%">
 				</td>
 			</tr>
 			<tr>
