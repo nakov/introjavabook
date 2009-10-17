@@ -101,11 +101,15 @@ ul.linklist li.first
 #header
 {
 	position: absolute;
-	background: #FF7800 url('images/java-book-banner.png') no-repeat;
 	width: 202px;
 	height: 92px;
-	padding-left: 20px;
 }
+
+#header img
+{
+	border: 0;
+}
+
 
 #header span
 {
@@ -240,6 +244,11 @@ ul.linklist li.first
 {
 	text-align: center;
 	margin-top: 20px;
+}
+
+#secondarycontent .sponsors img
+{
+	border: none;
 }
 
 #primarycontent
