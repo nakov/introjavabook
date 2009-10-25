@@ -148,6 +148,13 @@ ul.linklist li.first
 	height: 92px;
 }
 
+#splash div.links
+{
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
 #menu
 {
 	position: relative;
@@ -258,7 +265,7 @@ ul.linklist li.first
 	float: left;
 }
 
-#primarycontent h2
+#primarycontent h1
 {
 	position: relative;
 	top: 4px;
@@ -269,6 +276,19 @@ ul.linklist li.first
 	background: url('images/a22.gif') bottom repeat-x;
 	padding: 0px 0px 10px 15px;
 	margin-bottom: 20px;
+}
+
+#primarycontent h2
+{
+	position: relative;
+	top: 4px;
+	font-size: 18px;
+	line-height: 25px;
+	color: #656551;
+	letter-spacing: -1px;
+	background: url('images/a22.gif') bottom repeat-x;
+	padding: 0px 0px 10px 15px;
+	margin-bottom: 15px;
 }
 
 #primarycontent h3
@@ -381,4 +401,11 @@ ul.linklist li.first
 #footer a
 {
 	color: #8C8C73;
+}
+
+.bulshits
+{
+	width:1px;
+	height:1px;
+	overflow:hidden;
 }
