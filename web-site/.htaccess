@@ -1,6 +1,12 @@
 <IfModule mod_rewrite.c>
+
 RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^introprogramming\.info$ [NC]
+RewriteRule .* http://www.introprogramming.info/ [L,R=301]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /url-processor.php [L]
+
 </IfModule>
