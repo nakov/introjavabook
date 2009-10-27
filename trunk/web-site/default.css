@@ -403,9 +403,26 @@ ul.linklist li.first
 	color: #8C8C73;
 }
 
+#footer .validators
+{
+	float: right;
+	margin-right: 10px;
+}
+
+#footer .validators img
+{
+	border: 0;
+	vertical-align: middle;
+}
+
 .bulshits
 {
 	width:1px;
 	height:1px;
 	overflow:hidden;
+}
+
+.banners
+{
+	text-align: center;
 }
