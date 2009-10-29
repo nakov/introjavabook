@@ -148,10 +148,8 @@ ul.linklist li.first
 	height: 92px;
 }
 
-#splash div.links
+#links
 {
-	width: 1px;
-	height: 1px;
 	overflow: hidden;
 }
 
@@ -415,10 +413,8 @@ ul.linklist li.first
 	vertical-align: middle;
 }
 
-.bulshits
+#bulshits
 {
-	width:1px;
-	height:1px;
 	overflow:hidden;
 }
 
