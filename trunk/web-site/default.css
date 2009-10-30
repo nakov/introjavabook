@@ -148,11 +148,6 @@ ul.linklist li.first
 	height: 92px;
 }
 
-#links
-{
-	overflow: hidden;
-}
-
 #menu
 {
 	position: relative;
@@ -242,7 +237,9 @@ ul.linklist li.first
 #secondarycontent .sponsors
 {
 	padding: 0px 10px 0px 10px;
-	margin-bottom: 20px;
+	font-size: 8px;
+	line-height: 120%;
+	width: 160px;
 }
 
 #secondarycontent .sponsors p
@@ -411,11 +408,6 @@ ul.linklist li.first
 {
 	border: 0;
 	vertical-align: middle;
-}
-
-#bulshits
-{
-	overflow:hidden;
 }
 
 .banners
