@@ -190,7 +190,7 @@
 	}
 ?>
 	<p style="{text-align:center; font-size:85%;}">
-		<a href="http://academy.devbg.org/books/intro-java/">Връщане към сайта на книгата "Въведение в програмирането с Java"</a>
+		<a href="http://www.introprogramming.info/">Връщане към сайта на книгата "Въведение в програмирането с Java"</a>
 	</p>
 </body>
 </html>
