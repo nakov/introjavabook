@@ -185,7 +185,7 @@ ul.linklist li.first
 
 #menu ul li a:hover
 {
-	background: #fff url('images/a18.gif') repeat-x top;
+	background: #FFFFFF url(images/a18.gif) repeat-x scroll center top;
 	color: #4A4A24;
 	text-decoration: none;
 }
