@@ -1,0 +1,30 @@
+Петър Гешков
+Искам да обявя нещо като авторска грешка или като пропуск в кода за даден пример, не знам как да го определя, но става дума за книгата на Светлин Наков и колектив - „Introduction-to-Programing-with-Java-Book-v1.01.pdf“. Отиваме на урок номер 18 и се спираме на примера за „Свързан списък- Динамична реализация“. Не искам да копирам целия код, а само проблемната според мен част. Скачаме на страница 594 и се спираме на метода :
+
+......
+public Object remove(int index) {
+if (index>=count || index<0) {
+throw new IndexOutOfBoundsException(
+"Invalid index: " + index);
+}
+// Find the element at the specified index
+int currentIndex = 0;
+Node currentNode = head;
+Node prevNode = null;
+while (currentIndex < index) {
+prevNode = currentNode;
+currentNode = currentNode.next;
+currentIndex++;
+}
+// Remove the element
+count --;
+if (count ==0) {
+head = null ;
+tail = null ;
+} else if (prevNode == null ) {
+head = currentNode.next ;
+} else {
+prevNode.next = currentNode.next ;
+}
+return currentNode.element ;
+} 
