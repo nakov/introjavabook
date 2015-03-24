@@ -1,0 +1,48 @@
+# Речник за правилен превод #
+
+| **термин** | **превод** |
+|:-----------------|:-----------------|
+| add-in | добавка (add in) |
+| boxing | опаковане |
+| (class) cast | преобразуване (взето от тоя Балабанов) |
+| class | клас |
+| (standard) class library | (стандартна) клас-библиотека |
+| click (mouse click) | щракване (с мишката) |
+| component | компонент (мъжки род) |
+| connection | връзка |
+| control | контрола (женски род) |
+| debug | дебъгвам |
+| debug info | дебъг информация |
+| debugger | дебъгер |
+| deployment | внедряване (deployment) |
+| escaping | escaping |
+| fixed-point number | реално число с фиксирана запетая |
+| format specifier | спецификатор за формат |
+| handler | обработчик |
+| heap	| хийп |
+| implementation | имплементация |
+| instance | инстанция, илюстрация, екземпляр |
+| member variable | член-променлива |
+| lock | заключване |
+| native code | машиннозависим код (native код) |
+| overloads | варианти |
+| (method) override | пренаписване (на метод), припокриване (подмяна) на виртуален метод. |
+| parse, parsing | правя синтактичен анализ |
+| partial classes | частични класове |
+| precision specifier | спецификатор на точността |
+| reference type | референтен тип |
+| relative path | относителен път |
+| (method) signature | сигнатура (на метод) |
+| specifier | спецификатор |
+| statement | израз, програмна конструкция |
+| text box | текстово поле |
+| tracing | проследяване |
+| unboxing | разопаковане |
+| unit test | unit тест |
+| upgrade | надстрояване (upgrade) |
+| user control | потребителска контрола |
+| validate | валидирам |
+| value type | стойностен тип |
+| capacity | капацитет |
+| load factor | фактор на запълване |
+| viewer | визуализатор |
