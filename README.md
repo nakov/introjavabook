@@ -1,4 +1,4 @@
-# Itro Java Book - книга "Въведение в програмирането с Java"
+# Intro Java Book - безплатна книга "Въведение в програмирането с Java"
 Automatically exported from https://code.google.com/p/introjavabook.
 
 ## Добре дошли!
