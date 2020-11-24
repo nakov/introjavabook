@@ -1,5 +1,5 @@
-# introjavabook
-Automatically exported from code.google.com/p/introjavabook
+# Itro Java Book - книга "Въведение в програмирането с Java"
+Automatically exported from https://code.google.com/p/introjavabook.
 
 ## Добре дошли!
 
